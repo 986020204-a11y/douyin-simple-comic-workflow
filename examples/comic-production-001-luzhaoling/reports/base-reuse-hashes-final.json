@@ -1,0 +1,58 @@
+{
+  "P01": {
+    "candidate": "801f7c64e55f860686b7777c9831be6c0df356bc120726c02c68202b3df1574c",
+    "original_source": "801f7c64e55f860686b7777c9831be6c0df356bc120726c02c68202b3df1574c",
+    "revision_source": null,
+    "same_as_original": true,
+    "same_as_revision": false
+  },
+  "P02": {
+    "candidate": "5a1e4afe6a79436537f3a60930a149a230c84d5b482ed8c0eff724ee91638312",
+    "original_source": "5a1e4afe6a79436537f3a60930a149a230c84d5b482ed8c0eff724ee91638312",
+    "revision_source": null,
+    "same_as_original": true,
+    "same_as_revision": false
+  },
+  "P03": {
+    "candidate": "049a10b8a7cbd2f923386f66f0f71663be1e1acbdc379c5517df38a7049df0e7",
+    "original_source": "049a10b8a7cbd2f923386f66f0f71663be1e1acbdc379c5517df38a7049df0e7",
+    "revision_source": null,
+    "same_as_original": true,
+    "same_as_revision": false
+  },
+  "P04": {
+    "candidate": "ba8e67d74f4dd4ea09edcb16c48f5dbc0b9622361eb5af40bd8369247cc4b03e",
+    "original_source": "ba8e67d74f4dd4ea09edcb16c48f5dbc0b9622361eb5af40bd8369247cc4b03e",
+    "revision_source": null,
+    "same_as_original": true,
+    "same_as_revision": false
+  },
+  "P05": {
+    "candidate": "8433eb2711b9527efdb685092e08860d6f9d64784771bc8a94f06d1792fb4a29",
+    "original_source": "8433eb2711b9527efdb685092e08860d6f9d64784771bc8a94f06d1792fb4a29",
+    "revision_source": null,
+    "same_as_original": true,
+    "same_as_revision": false
+  },
+  "P06": {
+    "candidate": "f764713693c9934256108e1555bdbf3532399b02f6730c540890b64a33eb3266",
+    "original_source": "f764713693c9934256108e1555bdbf3532399b02f6730c540890b64a33eb3266",
+    "revision_source": "f764713693c9934256108e1555bdbf3532399b02f6730c540890b64a33eb3266",
+    "same_as_original": true,
+    "same_as_revision": true
+  },
+  "P07": {
+    "candidate": "71f847b02ff4d58a67708c85afbc145ad8f65202d21501390be9bd56535f598e",
+    "original_source": "71f847b02ff4d58a67708c85afbc145ad8f65202d21501390be9bd56535f598e",
+    "revision_source": "71f847b02ff4d58a67708c85afbc145ad8f65202d21501390be9bd56535f598e",
+    "same_as_original": true,
+    "same_as_revision": true
+  },
+  "P08": {
+    "candidate": "4d8ed7654b926c276b86d12b6e8479fd8b625ccaf9d4b4e2b7db80b3210e02c5",
+    "original_source": "4d8ed7654b926c276b86d12b6e8479fd8b625ccaf9d4b4e2b7db80b3210e02c5",
+    "revision_source": "4d8ed7654b926c276b86d12b6e8479fd8b625ccaf9d4b4e2b7db80b3210e02c5",
+    "same_as_original": true,
+    "same_as_revision": true
+  }
+}

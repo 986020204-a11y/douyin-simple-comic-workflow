@@ -1,0 +1,160 @@
+report: douyin-simple-comic-workflow packaging report
+report_schema_version: 0.2.0-rc.1
+source_skill_directory: 'C:\Users\啊海\.codex\skills\douyin-simple-comic-workflow'
+mirror_skill_directory: 'D:\CodexData\skills\douyin-simple-comic-workflow'
+package_directory: 'D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001'
+package_name: douyin-simple-comic-workflow
+package_version: 0.2.0-rc.1
+source_skill_version: 0.2-draft
+copied_files_count: 79
+preview_asset_files_count: 68
+package_file_count: 172
+preview_image_count: 68
+preview_image_missing: []
+source_skill_preview_image_missing: [SB-001, SB-002, SB-003, SB-004, SB-005, SB-006, SB-007, SB-008, SB-009, SB-010, SB-011, SB-012, SB-013, SB-014, SB-015, SB-016, SB-017, SB-018, SB-019, SB-020, SB-021, SB-022, SB-023, SB-024, SB-025, SB-026, SB-027, SB-028, SB-029, SB-030, SB-031, SB-032, SB-033, SB-034, SB-035, SB-036, SB-037, SB-038, SB-039, SB-040, SB-041, SB-042, SB-043, SB-044, SB-045, SB-046, SB-047, SB-048, SB-049, SB-050, SB-051, SB-052, SB-053, SB-054, SB-055, SB-056, SB-057, SB-058, SB-059, SB-060, SB-061, SB-062, SB-063, SB-064, SB-065, SB-066, SB-067, SB-068]
+mirror_preview_image_missing: [SB-001, SB-002, SB-003, SB-004, SB-005, SB-006, SB-007, SB-008, SB-009, SB-010, SB-011, SB-012, SB-013, SB-014, SB-015, SB-016, SB-017, SB-018, SB-019, SB-020, SB-021, SB-022, SB-023, SB-024, SB-025, SB-026, SB-027, SB-028, SB-029, SB-030, SB-031, SB-032, SB-033, SB-034, SB-035, SB-036, SB-037, SB-038, SB-039, SB-040, SB-041, SB-042, SB-043, SB-044, SB-045, SB-046, SB-047, SB-048, SB-049, SB-050, SB-051, SB-052, SB-053, SB-054, SB-055, SB-056, SB-057, SB-058, SB-059, SB-060, SB-061, SB-062, SB-063, SB-064, SB-065, SB-066, SB-067, SB-068]
+preview_image_path_validation: passed
+preview_image_capability: available_as_packaged_reference
+copied_scope: source Skill files excluding Python cache and historical script backup
+preview_scope: 68 related-local-gallery WebP files copied with explicit external provenance; not counted as source Skill files
+excluded_files:
+  - path: skills/douyin-simple-comic-workflow/scripts/__pycache__
+    status: omitted_cache
+  - path: skills/douyin-simple-comic-workflow/scripts/text_compositor.py.pre-text-layout-fix-20261008.bak
+    status: omitted_historical_backup
+missing_expected_files:
+  - path: skills/douyin-simple-comic-workflow/templates
+    status: not_present_in_source
+  - path: LICENSE.txt
+    status: no_reliable_license_found
+  - path: skills/douyin-simple-comic-workflow/config/text-layout.yaml
+    status: not_present_in_source
+    note: runtime project configuration is copied only under the example case and is not claimed as Skill-owned
+mirror_comparison:
+  status: synchronized
+  package_source: source_skill_directory
+  mirror_overwrite: targeted_three_files_after_reported_difference
+  same_version_metadata: true
+  content_differences:
+    - SKILL.md
+    - references/output-schema.md
+    - references/workflow-rules.md
+  difference_reason: source contains the current planned/visible panel reconciliation rules; mirror is stale
+  sync_status: identical_excluding_cache_backup
+  sync_action: source_to_mirror_three_core_docs
+  source_unique_authority: true
+path_validation:
+  status: passed
+  internal_plugin_paths_only: true
+  manifest_paths:
+    root_skills: ./skills/
+    codex_skills: ./skills/
+  dotdot_paths: []
+  absolute_asset_paths_in_manifests: []
+  external_services_or_hooks: absent
+manifest_validation:
+  status: passed
+  root_plugin_json: passed
+  codex_plugin_json: passed
+  name: douyin-simple-comic-workflow
+  version: 0.2.0-rc.1
+  description: present
+  semantic_identity: passed
+  optional_interface_difference: expected_codex_compatibility_metadata
+  root_extensions: absent
+  extensions_conflict: none
+  mcp_hooks_external_services: absent
+  author_license_repository: omitted_unreliable_metadata
+skill_structure_validation:
+  status: passed
+  skill_md: present
+  references: present
+  scripts: present
+  agents_openai_yaml: present_and_still_applicable
+  templates: not_present_in_source
+  quick_validate: passed
+  formal_text_compositor: present
+  image_generation_or_composition_run: not_run
+documentation_validation:
+  status: passed
+  readme_required_sections: present
+  changelog_version: matches_0.2.0-rc.1
+  delivery_manifest: present
+  final_release_gate_report: present
+  package_directory_references: consistent
+sb_resource_validation:
+  status: passed
+  index_count: 68
+  sb_markdown_count: 68
+  id_range: SB-001..SB-068
+  bubble_constraint_profiles: 68
+  bubble_audit: valid
+  prompt_pool_verification: passed
+  source_explicit_layouts: 11
+  no_sb_specific_bubble_evidence: 57
+preview_image_audit:
+  source_skill_preview_image_count: 0
+  mirror_preview_image_count: 0
+  related_local_gallery_preview_image_count: 68
+  preview_image_count: 68
+  preview_image_missing: []
+  preview_image_extra: []
+  one_to_one_sb_mapping: passed
+  content_hash_match_with_related_gallery: passed
+  preview_image_path_validation:
+    status: passed
+    declared_paths: 68
+    invalid_declared_paths: []
+    package_root: skills/douyin-simple-comic-workflow/references/comic-layouts
+  preview_image_capability:
+    status: available_as_packaged_reference
+    source_skill_capability: unavailable
+    provenance: related_local_gallery
+    source_skill_bundled: false
+    bubble_rule_evidence: not_allowed
+  related_gallery_source:
+    gallery_directory: 'D:\A抖音\.tmp_handraw_style\images\layouts\comic-storyboards'
+    index: 'D:\A抖音\.tmp_handraw_style\skills\handdraw-style-prompter\references\layouts.json'
+    files_readable: true
+    external_storyboard_skill_invoked: false
+example_case_validation:
+  status: passed
+  case: comic-production-001-luzhaoling
+  page_count: 8
+  planned_story_units: 24
+  planned_panel_count: 24
+  visible_panel_count: 37
+  panel_count_delta: 13
+  panel_count_reconciliation:
+    status: explained
+    basis: storyboard 8x3 planning count versus final-base visible-panel audit
+    reason: selected SB layouts expand into inset, split, or nested visible panels
+    release_effect: not_a_text_layer_error
+  key_reports_readable: true
+  bundled_images: false
+  human_visual_acceptance: passed
+  published: false
+published: false
+human_visual_acceptance: passed
+human_visual_acceptance_evidence:
+  full_size_contact_sheet: 'D:\A抖音漫画\tests\comic-production-001-luzhaoling-final-preflight-v001\pages\final-contact-sheet-preflight-v001.png'
+  mobile_contact_sheet: 'D:\A抖音漫画\tests\comic-production-001-luzhaoling-final-preflight-v001\pages\previews\mobile-contact-sheet-preflight-v001.png'
+  confirmation: user_confirmed_both_contact_sheets
+repository_submission: not_started
+repository_preparation_status: local_staging_prepared
+target_repository: 'https://github.com/986020204-a11y/douyin-simple-comic-workflow.git'
+target_branch: main
+preview_assets_redistribution_permission: confirmed
+preview_assets_redistribution_permission_reason: user_confirmed_in_conversation
+old_tests_or_images_modified: false
+image_generation: not_run
+text_composition: not_run
+final_status: ready_for_commit_review
+remaining_risks:
+  - source Skill has no reliable author, license, or repository metadata; these may be required when a real repository is supplied
+  - 'D:\CodexData\skills mirror was synchronized from the source for the three differing rule documents; cache and historical backup files remain excluded from the comparison'
+  - runtime text-layout.yaml is project configuration, not a source Skill resource
+  - preview images are related-local-gallery assets rather than source Skill assets and cannot be used as bubble-rule evidence
+  - preview images are related-local-gallery assets rather than source Skill assets and should remain documented as visual references only
+  - the remote repository is empty; the local main-branch working tree is prepared without a commit or push
+next_step: Review the prepared main-branch working tree and explicitly request the first commit or push if desired.

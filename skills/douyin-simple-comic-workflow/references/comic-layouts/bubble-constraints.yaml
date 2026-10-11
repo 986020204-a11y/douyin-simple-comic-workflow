@@ -1,0 +1,1736 @@
+schema_version: 0.2-draft
+purpose: layout_id to bubble candidates and placement constraints
+source_boundary: Only claims explicit wording found in bundled SB descriptions. All
+  adaptation_rule entries are additions for this workflow.
+audit_contract:
+  validator: scripts/audit_layout_bubbles.py
+  required_index_count: 68
+  required_description_files: SB-001.md through SB-068.md
+  source_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  reference_limitations:
+  - Preview-only appearance is not treated as recovered source wording.
+  - source_rule_level=none means generic type and placement rules only.
+  - preferred_bubble_candidates are shared workflow candidates, not claims of unique gallery artwork.
+profiles:
+- layout_id: SB-001
+  layout_name_en: Regular Grid
+  source_file: references/comic-layouts/SB-001.md
+  panel_count: variable
+  layout_structure: panels of equal size arranged neatly in a consistent reading order,
+    ideal for slice-of-life and dialogue-driven stories.
+  source_evidence: 源说明明确写出适合 dialogue-driven stories；未说明具体气泡形状或尾巴。
+  source_rule_level: explicit
+  preferred_bubble_candidates:
+  - rounded_speech
+  - narration_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-002
+  layout_name_en: Four-Panel Kishōtenketsu
+  source_file: references/comic-layouts/SB-002.md
+  panel_count: 4
+  layout_structure: four equal panels sequentially presenting introduction, development,
+    twist, and punchline, ideal for short comedic stories.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-003
+  layout_name_en: Hero Panel + Inset Panels
+  source_file: references/comic-layouts/SB-003.md
+  panel_count: variable
+  layout_structure: one prominent large panel occupies primary area, supported by
+    smaller secondary panels for reactions or details.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-004
+  layout_name_en: Top Splash Panel Opening
+  source_file: references/comic-layouts/SB-004.md
+  panel_count: variable
+  layout_structure: wide banner panel across top establishing scene and characters
+    before subsequent sequential narrative below.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-005
+  layout_name_en: Bottom Climax Panel Ending
+  source_file: references/comic-layouts/SB-005.md
+  panel_count: variable
+  layout_structure: smaller panels build narrative momentum leading to a large impactful
+    bottom panel for climax or reveal.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-006
+  layout_name_en: Center Focal Panel
+  source_file: references/comic-layouts/SB-006.md
+  panel_count: variable
+  layout_structure: dominant central panel commanding maximum visual attention for
+    action climax or core reveal.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-007
+  layout_name_en: Diagonal Dynamic Split
+  source_file: references/comic-layouts/SB-007.md
+  panel_count: variable
+  layout_structure: panels divided along diagonal angles, intensifying speed, conflict,
+    pursuit, and confrontation.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-008
+  layout_name_en: Z-Pattern Reading Flow
+  source_file: references/comic-layouts/SB-008.md
+  panel_count: variable
+  layout_structure: visual focus flows in a classic Z-path (top-left, top-right, bottom-left,
+    bottom-right) for clear storytelling.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-009
+  layout_name_en: S-Curve Narrative Flow
+  source_file: references/comic-layouts/SB-009.md
+  panel_count: variable
+  layout_structure: characters and compositions follow a soft curving path, suitable
+    for whimsical, romantic, or journey narratives.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-010
+  layout_name_en: Spiral Inward Flow
+  source_file: references/comic-layouts/SB-010.md
+  panel_count: variable
+  layout_structure: panels and gaze spiral inwards around center, gradually closing
+    in on core event.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-011
+  layout_name_en: Radial Converging Panels
+  source_file: references/comic-layouts/SB-011.md
+  panel_count: variable
+  layout_structure: multiple panels radiate toward central focus, perfect for explosions,
+    revelations, and high-impact moments.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-012
+  layout_name_en: Shattered Glass Panels
+  source_file: references/comic-layouts/SB-012.md
+  panel_count: variable
+  layout_structure: broken fragmented panels dividing screen like fractured glass,
+    expressing chaos, combat, memories, and psychological shock.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-013
+  layout_name_en: Border Break
+  source_file: references/comic-layouts/SB-013.md
+  panel_count: variable
+  layout_structure: characters, actions, or visual effects break through panel boundaries,
+    amplifying power, speed, and dimensional presence.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-014
+  layout_name_en: Multi-Panel Spanning Character
+  source_file: references/comic-layouts/SB-014.md
+  panel_count: variable
+  layout_structure: single character figure extends across multiple panels, creating
+    continuous fluid action.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-015
+  layout_name_en: Continuous Background Across Panels
+  source_file: references/comic-layouts/SB-015.md
+  panel_count: variable
+  layout_structure: multiple panels share unified continuous panoramic background,
+    with characters shown at different moments.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-016
+  layout_name_en: Single Continuous Take
+  source_file: references/comic-layouts/SB-016.md
+  panel_count: variable
+  layout_structure: entire page represents single unbroken environment, with characters
+    appearing at multiple positions sequentially.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-017
+  layout_name_en: Cinematic Filmstrip
+  source_file: references/comic-layouts/SB-017.md
+  panel_count: variable
+  layout_structure: sequential filmstrip-like horizontal panels, emphasizing linear
+    time progression and cinematic pacing.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-018
+  layout_name_en: Widescreen Horizontal Panels
+  source_file: references/comic-layouts/SB-018.md
+  panel_count: variable
+  layout_structure: wide horizontal panels dominating page, ideal for cinematic landscapes,
+    vehicle chases, and expansive scenes.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-019
+  layout_name_en: Vertical Skyscraper Panels
+  source_file: references/comic-layouts/SB-019.md
+  panel_count: variable
+  layout_structure: elongated vertical panels emphasizing falling, high-rise buildings,
+    full-body figures, or upward motion.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-020
+  layout_name_en: Ultra-Slim Reaction Insets
+  source_file: references/comic-layouts/SB-020.md
+  panel_count: variable
+  layout_structure: narrow slit-like panels inserted rapidly for eyes, mouth, hands,
+    or micro-reactions, boosting pacing.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-021
+  layout_name_en: Eye Close-Up Sequence
+  source_file: references/comic-layouts/SB-021.md
+  panel_count: variable
+  layout_structure: successive eye close-ups building confrontation, suspense, hesitation,
+    or escalating tension.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-022
+  layout_name_en: Hand Action Sequence
+  source_file: references/comic-layouts/SB-022.md
+  panel_count: variable
+  layout_structure: consecutive close-ups of hands, buttons, props, or tools driving
+    key tactical actions forward.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-023
+  layout_name_en: Long Shot to Extreme Close-Up
+  source_file: references/comic-layouts/SB-023.md
+  panel_count: variable
+  layout_structure: camera zooms from extreme wide shot to close-up, steadily accumulating
+    emotional tension.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-024
+  layout_name_en: Extreme Close-Up to Wide Reveal
+  source_file: references/comic-layouts/SB-024.md
+  panel_count: variable
+  layout_structure: camera pulls back from extreme macro detail to wide environmental
+    reveal, creating contrast.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-025
+  layout_name_en: Shot-Reverse-Shot
+  source_file: references/comic-layouts/SB-025.md
+  panel_count: variable
+  layout_structure: alternating character close-ups facing camera, perfect for dialogue,
+    verbal sparring, and psychological duel.
+  source_evidence: 源说明明确写出适合 dialogue、verbal sparring；未说明具体气泡形状、位置或尾巴。
+  source_rule_level: explicit
+  preferred_bubble_candidates:
+  - rounded_speech
+  - narration_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-026
+  layout_name_en: Triple Rapid Close-Ups
+  source_file: references/comic-layouts/SB-026.md
+  panel_count: 3
+  layout_structure: three consecutive rapid detail shots switching dynamically (e.g.
+    eyes, finger, trigger).
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-027
+  layout_name_en: Action Breakdown
+  source_file: references/comic-layouts/SB-027.md
+  panel_count: variable
+  layout_structure: single dynamic action dissected into preparation, motion, contact,
+    and aftermath across sequential panels.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-028
+  layout_name_en: Motion Trail Strobe Sequence
+  source_file: references/comic-layouts/SB-028.md
+  panel_count: variable
+  layout_structure: character repeated multiple times within panels depicting high-speed
+    kinetic motion.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-029
+  layout_name_en: Static Panel Repetition
+  source_file: references/comic-layouts/SB-029.md
+  panel_count: variable
+  layout_structure: successive panels nearly identical with minimal shift, creating
+    deadpan comedy, awkward pause, and comedic timing.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-030
+  layout_name_en: Sudden Pacing Halt
+  source_file: references/comic-layouts/SB-030.md
+  panel_count: variable
+  layout_structure: rapid dense action suddenly interrupted by large empty negative
+    space or quiet static frame for comedic anti-climax.
+  source_evidence: 源说明明确写出 large empty negative space；没有气泡规则。
+  source_rule_level: explicit
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-031
+  layout_name_en: Post-Climax Negative Space
+  source_file: references/comic-layouts/SB-031.md
+  panel_count: variable
+  layout_structure: intense explosive action followed by generous white space and
+    tiny silhouette, emphasizing absurdity or lingering mood.
+  source_evidence: 源说明明确写出 generous white space；没有气泡规则。
+  source_rule_level: explicit
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-032
+  layout_name_en: Vertical Mirroring
+  source_file: references/comic-layouts/SB-032.md
+  panel_count: variable
+  layout_structure: top and bottom halves feature symmetrical compositions with contrasted
+    or inverted content for before-after comparison.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-033
+  layout_name_en: Split-Side Confrontation
+  source_file: references/comic-layouts/SB-033.md
+  panel_count: variable
+  layout_structure: opposing characters or factions occupy left and right sides of
+    page, creating direct visual tension.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-034
+  layout_name_en: Dual Parallel Storylines
+  source_file: references/comic-layouts/SB-034.md
+  panel_count: variable
+  layout_structure: two simultaneous story tracks or locations progressing down page,
+    converging at single point.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-035
+  layout_name_en: Cross-Cutting Parallel Action
+  source_file: references/comic-layouts/SB-035.md
+  panel_count: variable
+  layout_structure: rapid alternating sequence between events A and B, amplifying
+    suspense or misunderstanding.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-036
+  layout_name_en: Inset Memory Flashback
+  source_file: references/comic-layouts/SB-036.md
+  panel_count: variable
+  layout_structure: main panels embedded with smaller vintage or bordered insets representing
+    memories or past events.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-037
+  layout_name_en: Inset Fantasy Bubble
+  source_file: references/comic-layouts/SB-037.md
+  panel_count: variable
+  layout_structure: reality scenes overlaid with dream-bubble panels depicting character's
+    internal imagination or comic thoughts.
+  source_evidence: 源说明明确写出 dream-bubble panels 与 comic thoughts；这是布局中的幻想/思绪画格说明，不等同于所有文字都使用思考气泡。
+  source_rule_level: explicit
+  preferred_bubble_candidates:
+  - thought_bubble
+  - narration_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-038
+  layout_name_en: Multi-CCTV Security Grid
+  source_file: references/comic-layouts/SB-038.md
+  panel_count: variable
+  layout_structure: page structured like multi-channel surveillance monitor feeds,
+    ideal for investigation and thriller narrative.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-039
+  layout_name_en: Smartphone Chat Overlay
+  source_file: references/comic-layouts/SB-039.md
+  panel_count: variable
+  layout_structure: real-life scene blended with phone messaging screens and speech
+    bubbles for modern social media narrative.
+  source_evidence: 源说明明确写出 phone messaging screens 与 speech bubbles；未规定具体尾巴坐标。
+  source_rule_level: explicit
+  preferred_bubble_candidates:
+  - phone_dialogue
+  - rounded_speech
+  - narration_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-040
+  layout_name_en: Detective Case File Collage
+  source_file: references/comic-layouts/SB-040.md
+  panel_count: variable
+  layout_structure: mix of photos, sticky notes, confidential memos, evidence pins,
+    and comic panels for investigative stories.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-041
+  layout_name_en: Editorial Magazine Layout
+  source_file: references/comic-layouts/SB-041.md
+  panel_count: variable
+  layout_structure: bold headlines, character cutouts, captions, and narrative panels
+    composed like high-end editorial spread.
+  source_evidence: 源说明明确写出 captions 与 narrative panels；未规定具体气泡形状。
+  source_rule_level: explicit
+  preferred_bubble_candidates:
+  - narration_box
+  - emphasis_box
+  - rounded_speech
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-042
+  layout_name_en: Infographic Comic Hybrid
+  source_file: references/comic-layouts/SB-042.md
+  panel_count: variable
+  layout_structure: comic storytelling integrated with statistical charts, flow arrows,
+    and data annotations for educational narrative.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-043
+  layout_name_en: Map & Trail Journey
+  source_file: references/comic-layouts/SB-043.md
+  panel_count: variable
+  layout_structure: characters navigate along route map or spatial path, guiding reader's
+    eye through the journey.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-044
+  layout_name_en: Chronological Timeline Progression
+  source_file: references/comic-layouts/SB-044.md
+  panel_count: variable
+  layout_structure: panels sequenced sequentially along time axis (morning to night
+    or past to future).
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-045
+  layout_name_en: Clock Face Radial Layout
+  source_file: references/comic-layouts/SB-045.md
+  panel_count: variable
+  layout_structure: panels organized around circular clock face or timeline dial,
+    ideal for 24-hour cycle or countdown motif.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-046
+  layout_name_en: Central Anchor Prop
+  source_file: references/comic-layouts/SB-046.md
+  panel_count: variable
+  layout_structure: core object (coffee cup, phone, doorway, car) anchored in center
+    with story unfolding around it.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-047
+  layout_name_en: Central Anchor Protagonist
+  source_file: references/comic-layouts/SB-047.md
+  panel_count: variable
+  layout_structure: main protagonist anchored in center of page while surrounding
+    panels rotate around their perspective.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-048
+  layout_name_en: Circular Loop Narrative
+  source_file: references/comic-layouts/SB-048.md
+  panel_count: variable
+  layout_structure: panels connect head-to-tail in closed loop, conveying recurring
+    cycle, time loop, or karmic fate.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-049
+  layout_name_en: Downward Plunge Flow
+  source_file: references/comic-layouts/SB-049.md
+  panel_count: variable
+  layout_structure: composition and reading path plunge downwards continuously, emphasizing
+    falling, vertigo, and freefall chase.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-050
+  layout_name_en: Stepped Staircase Progression
+  source_file: references/comic-layouts/SB-050.md
+  panel_count: variable
+  layout_structure: panels stepped diagonally like stairs, visually reinforcing uphill
+    struggle, ascending journey, or level progression.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-051
+  layout_name_en: Undulating Wave Flow
+  source_file: references/comic-layouts/SB-051.md
+  panel_count: variable
+  layout_structure: wavy panel contours and flowing rhythm, ideal for musical scenes,
+    dreamy states, and lighthearted moods.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-052
+  layout_name_en: Free-Floating Unframed Panels
+  source_file: references/comic-layouts/SB-052.md
+  panel_count: variable
+  layout_structure: irregularly positioned panels floating freely across white space,
+    guided by eyelines and speech balloons.
+  source_evidence: 源说明明确写出 white space 与 speech balloons；未规定具体尾巴坐标。
+  source_rule_level: explicit
+  preferred_bubble_candidates:
+  - rounded_speech
+  - thought_bubble
+  - narration_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-053
+  layout_name_en: Frameless Organic Narrative
+  source_file: references/comic-layouts/SB-053.md
+  panel_count: variable
+  layout_structure: conventional panel borders removed entirely; characters, backgrounds,
+    and negative space form organic reading zones.
+  source_evidence: 源说明明确写出 negative space organic reading zones；没有气泡规则。
+  source_rule_level: explicit
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-054
+  layout_name_en: Generous Negative Space
+  source_file: references/comic-layouts/SB-054.md
+  panel_count: variable
+  layout_structure: abundant white space isolating minimal characters and sparse dialogue,
+    conveying quiet, poetic, or awkward atmosphere.
+  source_evidence: 源说明明确写出 abundant white space 与 sparse dialogue；未规定具体气泡形状。
+  source_rule_level: explicit
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-055
+  layout_name_en: Full-Bleed Splash Page
+  source_file: references/comic-layouts/SB-055.md
+  panel_count: 1
+  layout_structure: single monumental scene filling entire page with zero margin,
+    delivering peak climax and iconic visual impact.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-056
+  layout_name_en: Simulated Double-Page Spread
+  source_file: references/comic-layouts/SB-056.md
+  panel_count: variable
+  layout_structure: simulated center gutter dividing page symmetrically, creating
+    epic cinematic widescreen feel on single page.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-057
+  layout_name_en: Poster-Style Narrative
+  source_file: references/comic-layouts/SB-057.md
+  panel_count: variable
+  layout_structure: strong dominant poster-like hero visual surrounded by small supporting
+    narrative panels.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-058
+  layout_name_en: Magazine Cover Narrative
+  source_file: references/comic-layouts/SB-058.md
+  panel_count: variable
+  layout_structure: stylized magazine cover masthead and cover star surrounded by
+    episodic panels telling complete story.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-059
+  layout_name_en: Fixed Proscenium Stage
+  source_file: references/comic-layouts/SB-059.md
+  panel_count: variable
+  layout_structure: single fixed theatrical stage perspective where characters enter
+    and exit while environment remains stationary.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-060
+  layout_name_en: Horizontal Continuous Scroll
+  source_file: references/comic-layouts/SB-060.md
+  panel_count: variable
+  layout_structure: emulating traditional horizontal scroll where character appears
+    multiple times across continuous landscape.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-061
+  layout_name_en: Vertical Hanging Scroll
+  source_file: references/comic-layouts/SB-061.md
+  panel_count: variable
+  layout_structure: emulating vertical scroll where events and characters descend
+    continuously down single tall space.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-062
+  layout_name_en: Mirror Reflection Dualism
+  source_file: references/comic-layouts/SB-062.md
+  panel_count: variable
+  layout_structure: mirror surfaces, puddles, or reflections splitting scene into
+    twin perspectives and psychological duality.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-063
+  layout_name_en: Architectural Window Framing
+  source_file: references/comic-layouts/SB-063.md
+  panel_count: variable
+  layout_structure: windows, door frames, balconies, or screens naturally forming
+    visual panels.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-064
+  layout_name_en: Foreground Silhouette Framing
+  source_file: references/comic-layouts/SB-064.md
+  panel_count: variable
+  layout_structure: foreground elements (pillars, tree trunks, door jambs) naturally
+    partitioning scene into narrative panels.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-065
+  layout_name_en: Typographic Scaffold Layout
+  source_file: references/comic-layouts/SB-065.md
+  panel_count: variable
+  layout_structure: monumental sound-effect characters or titles act as structural
+    skeleton, with panels built around lettering.
+  source_evidence: 源说明明确写出 lettering 作为结构骨架；不等于普通对白气泡规则。
+  source_rule_level: explicit
+  preferred_bubble_candidates:
+  - emphasis_box
+  - narration_box
+  - rounded_speech
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-066
+  layout_name_en: Onomatopoeia Trail
+  source_file: references/comic-layouts/SB-066.md
+  panel_count: variable
+  layout_structure: giant sound effect words cutting across panels, uniting kinetic
+    rhythm and visual direction.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-067
+  layout_name_en: Color Block Panel Partitions
+  source_file: references/comic-layouts/SB-067.md
+  panel_count: variable
+  layout_structure: distinct solid color blocks serving as panel dividers and emotional
+    mood zones rather than black lines.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-068
+  layout_name_en: Non-Rectangular Geometric Mosaic
+  source_file: references/comic-layouts/SB-068.md
+  panel_count: variable
+  layout_structure: circular, triangular, and polygon panels dividing page, creating
+    stylized geometric rhythm.
+  source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_rule_level: none
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size

@@ -1,0 +1,115 @@
+report: repository submission preflight
+report_schema_version: 0.2.0-rc.1
+package_name: douyin-simple-comic-workflow
+package_version: 0.2.0-rc.1
+package_directory: 'D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001'
+repository_content_status: ready_for_local_staging
+git_repository_detected: false
+target_repository: 'https://github.com/986020204-a11y/douyin-simple-comic-workflow.git'
+target_branch: main
+repository_submission: not_started
+git_commit: not_run
+git_push: not_run
+published: false
+human_visual_acceptance: passed
+changelog_status_consistency: passed
+preview_assets_redistribution_permission: confirmed
+preview_assets_redistribution_confirmation: user_confirmed_in_conversation
+preview_image_count: 68
+preview_image_missing: []
+preview_image_path_validation: passed
+preview_assets:
+  source_skill_bundled: false
+  origin: related_local_gallery
+  packaged_preview_count: 68
+  sha256_match_with_source_files: passed
+  redistribution_permission: confirmed
+  public_or_repository_release_with_preview_images: allowed_by_user_confirmation
+  confirmation_source: user_confirmed_in_conversation
+remote_repository:
+  url: 'https://github.com/986020204-a11y/douyin-simple-comic-workflow.git'
+  target_branch: main
+  read_only_access_check: passed
+  initial_state: empty_repository
+  main_branch_exists_remotely: false
+  local_staging_directory: 'D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001-repo-staging'
+  local_staging_status: working_tree_prepared_uncommitted
+mirror_comparison:
+  status: synchronized
+  source_directory: 'C:\Users\啊海\.codex\skills\douyin-simple-comic-workflow'
+  mirror_directory: 'D:\CodexData\skills\douyin-simple-comic-workflow'
+  compared_scope: all_non_cache_non_backup_files
+  differences: []
+plugin_manifest_validation:
+  status: passed
+  root_plugin_json: passed
+  codex_plugin_json: passed
+  core_identity_match: passed
+  skills_path_internal: passed
+  dotdot_paths: []
+  root_extensions: absent
+  external_services_hooks: absent
+skill_structure_validation:
+  status: passed
+  skill_md: present
+  references: present
+  scripts: present
+  formal_text_compositor: present
+  sb_markdown_count: 68
+  layouts_index_count: 68
+  preview_image_count: 68
+temporary_cache_backup_audit:
+  status: passed
+  package_file_count: 173
+  findings: []
+  excluded_cache_or_backup_files: []
+  intentional_placeholders:
+    - tests/smoke/.gitkeep
+    - tests/regression/.gitkeep
+unwanted_test_artifacts:
+  status: passed
+  bundled_comic_images: false
+  bundled_historical_test_directories: false
+  bundled_contact_sheets: false
+  bundled_probe_scripts: false
+documentation_validation:
+  root_readme: present
+  changelog: present
+  delivery_manifest: present
+  packaging_report: present
+  final_release_gate: present
+  repository_preflight: present
+  changelog_status: passed
+  changelog_claim: 'early human_visual_acceptance: pending is retained as historical status'
+  current_gate_claim: 'human_visual_acceptance: passed'
+  historical_pending_superseded: true
+  action: no_documentation_blocker
+provenance_references:
+  status: recorded_non_portable_local_paths
+  note: Absolute local paths occur in provenance and evidence text; they are not manifest path escapes, but are not portable repository references.
+statistics:
+  planned_story_units: 24
+  planned_panel_count: 24
+  visible_panel_count: 37
+  panel_count_delta: 13
+  panel_count_reconciliation:
+    status: explained
+    reason: planned 8x3 storyboard units differ from visible panels expanded by selected SB structures
+release_preparation:
+  status: local_staging_prepared
+  blockers:
+    - id: commit_or_push_authorization
+      status: not_requested
+      detail: The local working tree is prepared; no commit or push has been executed.
+next_user_inputs:
+  - explicit request to create the first commit and/or push to main
+scope_protection:
+  comic_images_modified: false
+  base_images_modified: false
+  original_sb_descriptions_modified: false
+  historical_test_directories_modified: false
+  image_generation_run: not_run
+  formal_text_composition_run: not_run
+final_status: ready_for_commit_review
+next_step: Review the prepared main-branch working tree and explicitly request commit or push if desired.
+

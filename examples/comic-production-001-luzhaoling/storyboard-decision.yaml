@@ -1,0 +1,471 @@
+run_id: ancient-revival-bubble-run-v001
+workflow: douyin-simple-comic-workflow
+workflow_version: 0.2-draft
+visual_mode: douyin_simple_comic
+panel_count_policy: minimum_sufficient
+page_count: 8
+total_panel_count: 24
+planned_story_units: 24
+planned_panel_count: 24
+visible_panel_count: 37
+panel_count_delta: 13
+panel_count_reconciliation:
+  status: explained
+  planned_basis: storyboard page planning counts, 8 x 3
+  visible_basis: final-base visible-panel audit
+  difference_reason: selected SB layouts expand into inset or split visible panels
+  release_rule: explained differences do not automatically fail; unresolved differences block publication
+layout_source: bundled-internal-comic-layouts
+selected_by: douyin-simple-comic-workflow
+internal_layout_pool: 68
+pages:
+- page_id: P01
+  layout_id: SB-003
+  main_focus: 黄昏巷子追逐，陆昭菱奔逃并被家奴逼近
+  narrative_function: 建立地点、追杀关系与少女的虚弱状态
+  source_text: 京城，黄昏，巷子。一个少女跌跌撞撞往前冲，后面有几个家奴模样的人紧追不舍。“臭丫头，站住！”少女身体虚软，额上还有一个红肿的大包，眼前开始模糊。“来人啊！救命！”
+  layout_name: Hero Panel + Inset Panels
+  panel_count: 3
+  panel_count_reason: 3格分别承载本页的建立/推进/转折或证据，压缩会使动作关系或气泡读序拥挤
+  required_story_beats:
+  - 京城黄昏巷子建立镜头
+  - 少女跌撞奔逃
+  - 少女回头呼救、家奴追近
+  panel_addition_log: []
+  layout_source: bundled-internal-comic-layouts
+  selection_reason: explicit layout requested; validated against bundled internal
+    index
+  selected_by: douyin-simple-comic-workflow
+  internal_layout_pool: 68
+  panels:
+  - id: P01-01
+    focus: 京城黄昏巷子建立镜头
+    secondary_focus: 狭窄巷道与暮色
+    key_objects:
+    - 巷子
+    - 暮色
+    text:
+    - 京城，黄昏，巷子。
+    types:
+    - narration
+  - id: P01-02
+    focus: 少女跌撞奔逃
+    secondary_focus: 额头红肿大包、视线模糊
+    key_objects:
+    - 少女
+    - 红肿大包
+    text:
+    - 臭丫头，站住！
+    types:
+    - dialogue
+    speakers:
+    - N02
+  - id: P01-03
+    focus: 少女回头呼救、家奴追近
+    secondary_focus: 身体虚软
+    key_objects:
+    - 少女
+    - 家奴
+    text:
+    - 来人啊！救命！
+    types:
+    - shout
+    speakers:
+    - N01
+- page_id: P02
+  layout_id: SB-007
+  main_focus: 石头袭击、后脑受击与滚出巷口
+  narrative_function: 把追逐推进到濒死转折
+  source_text: 后面一家奴听她大喊，恼怒地骂了一句粗话，抄起路边一块石头就朝她猛地砸了过来。石头划破风声，狠狠地砸中了她的后脑勺。砰。血花溅出。剧痛传来，少女眼前一黑，身体往前扑倒，她凭着最后一分清醒，连扑带爬地滚出了巷子。
+  layout_name: Diagonal Dynamic Split
+  panel_count: 3
+  panel_count_reason: 3格分别承载本页的建立/推进/转折或证据，压缩会使动作关系或气泡读序拥挤
+  required_story_beats:
+  - 家奴抄起路边石头
+  - 石头击中少女后脑
+  - 少女扑倒并滚出巷子
+  panel_addition_log: []
+  layout_source: bundled-internal-comic-layouts
+  selection_reason: explicit layout requested; validated against bundled internal
+    index
+  selected_by: douyin-simple-comic-workflow
+  internal_layout_pool: 68
+  panels:
+  - id: P02-01
+    focus: 家奴抄起路边石头
+    secondary_focus: 投掷动作蓄力
+    key_objects:
+    - 石头
+    - 家奴
+    text:
+    - 石头划破风声，狠狠地砸了过来。
+    types:
+    - narration
+  - id: P02-02
+    focus: 石头击中少女后脑
+    secondary_focus: 血花与冲击
+    key_objects:
+    - 石头
+    - 后脑伤口
+    text:
+    - 砰。
+    types:
+    - emphasis
+  - id: P02-03
+    focus: 少女扑倒并滚出巷子
+    secondary_focus: 最后一分清醒
+    key_objects:
+    - 少女
+    - 巷口
+    text:
+    - 血花溅出。剧痛传来，少女眼前一黑，身体往前扑倒。
+    types:
+    - narration
+- page_id: P03
+  layout_id: SB-028
+  main_focus: 少女滚到马车前，惊马与家奴围上
+  narrative_function: 把濒死少女送入新的权力场景
+  source_text: 就在这时，一辆马车正好经过这个巷子口。少女这么一扑出来，直接就滚到了马车前面。“咴——”拉车的马匹受惊，发出嘶鸣。突来的变故，也让周围百姓惊呼出声。那几个家奴急追出来，没看清楚眼前情况，见少女伏在马车前面，立即就要上前抓人。
+  layout_name: Motion Trail Strobe Sequence
+  panel_count: 3
+  panel_count_reason: 3格分别承载本页的建立/推进/转折或证据，压缩会使动作关系或气泡读序拥挤
+  required_story_beats:
+  - 马车经过巷口，少女滚出
+  - 惊马仰头嘶鸣
+  - 家奴与百姓围向倒地少女
+  panel_addition_log: []
+  layout_source: bundled-internal-comic-layouts
+  selection_reason: explicit layout requested; validated against bundled internal
+    index
+  selected_by: douyin-simple-comic-workflow
+  internal_layout_pool: 68
+  panels:
+  - id: P03-01
+    focus: 马车经过巷口，少女滚出
+    secondary_focus: 运动残影
+    key_objects:
+    - 马车
+    - 少女
+    text:
+    - 少女这么一扑出来，直接就滚到了马车前面。
+    types:
+    - narration
+  - id: P03-02
+    focus: 惊马仰头嘶鸣
+    secondary_focus: 马车骤停
+    key_objects:
+    - 马匹
+    - 缰绳
+    text:
+    - 咴——
+    types:
+    - emphasis
+  - id: P03-03
+    focus: 家奴与百姓围向倒地少女
+    secondary_focus: 抓人意图
+    key_objects:
+    - 家奴
+    - 少女
+    - 百姓
+    text:
+    - 趁没人看清楚这姑娘的样子，赶紧把她弄回去！
+    types:
+    - narration
+- page_id: P04
+  layout_id: SB-020
+  main_focus: 少女挣脱钻入车厢，周时阅掐住她的脖子
+  narrative_function: 完成空间切换并制造车厢内生死悬念
+  source_text: 少女被一人抓住肩膀，濒死一瞬间爆发出最后力气，猛地挣脱开他，转身爬上了马车，一头栽进了马车里，撞进一人胸膛。马车里，一只骨节分明修长的手，掐住了少女的脖子，将她推离自己怀抱。那少女分明双眼紧闭，气息全无。嗯，死了？那就直接丢出去吧。
+  layout_name: Ultra-Slim Reaction Insets
+  panel_count: 3
+  panel_count_reason: 3格分别承载本页的建立/推进/转折或证据，压缩会使动作关系或气泡读序拥挤
+  required_story_beats:
+  - 少女挣脱家奴并爬上马车
+  - 骨节分明的手掐住少女脖子
+  - 男人准备把尸体丢出车厢
+  panel_addition_log: []
+  layout_source: bundled-internal-comic-layouts
+  selection_reason: explicit layout requested; validated against bundled internal
+    index
+  selected_by: douyin-simple-comic-workflow
+  internal_layout_pool: 68
+  panels:
+  - id: P04-01
+    focus: 少女挣脱家奴并爬上马车
+    secondary_focus: 车夫一鞭甩开家奴
+    key_objects:
+    - 少女
+    - 车夫
+    - 马车
+    text:
+    - 少女猛地挣脱开他，转身爬上了马车。
+    types:
+    - narration
+  - id: P04-02
+    focus: 骨节分明的手掐住少女脖子
+    secondary_focus: 少女闭眼无息
+    key_objects:
+    - 手
+    - 脖子
+    - 少女
+    text:
+    - 嗯，死了？
+    types:
+    - thought
+    speakers:
+    - N03
+  - id: P04-03
+    focus: 男人准备把尸体丢出车厢
+    secondary_focus: 冷漠判断
+    key_objects:
+    - 少女
+    - 车帘
+    text:
+    - 那就直接丢出去吧。
+    types:
+    - dialogue
+    speakers:
+    - N03
+- page_id: P05
+  layout_id: SB-022
+  main_focus: 陆昭菱死而复生并袭向周时阅咽喉
+  narrative_function: 第一次反转，建立两人近身对抗
+  source_text: 正要将这具尸体抛出马车，那被掐着脖子的少女却“刷”地睁开了眼睛。刹那间，眸光冷洌，带着寒霜般的杀意。死而复生的陆昭菱一睁开眼睛，便看到了一张摄心夺魄的脸。下一秒，陆昭菱倏地出手，袭向了他的咽喉。指尖如剑，凌厉得像要直接插进他的喉咙。掐着脖子的手蓦地用力一捏，同时，对方另一只手抓住了陆昭菱的手腕。“死人还能这样张牙舞爪？”
+  layout_name: Hand Action Sequence
+  panel_count: 3
+  panel_count_reason: 3格分别承载本页的建立/推进/转折或证据，压缩会使动作关系或气泡读序拥挤
+  required_story_beats:
+  - 陆昭菱刷地睁眼
+  - 陆昭菱袭向周时阅咽喉
+  - 周时阅掐喉并抓腕制住她
+  panel_addition_log: []
+  layout_source: bundled-internal-comic-layouts
+  selection_reason: explicit layout requested; validated against bundled internal
+    index
+  selected_by: douyin-simple-comic-workflow
+  internal_layout_pool: 68
+  panels:
+  - id: P05-01
+    focus: 陆昭菱刷地睁眼
+    secondary_focus: 冷洌眸光与杀意
+    key_objects:
+    - 陆昭菱的眼睛
+    - 手
+    text:
+    - 刷
+    types:
+    - emphasis
+  - id: P05-02
+    focus: 陆昭菱袭向周时阅咽喉
+    secondary_focus: 指尖如剑
+    key_objects:
+    - 手腕
+    - 咽喉
+    text:
+    - 死而复生的陆昭菱一睁开眼睛，便看到了一张摄心夺魄的脸。
+    types:
+    - narration
+  - id: P05-03
+    focus: 周时阅掐喉并抓腕制住她
+    secondary_focus: 近身压制
+    key_objects:
+    - 周时阅的手
+    - 陆昭菱手腕
+    text:
+    - 死人还能这样张牙舞爪？
+    types:
+    - dialogue
+    speakers:
+    - N03
+- page_id: P06
+  layout_id: SB-037
+  main_focus: 紫气黑雾视觉化与“半年”救命交易
+  narrative_function: 揭示陆昭菱复生原因并提出主线交易
+  source_text: 陆昭菱头痛欲裂，感觉到后脑勺有血流着，抬眸看着他一身紫气，以及那股正一点点蚕食紫气的黑雾。帝星命格。原来是他的帝星紫气，助她死而复生，从这个小姑娘身上活了过来。感觉着脖子越掐越紧，陆昭菱指向他的胸膛，艰难地挤出一句话。“我能救你……”那只骨节分明的手微一顿，又把她拽到眼前。“你要如何救本王？”陆昭菱呼吸困难，“让我待在你身边半年，我会让你知道怎么救！”
+  layout_name: Inset Fantasy Bubble
+  panel_count: 3
+  panel_count_reason: 3格分别承载本页的建立/推进/转折或证据，压缩会使动作关系或气泡读序拥挤
+  required_story_beats:
+  - 周时阅紫气与黑雾在车厢中显形
+  - 陆昭菱指向周时阅胸膛提出救命
+  - 周时阅拽近逼问，陆昭菱提出半年
+  panel_addition_log: []
+  layout_source: bundled-internal-comic-layouts
+  selection_reason: explicit layout requested; validated against bundled internal
+    index
+  selected_by: douyin-simple-comic-workflow
+  internal_layout_pool: 68
+  panels:
+  - id: P06-01
+    focus: 周时阅紫气与黑雾在车厢中显形
+    secondary_focus: 陆昭菱辨认帝星命格
+    key_objects:
+    - 紫气
+    - 黑雾
+    text:
+    - 帝星命格。
+    types:
+    - narration
+  - id: P06-02
+    focus: 陆昭菱指向周时阅胸膛提出救命
+    secondary_focus: 被掐喉仍保持自信
+    key_objects:
+    - 手指
+    - 胸膛
+    text:
+    - 我能救你……
+    types:
+    - dialogue
+    speakers:
+    - N01
+  - id: P06-03
+    focus: 周时阅拽近逼问，陆昭菱提出半年
+    secondary_focus: 两人近距离目光碰撞
+    key_objects:
+    - 两人脸部
+    - 脖子
+    text:
+    - 你要如何救本王？
+    - 让我待在你身边半年，我会让你知道怎么救！
+    types:
+    - dialogue
+    - dialogue
+    speakers:
+    - N03
+    - N01
+- page_id: P07
+  layout_id: SB-030
+  main_focus: 车外侍卫守护、朱明浩拦车与晋王身份炸响
+  narrative_function: 外部权势介入并完成身份揭示
+  source_text: “主子，您没事吧？”外面侍卫已经下马，紧围在马车前面。“无事。”马车里传出了一道低沉的声音。就在这时，有一队人马赶来，气势汹汹拦住了马车。“世子，那丫头在马车上！”“世子，这马车看着眼生，小的们怕惹事，这才没有上前抢人。”“管他眼生眼熟的！把人给本世子拉出来！”“大胆！”一侍卫怒喝，“晋王回京，谁敢放肆？”“晋、晋王？！”
+  layout_name: Sudden Pacing Halt
+  panel_count: 3
+  panel_count_reason: 3格分别承载本页的建立/推进/转折或证据，压缩会使动作关系或气泡读序拥挤
+  required_story_beats:
+  - 侍卫下马围住车厢
+  - 朱明浩带人拦车索人
+  - 侍卫怒喝后，周围人得知晋王回京
+  panel_addition_log: []
+  layout_source: bundled-internal-comic-layouts
+  selection_reason: explicit layout requested; validated against bundled internal
+    index
+  selected_by: douyin-simple-comic-workflow
+  internal_layout_pool: 68
+  panels:
+  - id: P07-01
+    focus: 侍卫下马围住车厢
+    secondary_focus: 车帘遮挡内情
+    key_objects:
+    - 侍卫
+    - 马车
+    text:
+    - 主子，您没事吧？
+    - 无事。
+    types:
+    - dialogue
+    - dialogue
+    speakers:
+    - N04
+    - N03
+  - id: P07-02
+    focus: 朱明浩带人拦车索人
+    secondary_focus: 锦袍、玉带、碧玉戒的权势感
+    key_objects:
+    - 朱明浩
+    - 家奴
+    - 马车
+    text:
+    - 世子，那丫头在马车上！
+    - 管他眼生眼熟的！把人给本世子拉出来！
+    types:
+    - dialogue
+    - dialogue
+    speakers:
+    - N02
+    - N05
+  - id: P07-03
+    focus: 侍卫怒喝后，周围人得知晋王回京
+    secondary_focus: 突然静止与惊愕留白
+    key_objects:
+    - 侍卫
+    - 百姓
+    - 马车
+    text:
+    - 大胆！
+    - 晋王回京，谁敢放肆？
+    - 晋、晋王？！
+    types:
+    - shout
+    - dialogue
+    - dialogue
+    speakers:
+    - N04
+    - N04
+    - null
+- page_id: P08
+  layout_id: SB-035
+  main_focus: 车内擦手、扯衣露黑印与车外朱明浩叫嚣
+  narrative_function: 用黑印的可见证据巩固救命交易并留下冲突钩子
+  source_text: 马车里，陆昭菱靠坐在一角，看着眼前的男人拿着一条手帕，仔细地擦着手，动作优雅。刚才他的手掐过她的脖子，这是嫌脏了。她忍着恶心作呕，“这个交易你不吃亏，毕竟你这条命很贵重，没我救你，你活不了几年。”晋王周时阅淡淡地瞥了她一眼，“你倒是先说说，本王哪里需要你救？”陆昭菱突然动作极快地朝他扑了过来，伸手抓住他的衣襟蓦地一扯。嘶啦。周时阅的衣襟被拉开，露出了锁骨和一片胸膛！他瞳孔一缩，再次掐住了她纤细的脖子，“想死？”雪白的胸膛上，一个诡异的黑色印记赫然出现，像是隐在皮肤之下的怪物。陆昭菱的手指戳了上去，那个黑色印记竟然仿似有生命一样，缩了一缩，颜色瞬间浅了几分。“咳咳，确定不需要我救吗？”外面传来了朱明浩的叫声，“晋王！我是青福侯府的朱明浩！那个丫头是我小妾，你快把人交出来！”朱明浩一开始听到晋王也吓了一跳，但很快就回过神来，就算是晋王也不能当街跟他抢女人啊！传到太后面前，太后肯定是护着他，谁不知道太后不喜欢晋王？
+  layout_name: Cross-Cutting Parallel Action
+  panel_count: 3
+  panel_count_reason: 3格分别承载本页的建立/推进/转折或证据，压缩会使动作关系或气泡读序拥挤
+  required_story_beats:
+  - 周时阅擦手，陆昭菱说明交易价值
+  - 陆昭菱扯开衣襟露出黑色印记并触碰变浅
+  - 车外朱明浩继续叫嚣索人
+  panel_addition_log: []
+  layout_source: bundled-internal-comic-layouts
+  selection_reason: explicit layout requested; validated against bundled internal
+    index
+  selected_by: douyin-simple-comic-workflow
+  internal_layout_pool: 68
+  panels:
+  - id: P08-01
+    focus: 周时阅擦手，陆昭菱说明交易价值
+    secondary_focus: 冷漠与恶心作呕的反差
+    key_objects:
+    - 手帕
+    - 陆昭菱
+    - 周时阅
+    text:
+    - 这个交易你不吃亏，毕竟你这条命很贵重，没我救你，你活不了几年。
+    types:
+    - dialogue
+    speakers:
+    - N01
+  - id: P08-02
+    focus: 陆昭菱扯开衣襟露出黑色印记并触碰变浅
+    secondary_focus: 周时阅掐喉与警告
+    key_objects:
+    - 衣襟
+    - 黑色印记
+    - 手指
+    text:
+    - 嘶啦。
+    - 想死？
+    - 咳咳，确定不需要我救吗？
+    types:
+    - emphasis
+    - dialogue
+    - dialogue
+    speakers:
+    - null
+    - N03
+    - N01
+  - id: P08-03
+    focus: 车外朱明浩继续叫嚣索人
+    secondary_focus: 车内外平行对峙
+    key_objects:
+    - 车帘
+    - 朱明浩
+    - 家奴
+    text:
+    - 晋王！我是青福侯府的朱明浩！那个丫头是我小妾，你快把人交出来！
+    - 就算是晋王也不能当街跟他抢女人啊！传到太后面前，太后肯定是护着他，谁不知道太后不喜欢晋王？
+    types:
+    - dialogue
+    - narration
+    speakers:
+    - N05
+    - null

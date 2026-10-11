@@ -1,0 +1,1501 @@
+pool_name: bundled-internal-comic-layouts
+pool_size: 68
+category: comic-storyboard
+source_scope: migrated comic-storyboard entries only; no style/color/video assets
+layouts:
+- id: SB-001
+  category: comic-storyboard
+  name: 规则网格
+  name_en: Regular Grid
+  keywords: &id001
+  - 漫画分镜
+  - 规则网格
+  - 等分面板
+  - 稳定节奏
+  - 日常对白
+  prompt_file: SB-001.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: panels of equal size arranged neatly in a consistent reading order,
+    ideal for slice-of-life and dialogue-driven stories.
+  story_functions: *id001
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-001.md
+- id: SB-002
+  category: comic-storyboard
+  name: 四格起承转合
+  name_en: Four-Panel Kishōtenketsu
+  keywords: &id002
+  - 漫画分镜
+  - 四格漫画
+  - 起承转合
+  - 四等格
+  - 搞笑短剧
+  prompt_file: SB-002.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: 4
+  panel_count_rule: fixed by source prompt
+  layout_structure: four equal panels sequentially presenting introduction, development,
+    twist, and punchline, ideal for short comedic stories.
+  story_functions: *id002
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-002.md
+- id: SB-003
+  category: comic-storyboard
+  name: 大格 + 小格
+  name_en: Hero Panel + Inset Panels
+  keywords: &id003
+  - 漫画分镜
+  - 主次画格
+  - 一大配多小
+  - 视觉重点
+  - 节奏对比
+  prompt_file: SB-003.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: one prominent large panel occupies primary area, supported by
+    smaller secondary panels for reactions or details.
+  story_functions: *id003
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-003.md
+- id: SB-004
+  category: comic-storyboard
+  name: 顶部大格开场
+  name_en: Top Splash Panel Opening
+  keywords: &id004
+  - 漫画分镜
+  - 顶部大格
+  - 横跨页面
+  - 建立场景
+  - 开场分镜
+  prompt_file: SB-004.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: wide banner panel across top establishing scene and characters
+    before subsequent sequential narrative below.
+  story_functions: *id004
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-004.md
+- id: SB-005
+  category: comic-storyboard
+  name: 底部大格收尾
+  name_en: Bottom Climax Panel Ending
+  keywords: &id005
+  - 漫画分镜
+  - 底部大格
+  - 高潮收尾
+  - 情绪落点
+  - 反转揭示
+  prompt_file: SB-005.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: smaller panels build narrative momentum leading to a large impactful
+    bottom panel for climax or reveal.
+  story_functions: *id005
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-005.md
+- id: SB-006
+  category: comic-storyboard
+  name: 中央大格爆发
+  name_en: Center Focal Panel
+  keywords: &id006
+  - 漫画分镜
+  - 中央大格
+  - 视觉中心
+  - 核心爆发
+  - 动作高潮
+  prompt_file: SB-006.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: dominant central panel commanding maximum visual attention for
+    action climax or core reveal.
+  story_functions: *id006
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-006.md
+- id: SB-007
+  category: comic-storyboard
+  name: 对角切割
+  name_en: Diagonal Dynamic Split
+  keywords: &id007
+  - 漫画分镜
+  - 对角切割
+  - 斜线构图
+  - 速度感
+  - 冲突对峙
+  prompt_file: SB-007.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: panels divided along diagonal angles, intensifying speed, conflict,
+    pursuit, and confrontation.
+  story_functions: *id007
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-007.md
+- id: SB-008
+  category: comic-storyboard
+  name: Z 字阅读
+  name_en: Z-Pattern Reading Flow
+  keywords: &id008
+  - 漫画分镜
+  - Z字阅读
+  - 视线流动
+  - 经典阅读路径
+  - 清晰叙事
+  prompt_file: SB-008.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: visual focus flows in a classic Z-path (top-left, top-right, bottom-left,
+    bottom-right) for clear storytelling.
+  story_functions: *id008
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-008.md
+- id: SB-009
+  category: comic-storyboard
+  name: S 型阅读
+  name_en: S-Curve Narrative Flow
+  keywords: &id009
+  - 漫画分镜
+  - S型阅读
+  - 柔和曲线
+  - 轻快浪漫
+  - 旅途叙事
+  prompt_file: SB-009.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: characters and compositions follow a soft curving path, suitable
+    for whimsical, romantic, or journey narratives.
+  story_functions: *id009
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-009.md
+- id: SB-010
+  category: comic-storyboard
+  name: 螺旋阅读
+  name_en: Spiral Inward Flow
+  keywords: &id010
+  - 漫画分镜
+  - 螺旋阅读
+  - 环形收拢
+  - 层层逼近
+  - 核心聚焦
+  prompt_file: SB-010.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: panels and gaze spiral inwards around center, gradually closing
+    in on core event.
+  story_functions: *id010
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-010.md
+- id: SB-011
+  category: comic-storyboard
+  name: 放射型分镜
+  name_en: Radial Converging Panels
+  keywords: &id011
+  - 漫画分镜
+  - 放射型分镜
+  - 向心聚拢
+  - 爆发时刻
+  - 强焦点
+  prompt_file: SB-011.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: multiple panels radiate toward central focus, perfect for explosions,
+    revelations, and high-impact moments.
+  story_functions: *id011
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-011.md
+- id: SB-012
+  category: comic-storyboard
+  name: 碎片面板
+  name_en: Shattered Glass Panels
+  keywords: &id012
+  - 漫画分镜
+  - 碎片面板
+  - 玻璃破碎
+  - 混乱战斗
+  - 心理冲击
+  prompt_file: SB-012.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: broken fragmented panels dividing screen like fractured glass,
+    expressing chaos, combat, memories, and psychological shock.
+  story_functions: *id012
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-012.md
+- id: SB-013
+  category: comic-storyboard
+  name: 破框构图
+  name_en: Border Break
+  keywords: &id013
+  - 漫画分镜
+  - 破框构图
+  - 越界动态
+  - 空间突破
+  - 力量感
+  prompt_file: SB-013.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: characters, actions, or visual effects break through panel boundaries,
+    amplifying power, speed, and dimensional presence.
+  story_functions: *id013
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-013.md
+- id: SB-014
+  category: comic-storyboard
+  name: 跨格人物
+  name_en: Multi-Panel Spanning Character
+  keywords: &id014
+  - 漫画分镜
+  - 跨格人物
+  - 连续动作
+  - 跨格延伸
+  - 流动感
+  prompt_file: SB-014.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: single character figure extends across multiple panels, creating
+    continuous fluid action.
+  story_functions: *id014
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-014.md
+- id: SB-015
+  category: comic-storyboard
+  name: 跨格背景
+  name_en: Continuous Background Across Panels
+  keywords: &id015
+  - 漫画分镜
+  - 跨格背景
+  - 共享空间
+  - 全景延续
+  - 时空位移
+  prompt_file: SB-015.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: multiple panels share unified continuous panoramic background,
+    with characters shown at different moments.
+  story_functions: *id015
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-015.md
+- id: SB-016
+  category: comic-storyboard
+  name: 一镜到底
+  name_en: Single Continuous Take
+  keywords: &id016
+  - 漫画分镜
+  - 一镜到底
+  - 完整空间
+  - 多位置连续
+  - 纯镜头感
+  prompt_file: SB-016.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: entire page represents single unbroken environment, with characters
+    appearing at multiple positions sequentially.
+  story_functions: *id016
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-016.md
+- id: SB-017
+  category: comic-storyboard
+  name: 电影胶片式
+  name_en: Cinematic Filmstrip
+  keywords: &id017
+  - 漫画分镜
+  - 电影胶片
+  - 连续画格
+  - 时间推进
+  - 电影质感
+  prompt_file: SB-017.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: sequential filmstrip-like horizontal panels, emphasizing linear
+    time progression and cinematic pacing.
+  story_functions: *id017
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-017.md
+- id: SB-018
+  category: comic-storyboard
+  name: 宽银幕横格
+  name_en: Widescreen Horizontal Panels
+  keywords: &id018
+  - 漫画分镜
+  - 宽银幕横格
+  - 横向宽幅
+  - 宏大场景
+  - 动作场面
+  prompt_file: SB-018.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: wide horizontal panels dominating page, ideal for cinematic landscapes,
+    vehicle chases, and expansive scenes.
+  story_functions: *id018
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-018.md
+- id: SB-019
+  category: comic-storyboard
+  name: 竖向长格
+  name_en: Vertical Skyscraper Panels
+  keywords: &id019
+  - 漫画分镜
+  - 竖向长格
+  - 细长垂直
+  - 高空坠落
+  - 纵向运动
+  prompt_file: SB-019.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: elongated vertical panels emphasizing falling, high-rise buildings,
+    full-body figures, or upward motion.
+  story_functions: *id019
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-019.md
+- id: SB-020
+  category: comic-storyboard
+  name: 超窄反应格
+  name_en: Ultra-Slim Reaction Insets
+  keywords: &id020
+  - 漫画分镜
+  - 超窄反应格
+  - 极速插入
+  - 局部特写
+  - 节奏切换
+  prompt_file: SB-020.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: narrow slit-like panels inserted rapidly for eyes, mouth, hands,
+    or micro-reactions, boosting pacing.
+  story_functions: *id020
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-020.md
+- id: SB-021
+  category: comic-storyboard
+  name: 眼睛特写链
+  name_en: Eye Close-Up Sequence
+  keywords: &id021
+  - 漫画分镜
+  - 眼神特写链
+  - 对峙神态
+  - 心理悬念
+  - 情绪升级
+  prompt_file: SB-021.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: successive eye close-ups building confrontation, suspense, hesitation,
+    or escalating tension.
+  story_functions: *id021
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-021.md
+- id: SB-022
+  category: comic-storyboard
+  name: 手部动作链
+  name_en: Hand Action Sequence
+  keywords: &id022
+  - 漫画分镜
+  - 手部动作链
+  - 关键细节
+  - 局部操作
+  - 推进动作
+  prompt_file: SB-022.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: consecutive close-ups of hands, buttons, props, or tools driving
+    key tactical actions forward.
+  story_functions: *id022
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-022.md
+- id: SB-023
+  category: comic-storyboard
+  name: 由远到近
+  name_en: Long Shot to Extreme Close-Up
+  keywords: &id023
+  - 漫画分镜
+  - 由远到近
+  - 远景到特写
+  - 层层逼近
+  - 紧张感累积
+  prompt_file: SB-023.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: camera zooms from extreme wide shot to close-up, steadily accumulating
+    emotional tension.
+  story_functions: *id023
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-023.md
+- id: SB-024
+  category: comic-storyboard
+  name: 由近到远
+  name_en: Extreme Close-Up to Wide Reveal
+  keywords: &id024
+  - 漫画分镜
+  - 由近到远
+  - 特写拉远
+  - 揭晓真相
+  - 环境反差
+  prompt_file: SB-024.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: camera pulls back from extreme macro detail to wide environmental
+    reveal, creating contrast.
+  story_functions: *id024
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-024.md
+- id: SB-025
+  category: comic-storyboard
+  name: 正反打
+  name_en: Shot-Reverse-Shot
+  keywords: &id025
+  - 漫画分镜
+  - 正反打
+  - 交替对视
+  - 台词博弈
+  - 对话节奏
+  prompt_file: SB-025.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: alternating character close-ups facing camera, perfect for dialogue,
+    verbal sparring, and psychological duel.
+  story_functions: *id025
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-025.md
+- id: SB-026
+  category: comic-storyboard
+  name: 三连特写
+  name_en: Triple Rapid Close-Ups
+  keywords: &id026
+  - 漫画分镜
+  - 三连特写
+  - 快速切换
+  - 三级递进
+  - 紧凑节拍
+  prompt_file: SB-026.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: 3
+  panel_count_rule: fixed by source prompt
+  layout_structure: three consecutive rapid detail shots switching dynamically (e.g.
+    eyes, finger, trigger).
+  story_functions: *id026
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-026.md
+- id: SB-027
+  category: comic-storyboard
+  name: 动作分解
+  name_en: Action Breakdown
+  keywords: &id027
+  - 漫画分镜
+  - 动作分解
+  - 起势过程
+  - 击中反馈
+  - 慢动作解析
+  prompt_file: SB-027.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: single dynamic action dissected into preparation, motion, contact,
+    and aftermath across sequential panels.
+  story_functions: *id027
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-027.md
+- id: SB-028
+  category: comic-storyboard
+  name: 连续动作残影
+  name_en: Motion Trail Strobe Sequence
+  keywords: &id028
+  - 漫画分镜
+  - 连续残影
+  - 多重影像
+  - 高速轨迹
+  - 动能表现
+  prompt_file: SB-028.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: character repeated multiple times within panels depicting high-speed
+    kinetic motion.
+  story_functions: *id028
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-028.md
+- id: SB-029
+  category: comic-storyboard
+  name: 静止重复
+  name_en: Static Panel Repetition
+  keywords: &id029
+  - 漫画分镜
+  - 静止重复
+  - 微小变化
+  - 冷面幽默
+  - 尴尬停滞
+  prompt_file: SB-029.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: successive panels nearly identical with minimal shift, creating
+    deadpan comedy, awkward pause, and comedic timing.
+  story_functions: *id029
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-029.md
+- id: SB-030
+  category: comic-storyboard
+  name: 节奏骤停
+  name_en: Sudden Pacing Halt
+  keywords: &id030
+  - 漫画分镜
+  - 节奏骤停
+  - 急停空白
+  - 反高潮
+  - 戏剧反差
+  prompt_file: SB-030.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: rapid dense action suddenly interrupted by large empty negative
+    space or quiet static frame for comedic anti-climax.
+  story_functions: *id030
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-030.md
+- id: SB-031
+  category: comic-storyboard
+  name: 爆发后留白
+  name_en: Post-Climax Negative Space
+  keywords: &id031
+  - 漫画分镜
+  - 爆发后留白
+  - 余韵留白
+  - 空旷微小
+  - 反差幽默
+  prompt_file: SB-031.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: intense explosive action followed by generous white space and
+    tiny silhouette, emphasizing absurdity or lingering mood.
+  story_functions: *id031
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-031.md
+- id: SB-032
+  category: comic-storyboard
+  name: 上下镜像
+  name_en: Vertical Mirroring
+  keywords: &id032
+  - 漫画分镜
+  - 上下镜像
+  - 构图对照
+  - 内容反转
+  - 前后对比
+  prompt_file: SB-032.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: top and bottom halves feature symmetrical compositions with contrasted
+    or inverted content for before-after comparison.
+  story_functions: *id032
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-032.md
+- id: SB-033
+  category: comic-storyboard
+  name: 左右对峙
+  name_en: Split-Side Confrontation
+  keywords: &id033
+  - 漫画分镜
+  - 左右对峙
+  - 两极分化
+  - 视觉对抗
+  - 阵营博弈
+  prompt_file: SB-033.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: opposing characters or factions occupy left and right sides of
+    page, creating direct visual tension.
+  story_functions: *id033
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-033.md
+- id: SB-034
+  category: comic-storyboard
+  name: 双线并行
+  name_en: Dual Parallel Storylines
+  keywords: &id034
+  - 漫画分镜
+  - 双线并行
+  - 双线推进
+  - 时空汇聚
+  - 多线叙事
+  prompt_file: SB-034.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: two simultaneous story tracks or locations progressing down page,
+    converging at single point.
+  story_functions: *id034
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-034.md
+- id: SB-035
+  category: comic-storyboard
+  name: 交叉剪辑
+  name_en: Cross-Cutting Parallel Action
+  keywords: &id035
+  - 漫画分镜
+  - 交叉剪辑
+  - 两地交替
+  - 悬念紧迫
+  - 误会冲突
+  prompt_file: SB-035.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: rapid alternating sequence between events A and B, amplifying
+    suspense or misunderstanding.
+  story_functions: *id035
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-035.md
+- id: SB-036
+  category: comic-storyboard
+  name: 闪回嵌套
+  name_en: Inset Memory Flashback
+  keywords: &id036
+  - 漫画分镜
+  - 闪回嵌套
+  - 记忆画格
+  - 画中画
+  - 回忆片段
+  prompt_file: SB-036.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: main panels embedded with smaller vintage or bordered insets representing
+    memories or past events.
+  story_functions: *id036
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-036.md
+- id: SB-037
+  category: comic-storyboard
+  name: 想象嵌套
+  name_en: Inset Fantasy Bubble
+  keywords: &id037
+  - 漫画分镜
+  - 想象嵌套
+  - 脑洞格
+  - 现实幻想
+  - 内心喜剧
+  prompt_file: SB-037.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: reality scenes overlaid with dream-bubble panels depicting character's
+    internal imagination or comic thoughts.
+  story_functions: *id037
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-037.md
+- id: SB-038
+  category: comic-storyboard
+  name: 监控屏幕式
+  name_en: Multi-CCTV Security Grid
+  keywords: &id038
+  - 漫画分镜
+  - 监控屏幕式
+  - 多视角监视
+  - 悬疑探案
+  - 客观观察
+  prompt_file: SB-038.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: page structured like multi-channel surveillance monitor feeds,
+    ideal for investigation and thriller narrative.
+  story_functions: *id038
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-038.md
+- id: SB-039
+  category: comic-storyboard
+  name: 手机聊天式
+  name_en: Smartphone Chat Overlay
+  keywords: &id039
+  - 漫画分镜
+  - 手机聊天式
+  - 社交气泡
+  - 虚拟现实
+  - 现代生活
+  prompt_file: SB-039.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: real-life scene blended with phone messaging screens and speech
+    bubbles for modern social media narrative.
+  story_functions: *id039
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-039.md
+- id: SB-040
+  category: comic-storyboard
+  name: 档案拼贴式
+  name_en: Detective Case File Collage
+  keywords: &id040
+  - 漫画分镜
+  - 档案拼贴式
+  - 线索板
+  - 图文便签
+  - 破案调查
+  prompt_file: SB-040.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: mix of photos, sticky notes, confidential memos, evidence pins,
+    and comic panels for investigative stories.
+  story_functions: *id040
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-040.md
+- id: SB-041
+  category: comic-storyboard
+  name: 杂志编辑式
+  name_en: Editorial Magazine Layout
+  keywords: &id041
+  - 漫画分镜
+  - 杂志编辑式
+  - 大标题排版
+  - 时尚版面
+  - 图文混排
+  prompt_file: SB-041.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: bold headlines, character cutouts, captions, and narrative panels
+    composed like high-end editorial spread.
+  story_functions: *id041
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-041.md
+- id: SB-042
+  category: comic-storyboard
+  name: 信息图漫画
+  name_en: Infographic Comic Hybrid
+  keywords: &id042
+  - 漫画分镜
+  - 信息图漫画
+  - 图表箭头
+  - 科普漫画
+  - 数据可视化
+  prompt_file: SB-042.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: comic storytelling integrated with statistical charts, flow arrows,
+    and data annotations for educational narrative.
+  story_functions: *id042
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-042.md
+- id: SB-043
+  category: comic-storyboard
+  name: 地图路线式
+  name_en: Map & Trail Journey
+  keywords: &id043
+  - 漫画分镜
+  - 地图路线式
+  - 路径引导
+  - 空间位移
+  - 旅行冒险
+  prompt_file: SB-043.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: characters navigate along route map or spatial path, guiding reader's
+    eye through the journey.
+  story_functions: *id043
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-043.md
+- id: SB-044
+  category: comic-storyboard
+  name: 时间轴式
+  name_en: Chronological Timeline Progression
+  keywords: &id044
+  - 漫画分镜
+  - 时间轴式
+  - 早中晚顺序
+  - 时光流转
+  - 阶段演进
+  prompt_file: SB-044.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: panels sequenced sequentially along time axis (morning to night
+    or past to future).
+  story_functions: *id044
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-044.md
+- id: SB-045
+  category: comic-storyboard
+  name: 时钟式
+  name_en: Clock Face Radial Layout
+  keywords: &id045
+  - 漫画分镜
+  - 时钟式
+  - 表盘刻度
+  - 倒计时
+  - 日周循环
+  prompt_file: SB-045.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: panels organized around circular clock face or timeline dial,
+    ideal for 24-hour cycle or countdown motif.
+  story_functions: *id045
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-045.md
+- id: SB-046
+  category: comic-storyboard
+  name: 中心物件式
+  name_en: Central Anchor Prop
+  keywords: &id046
+  - 漫画分镜
+  - 中心物件式
+  - 核心道具
+  - 环绕事件
+  - 物象聚焦
+  prompt_file: SB-046.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: core object (coffee cup, phone, doorway, car) anchored in center
+    with story unfolding around it.
+  story_functions: *id046
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-046.md
+- id: SB-047
+  category: comic-storyboard
+  name: 中心人物式
+  name_en: Central Anchor Protagonist
+  keywords: &id047
+  - 漫画分镜
+  - 中心人物式
+  - 主角居中
+  - 环视多角
+  - 众星捧月
+  prompt_file: SB-047.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: main protagonist anchored in center of page while surrounding
+    panels rotate around their perspective.
+  story_functions: *id047
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-047.md
+- id: SB-048
+  category: comic-storyboard
+  name: 环形阅读
+  name_en: Circular Loop Narrative
+  keywords: &id048
+  - 漫画分镜
+  - 环形阅读
+  - 闭环循环
+  - 首尾相接
+  - 时间莫比乌斯
+  prompt_file: SB-048.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: panels connect head-to-tail in closed loop, conveying recurring
+    cycle, time loop, or karmic fate.
+  story_functions: *id048
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-048.md
+- id: SB-049
+  category: comic-storyboard
+  name: 上下坠落式
+  name_en: Downward Plunge Flow
+  keywords: &id049
+  - 漫画分镜
+  - 上下坠落式
+  - 纵深俯冲
+  - 失重加速
+  - 垂直贯穿
+  prompt_file: SB-049.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: composition and reading path plunge downwards continuously, emphasizing
+    falling, vertigo, and freefall chase.
+  story_functions: *id049
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-049.md
+- id: SB-050
+  category: comic-storyboard
+  name: 阶梯式
+  name_en: Stepped Staircase Progression
+  keywords: &id050
+  - 漫画分镜
+  - 阶梯式
+  - 台阶排版
+  - 层级爬升
+  - 逐级强化
+  prompt_file: SB-050.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: panels stepped diagonally like stairs, visually reinforcing uphill
+    struggle, ascending journey, or level progression.
+  story_functions: *id050
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-050.md
+- id: SB-051
+  category: comic-storyboard
+  name: 波浪式
+  name_en: Undulating Wave Flow
+  keywords: &id051
+  - 漫画分镜
+  - 波浪式
+  - 曲线律动
+  - 梦境起伏
+  - 音乐流动
+  prompt_file: SB-051.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: wavy panel contours and flowing rhythm, ideal for musical scenes,
+    dreamy states, and lighthearted moods.
+  story_functions: *id051
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-051.md
+- id: SB-052
+  category: comic-storyboard
+  name: 自由漂浮式
+  name_en: Free-Floating Unframed Panels
+  keywords: &id052
+  - 漫画分镜
+  - 自由漂浮式
+  - 散点排布
+  - 留白飘逸
+  - 视线导引
+  prompt_file: SB-052.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: irregularly positioned panels floating freely across white space,
+    guided by eyelines and speech balloons.
+  story_functions: *id052
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-052.md
+- id: SB-053
+  category: comic-storyboard
+  name: 无边框分镜
+  name_en: Frameless Organic Narrative
+  keywords: &id053
+  - 漫画分镜
+  - 无边框分镜
+  - 自然破框
+  - 呼吸留白
+  - 有机排版
+  prompt_file: SB-053.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: conventional panel borders removed entirely; characters, backgrounds,
+    and negative space form organic reading zones.
+  story_functions: *id053
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-053.md
+- id: SB-054
+  category: comic-storyboard
+  name: 白场分镜
+  name_en: Generous Negative Space
+  keywords: &id054
+  - 漫画分镜
+  - 白场分镜
+  - 大面积留白
+  - 极简留白
+  - 诗意克制
+  prompt_file: SB-054.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: abundant white space isolating minimal characters and sparse dialogue,
+    conveying quiet, poetic, or awkward atmosphere.
+  story_functions: *id054
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-054.md
+- id: SB-055
+  category: comic-storyboard
+  name: 满版冲击格
+  name_en: Full-Bleed Splash Page
+  keywords: &id055
+  - 漫画分镜
+  - 满版冲击格
+  - 全版画格
+  - 视觉爆点
+  - 高潮定格
+  prompt_file: SB-055.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: 1
+  panel_count_rule: fixed by source prompt
+  layout_structure: single monumental scene filling entire page with zero margin,
+    delivering peak climax and iconic visual impact.
+  story_functions: *id055
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-055.md
+- id: SB-056
+  category: comic-storyboard
+  name: 跨页式单页模拟
+  name_en: Simulated Double-Page Spread
+  keywords: &id056
+  - 漫画分镜
+  - 跨页式单页
+  - 中央对称
+  - 双页模拟
+  - 史诗宽幅
+  prompt_file: SB-056.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: simulated center gutter dividing page symmetrically, creating
+    epic cinematic widescreen feel on single page.
+  story_functions: *id056
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-056.md
+- id: SB-057
+  category: comic-storyboard
+  name: 海报式漫画
+  name_en: Poster-Style Narrative
+  keywords: &id057
+  - 漫画分镜
+  - 海报式漫画
+  - 主视觉封面
+  - 画中嵌入
+  - 故事附着
+  prompt_file: SB-057.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: strong dominant poster-like hero visual surrounded by small supporting
+    narrative panels.
+  story_functions: *id057
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-057.md
+- id: SB-058
+  category: comic-storyboard
+  name: 封面式叙事页
+  name_en: Magazine Cover Narrative
+  keywords: &id058
+  - 漫画分镜
+  - 封面式叙事
+  - 杂志头条
+  - 刊头标题
+  - 完整情节
+  prompt_file: SB-058.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: stylized magazine cover masthead and cover star surrounded by
+    episodic panels telling complete story.
+  story_functions: *id058
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-058.md
+- id: SB-059
+  category: comic-storyboard
+  name: 舞台式分镜
+  name_en: Fixed Proscenium Stage
+  keywords: &id059
+  - 漫画分镜
+  - 舞台式分镜
+  - 固定机位
+  - 角色进出
+  - 戏剧空间
+  prompt_file: SB-059.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: single fixed theatrical stage perspective where characters enter
+    and exit while environment remains stationary.
+  story_functions: *id059
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-059.md
+- id: SB-060
+  category: comic-storyboard
+  name: 横卷式分镜
+  name_en: Horizontal Continuous Scroll
+  keywords: &id060
+  - 漫画分镜
+  - 横卷式分镜
+  - 长卷漫步
+  - 连续画卷
+  - 步移景异
+  prompt_file: SB-060.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: emulating traditional horizontal scroll where character appears
+    multiple times across continuous landscape.
+  story_functions: *id060
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-060.md
+- id: SB-061
+  category: comic-storyboard
+  name: 竖卷式分镜
+  name_en: Vertical Hanging Scroll
+  keywords: &id061
+  - 漫画分镜
+  - 竖卷式分镜
+  - 立轴画幅
+  - 垂直流转
+  - 古风长卷
+  prompt_file: SB-061.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: emulating vertical scroll where events and characters descend
+    continuously down single tall space.
+  story_functions: *id061
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-061.md
+- id: SB-062
+  category: comic-storyboard
+  name: 镜面反射式
+  name_en: Mirror Reflection Dualism
+  keywords: &id062
+  - 漫画分镜
+  - 镜面反射式
+  - 倒影双重视角
+  - 双重人格
+  - 心理对照
+  prompt_file: SB-062.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: mirror surfaces, puddles, or reflections splitting scene into
+    twin perspectives and psychological duality.
+  story_functions: *id062
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-062.md
+- id: SB-063
+  category: comic-storyboard
+  name: 窗口式分镜
+  name_en: Architectural Window Framing
+  keywords: &id063
+  - 漫画分镜
+  - 窗口式分镜
+  - 现实画框
+  - 门窗借景
+  - 空间切割
+  prompt_file: SB-063.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: windows, door frames, balconies, or screens naturally forming
+    visual panels.
+  story_functions: *id063
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-063.md
+- id: SB-064
+  category: comic-storyboard
+  name: 物件遮挡式
+  name_en: Foreground Silhouette Framing
+  keywords: &id064
+  - 漫画分镜
+  - 物件遮挡式
+  - 前景遮挡
+  - 自然隔断
+  - 纵深分层
+  prompt_file: SB-064.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: foreground elements (pillars, tree trunks, door jambs) naturally
+    partitioning scene into narrative panels.
+  story_functions: *id064
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-064.md
+- id: SB-065
+  category: comic-storyboard
+  name: 文字主导式
+  name_en: Typographic Scaffold Layout
+  keywords: &id065
+  - 漫画分镜
+  - 文字主导式
+  - 字形骨架
+  - 拟声构架
+  - 图文共构
+  prompt_file: SB-065.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: monumental sound-effect characters or titles act as structural
+    skeleton, with panels built around lettering.
+  story_functions: *id065
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-065.md
+- id: SB-066
+  category: comic-storyboard
+  name: 音效主导式
+  name_en: Onomatopoeia Trail
+  keywords: &id066
+  - 漫画分镜
+  - 音效主导式
+  - 巨大声效
+  - 动势贯通
+  - 冲击力
+  prompt_file: SB-066.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: giant sound effect words cutting across panels, uniting kinetic
+    rhythm and visual direction.
+  story_functions: *id066
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-066.md
+- id: SB-067
+  category: comic-storyboard
+  name: 色块主导式
+  name_en: Color Block Panel Partitions
+  keywords: &id067
+  - 漫画分镜
+  - 色块主导式
+  - 纯色分隔
+  - 情绪色彩
+  - 平面设计感
+  prompt_file: SB-067.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: distinct solid color blocks serving as panel dividers and emotional
+    mood zones rather than black lines.
+  story_functions: *id067
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-067.md
+- id: SB-068
+  category: comic-storyboard
+  name: 几何分割式
+  name_en: Non-Rectangular Geometric Mosaic
+  keywords: &id068
+  - 漫画分镜
+  - 几何分割式
+  - 非矩形面板
+  - 圆形三角
+  - 视觉律动
+  prompt_file: SB-068.md
+  layout_source: bundled-internal-comic-layouts
+  panel_count: variable
+  panel_count_rule: story-dependent; source prompt does not declare a fixed count
+  layout_structure: circular, triangular, and polygon panels dividing page, creating
+    stylized geometric rhythm.
+  story_functions: *id068
+  dependencies:
+    scripts: []
+    templates: []
+    runtime_resources:
+    - SB-068.md

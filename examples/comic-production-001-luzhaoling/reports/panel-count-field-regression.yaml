@@ -1,0 +1,72 @@
+report: panel-count-field-regression
+run_mode: read-only-lightweight
+image_generation_run: false
+base_image_write: false
+final_image_write: false
+original_sb_description_write: false
+checks:
+  skill_structure:
+    status: passed
+    fields_found:
+    - planned_story_units
+    - planned_panel_count
+    - visible_panel_count
+    - panel_count_delta
+    - panel_count_reconciliation
+    rules_found:
+    - explained SB-structure differences do not automatically fail
+    - unexplained differences block publication
+    - planning counts are not overwritten by visible counts
+  output_schema_fields:
+    status: passed
+    fields_found:
+    - planned_story_units
+    - planned_panel_count
+    - visible_panel_count
+    - panel_count_delta
+    - panel_count_reconciliation
+  workflow_rules_fields:
+    status: passed
+    fields_found:
+    - planned_story_units
+    - planned_panel_count
+    - visible_panel_count
+    - panel_count_delta
+    - panel_count_reconciliation
+  existing_report_read:
+    status: passed
+    pages:
+      P01: accepted
+      P02: accepted
+      P03: accepted
+      P04: accepted
+      P05: accepted
+      P06: accepted
+      P07: accepted
+      P08: accepted
+  storyboard_planning_consistency:
+    status: passed
+    page_count: 8
+    each_page_panel_count_equals_panels_length: true
+    planned_story_units: 24
+    planned_panel_count: 24
+  delivery_statistics_consistency:
+    status: passed
+    page_count: 8
+    planned_story_units: 24
+    planned_panel_count: 24
+    visible_panel_count: 37
+    panel_count_delta: 13
+    delta_formula: visible_panel_count - planned_panel_count
+    reconciliation_status: explained
+  image_contract_read:
+    status: passed
+    final_pages: 8
+    final_canvas: 1080x1440_png
+    mobile_previews: 8
+    mobile_canvas: 360x480_png
+  human_visual_acceptance:
+    status: pending
+    machine_did_not_set_global_pass: true
+release_candidate_status: ready-for-human-visual-acceptance
+repository_submission_status: not_started

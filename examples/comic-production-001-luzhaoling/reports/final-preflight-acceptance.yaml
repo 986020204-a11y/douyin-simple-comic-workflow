@@ -1,0 +1,84 @@
+report: comic-production-001-luzhaoling-final-preflight-acceptance
+workflow: douyin-simple-comic-workflow
+workflow_version: 0.2-draft
+scope: final pre-release text-layer acceptance only
+base_policy: reused_existing_unlettered_bases
+original_sb_descriptions_modified: false
+workflow_structure_upgraded: false
+external_storyboard_skill_called: false
+outputs:
+  full_pages_canvas: 1080x1440_png
+  mobile_previews_canvas: 360x480_png
+  page_count: 8
+  final_contact_sheet: pages/final-contact-sheet-preflight-v001.png
+  mobile_contact_sheet: pages/previews/mobile-contact-sheet-preflight-v001.png
+page_count: 8
+planned_story_units: 24
+planned_panel_count: 24
+visible_panel_count: 37
+panel_count_delta: 13
+panel_count_reconciliation:
+  status: explained
+  planned_basis: storyboard-decision.yaml page planning counts, 8 x 3
+  visible_basis: final-base visible-panel audit
+  difference_reason: selected SB layouts expand into inset or split visible panels
+  release_rule: explained differences do not automatically fail; unresolved differences block publication
+technical_render_status:
+  P01: accepted
+  P02: accepted
+  P03: accepted
+  P04: accepted
+  P05: accepted
+  P06: accepted
+  P07: accepted
+  P08: accepted
+P07-T02:
+  text: 无事。
+  final_status: rendered_off_panel
+  source_check: source article explicitly says “马车里传出了一道低沉的声音”; the original plan associates the line with N03, while the top panel does not show a car-interior speaker
+  speaker_status: source_context_supported_not_visually_shown
+  visual_method: rounded_speech with no tail, speaker null, speaker_status remote, off_panel true, remote_attribution N03
+  exact_text_preserved: true
+  invented_visible_speaker_or_tail: false
+  final_blocker: false
+  human_visual_acceptance: pending
+P08-T04:
+  text: 咳咳，确定不需要我救吗？
+  final_status: minimally_adjusted_text_layer
+  adjustment: speaker_region moved to x=980,y=970,w=100,h=20 so the tail terminates on the lower-right N01 torso/robe side within P08-02
+  prior_issues_checked: previous-panel reach and hand-directed tail removed; text remains inside the rounded bubble
+  exact_text_preserved: true
+  geometry_safe: true
+  speaker_direction: readable toward N01, subject to human visual confirmation
+  final_blocker: false
+  human_visual_acceptance: pending
+P01-P08:
+  same_level_text_layer_review: complete_for_preflight
+  notes: P01-T01 received a minimal width repair; P02-P05 retained their accepted formal-compositor text layers and were rechecked in the full/mobile contact sheets; P06-P08 use the independent revised text layers
+  automated_occlusion: all_rendered_blocks_geometry_safe
+  observed_face_hand_action_object_occlusion: none_in_preflight
+  observed_cross_panel_tail: none_in_preflight
+  observed_orphan_punctuation: none_in_preflight
+tail_direction_summary:
+  P01: P01-T02 -> N02; P01-T03 shout has no connector tail
+  P02: no speech tails
+  P03: no speech tails
+  P04: P04-T03 -> N03; thought connector remains on the same panel
+  P05: P05-T03 -> N03
+  P06: P06-T02 -> N01; P06-T03 -> N03 shoulder/arm side; P06-T04 -> N01
+  P07: P07-T01 -> N04; P07-T02 off-panel/no tail; P07-T03 -> N02; P07-T04 -> N05; P07-T06 -> N04
+  P08: P08-T01 -> N01; P08-T03 -> N03; P08-T04 -> N01 lower-right torso/robe; P08-T05 -> N05
+mobile_readability:
+  P01-P08: readable_at_360x480_preflight_scale
+  P07_T05_大胆: readable
+  P08_T04: readable
+panel_count_reconciliation: reports/panel-count-reconciliation.yaml
+release_decision:
+  technical_text_layer_blockers: none
+  structural_base_mismatch: explained_recorded
+  structural_mismatch_detail: planned 24 versus manually audited visible 37; the +13 difference is explained by selected SB layout expansion and is not a lettering error
+  human_visual_acceptance: pending
+  final_blocker: true
+  blocker_reasons:
+  - human visual acceptance is intentionally pending
+  freeze_statement: Do not report final release clearance yet because human visual acceptance is pending. The explained +13 structure difference is recorded and does not itself block publication.

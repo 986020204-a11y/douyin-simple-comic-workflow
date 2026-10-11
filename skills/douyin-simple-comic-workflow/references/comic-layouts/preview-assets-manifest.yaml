@@ -1,0 +1,19 @@
+asset_type: storyboard_preview_images
+status: packaged_reference_assets
+preview_image_count: 68
+preview_image_missing: []
+preview_image_pattern: preview-images/SB-###.webp
+source_skill_bundled: false
+source_skill_preview_image_count: 0
+provenance:
+  kind: related_local_gallery
+  gallery_directory: D:\A抖音\.tmp_handraw_style\images\layouts\comic-storyboards
+  gallery_index: D:\A抖音\.tmp_handraw_style\skills\handdraw-style-prompter\references\layouts.json
+  mapping_status: one_to_one_verified
+  content_status: all_files_readable
+  content_hash_match_with_gallery: true
+  external_storyboard_skill_invoked: false
+evidence_boundary:
+  - These files are visual previews only and are not source evidence for bubble shape, position, tail, or writable area.
+  - The source Skill and its original layouts.json remain unchanged; package paths are additive metadata in this candidate copy.
+  - Preview images do not authorize choosing an external storyboard layout or replacing the bundled SB descriptions.

@@ -1,0 +1,54 @@
+report: visual-occlusion-final
+human_visual_acceptance: pending
+automated_geometry_scope: text body, border, connector/tail order, same-page text overlap, canvas bounds
+automated_geometry_result: all_final_reports_accepted
+manual_preflight_observation: no observed glyph occlusion in the current full-size pages or mobile previews; human confirmation remains pending
+pages:
+  P01:
+    text_occlusion: no_observed
+    face_hand_action_object_avoidance: no_observed_collision
+    tail_cross_panel: no_observed_cross_panel_tail
+    punctuation: P01-T01 period stays on the same line after the minimal anchor-width repair
+    revision_scope: P01 text layer only; base reused
+  P02:
+    text_occlusion: no_observed
+    face_hand_action_object_avoidance: no_observed_collision
+    tail_cross_panel: no_speech_tail_blocks
+    punctuation: no_orphan_punctuation_observed
+    revision_scope: existing compositor output retained; base reused
+  P03:
+    text_occlusion: no_observed
+    face_hand_action_object_avoidance: no_observed_collision
+    tail_cross_panel: no_speech_tail_blocks
+    punctuation: no_orphan_punctuation_observed
+    revision_scope: existing compositor output retained; base reused
+  P04:
+    text_occlusion: no_observed
+    face_hand_action_object_avoidance: no_observed_collision
+    tail_cross_panel: no_observed_cross_panel_tail
+    punctuation: no_orphan_punctuation_observed
+    revision_scope: existing compositor output retained; base reused
+  P05:
+    text_occlusion: no_observed
+    face_hand_action_object_avoidance: no_observed_collision
+    tail_cross_panel: no_observed_cross_panel_tail
+    punctuation: no_orphan_punctuation_observed
+    revision_scope: existing compositor output retained; base reused
+  P06:
+    text_occlusion: no_observed
+    face_hand_action_object_avoidance: no_observed_collision
+    tail_cross_panel: P06-T03 tail stays on the current panel and points to N03 shoulder/arm side
+    punctuation: no_orphan_punctuation_observed
+    revision_scope: reused P06 revised text layer; base reused
+  P07:
+    text_occlusion: no_observed
+    face_hand_action_object_avoidance: no_observed_collision
+    tail_cross_panel: top T01, middle T03/T04 and lower T06 tails stay in their speaker panels; T02 has no tail
+    punctuation: no_orphan_punctuation_observed; 大胆！ remains readable in mobile preview
+    revision_scope: reused P07 base; T02 changed from paused fake-region plan to source-confirmed off-panel rendering
+  P08:
+    text_occlusion: no_observed
+    face_hand_action_object_avoidance: no_observed_collision
+    tail_cross_panel: P08-T04 endpoint remains inside P08-02 at the lower-right N01 torso/robe side; it does not return to the previous panel or point at the hand
+    punctuation: no_orphan_punctuation_observed
+    revision_scope: reused P08 base; T04 speaker-region endpoint minimally adjusted

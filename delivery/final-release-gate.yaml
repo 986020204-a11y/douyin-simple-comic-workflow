@@ -1,0 +1,70 @@
+report: douyin-simple-comic-workflow final release gate
+package_name: douyin-simple-comic-workflow
+package_version: 0.2.0-rc.1
+candidate_directory: 'D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001'
+human_visual_acceptance: passed
+human_visual_acceptance_evidence:
+  full_size_contact_sheet: 'D:\A抖音漫画\tests\comic-production-001-luzhaoling-final-preflight-v001\pages\final-contact-sheet-preflight-v001.png'
+  mobile_contact_sheet: 'D:\A抖音漫画\tests\comic-production-001-luzhaoling-final-preflight-v001\pages\previews\mobile-contact-sheet-preflight-v001.png'
+  confirmation: user_confirmed_both_contact_sheets
+published: false
+repository_submission: not_started
+repository_preparation:
+  status: local_staging_prepared
+  target_repository: 'https://github.com/986020204-a11y/douyin-simple-comic-workflow.git'
+  target_branch: main
+  remote_initial_state: empty_repository
+  local_staging_status: working_tree_prepared_uncommitted
+preview_image_count: 68
+preview_image_missing: []
+preview_image_path_validation: passed
+preview_image_capability: available_as_packaged_reference
+preview_assets:
+  source_skill_bundled: false
+  origin: related_local_gallery
+  gallery_directory: 'D:\A抖音\.tmp_handraw_style\images\layouts\comic-storyboards'
+  sha256_match_with_source_files: passed
+  redistribution_permission: confirmed
+  redistribution_permission_reason: user_confirmed_in_conversation
+  redistribution_effect: allowed_by_user_confirmation
+mirror_comparison:
+  status: synchronized
+  source_unique_authority: true
+  synchronized_files:
+    - SKILL.md
+    - references/output-schema.md
+    - references/workflow-rules.md
+  remaining_differences_excluding_cache_backup: []
+plugin_manifest_validation:
+  status: passed
+  core_fields_identical: true
+  root_extensions: absent
+  optional_codex_interface: expected
+  path_validation: passed
+skill_structure_validation:
+  status: passed
+  quick_validate: passed
+  sb_resource_count: 68
+  formal_text_compositor_present: true
+  image_generation_run: not_run
+  text_composition_run: not_run
+panel_statistics:
+  planned_story_units: 24
+  planned_panel_count: 24
+  visible_panel_count: 37
+  panel_count_delta: 13
+  panel_count_reconciliation:
+    status: explained
+    reason: selected SB layouts expand into inset, split, nested, or otherwise visibly expanded panels
+release_gate:
+  technical_validation: passed
+  human_visual_validation: passed
+  status: ready_for_commit_review
+  blocking_items:
+    - id: commit_or_push_authorization
+      status: not_requested
+      scope: creating the first commit or pushing to main
+historical_assets_modified: false
+original_sb_descriptions_modified: false
+comic_regeneration: not_run
+formal_text_composition: not_run

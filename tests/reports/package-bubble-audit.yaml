@@ -1,0 +1,2812 @@
+audit: douyin-simple-comic-workflow layout bubble audit
+schema_version: 0.2-draft
+layout_index: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\layouts.json
+bubble_map: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\bubble-constraints.yaml
+index_count: 68
+profile_count: 68
+source_boundary: Only wording in the SB markdown is source evidence. Preview-only
+  appearance is not claimed as recovered rule.
+classification:
+  source_rule: source_rule_level=explicit plus matching source wording
+  adaptation_rule: profile.adaptation_rule and placement_constraints are workflow
+    additions
+  missing_reference: a dimension with no matching source wording; generic rules only
+entries:
+- layout_id: SB-001
+  layout_name_en: Regular Grid
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-001.md
+  source_rule_level: explicit
+  source_evidence_from_map: 源说明明确写出适合 dialogue-driven stories；未说明具体气泡形状或尾巴。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Regular Grid, panels of equal size arranged neatly
+        in a consistent reading order, ideal for slice-of-life and dialogue-driven
+        stories. Let this storyboard mechanism determine the page structure, reading
+        flow, panel hierarchy, and pacing; output a complete single-page comic where
+        panels tell a continuous story with consistent characters.'
+  explicit_dimensions:
+  - text_semantics
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-002
+  layout_name_en: Four-Panel Kishōtenketsu
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-002.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-003
+  layout_name_en: Hero Panel + Inset Panels
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-003.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-004
+  layout_name_en: Top Splash Panel Opening
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-004.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-005
+  layout_name_en: Bottom Climax Panel Ending
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-005.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-006
+  layout_name_en: Center Focal Panel
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-006.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-007
+  layout_name_en: Diagonal Dynamic Split
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-007.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-008
+  layout_name_en: Z-Pattern Reading Flow
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-008.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-009
+  layout_name_en: S-Curve Narrative Flow
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-009.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-010
+  layout_name_en: Spiral Inward Flow
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-010.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-011
+  layout_name_en: Radial Converging Panels
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-011.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-012
+  layout_name_en: Shattered Glass Panels
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-012.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-013
+  layout_name_en: Border Break
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-013.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-014
+  layout_name_en: Multi-Panel Spanning Character
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-014.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-015
+  layout_name_en: Continuous Background Across Panels
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-015.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-016
+  layout_name_en: Single Continuous Take
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-016.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-017
+  layout_name_en: Cinematic Filmstrip
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-017.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-018
+  layout_name_en: Widescreen Horizontal Panels
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-018.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-019
+  layout_name_en: Vertical Skyscraper Panels
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-019.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-020
+  layout_name_en: Ultra-Slim Reaction Insets
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-020.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-021
+  layout_name_en: Eye Close-Up Sequence
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-021.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-022
+  layout_name_en: Hand Action Sequence
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-022.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-023
+  layout_name_en: Long Shot to Extreme Close-Up
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-023.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-024
+  layout_name_en: Extreme Close-Up to Wide Reveal
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-024.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-025
+  layout_name_en: Shot-Reverse-Shot
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-025.md
+  source_rule_level: explicit
+  source_evidence_from_map: 源说明明确写出适合 dialogue、verbal sparring；未说明具体气泡形状、位置或尾巴。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Shot-Reverse-Shot, alternating character close-ups
+        facing camera, perfect for dialogue, verbal sparring, and psychological duel.
+        Let this storyboard mechanism determine the page structure, reading flow,
+        panel hierarchy, and pacing; output a complete single-page comic where panels
+        tell a continuous story with consistent characters.'
+  explicit_dimensions:
+  - text_semantics
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-026
+  layout_name_en: Triple Rapid Close-Ups
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-026.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-027
+  layout_name_en: Action Breakdown
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-027.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-028
+  layout_name_en: Motion Trail Strobe Sequence
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-028.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-029
+  layout_name_en: Static Panel Repetition
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-029.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-030
+  layout_name_en: Sudden Pacing Halt
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-030.md
+  source_rule_level: explicit
+  source_evidence_from_map: 源说明明确写出 large empty negative space；没有气泡规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Sudden Pacing Halt, rapid dense action suddenly
+        interrupted by large empty negative space or quiet static frame for comedic
+        anti-climax. Let this storyboard mechanism determine the page structure, reading
+        flow, panel hierarchy, and pacing; output a complete single-page comic where
+        panels tell a continuous story with consistent characters.'
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Sudden Pacing Halt, rapid dense action suddenly
+        interrupted by large empty negative space or quiet static frame for comedic
+        anti-climax. Let this storyboard mechanism determine the page structure, reading
+        flow, panel hierarchy, and pacing; output a complete single-page comic where
+        panels tell a continuous story with consistent characters.'
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions:
+  - bubble_position
+  - text_whitespace
+  missing_reference_dimensions:
+  - bubble_shape
+  - tail
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-031
+  layout_name_en: Post-Climax Negative Space
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-031.md
+  source_rule_level: explicit
+  source_evidence_from_map: 源说明明确写出 generous white space；没有气泡规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Post-Climax Negative Space, intense explosive action
+        followed by generous white space and tiny silhouette, emphasizing absurdity
+        or lingering mood. Let this storyboard mechanism determine the page structure,
+        reading flow, panel hierarchy, and pacing; output a complete single-page comic
+        where panels tell a continuous story with consistent characters.'
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Post-Climax Negative Space, intense explosive action
+        followed by generous white space and tiny silhouette, emphasizing absurdity
+        or lingering mood. Let this storyboard mechanism determine the page structure,
+        reading flow, panel hierarchy, and pacing; output a complete single-page comic
+        where panels tell a continuous story with consistent characters.'
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions:
+  - bubble_position
+  - text_whitespace
+  missing_reference_dimensions:
+  - bubble_shape
+  - tail
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-032
+  layout_name_en: Vertical Mirroring
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-032.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-033
+  layout_name_en: Split-Side Confrontation
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-033.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-034
+  layout_name_en: Dual Parallel Storylines
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-034.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-035
+  layout_name_en: Cross-Cutting Parallel Action
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-035.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-036
+  layout_name_en: Inset Memory Flashback
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-036.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-037
+  layout_name_en: Inset Fantasy Bubble
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-037.md
+  source_rule_level: explicit
+  source_evidence_from_map: 源说明明确写出 dream-bubble panels 与 comic thoughts；这是布局中的幻想/思绪画格说明，不等同于所有文字都使用思考气泡。
+  source_dimensions:
+    bubble_shape:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Inset Fantasy Bubble, reality scenes overlaid with
+        dream-bubble panels depicting character''s internal imagination or comic thoughts.
+        Let this storyboard mechanism determine the page structure, reading flow,
+        panel hierarchy, and pacing; output a complete single-page comic where panels
+        tell a continuous story with consistent characters.'
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Inset Fantasy Bubble, reality scenes overlaid with
+        dream-bubble panels depicting character''s internal imagination or comic thoughts.
+        Let this storyboard mechanism determine the page structure, reading flow,
+        panel hierarchy, and pacing; output a complete single-page comic where panels
+        tell a continuous story with consistent characters.'
+  explicit_dimensions:
+  - bubble_shape
+  - text_semantics
+  missing_reference_dimensions:
+  - bubble_position
+  - tail
+  - text_whitespace
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-038
+  layout_name_en: Multi-CCTV Security Grid
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-038.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-039
+  layout_name_en: Smartphone Chat Overlay
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-039.md
+  source_rule_level: explicit
+  source_evidence_from_map: 源说明明确写出 phone messaging screens 与 speech bubbles；未规定具体尾巴坐标。
+  source_dimensions:
+    bubble_shape:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Smartphone Chat Overlay, real-life scene blended
+        with phone messaging screens and speech bubbles for modern social media narrative.
+        Let this storyboard mechanism determine the page structure, reading flow,
+        panel hierarchy, and pacing; output a complete single-page comic where panels
+        tell a continuous story with consistent characters.'
+    bubble_position:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Smartphone Chat Overlay, real-life scene blended
+        with phone messaging screens and speech bubbles for modern social media narrative.
+        Let this storyboard mechanism determine the page structure, reading flow,
+        panel hierarchy, and pacing; output a complete single-page comic where panels
+        tell a continuous story with consistent characters.'
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Smartphone Chat Overlay, real-life scene blended
+        with phone messaging screens and speech bubbles for modern social media narrative.
+        Let this storyboard mechanism determine the page structure, reading flow,
+        panel hierarchy, and pacing; output a complete single-page comic where panels
+        tell a continuous story with consistent characters.'
+  explicit_dimensions:
+  - bubble_shape
+  - bubble_position
+  - text_semantics
+  missing_reference_dimensions:
+  - tail
+  - text_whitespace
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-040
+  layout_name_en: Detective Case File Collage
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-040.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-041
+  layout_name_en: Editorial Magazine Layout
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-041.md
+  source_rule_level: explicit
+  source_evidence_from_map: 源说明明确写出 captions 与 narrative panels；未规定具体气泡形状。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Editorial Magazine Layout, bold headlines, character
+        cutouts, captions, and narrative panels composed like high-end editorial spread.
+        Let this storyboard mechanism determine the page structure, reading flow,
+        panel hierarchy, and pacing; output a complete single-page comic where panels
+        tell a continuous story with consistent characters.'
+    text_semantics:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Editorial Magazine Layout, bold headlines, character
+        cutouts, captions, and narrative panels composed like high-end editorial spread.
+        Let this storyboard mechanism determine the page structure, reading flow,
+        panel hierarchy, and pacing; output a complete single-page comic where panels
+        tell a continuous story with consistent characters.'
+  explicit_dimensions:
+  - text_whitespace
+  - text_semantics
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-042
+  layout_name_en: Infographic Comic Hybrid
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-042.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-043
+  layout_name_en: Map & Trail Journey
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-043.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-044
+  layout_name_en: Chronological Timeline Progression
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-044.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-045
+  layout_name_en: Clock Face Radial Layout
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-045.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-046
+  layout_name_en: Central Anchor Prop
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-046.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-047
+  layout_name_en: Central Anchor Protagonist
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-047.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-048
+  layout_name_en: Circular Loop Narrative
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-048.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-049
+  layout_name_en: Downward Plunge Flow
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-049.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-050
+  layout_name_en: Stepped Staircase Progression
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-050.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-051
+  layout_name_en: Undulating Wave Flow
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-051.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-052
+  layout_name_en: Free-Floating Unframed Panels
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-052.md
+  source_rule_level: explicit
+  source_evidence_from_map: 源说明明确写出 white space 与 speech balloons；未规定具体尾巴坐标。
+  source_dimensions:
+    bubble_shape:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Free-Floating Unframed Panels, irregularly positioned
+        panels floating freely across white space, guided by eyelines and speech balloons.
+        Let this storyboard mechanism determine the page structure, reading flow,
+        panel hierarchy, and pacing; output a complete single-page comic where panels
+        tell a continuous story with consistent characters.'
+    bubble_position:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Free-Floating Unframed Panels, irregularly positioned
+        panels floating freely across white space, guided by eyelines and speech balloons.
+        Let this storyboard mechanism determine the page structure, reading flow,
+        panel hierarchy, and pacing; output a complete single-page comic where panels
+        tell a continuous story with consistent characters.'
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Free-Floating Unframed Panels, irregularly positioned
+        panels floating freely across white space, guided by eyelines and speech balloons.
+        Let this storyboard mechanism determine the page structure, reading flow,
+        panel hierarchy, and pacing; output a complete single-page comic where panels
+        tell a continuous story with consistent characters.'
+    text_semantics:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Free-Floating Unframed Panels, irregularly positioned
+        panels floating freely across white space, guided by eyelines and speech balloons.
+        Let this storyboard mechanism determine the page structure, reading flow,
+        panel hierarchy, and pacing; output a complete single-page comic where panels
+        tell a continuous story with consistent characters.'
+  explicit_dimensions:
+  - bubble_shape
+  - bubble_position
+  - text_whitespace
+  - text_semantics
+  missing_reference_dimensions:
+  - tail
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-053
+  layout_name_en: Frameless Organic Narrative
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-053.md
+  source_rule_level: explicit
+  source_evidence_from_map: 源说明明确写出 negative space organic reading zones；没有气泡规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Frameless Organic Narrative, conventional panel
+        borders removed entirely; characters, backgrounds, and negative space form
+        organic reading zones. Let this storyboard mechanism determine the page structure,
+        reading flow, panel hierarchy, and pacing; output a complete single-page comic
+        where panels tell a continuous story with consistent characters.'
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Frameless Organic Narrative, conventional panel
+        borders removed entirely; characters, backgrounds, and negative space form
+        organic reading zones. Let this storyboard mechanism determine the page structure,
+        reading flow, panel hierarchy, and pacing; output a complete single-page comic
+        where panels tell a continuous story with consistent characters.'
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions:
+  - bubble_position
+  - text_whitespace
+  missing_reference_dimensions:
+  - bubble_shape
+  - tail
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-054
+  layout_name_en: Generous Negative Space
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-054.md
+  source_rule_level: explicit
+  source_evidence_from_map: 源说明明确写出 abundant white space 与 sparse dialogue；未规定具体气泡形状。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Generous Negative Space, abundant white space isolating
+        minimal characters and sparse dialogue, conveying quiet, poetic, or awkward
+        atmosphere. Let this storyboard mechanism determine the page structure, reading
+        flow, panel hierarchy, and pacing; output a complete single-page comic where
+        panels tell a continuous story with consistent characters.'
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Generous Negative Space, abundant white space isolating
+        minimal characters and sparse dialogue, conveying quiet, poetic, or awkward
+        atmosphere. Let this storyboard mechanism determine the page structure, reading
+        flow, panel hierarchy, and pacing; output a complete single-page comic where
+        panels tell a continuous story with consistent characters.'
+    text_semantics:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Generous Negative Space, abundant white space isolating
+        minimal characters and sparse dialogue, conveying quiet, poetic, or awkward
+        atmosphere. Let this storyboard mechanism determine the page structure, reading
+        flow, panel hierarchy, and pacing; output a complete single-page comic where
+        panels tell a continuous story with consistent characters.'
+  explicit_dimensions:
+  - bubble_position
+  - text_whitespace
+  - text_semantics
+  missing_reference_dimensions:
+  - bubble_shape
+  - tail
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-055
+  layout_name_en: Full-Bleed Splash Page
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-055.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-056
+  layout_name_en: Simulated Double-Page Spread
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-056.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-057
+  layout_name_en: Poster-Style Narrative
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-057.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-058
+  layout_name_en: Magazine Cover Narrative
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-058.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-059
+  layout_name_en: Fixed Proscenium Stage
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-059.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-060
+  layout_name_en: Horizontal Continuous Scroll
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-060.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-061
+  layout_name_en: Vertical Hanging Scroll
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-061.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-062
+  layout_name_en: Mirror Reflection Dualism
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-062.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-063
+  layout_name_en: Architectural Window Framing
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-063.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-064
+  layout_name_en: Foreground Silhouette Framing
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-064.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-065
+  layout_name_en: Typographic Scaffold Layout
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-065.md
+  source_rule_level: explicit
+  source_evidence_from_map: 源说明明确写出 lettering 作为结构骨架；不等于普通对白气泡规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Typographic Scaffold Layout, monumental sound-effect
+        characters or titles act as structural skeleton, with panels built around
+        lettering. Let this storyboard mechanism determine the page structure, reading
+        flow, panel hierarchy, and pacing; output a complete single-page comic where
+        panels tell a continuous story with consistent characters.'
+    text_semantics:
+      status: explicit
+      source_lines:
+      - 'Comic storyboard. Layout: Typographic Scaffold Layout, monumental sound-effect
+        characters or titles act as structural skeleton, with panels built around
+        lettering. Let this storyboard mechanism determine the page structure, reading
+        flow, panel hierarchy, and pacing; output a complete single-page comic where
+        panels tell a continuous story with consistent characters.'
+  explicit_dimensions:
+  - text_whitespace
+  - text_semantics
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-066
+  layout_name_en: Onomatopoeia Trail
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-066.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-067
+  layout_name_en: Color Block Panel Partitions
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-067.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+- layout_id: SB-068
+  layout_name_en: Non-Rectangular Geometric Mosaic
+  source_file: D:\A抖音漫画\tests\skill-package-v0.2.0-rc-001\skills\douyin-simple-comic-workflow\references\comic-layouts\SB-068.md
+  source_rule_level: none
+  source_evidence_from_map: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
+  source_dimensions:
+    bubble_shape:
+      status: missing
+      source_lines: []
+    bubble_position:
+      status: missing
+      source_lines: []
+    tail:
+      status: missing
+      source_lines: []
+    text_whitespace:
+      status: missing
+      source_lines: []
+    text_semantics:
+      status: missing
+      source_lines: []
+  explicit_dimensions: []
+  missing_reference_dimensions:
+  - bubble_shape
+  - bubble_position
+  - tail
+  - text_whitespace
+  - text_semantics
+  adaptation_rule: 新增适配：先按文字类型与情绪选择候选，再用当前底图的实际留白、说话者区域、载体区域和避让区域决定最终尺寸/位置；不把候选样式宣称为原画廊独有造型。
+  placement_constraints:
+  - anchor must be explicit pixel rect with rect_format and panel_id
+  - compact body follows text content; do not span the whole panel unless whitespace
+    requires it
+  - speech/thought tail or connector only when the same-panel speaker_region is confirmed
+  - recheck body, tail/connector and later blocks against face, main_action, key_object
+    and other text
+  - if no safe fit remains, keep needs-placement and do not shrink text below readable
+    size
+summary:
+  source_explicit_layouts:
+  - SB-001
+  - SB-025
+  - SB-030
+  - SB-031
+  - SB-037
+  - SB-039
+  - SB-041
+  - SB-052
+  - SB-053
+  - SB-054
+  - SB-065
+  no_sb_specific_bubble_evidence:
+  - SB-002
+  - SB-003
+  - SB-004
+  - SB-005
+  - SB-006
+  - SB-007
+  - SB-008
+  - SB-009
+  - SB-010
+  - SB-011
+  - SB-012
+  - SB-013
+  - SB-014
+  - SB-015
+  - SB-016
+  - SB-017
+  - SB-018
+  - SB-019
+  - SB-020
+  - SB-021
+  - SB-022
+  - SB-023
+  - SB-024
+  - SB-026
+  - SB-027
+  - SB-028
+  - SB-029
+  - SB-032
+  - SB-033
+  - SB-034
+  - SB-035
+  - SB-036
+  - SB-038
+  - SB-040
+  - SB-042
+  - SB-043
+  - SB-044
+  - SB-045
+  - SB-046
+  - SB-047
+  - SB-048
+  - SB-049
+  - SB-050
+  - SB-051
+  - SB-055
+  - SB-056
+  - SB-057
+  - SB-058
+  - SB-059
+  - SB-060
+  - SB-061
+  - SB-062
+  - SB-063
+  - SB-064
+  - SB-066
+  - SB-067
+  - SB-068
+  source_shape_mentions:
+  - SB-037
+  - SB-039
+  - SB-052
+  source_position_mentions:
+  - SB-030
+  - SB-031
+  - SB-039
+  - SB-052
+  - SB-053
+  - SB-054
+  source_tail_mentions: []
+  source_text_whitespace_mentions:
+  - SB-030
+  - SB-031
+  - SB-041
+  - SB-052
+  - SB-053
+  - SB-054
+  - SB-065
+validation:
+  status: valid
+  errors: []

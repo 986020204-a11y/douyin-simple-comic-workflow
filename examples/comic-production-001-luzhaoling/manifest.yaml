@@ -1,0 +1,27 @@
+example: comic-production-001-luzhaoling
+workflow: douyin-simple-comic-workflow
+workflow_version: 0.2-draft
+package_version: 0.2.0-rc.1
+bundled_images: false
+page_count: 8
+planned_story_units: 24
+planned_panel_count: 24
+visible_panel_count: 37
+panel_count_delta: 13
+panel_count_reconciliation:
+  status: explained
+  planned_basis: storyboard-decision.yaml 的 8×3 规划基数
+  visible_basis: final-preflight 案例的底图可见画格审计
+  reason: 所选 SB 布局展开、插格、嵌套格或分格结构
+  release_effect: 差异本身不自动失败；无法解释时阻断
+human_visual_acceptance: passed
+published: false
+preview_assets_redistribution_permission: confirmed
+preview_assets_redistribution_permission_source: user_confirmed_in_conversation
+reports:
+  acceptance: reports/final-preflight-acceptance.yaml
+  occlusion: reports/visual-occlusion-final.yaml
+  panel_count: reports/panel-count-reconciliation.yaml
+  panel_count_regression: reports/panel-count-field-regression.yaml
+  base_reuse_hashes: reports/base-reuse-hashes-final.json
+runtime_project_config: config/text-layout.yaml

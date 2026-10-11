@@ -1,0 +1,20 @@
+font_family: Microsoft YaHei
+font_file: C:/Windows/Fonts/msyh.ttc
+font_size: 42
+font_color: '#1F1B17'
+text_box_style:
+  type: warm-white-rounded-narration-box
+  fill_color: '#FFFDF7'
+  fill_opacity: 245
+  border_color: '#2B2621'
+  border_width: 3
+  corner_radius: 12
+  padding: 22
+text_alignment: left
+safe_area:
+  left: 48
+  top: 40
+  right: 48
+  bottom: 48
+default_placement: top-left-clean-area-of-top-splash-panel
+rendering_method: post-layout-raster-text-overlay

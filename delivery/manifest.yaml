@@ -1,0 +1,42 @@
+delivery: skill-package-v0.2.0-rc-001
+package_name: douyin-simple-comic-workflow
+package_version: 0.2.0-rc.1
+status: release-candidate
+release_gate_status: ready_for_commit_review
+published: false
+human_visual_acceptance: passed
+repository_submission: not_started
+repository_preparation_status: local_staging_prepared
+target_repository: 'https://github.com/986020204-a11y/douyin-simple-comic-workflow.git'
+target_branch: main
+preview_assets_redistribution_permission: confirmed
+source_case: examples/comic-production-001-luzhaoling
+page_count: 8
+planned_story_units: 24
+planned_panel_count: 24
+visible_panel_count: 37
+panel_count_delta: 13
+panel_count_reconciliation:
+  status: explained
+  planned_basis: storyboard 的 8×3 规划单元
+  visible_basis: 最终底图的可见画格审计
+  reason: 所选 SB 布局展开、插格、嵌套格或分格结构
+  release_effect: 差异本身不自动判定失败；无法解释时阻断
+preview_image_count: 68
+preview_image_missing: []
+source_skill_preview_image_count: 0
+related_local_gallery_preview_image_count: 68
+preview_image_path_validation:
+  status: passed
+  basis: packaged layouts.json paths resolve one-to-one to preview-images/SB-001.webp through SB-068.webp
+preview_image_capability:
+  status: available_as_packaged_reference
+  source_skill_bundled: false
+  provenance: related_local_gallery
+included:
+  - plugin.json
+  - .codex-plugin/plugin.json
+  - skills/douyin-simple-comic-workflow
+  - examples/comic-production-001-luzhaoling
+  - tests
+  - delivery

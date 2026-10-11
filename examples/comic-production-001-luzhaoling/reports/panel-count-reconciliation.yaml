@@ -1,0 +1,48 @@
+report: panel-count-reconciliation
+status: explained-difference-recorded
+page_count: 8
+planned_story_units: 24
+planned_panel_count: 24
+visible_panel_count: 37
+panel_count_delta: 13
+planned_panel_count_by_page:
+  per_page:
+    P01: 3
+    P02: 3
+    P03: 3
+    P04: 3
+    P05: 3
+    P06: 3
+    P07: 3
+    P08: 3
+  basis: storyboard-decision.yaml declares page_count 8 and panel_count 3 for every page; 8 x 3 = 24 planned panels.
+visible_panel_count_by_page:
+  audit_method: manual border audit of the reused final base images, before text-layer rendering
+  per_page:
+    P01: 3
+    P02: 4
+    P03: 3
+    P04: 6
+    P05: 4
+    P06: 6
+    P07: 4
+    P08: 7
+panel_count_reconciliation:
+  status: explained
+  planned_story_units: 24
+  planned_panel_count: 24
+  visible_panel_count: 37
+  panel_count_delta: 13
+  planned_basis: storyboard-decision.yaml page planning counts, 8 x 3
+  visible_basis: final-base visible-panel audit before text-layer rendering
+  delta_visible_minus_planned: 13
+  formula: 37 visible - 24 planned = +13
+  pages_with_mismatch:
+  - P02
+  - P04
+  - P05
+  - P06
+  - P07
+  - P08
+  interpretation: The storyboard planning count is not the final visible panel count. The reused base images contain additional inset or split panels produced by the selected SB layouts; this is a documented structure difference, not a text-layer error.
+  release_effect: does_not_auto_fail; unresolved_reconciliation_would_block_publication

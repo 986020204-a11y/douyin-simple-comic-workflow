@@ -1,0 +1,643 @@
+{
+  "layout_id": "SB-052",
+  "source_size": [
+    556,
+    700
+  ],
+  "preview_sha256": "5a576dde2c021b803ee2013673b0e868a6c153598b4d625620744fd170c72051",
+  "note_sha256": "2637f901ba843b734f89384b89f0705d8184668354983db8bb3c7c99fd030a45",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 69,
+  "panels": [
+    {
+      "bounds_px": [
+        116,
+        94,
+        220,
+        134
+      ],
+      "role": "sleep",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          117,
+          134
+        ],
+        [
+          190,
+          119
+        ],
+        [
+          289,
+          94
+        ],
+        [
+          336,
+          196
+        ],
+        [
+          231,
+          211
+        ],
+        [
+          116,
+          228
+        ]
+      ],
+      "source_number": 1
+    },
+    {
+      "bounds_px": [
+        367,
+        76,
+        186,
+        187
+      ],
+      "role": "dream start",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          407,
+          76
+        ],
+        [
+          539,
+          90
+        ],
+        [
+          553,
+          134
+        ],
+        [
+          532,
+          263
+        ],
+        [
+          367,
+          202
+        ]
+      ],
+      "source_number": 2
+    },
+    {
+      "bounds_px": [
+        354,
+        342,
+        200,
+        179
+      ],
+      "role": "floating room",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          384,
+          352
+        ],
+        [
+          520,
+          342
+        ],
+        [
+          554,
+          376
+        ],
+        [
+          545,
+          467
+        ],
+        [
+          481,
+          521
+        ],
+        [
+          354,
+          480
+        ]
+      ],
+      "source_number": 3
+    },
+    {
+      "bounds_px": [
+        22,
+        245,
+        165,
+        175
+      ],
+      "role": "meet memory",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          32,
+          245
+        ],
+        [
+          147,
+          251
+        ],
+        [
+          187,
+          386
+        ],
+        [
+          25,
+          420
+        ],
+        [
+          22,
+          303
+        ]
+      ],
+      "source_number": 4
+    },
+    {
+      "bounds_px": [
+        9,
+        432,
+        242,
+        244
+      ],
+      "role": "free exploration",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          54,
+          432
+        ],
+        [
+          100,
+          448
+        ],
+        [
+          174,
+          447
+        ],
+        [
+          191,
+          487
+        ],
+        [
+          251,
+          524
+        ],
+        [
+          230,
+          588
+        ],
+        [
+          160,
+          676
+        ],
+        [
+          75,
+          641
+        ],
+        [
+          9,
+          591
+        ],
+        [
+          11,
+          500
+        ]
+      ],
+      "source_number": 5
+    },
+    {
+      "bounds_px": [
+        257,
+        489,
+        219,
+        196
+      ],
+      "role": "wake",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          303,
+          489
+        ],
+        [
+          424,
+          500
+        ],
+        [
+          440,
+          560
+        ],
+        [
+          476,
+          648
+        ],
+        [
+          435,
+          680
+        ],
+        [
+          269,
+          685
+        ],
+        [
+          257,
+          596
+        ],
+        [
+          268,
+          527
+        ]
+      ],
+      "source_number": 6
+    },
+    {
+      "bounds_px": [
+        187,
+        228,
+        213,
+        238
+      ],
+      "role": "unframed drifting protagonist",
+      "geometry_type": "unframed",
+      "cross_panel_allowed": false,
+      "layer": 0
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        246,
+        131,
+        89,
+        52
+      ],
+      "sample_text": "好困啊……晚安……",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            252,
+            170
+          ],
+          [
+            242,
+            182
+          ],
+          [
+            260,
+            176
+          ]
+        ],
+        "anchor_px": [
+          242,
+          182
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        420,
+        114,
+        91,
+        43
+      ],
+      "sample_text": "咦？我在飘起来？！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            489,
+            150
+          ],
+          [
+            496,
+            166
+          ],
+          [
+            498,
+            154
+          ]
+        ],
+        "anchor_px": [
+          496,
+          166
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        402,
+        380,
+        120,
+        47
+      ],
+      "sample_text": "连猫咪也在飞！这里是梦的世界吧？",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            458,
+            422
+          ],
+          [
+            455,
+            437
+          ],
+          [
+            470,
+            425
+          ]
+        ],
+        "anchor_px": [
+          455,
+          437
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        34,
+        277,
+        104,
+        43
+      ],
+      "sample_text": "好多熟悉的画面，在眼前飘过……",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            81,
+            316
+          ],
+          [
+            76,
+            329
+          ],
+          [
+            89,
+            321
+          ]
+        ],
+        "anchor_px": [
+          76,
+          329
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        35,
+        600,
+        116,
+        48
+      ],
+      "sample_text": "我可以去任何地方！太不可思议了！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            138,
+            609
+          ],
+          [
+            158,
+            596
+          ],
+          [
+            145,
+            618
+          ]
+        ],
+        "anchor_px": [
+          158,
+          596
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        276,
+        617,
+        131,
+        58
+      ],
+      "sample_text": "原来是一场梦……但这些回忆，会一直留在我心里！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            381,
+            621
+          ],
+          [
+            389,
+            607
+          ],
+          [
+            391,
+            626
+          ]
+        ],
+        "anchor_px": [
+          389,
+          607
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        237,
+        109,
+        51,
+        26
+      ],
+      "sample_text": "1.入睡",
+      "kind": "panel_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        414,
+        87,
+        70,
+        24
+      ],
+      "sample_text": "2.梦开始",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        384,
+        354,
+        119,
+        24
+      ],
+      "sample_text": "3.漂浮的房间",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        39,
+        250,
+        103,
+        24
+      ],
+      "sample_text": "4.遇见回忆",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        35,
+        575,
+        109,
+        26
+      ],
+      "sample_text": "5.自由探索",
+      "kind": "panel_label",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        269,
+        512,
+        65,
+        24
+      ],
+      "sample_text": "6.醒来",
+      "kind": "panel_label",
+      "panel": 6,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        270,
+        594,
+        59,
+        25
+      ],
+      "sample_text": "6.醒来",
+      "kind": "panel_label",
+      "panel": 6,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred",
+      "duplicate_label_observed": true
+    },
+    {
+      "bounds_px": [
+        21,
+        82,
+        209,
+        55
+      ],
+      "sample_text": "在梦里，一切都可以自由漂浮……",
+      "kind": "page_furniture",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        376,
+        241,
+        118,
+        91
+      ],
+      "sample_text": "重要的不是去了哪里，而是想起了什么。",
+      "kind": "page_furniture",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        440,
+        529,
+        112,
+        100
+      ],
+      "sample_text": "梦，也是一种让心灵受洗的奇妙旅行。",
+      "kind": "page_note",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    }
+  ],
+  "observed_features": [
+    "six irregular floating bordered panels",
+    "central extra unframed floating person",
+    "stars arrows and space background"
+  ],
+  "uncertainties": [
+    "Six source-numbered panels plus one unframed central scene; visible story-unit count 7, bordered count 6.",
+    "Wake label is visibly duplicated in source; keep rather than silently deduplicate."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

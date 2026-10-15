@@ -1,0 +1,447 @@
+{
+  "layout_id": "SB-058",
+  "source_size": [
+    555,
+    635
+  ],
+  "preview_sha256": "7aec2f63dd05f2b860aea5866b4091c3b6fe4f0bfb2a468989cc1fb360bede75",
+  "note_sha256": "0712a4638c270a707f7673efd0c53ddd2be15863c7d4773f55a31b4cc8760ca6",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 60,
+  "panels": [
+    {
+      "bounds_px": [
+        17,
+        61,
+        264,
+        559
+      ],
+      "role": "magazine cover protagonist",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false
+    },
+    {
+      "bounds_px": [
+        290,
+        61,
+        260,
+        117
+      ],
+      "role": "ordinary day",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 1
+    },
+    {
+      "bounds_px": [
+        290,
+        183,
+        260,
+        106
+      ],
+      "role": "meet music",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 2
+    },
+    {
+      "bounds_px": [
+        290,
+        294,
+        260,
+        93
+      ],
+      "role": "practice",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 3
+    },
+    {
+      "bounds_px": [
+        290,
+        391,
+        260,
+        106
+      ],
+      "role": "on stage",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 4
+    },
+    {
+      "bounds_px": [
+        290,
+        502,
+        260,
+        118
+      ],
+      "role": "continue",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 5
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        25,
+        379,
+        234,
+        79
+      ],
+      "sample_text": "平凡的我，也能发光！",
+      "shape": "display_text",
+      "text_kind": "emphasis",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        25,
+        492,
+        150,
+        62
+      ],
+      "sample_text": "从教室到舞台\n——一个普通女孩的\n音乐梦想",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        25,
+        566,
+        150,
+        35
+      ],
+      "sample_text": "音乐×友情×成长\n不完美 也很精彩",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        430,
+        98,
+        118,
+        46
+      ],
+      "sample_text": "每天上课、考试……我真的只是一个普通的女生吧？",
+      "shape": "rounded_rect",
+      "text_kind": "thought",
+      "tail": {
+        "mode": "observed_dots",
+        "anchor_px": null
+      },
+      "tail_dots_px": [
+        [
+          424,
+          114,
+          5
+        ],
+        [
+          420,
+          122,
+          4
+        ],
+        [
+          417,
+          129,
+          3
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        445,
+        194,
+        103,
+        76
+      ],
+      "sample_text": "第一次抱起吉他，感觉找到了真正的自己！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            449,
+            246
+          ],
+          [
+            434,
+            250
+          ],
+          [
+            449,
+            256
+          ]
+        ],
+        "anchor_px": [
+          434,
+          250
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        454,
+        307,
+        94,
+        76
+      ],
+      "sample_text": "手指好痛……但我不想放弃！再练一次！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            457,
+            346
+          ],
+          [
+            441,
+            349
+          ],
+          [
+            457,
+            356
+          ]
+        ],
+        "anchor_px": [
+          441,
+          349
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        296,
+        427,
+        99,
+        47
+      ],
+      "sample_text": "站在舞台上的我，好快乐！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            390,
+            442
+          ],
+          [
+            409,
+            437
+          ],
+          [
+            393,
+            452
+          ]
+        ],
+        "anchor_px": [
+          409,
+          437
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        442,
+        506,
+        99,
+        69
+      ],
+      "sample_text": "这只是开始！我还想唱给更多人听！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            445,
+            546
+          ],
+          [
+            430,
+            550
+          ],
+          [
+            445,
+            557
+          ]
+        ],
+        "anchor_px": [
+          430,
+          550
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        461,
+        581,
+        83,
+        35
+      ],
+      "sample_text": "新的故事，正在继续……",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        19,
+        66,
+        263,
+        94
+      ],
+      "sample_text": "Campus 青春志",
+      "kind": "masthead",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        235,
+        176,
+        43,
+        49
+      ],
+      "sample_text": "2024 No.6 青春特刊",
+      "kind": "edition_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        294,
+        63,
+        111,
+        25
+      ],
+      "sample_text": "1.平凡的日常",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        294,
+        184,
+        90,
+        24
+      ],
+      "sample_text": "2.遇见音乐",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        294,
+        294,
+        90,
+        24
+      ],
+      "sample_text": "3.努力练习",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        294,
+        392,
+        88,
+        25
+      ],
+      "sample_text": "4.登上舞台",
+      "kind": "panel_label",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        294,
+        504,
+        94,
+        24
+      ],
+      "sample_text": "5.未来继续",
+      "kind": "panel_label",
+      "panel": 6,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    }
+  ],
+  "observed_features": [
+    "left cover panel plus five stacked right scenes",
+    "magazine masthead and edition typography",
+    "first right bubble is thought dots, not a speech tail"
+  ],
+  "uncertainties": [
+    "Exact cover font and lettering unknown."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

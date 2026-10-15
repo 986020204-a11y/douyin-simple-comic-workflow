@@ -1,0 +1,475 @@
+{
+  "content_roi_px": [
+    14,
+    97,
+    538,
+    546
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        16,
+        188,
+        101,
+        308
+      ],
+      "role": "morning_0700",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        124,
+        188,
+        100,
+        308
+      ],
+      "role": "morning_0900",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        231,
+        188,
+        101,
+        308
+      ],
+      "role": "noon_1200",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        339,
+        188,
+        101,
+        308
+      ],
+      "role": "afternoon_1500",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        447,
+        188,
+        105,
+        308
+      ],
+      "role": "night_2100",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        14,
+        503,
+        538,
+        140
+      ],
+      "role": "night_city_epilogue",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        20,
+        191,
+        93,
+        53
+      ],
+      "source_sample_text": "早上 7:00 起床·出发",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "orange_white"
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        19,
+        264,
+        72,
+        66
+      ],
+      "source_sample_text": "新的一天开始了！加油！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          63,
+          323
+        ],
+        [
+          68,
+          341
+        ],
+        [
+          75,
+          326
+        ]
+      ]
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        23,
+        453,
+        88,
+        37
+      ],
+      "source_sample_text": "充满活力 迎接新的挑战！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        128,
+        191,
+        92,
+        53
+      ],
+      "source_sample_text": "上午 9:00 认真学习",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "blue_white"
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        161,
+        262,
+        60,
+        67
+      ],
+      "source_sample_text": "专注！把知识装进脑子里！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          173,
+          324
+        ],
+        [
+          160,
+          337
+        ],
+        [
+          182,
+          327
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        131,
+        453,
+        86,
+        37
+      ],
+      "source_sample_text": "一点一滴 积累更好的自己！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        235,
+        191,
+        93,
+        53
+      ],
+      "source_sample_text": "中午 12:00 午餐·休息",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "yellow_white"
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        253,
+        260,
+        75,
+        68
+      ],
+      "source_sample_text": "干饭！补充能量！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          272,
+          322
+        ],
+        [
+          271,
+          339
+        ],
+        [
+          285,
+          326
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        239,
+        455,
+        86,
+        33
+      ],
+      "source_sample_text": "美食治愈一切！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        343,
+        191,
+        93,
+        53
+      ],
+      "source_sample_text": "下午 15:00 继续努力",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "orange_white"
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        350,
+        263,
+        85,
+        66
+      ],
+      "source_sample_text": "还有很多事情要完成！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          396,
+          322
+        ],
+        [
+          394,
+          339
+        ],
+        [
+          409,
+          326
+        ]
+      ]
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        347,
+        453,
+        87,
+        38
+      ],
+      "source_sample_text": "专注当下 一步步靠近目标！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        451,
+        191,
+        96,
+        53
+      ],
+      "source_sample_text": "晚上 21:00 放松·总结",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "purple_white"
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        478,
+        260,
+        70,
+        69
+      ],
+      "source_sample_text": "今天也很充实！明天继续加油！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          503,
+          323
+        ],
+        [
+          499,
+          340
+        ],
+        [
+          514,
+          325
+        ]
+      ]
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        455,
+        453,
+        86,
+        38
+      ],
+      "source_sample_text": "在喜欢的事里 给生活充电！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        30,
+        516,
+        127,
+        111
+      ],
+      "source_sample_text": "生活小结：按时起床✓ 认真学习✓ 运动/健康✓ 做喜欢的事✓ 成为更好的自己✓",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          15,
+          514
+        ],
+        [
+          151,
+          503
+        ],
+        [
+          168,
+          635
+        ],
+        [
+          29,
+          646
+        ]
+      ],
+      "carrier_id": "daily_checklist"
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        181,
+        542,
+        142,
+        64
+      ],
+      "source_sample_text": "平凡的日子里，也藏着大大的梦想！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "text_color": "white",
+      "rotation_degrees": -13
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        442,
+        518,
+        106,
+        57
+      ],
+      "source_sample_text": "明天，又是全新的一天！Good Night",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "text_color": "white",
+      "rotation_degrees": -12
+    }
+  ],
+  "features": [
+    "five_colored_time_columns",
+    "bottom_night_city_panel",
+    "checklist_note"
+  ],
+  "execution_blockers": [
+    "physical_carrier_perspective",
+    "rotated_display_text"
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        25,
+        101,
+        252,
+        61
+      ],
+      "source_sample_text": "平凡的一天",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text"
+    },
+    {
+      "bounds_px": [
+        42,
+        161,
+        243,
+        21
+      ],
+      "source_sample_text": "每一个努力的日子，都是闪闪发光的！",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text"
+    },
+    {
+      "bounds_px": [
+        362,
+        121,
+        179,
+        41
+      ],
+      "source_sample_text": "生活虽然平凡，但每个时刻都值得认真对待！",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text",
+      "rotation_degrees": -10
+    }
+  ],
+  "overlays": [],
+  "confidence": 0.85,
+  "notes": [],
+  "layout_id": "SB-044",
+  "source_size": [
+    555,
+    651
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：时间轴式，按照早→中→晚或过去→现在→未来沿页面顺序推进。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Chronological Timeline Progression, panels sequenced sequentially along time axis (morning to night or past to future). Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "42023ea464836694a24c774aba6a0873bb9dd1c4d209d2fd6ae8b25128498d98",
+  "preview_sha256": "eb84287f3252086093b4650f282a36661f3eb289628ed3ef15263db1aa69b303",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-044.webp",
+    "source_note_path": "source-notes/SB-044.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

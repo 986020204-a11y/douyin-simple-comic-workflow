@@ -1,0 +1,259 @@
+{
+  "content_roi_px": [
+    10,
+    70,
+    531,
+    582
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        10,
+        70,
+        267,
+        207
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        283,
+        70,
+        258,
+        207
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        10,
+        283,
+        267,
+        170
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        283,
+        283,
+        258,
+        170
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        10,
+        460,
+        267,
+        192
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        283,
+        460,
+        258,
+        192
+      ],
+      "role": "scene",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        127,
+        71,
+        143,
+        58
+      ],
+      "source_sample_text": "你真的决定要分手了吗？",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          142,
+          122
+        ],
+        [
+          132,
+          134
+        ],
+        [
+          164,
+          124
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        404,
+        71,
+        135,
+        64
+      ],
+      "source_sample_text": "是的。我已经想清楚了。",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          492,
+          126
+        ],
+        [
+          497,
+          141
+        ],
+        [
+          509,
+          127
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        149,
+        284,
+        123,
+        64
+      ],
+      "source_sample_text": "……为什么？我做错了什么？",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          185,
+          342
+        ],
+        [
+          197,
+          359
+        ],
+        [
+          206,
+          344
+        ]
+      ]
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        414,
+        285,
+        125,
+        73
+      ],
+      "source_sample_text": "不是你的错。只是……我不能再继续了。",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          480,
+          352
+        ],
+        [
+          487,
+          370
+        ],
+        [
+          500,
+          354
+        ]
+      ]
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        152,
+        461,
+        123,
+        80
+      ],
+      "source_sample_text": "……我明白了。谢谢你曾经真心对我。",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          179,
+          535
+        ],
+        [
+          182,
+          550
+        ],
+        [
+          195,
+          537
+        ]
+      ]
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        449,
+        460,
+        88,
+        62
+      ],
+      "source_sample_text": "……对不起。",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          463,
+          515
+        ],
+        [
+          459,
+          526
+        ],
+        [
+          475,
+          519
+        ]
+      ]
+    }
+  ],
+  "features": [
+    "six_rect_panels",
+    "alternating_shot_reverse_shot"
+  ],
+  "execution_blockers": [],
+  "text_zones": [],
+  "overlays": [],
+  "confidence": 0.86,
+  "notes": [],
+  "layout_id": "SB-025",
+  "source_size": [
+    557,
+    664
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：正反打，两个角色交替面对镜头出现，适合对话、争执和心理博弈。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Shot-Reverse-Shot, alternating character close-ups facing camera, perfect for dialogue, verbal sparring, and psychological duel. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "c451848d614ed5b24da83ccb0131bb2a7e90017248dce91019ae59711ecb02f7",
+  "preview_sha256": "bb86c8f8f1778d15e495fe88254ac28773a99652b746a113851eed99962c225e",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-025.webp",
+    "source_note_path": "source-notes/SB-025.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

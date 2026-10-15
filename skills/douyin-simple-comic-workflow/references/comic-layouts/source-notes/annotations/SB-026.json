@@ -1,0 +1,286 @@
+{
+  "content_roi_px": [
+    13,
+    72,
+    507,
+    581
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        13,
+        72,
+        401,
+        118
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        13,
+        199,
+        401,
+        136
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        13,
+        344,
+        401,
+        118
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        13,
+        470,
+        401,
+        183
+      ],
+      "role": "scene",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        365,
+        157,
+        133,
+        33
+      ],
+      "source_sample_text": "再坚持一下……！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "cross_panel_allowed": true
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        272,
+        205,
+        85,
+        53
+      ],
+      "source_sample_text": "咔…",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        361,
+        291,
+        129,
+        35
+      ],
+      "source_sample_text": "不能放弃……！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "cross_panel_allowed": true
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        303,
+        372,
+        76,
+        43
+      ],
+      "source_sample_text": "滴…",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        337,
+        429,
+        184,
+        33
+      ],
+      "source_sample_text": "这是我最后一次机会……",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "cross_panel_allowed": true
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        39,
+        473,
+        125,
+        61
+      ],
+      "source_sample_text": "我做到了！",
+      "kind": "emphasis",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          42,
+          480
+        ],
+        [
+          67,
+          479
+        ],
+        [
+          69,
+          470
+        ],
+        [
+          94,
+          477
+        ],
+        [
+          120,
+          473
+        ],
+        [
+          123,
+          486
+        ],
+        [
+          151,
+          482
+        ],
+        [
+          153,
+          500
+        ],
+        [
+          164,
+          511
+        ],
+        [
+          151,
+          515
+        ],
+        [
+          152,
+          533
+        ],
+        [
+          127,
+          527
+        ],
+        [
+          108,
+          535
+        ],
+        [
+          89,
+          529
+        ],
+        [
+          62,
+          535
+        ],
+        [
+          64,
+          521
+        ],
+        [
+          40,
+          530
+        ],
+        [
+          48,
+          505
+        ]
+      ]
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        247,
+        532,
+        143,
+        76
+      ],
+      "source_sample_text": "高考成绩单 总分：698",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          266,
+          514
+        ],
+        [
+          405,
+          537
+        ],
+        [
+          373,
+          651
+        ],
+        [
+          236,
+          630
+        ]
+      ],
+      "carrier_id": "score_sheet"
+    }
+  ],
+  "features": [
+    "four_horizontal_panels",
+    "three_detail_then_result",
+    "speech_overflows_image_rect",
+    "diegetic_score_sheet"
+  ],
+  "execution_blockers": [
+    "explicit_text_overflow_into_source_explanatory_margin",
+    "physical_carrier_perspective"
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        420,
+        80,
+        121,
+        563
+      ],
+      "type": "source_explanatory_sidebar",
+      "executable_story_text": false
+    }
+  ],
+  "overlays": [],
+  "confidence": 0.84,
+  "notes": [],
+  "layout_id": "SB-026",
+  "source_size": [
+    552,
+    664
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：三连特写，连续三个关键细节快速切换，例如眼睛→手指→按钮。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Triple Rapid Close-Ups, three consecutive rapid detail shots switching dynamically (e.g. eyes, finger, trigger). Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "dc3de42b20e8b1727ed5d4b44f40c557883a062abe3ee6825c76ac3313e602e8",
+  "preview_sha256": "5155c695ceead71f65111644147cf02417bd3f48eddd72215a51eeb0888d2619",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-026.webp",
+    "source_note_path": "source-notes/SB-026.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

@@ -1,0 +1,438 @@
+{
+  "roi": [
+    19,
+    55,
+    531,
+    620
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        19,
+        55,
+        263,
+        262
+      ],
+      "polygon_px": null,
+      "role": "clue"
+    },
+    {
+      "bounds_px": [
+        290,
+        55,
+        260,
+        262
+      ],
+      "polygon_px": null,
+      "role": "follow clue"
+    },
+    {
+      "bounds_px": [
+        19,
+        327,
+        263,
+        348
+      ],
+      "polygon_px": null,
+      "role": "open locker"
+    },
+    {
+      "bounds_px": [
+        290,
+        327,
+        260,
+        348
+      ],
+      "polygon_px": null,
+      "role": "surprise reveal"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        176,
+        75,
+        100,
+        66
+      ],
+      "source_sample": "咦？这是什么？",
+      "tail_tip_px": [
+        194,
+        149
+      ],
+      "tail_polygon_px": [
+        [
+          191,
+          135
+        ],
+        [
+          194,
+          149
+        ],
+        [
+          206,
+          138
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 1,
+      "shape": "physical_carrier",
+      "bounds_px": [
+        145,
+        195,
+        111,
+        87
+      ],
+      "source_sample": "去找三楼的蓝色柜子——有惊喜",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "note",
+      "carrier": {
+        "carrier_id": "paper_clue",
+        "polygon_px": [
+          [
+            148,
+            180
+          ],
+          [
+            279,
+            195
+          ],
+          [
+            250,
+            301
+          ],
+          [
+            123,
+            277
+          ]
+        ],
+        "writable_rect_px": [
+          145,
+          195,
+          111,
+          87
+        ]
+      }
+    },
+    {
+      "panel": 2,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        443,
+        83,
+        105,
+        58
+      ],
+      "source_sample": "就是这里吧…好紧张！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "thought",
+      "thought_dots_px": [
+        [
+          458,
+          144,
+          6,
+          5
+        ],
+        [
+          451,
+          152,
+          4,
+          4
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "shape": "physical_carrier",
+      "bounds_px": [
+        124,
+        434,
+        71,
+        51
+      ],
+      "source_sample": "生日快乐",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "note",
+      "carrier": {
+        "carrier_id": "locker_birthday_note",
+        "polygon_px": [
+          [
+            113,
+            427
+          ],
+          [
+            202,
+            411
+          ],
+          [
+            203,
+            482
+          ],
+          [
+            117,
+            496
+          ]
+        ],
+        "writable_rect_px": [
+          124,
+          434,
+          71,
+          51
+        ]
+      }
+    },
+    {
+      "panel": 3,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        34,
+        579,
+        94,
+        56
+      ],
+      "source_sample": "哇……！",
+      "tail_tip_px": [
+        47,
+        570
+      ],
+      "tail_polygon_px": [
+        [
+          40,
+          584
+        ],
+        [
+          47,
+          570
+        ],
+        [
+          55,
+          584
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 4,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        435,
+        346,
+        113,
+        131
+      ],
+      "source_sample": "原来是同学们给我的生日惊喜！好幸福……",
+      "tail_tip_px": [
+        429,
+        485
+      ],
+      "tail_polygon_px": [
+        [
+          443,
+          465
+        ],
+        [
+          429,
+          485
+        ],
+        [
+          456,
+          475
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 4,
+      "shape": "physical_carrier",
+      "bounds_px": [
+        405,
+        585,
+        128,
+        52
+      ],
+      "source_sample": "有你们在，每天都是特别的日子！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "note",
+      "carrier": {
+        "carrier_id": "held_thank_you_card",
+        "polygon_px": [
+          [
+            393,
+            575
+          ],
+          [
+            547,
+            565
+          ],
+          [
+            547,
+            653
+          ],
+          [
+            403,
+            664
+          ]
+        ],
+        "writable_rect_px": [
+          405,
+          585,
+          128,
+          52
+        ]
+      }
+    }
+  ],
+  "overlays": [
+    {
+      "type": "reading_arrow",
+      "bounds_px": [
+        254,
+        158,
+        65,
+        37
+      ],
+      "polygon_px": [
+        [
+          254,
+          168
+        ],
+        [
+          288,
+          168
+        ],
+        [
+          288,
+          159
+        ],
+        [
+          317,
+          178
+        ],
+        [
+          290,
+          195
+        ],
+        [
+          290,
+          184
+        ],
+        [
+          254,
+          184
+        ]
+      ],
+      "cross_panel_allowed": true
+    },
+    {
+      "type": "reading_arrow",
+      "bounds_px": [
+        186,
+        267,
+        221,
+        88
+      ],
+      "polygon_px": [
+        [
+          399,
+          266
+        ],
+        [
+          407,
+          282
+        ],
+        [
+          219,
+          340
+        ],
+        [
+          220,
+          353
+        ],
+        [
+          187,
+          345
+        ],
+        [
+          207,
+          323
+        ],
+        [
+          211,
+          332
+        ]
+      ],
+      "cross_panel_allowed": true
+    },
+    {
+      "type": "reading_arrow",
+      "bounds_px": [
+        255,
+        432,
+        66,
+        35
+      ],
+      "polygon_px": [
+        [
+          255,
+          442
+        ],
+        [
+          288,
+          442
+        ],
+        [
+          288,
+          433
+        ],
+        [
+          320,
+          450
+        ],
+        [
+          288,
+          467
+        ],
+        [
+          288,
+          457
+        ],
+        [
+          255,
+          457
+        ]
+      ],
+      "cross_panel_allowed": true
+    }
+  ],
+  "features": [
+    "physical_carrier",
+    "thought_dots",
+    "reading_arrow",
+    "cross_panel_overlay"
+  ],
+  "notes": [
+    "Red Z-route arrows are real source overlays; coordinates are manually traced.",
+    "Numbered title strips and ambient floor sign are source decorations rather than new-story bubbles."
+  ],
+  "layout_id": "SB-008",
+  "source_size_px": [
+    561,
+    684
+  ],
+  "preview_sha256": "ff6ff7f4ece7882f581c3c02c42db65865addce589b079dca59e868d69b46019",
+  "note_sha256": "2c477d72f2fdd263a3d72f774ab8b084efa7006bf2044f569ccf04705f14a3eb",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

@@ -1,0 +1,376 @@
+{
+  "roi": [
+    8,
+    61,
+    536,
+    591
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        8,
+        61,
+        294,
+        262
+      ],
+      "polygon_px": [
+        [
+          8,
+          61
+        ],
+        [
+          302,
+          61
+        ],
+        [
+          279,
+          202
+        ],
+        [
+          173,
+          224
+        ],
+        [
+          141,
+          284
+        ],
+        [
+          8,
+          323
+        ]
+      ],
+      "role": "spill setup"
+    },
+    {
+      "bounds_px": [
+        287,
+        61,
+        257,
+        148
+      ],
+      "polygon_px": [
+        [
+          310,
+          61
+        ],
+        [
+          544,
+          61
+        ],
+        [
+          544,
+          184
+        ],
+        [
+          287,
+          209
+        ]
+      ],
+      "role": "falling sugar cube"
+    },
+    {
+      "bounds_px": [
+        8,
+        191,
+        536,
+        281
+      ],
+      "polygon_px": [
+        [
+          279,
+          211
+        ],
+        [
+          544,
+          191
+        ],
+        [
+          544,
+          443
+        ],
+        [
+          306,
+          472
+        ],
+        [
+          8,
+          324
+        ],
+        [
+          142,
+          284
+        ],
+        [
+          176,
+          232
+        ]
+      ],
+      "role": "both reach"
+    },
+    {
+      "bounds_px": [
+        8,
+        331,
+        536,
+        204
+      ],
+      "polygon_px": [
+        [
+          8,
+          331
+        ],
+        [
+          544,
+          445
+        ],
+        [
+          8,
+          535
+        ]
+      ],
+      "role": "eye contact"
+    },
+    {
+      "bounds_px": [
+        8,
+        507,
+        268,
+        145
+      ],
+      "polygon_px": [
+        [
+          8,
+          540
+        ],
+        [
+          252,
+          507
+        ],
+        [
+          276,
+          652
+        ],
+        [
+          8,
+          652
+        ]
+      ],
+      "role": "lower-left closer romantic angle",
+      "parent_panel_id": "P04",
+      "z_index": 1,
+      "geometry_type": "inset_scene"
+    },
+    {
+      "bounds_px": [
+        264,
+        448,
+        280,
+        204
+      ],
+      "polygon_px": [
+        [
+          264,
+          505
+        ],
+        [
+          544,
+          448
+        ],
+        [
+          544,
+          652
+        ],
+        [
+          283,
+          652
+        ]
+      ],
+      "role": "coffee ending"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "ellipse",
+      "bounds_px": [
+        238,
+        96,
+        43,
+        50
+      ],
+      "source_sample": "啊！",
+      "tail_tip_px": [
+        235,
+        141
+      ],
+      "tail_polygon_px": [
+        [
+          243,
+          132
+        ],
+        [
+          235,
+          141
+        ],
+        [
+          247,
+          140
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 2,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        454,
+        117,
+        67,
+        42
+      ],
+      "source_sample": "哒嗒！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "sound_effect",
+      "rotation_deg": -12
+    },
+    {
+      "panel": 4,
+      "shape": "ellipse",
+      "bounds_px": [
+        128,
+        473,
+        44,
+        43
+      ],
+      "source_sample": "……",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 6,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        286,
+        533,
+        183,
+        89
+      ],
+      "source_sample": "也许，美好的相遇，就从一颗小小的糖块开始。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration",
+      "rotation_deg": -15
+    }
+  ],
+  "overlays": [
+    {
+      "type": "reading_route",
+      "bounds_px": [
+        120,
+        65,
+        270,
+        574
+      ],
+      "path_px": [
+        [
+          206,
+          66
+        ],
+        [
+          364,
+          103
+        ],
+        [
+          374,
+          145
+        ],
+        [
+          339,
+          177
+        ],
+        [
+          181,
+          223
+        ],
+        [
+          129,
+          258
+        ],
+        [
+          144,
+          300
+        ],
+        [
+          333,
+          370
+        ],
+        [
+          376,
+          406
+        ],
+        [
+          360,
+          443
+        ],
+        [
+          187,
+          518
+        ],
+        [
+          149,
+          555
+        ],
+        [
+          177,
+          592
+        ],
+        [
+          258,
+          626
+        ]
+      ],
+      "arrow_tip_px": [
+        267,
+        628
+      ],
+      "cross_panel_allowed": true,
+      "stroke_color": "pale_pink",
+      "stroke_width_px": 8,
+      "outline_color": "white"
+    }
+  ],
+  "features": [
+    "oblique_polygon",
+    "concave_polygon",
+    "reading_route",
+    "unboxed_text",
+    "inset_scene"
+  ],
+  "notes": [
+    "S-curve overlay obscures portions of scene edges; invisible border completion is inferred.",
+    "Tiny ellipsis bubble tail is visible to the left on enlarged preview; see explicit traced polygon correction below.",
+    "Five numbered labels describe six visible scene regions: a lower-left closer romantic angle is additional to the eye-contact closeup. Lower-left seam is partly hidden by label/route and must be independently reviewed.",
+    "Numbered white narrative-descriptor strips are excluded consistently with other storyboard explanation labels."
+  ],
+  "independent_review": {
+    "reviewer": "root",
+    "status": "source_contours_and_six_units_confirmed",
+    "method": "tools.view_image original preview",
+    "note": "Five labels, six actual image units; lower-left view has a visible white diagonal seam."
+  },
+  "layout_id": "SB-009",
+  "source_size_px": [
+    552,
+    659
+  ],
+  "preview_sha256": "e326738490b8066f26ca68827e32b0fc7ab5c8ed4a2def66c16db80b05ee22df",
+  "note_sha256": "3a5501da65dcccd538bfe63309cf00170d1d4c7baa6a1d1f0b174d838b297f93",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

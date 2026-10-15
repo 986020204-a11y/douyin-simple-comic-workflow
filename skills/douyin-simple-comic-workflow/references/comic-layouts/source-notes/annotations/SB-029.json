@@ -1,0 +1,706 @@
+{
+  "content_roi_px": [
+    14,
+    80,
+    531,
+    458
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        14,
+        80,
+        172,
+        220
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        194,
+        80,
+        172,
+        220
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        374,
+        80,
+        171,
+        220
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        14,
+        308,
+        172,
+        230
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        194,
+        308,
+        172,
+        230
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        374,
+        308,
+        171,
+        230
+      ],
+      "role": "scene",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        21,
+        130,
+        32,
+        25
+      ],
+      "source_sample_text": "…",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          34,
+          150
+        ],
+        [
+          43,
+          163
+        ],
+        [
+          43,
+          151
+        ]
+      ]
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        145,
+        130,
+        32,
+        25
+      ],
+      "source_sample_text": "…",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          154,
+          151
+        ],
+        [
+          157,
+          163
+        ],
+        [
+          165,
+          151
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        201,
+        130,
+        32,
+        25
+      ],
+      "source_sample_text": "…",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          214,
+          150
+        ],
+        [
+          223,
+          163
+        ],
+        [
+          223,
+          151
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        325,
+        130,
+        32,
+        25
+      ],
+      "source_sample_text": "…",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          334,
+          151
+        ],
+        [
+          337,
+          163
+        ],
+        [
+          345,
+          151
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        381,
+        130,
+        32,
+        25
+      ],
+      "source_sample_text": "…",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          394,
+          150
+        ],
+        [
+          403,
+          163
+        ],
+        [
+          403,
+          151
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        505,
+        130,
+        32,
+        25
+      ],
+      "source_sample_text": "…",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          514,
+          151
+        ],
+        [
+          517,
+          163
+        ],
+        [
+          525,
+          151
+        ]
+      ]
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        21,
+        358,
+        32,
+        25
+      ],
+      "source_sample_text": "…",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          34,
+          378
+        ],
+        [
+          43,
+          391
+        ],
+        [
+          43,
+          379
+        ]
+      ]
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        145,
+        358,
+        32,
+        25
+      ],
+      "source_sample_text": "…",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          154,
+          379
+        ],
+        [
+          157,
+          391
+        ],
+        [
+          165,
+          379
+        ]
+      ]
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        201,
+        358,
+        32,
+        25
+      ],
+      "source_sample_text": "…",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          214,
+          378
+        ],
+        [
+          223,
+          391
+        ],
+        [
+          223,
+          379
+        ]
+      ]
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        325,
+        358,
+        32,
+        25
+      ],
+      "source_sample_text": "…",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          334,
+          379
+        ],
+        [
+          337,
+          391
+        ],
+        [
+          345,
+          379
+        ]
+      ]
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        381,
+        359,
+        33,
+        25
+      ],
+      "source_sample_text": "…",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          392,
+          379
+        ],
+        [
+          399,
+          391
+        ],
+        [
+          402,
+          379
+        ]
+      ]
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        440,
+        357,
+        66,
+        57
+      ],
+      "source_sample_text": "阿嚏！",
+      "kind": "emphasis",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          440,
+          368
+        ],
+        [
+          456,
+          368
+        ],
+        [
+          460,
+          359
+        ],
+        [
+          473,
+          364
+        ],
+        [
+          489,
+          354
+        ],
+        [
+          490,
+          365
+        ],
+        [
+          503,
+          360
+        ],
+        [
+          502,
+          377
+        ],
+        [
+          510,
+          383
+        ],
+        [
+          499,
+          390
+        ],
+        [
+          498,
+          402
+        ],
+        [
+          484,
+          402
+        ],
+        [
+          470,
+          416
+        ],
+        [
+          469,
+          405
+        ],
+        [
+          450,
+          410
+        ],
+        [
+          453,
+          395
+        ],
+        [
+          438,
+          396
+        ],
+        [
+          445,
+          381
+        ]
+      ]
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        515,
+        380,
+        25,
+        25
+      ],
+      "source_sample_text": "！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          522,
+          401
+        ],
+        [
+          520,
+          414
+        ],
+        [
+          529,
+          402
+        ]
+      ]
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        76,
+        92,
+        45,
+        27
+      ],
+      "source_sample_text": "1",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          70,
+          88
+        ],
+        [
+          126,
+          88
+        ],
+        [
+          126,
+          120
+        ],
+        [
+          70,
+          120
+        ]
+      ],
+      "carrier_id": "elevator_display_1"
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        256,
+        92,
+        45,
+        27
+      ],
+      "source_sample_text": "2",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          250,
+          88
+        ],
+        [
+          306,
+          88
+        ],
+        [
+          306,
+          120
+        ],
+        [
+          250,
+          120
+        ]
+      ],
+      "carrier_id": "elevator_display_2"
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        436,
+        92,
+        45,
+        27
+      ],
+      "source_sample_text": "3",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          430,
+          88
+        ],
+        [
+          486,
+          88
+        ],
+        [
+          486,
+          120
+        ],
+        [
+          430,
+          120
+        ]
+      ],
+      "carrier_id": "elevator_display_3"
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        76,
+        320,
+        45,
+        27
+      ],
+      "source_sample_text": "4",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          70,
+          316
+        ],
+        [
+          126,
+          316
+        ],
+        [
+          126,
+          348
+        ],
+        [
+          70,
+          348
+        ]
+      ],
+      "carrier_id": "elevator_display_4"
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        256,
+        320,
+        45,
+        27
+      ],
+      "source_sample_text": "5",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          250,
+          316
+        ],
+        [
+          306,
+          316
+        ],
+        [
+          306,
+          348
+        ],
+        [
+          250,
+          348
+        ]
+      ],
+      "carrier_id": "elevator_display_5"
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        436,
+        320,
+        45,
+        27
+      ],
+      "source_sample_text": "6",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          430,
+          316
+        ],
+        [
+          486,
+          316
+        ],
+        [
+          486,
+          348
+        ],
+        [
+          430,
+          348
+        ]
+      ],
+      "carrier_id": "elevator_display_6"
+    }
+  ],
+  "features": [
+    "static_repeated_composition",
+    "elevator_floor_diegetic_digits",
+    "final_reaction_breaks_repetition"
+  ],
+  "execution_blockers": [],
+  "text_zones": [
+    {
+      "bounds_px": [
+        16,
+        554,
+        529,
+        69
+      ],
+      "type": "source_explanatory_footer",
+      "executable_story_text": false
+    }
+  ],
+  "overlays": [],
+  "confidence": 0.87,
+  "notes": [],
+  "layout_id": "SB-029",
+  "source_size": [
+    559,
+    643
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：静止重复，连续几格几乎不变，只改变极小细节，适合尴尬、冷笑话和停顿。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Static Panel Repetition, successive panels nearly identical with minimal shift, creating deadpan comedy, awkward pause, and comedic timing. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "6007edd1968455127257e2238d64c3c0c114a9520d10947ee4bb1ee330f1c4ab",
+  "preview_sha256": "3b17da4337e59c436daf2580b0bb5fea91c5ec1fb6c049e09fd956a7e969b449",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-029.webp",
+    "source_note_path": "source-notes/SB-029.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

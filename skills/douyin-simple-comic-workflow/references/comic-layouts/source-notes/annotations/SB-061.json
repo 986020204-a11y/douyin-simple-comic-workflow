@@ -1,0 +1,373 @@
+{
+  "layout_id": "SB-061",
+  "source_size": [
+    544,
+    664
+  ],
+  "preview_sha256": "104a037d62dff982130dae269ae68646bca1e53e1ef653fcbbd8444fcd254403",
+  "note_sha256": "a3f3165aa9004e72d26c426d5e3bf458042095e7b5a0fbe46868dbd74609b12b",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 84,
+  "panels": [
+    {
+      "bounds_px": [
+        10,
+        85,
+        252,
+        573
+      ],
+      "role": "mountain foot and continuous ascent vista",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 1
+    },
+    {
+      "bounds_px": [
+        268,
+        85,
+        271,
+        130
+      ],
+      "role": "halfway challenge",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 2
+    },
+    {
+      "bounds_px": [
+        268,
+        221,
+        271,
+        131
+      ],
+      "role": "waterfall",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 3
+    },
+    {
+      "bounds_px": [
+        268,
+        359,
+        271,
+        121
+      ],
+      "role": "near summit",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 4
+    },
+    {
+      "bounds_px": [
+        268,
+        486,
+        271,
+        172
+      ],
+      "role": "summit",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 5
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        17,
+        137,
+        81,
+        95
+      ],
+      "sample_text": "山很高，但我想去看看山顶的风景！",
+      "shape": "rect",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        18,
+        337,
+        134,
+        66
+      ],
+      "sample_text": "向上，遇见更好的自己！",
+      "shape": "display_text",
+      "text_kind": "emphasis",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        444,
+        130,
+        94,
+        76
+      ],
+      "sample_text": "好累……但不能放弃！再往上！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            448,
+            173
+          ],
+          [
+            433,
+            183
+          ],
+          [
+            450,
+            185
+          ]
+        ],
+        "anchor_px": [
+          433,
+          183
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        440,
+        255,
+        96,
+        78
+      ],
+      "sample_text": "水雾好大！感觉整个人都被洗涤了！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            444,
+            294
+          ],
+          [
+            431,
+            304
+          ],
+          [
+            446,
+            307
+          ]
+        ],
+        "anchor_px": [
+          431,
+          304
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        429,
+        398,
+        99,
+        76
+      ],
+      "sample_text": "快到了……看到了！真的好美！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            432,
+            432
+          ],
+          [
+            416,
+            441
+          ],
+          [
+            433,
+            445
+          ]
+        ],
+        "anchor_px": [
+          416,
+          441
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        405,
+        514,
+        103,
+        89
+      ],
+      "sample_text": "我做到了！原来坚持真的能看到不一样的风景！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            410,
+            547
+          ],
+          [
+            395,
+            558
+          ],
+          [
+            410,
+            561
+          ]
+        ],
+        "anchor_px": [
+          395,
+          558
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        465,
+        605,
+        73,
+        49
+      ],
+      "sample_text": "每一步都算数！",
+      "shape": "display_text",
+      "text_kind": "emphasis",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        17,
+        95,
+        99,
+        25
+      ],
+      "sample_text": "1.山脚出发",
+      "kind": "panel_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        273,
+        89,
+        99,
+        25
+      ],
+      "sample_text": "2.半山挑战",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        273,
+        224,
+        99,
+        25
+      ],
+      "sample_text": "3.穿过瀑布",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        273,
+        362,
+        101,
+        25
+      ],
+      "sample_text": "4.接近山顶",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        273,
+        489,
+        72,
+        24
+      ],
+      "sample_text": "5.登顶",
+      "kind": "panel_label",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        27,
+        480,
+        39,
+        142
+      ],
+      "sample_text": "朝梦而上",
+      "kind": "physical_carrier",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred",
+      "carrier_kind": "wood_sign"
+    }
+  ],
+  "observed_features": [
+    "one tall left panel plus four stacked right panels",
+    "vertical physical wood sign"
+  ],
+  "uncertainties": [
+    "Exact sign writable polygon and perspective require carrier measurement."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

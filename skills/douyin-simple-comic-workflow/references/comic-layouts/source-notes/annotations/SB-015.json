@@ -1,0 +1,308 @@
+{
+  "roi": [
+    6,
+    106,
+    542,
+    512
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        6,
+        106,
+        134,
+        512
+      ],
+      "polygon_px": null,
+      "role": "mix ingredients"
+    },
+    {
+      "bounds_px": [
+        145,
+        106,
+        132,
+        512
+      ],
+      "polygon_px": null,
+      "role": "bake"
+    },
+    {
+      "bounds_px": [
+        281,
+        106,
+        129,
+        512
+      ],
+      "polygon_px": null,
+      "role": "anticipate"
+    },
+    {
+      "bounds_px": [
+        416,
+        106,
+        132,
+        512
+      ],
+      "polygon_px": null,
+      "role": "burnt outcome"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "physical_carrier",
+      "bounds_px": [
+        20,
+        123,
+        200,
+        51
+      ],
+      "source_sample": "小美的饼干挑战——从期待到焦黑……",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "display",
+      "cross_panel_allowed": true,
+      "allowed_cross_panel_ids": [
+        "P02"
+      ],
+      "carrier": {
+        "carrier_id": "overlaid_title_card",
+        "polygon_px": [
+          [
+            7,
+            120
+          ],
+          [
+            229,
+            100
+          ],
+          [
+            237,
+            179
+          ],
+          [
+            17,
+            196
+          ]
+        ],
+        "writable_rect_px": [
+          20,
+          123,
+          200,
+          51
+        ]
+      }
+    },
+    {
+      "panel": 1,
+      "shape": "ellipse",
+      "bounds_px": [
+        88,
+        262,
+        39,
+        36
+      ],
+      "source_sample": "♪",
+      "tail_tip_px": [
+        106,
+        308
+      ],
+      "tail_polygon_px": [
+        [
+          99,
+          291
+        ],
+        [
+          106,
+          308
+        ],
+        [
+          111,
+          294
+        ]
+      ],
+      "text_type": "sound_effect"
+    },
+    {
+      "panel": 2,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        162,
+        255,
+        91,
+        80
+      ],
+      "source_sample": "放进烤箱！一定会很成功！",
+      "tail_tip_px": [
+        208,
+        347
+      ],
+      "tail_polygon_px": [
+        [
+          201,
+          329
+        ],
+        [
+          208,
+          347
+        ],
+        [
+          216,
+          331
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 3,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        306,
+        287,
+        97,
+        75
+      ],
+      "source_sample": "哇！看起来好棒！",
+      "tail_tip_px": [
+        358,
+        373
+      ],
+      "tail_polygon_px": [
+        [
+          349,
+          356
+        ],
+        [
+          358,
+          373
+        ],
+        [
+          367,
+          357
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 4,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        439,
+        266,
+        90,
+        69
+      ],
+      "source_sample": "啊——！烧焦了！",
+      "tail_tip_px": [
+        484,
+        344
+      ],
+      "tail_polygon_px": [
+        [
+          475,
+          329
+        ],
+        [
+          484,
+          344
+        ],
+        [
+          491,
+          331
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 1,
+      "shape": "rect",
+      "bounds_px": [
+        8,
+        560,
+        131,
+        57
+      ],
+      "source_sample": "①准备材料 好期待！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "caption"
+    },
+    {
+      "panel": 2,
+      "shape": "rect",
+      "bounds_px": [
+        147,
+        560,
+        128,
+        57
+      ],
+      "source_sample": "②开始烘烤 静静等待……",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "caption"
+    },
+    {
+      "panel": 3,
+      "shape": "rect",
+      "bounds_px": [
+        283,
+        560,
+        126,
+        57
+      ],
+      "source_sample": "③满心期待 快好了……",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "caption"
+    },
+    {
+      "panel": 4,
+      "shape": "rect",
+      "bounds_px": [
+        418,
+        560,
+        128,
+        57
+      ],
+      "source_sample": "④结果出炉 下次再来……",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "caption"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "emotion_scribble",
+      "bounds_px": [
+        461,
+        210,
+        41,
+        47
+      ],
+      "type_detail": "nonlinguistic_black_scribble"
+    }
+  ],
+  "features": [
+    "shared_canvas_background",
+    "cross_panel_text",
+    "physical_carrier"
+  ],
+  "notes": [
+    "Kitchen geometry continues across all four panes while character appears at four different times.",
+    "Bottom strips contain actual sample narrative/caption text, unlike the standalone explanatory labels in other sources.",
+    "Top card is a graphical title card, not an inferred in-world held sign; carrier subtype overlay_card is explicit."
+  ],
+  "layout_id": "SB-015",
+  "source_size_px": [
+    559,
+    632
+  ],
+  "preview_sha256": "9227770fa48e8a574fb1d502996848525ba46e7817c822c46cbc1b695e9af6c7",
+  "note_sha256": "b3d6dd9856a092c3c6779db06ae0e776a2cea47261ff0d3f852375c87f382f95",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

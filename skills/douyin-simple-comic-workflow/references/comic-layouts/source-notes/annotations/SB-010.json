@@ -1,0 +1,613 @@
+{
+  "roi": [
+    18,
+    62,
+    536,
+    588
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        18,
+        62,
+        354,
+        234
+      ],
+      "polygon_px": [
+        [
+          18,
+          62
+        ],
+        [
+          372,
+          62
+        ],
+        [
+          339,
+          181
+        ],
+        [
+          286,
+          181
+        ],
+        [
+          244,
+          186
+        ],
+        [
+          202,
+          199
+        ],
+        [
+          159,
+          224
+        ],
+        [
+          110,
+          270
+        ],
+        [
+          18,
+          296
+        ]
+      ],
+      "role": "entrance"
+    },
+    {
+      "bounds_px": [
+        345,
+        62,
+        209,
+        273
+      ],
+      "polygon_px": [
+        [
+          379,
+          62
+        ],
+        [
+          554,
+          62
+        ],
+        [
+          554,
+          331
+        ],
+        [
+          512,
+          335
+        ],
+        [
+          493,
+          292
+        ],
+        [
+          460,
+          250
+        ],
+        [
+          423,
+          217
+        ],
+        [
+          383,
+          193
+        ],
+        [
+          345,
+          182
+        ]
+      ],
+      "role": "wall clue"
+    },
+    {
+      "bounds_px": [
+        398,
+        340,
+        156,
+        310
+      ],
+      "polygon_px": [
+        [
+          417,
+          346
+        ],
+        [
+          554,
+          340
+        ],
+        [
+          554,
+          650
+        ],
+        [
+          508,
+          650
+        ],
+        [
+          453,
+          550
+        ],
+        [
+          416,
+          480
+        ],
+        [
+          398,
+          447
+        ],
+        [
+          409,
+          410
+        ],
+        [
+          416,
+          375
+        ]
+      ],
+      "role": "corner clue"
+    },
+    {
+      "bounds_px": [
+        143,
+        457,
+        366,
+        193
+      ],
+      "polygon_px": [
+        [
+          396,
+          457
+        ],
+        [
+          509,
+          650
+        ],
+        [
+          143,
+          650
+        ],
+        [
+          238,
+          494
+        ],
+        [
+          281,
+          507
+        ],
+        [
+          324,
+          506
+        ],
+        [
+          365,
+          489
+        ]
+      ],
+      "role": "downward path"
+    },
+    {
+      "bounds_px": [
+        18,
+        229,
+        215,
+        421
+      ],
+      "polygon_px": [
+        [
+          18,
+          304
+        ],
+        [
+          111,
+          274
+        ],
+        [
+          142,
+          249
+        ],
+        [
+          168,
+          229
+        ],
+        [
+          140,
+          266
+        ],
+        [
+          119,
+          309
+        ],
+        [
+          113,
+          356
+        ],
+        [
+          122,
+          404
+        ],
+        [
+          145,
+          447
+        ],
+        [
+          177,
+          479
+        ],
+        [
+          233,
+          496
+        ],
+        [
+          137,
+          650
+        ],
+        [
+          18,
+          650
+        ]
+      ],
+      "role": "last path"
+    },
+    {
+      "bounds_px": [
+        115,
+        222,
+        301,
+        286
+      ],
+      "polygon_px": null,
+      "role": "central treasure",
+      "geometry_type": "ellipse",
+      "curve_source": "ellipse"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "physical_carrier",
+      "bounds_px": [
+        214,
+        91,
+        80,
+        67
+      ],
+      "source_sample": "真正的宝藏藏在更深处。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "note",
+      "carrier": {
+        "carrier_id": "entrance_stone_inscription",
+        "polygon_px": [
+          [
+            201,
+            78
+          ],
+          [
+            308,
+            82
+          ],
+          [
+            308,
+            170
+          ],
+          [
+            204,
+            167
+          ]
+        ],
+        "writable_rect_px": [
+          214,
+          91,
+          80,
+          67
+        ]
+      }
+    },
+    {
+      "panel": 2,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        462,
+        152,
+        74,
+        50
+      ],
+      "source_sample": "顺着螺旋寻找真相。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 3,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        462,
+        444,
+        76,
+        46
+      ],
+      "source_sample": "放下恐惧，继续前行。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration",
+      "rotation_deg": -8
+    },
+    {
+      "panel": 4,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        321,
+        579,
+        135,
+        48
+      ],
+      "source_sample": "最深的黑暗，孕育最珍贵的光。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration",
+      "rotation_deg": -12
+    },
+    {
+      "panel": 6,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        290,
+        436,
+        93,
+        47
+      ],
+      "source_sample": "所有的旅程都指向内心的光。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration",
+      "rotation_deg": -8
+    }
+  ],
+  "overlays": [
+    {
+      "type": "reading_arrow",
+      "bounds_px": [
+        344,
+        151,
+        53,
+        31
+      ],
+      "polygon_px": [
+        [
+          347,
+          155
+        ],
+        [
+          379,
+          164
+        ],
+        [
+          381,
+          153
+        ],
+        [
+          395,
+          177
+        ],
+        [
+          369,
+          180
+        ],
+        [
+          374,
+          171
+        ]
+      ],
+      "cross_panel_allowed": true
+    },
+    {
+      "type": "reading_arrow",
+      "bounds_px": [
+        505,
+        249,
+        33,
+        66
+      ],
+      "polygon_px": [
+        [
+          509,
+          250
+        ],
+        [
+          521,
+          278
+        ],
+        [
+          522,
+          294
+        ],
+        [
+          511,
+          293
+        ],
+        [
+          528,
+          314
+        ],
+        [
+          538,
+          288
+        ],
+        [
+          531,
+          290
+        ],
+        [
+          530,
+          273
+        ],
+        [
+          517,
+          248
+        ]
+      ],
+      "cross_panel_allowed": true
+    },
+    {
+      "type": "reading_arrow",
+      "bounds_px": [
+        348,
+        472,
+        46,
+        43
+      ],
+      "polygon_px": [
+        [
+          351,
+          508
+        ],
+        [
+          376,
+          483
+        ],
+        [
+          367,
+          480
+        ],
+        [
+          394,
+          474
+        ],
+        [
+          387,
+          501
+        ],
+        [
+          382,
+          493
+        ],
+        [
+          359,
+          515
+        ]
+      ],
+      "cross_panel_allowed": true
+    },
+    {
+      "type": "reading_arrow",
+      "bounds_px": [
+        188,
+        574,
+        73,
+        33
+      ],
+      "polygon_px": [
+        [
+          191,
+          591
+        ],
+        [
+          223,
+          598
+        ],
+        [
+          246,
+          593
+        ],
+        [
+          239,
+          583
+        ],
+        [
+          261,
+          586
+        ],
+        [
+          246,
+          607
+        ],
+        [
+          246,
+          600
+        ],
+        [
+          222,
+          606
+        ],
+        [
+          189,
+          598
+        ]
+      ],
+      "cross_panel_allowed": true
+    },
+    {
+      "type": "reading_arrow",
+      "bounds_px": [
+        65,
+        303,
+        32,
+        114
+      ],
+      "polygon_px": [
+        [
+          65,
+          415
+        ],
+        [
+          67,
+          354
+        ],
+        [
+          79,
+          319
+        ],
+        [
+          70,
+          318
+        ],
+        [
+          97,
+          303
+        ],
+        [
+          96,
+          332
+        ],
+        [
+          87,
+          326
+        ],
+        [
+          77,
+          358
+        ],
+        [
+          76,
+          415
+        ]
+      ],
+      "cross_panel_allowed": true
+    }
+  ],
+  "features": [
+    "curved_panel_mask",
+    "spiral_reading",
+    "reading_arrow",
+    "physical_carrier"
+  ],
+  "notes": [
+    "Center is an observed elliptical frame, not a rectangular inset. Its ellipse bounds are manually measured, and exact source curve fitting remains inferred.",
+    "Outer spiral separators contain curved spans; manual multi-vertex approximations remain inferred and need contour review.",
+    "Six numbered white labels are explanatory source labels; stone inscription is a true physical carrier."
+  ],
+  "layout_id": "SB-010",
+  "source_size_px": [
+    561,
+    659
+  ],
+  "preview_sha256": "8a273ca3d05558cf56f689c11a1a49425be0ee4335e2710569e86cfd27e6136e",
+  "note_sha256": "2c81fa1f1ee5599f5a226ba08e9c460d9656a95143e7e08cb71459478a3bad97",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

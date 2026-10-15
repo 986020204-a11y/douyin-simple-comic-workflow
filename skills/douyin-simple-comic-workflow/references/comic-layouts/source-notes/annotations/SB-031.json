@@ -1,0 +1,116 @@
+{
+  "content_roi_px": [
+    14,
+    82,
+    532,
+    501
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        14,
+        82,
+        532,
+        263
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        14,
+        356,
+        532,
+        227
+      ],
+      "role": "scene",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        201,
+        98,
+        232,
+        148
+      ],
+      "source_sample_text": "阿嚏——！！！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        409,
+        443,
+        89,
+        52
+      ],
+      "source_sample_text": "……不好意思……",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          415,
+          482
+        ],
+        [
+          410,
+          497
+        ],
+        [
+          428,
+          489
+        ]
+      ]
+    }
+  ],
+  "features": [
+    "two_horizontal_panels",
+    "intentional_large_negative_space_in_second_panel",
+    "tiny_subject_in_lower_panel"
+  ],
+  "execution_blockers": [],
+  "text_zones": [
+    {
+      "bounds_px": [
+        15,
+        595,
+        531,
+        70
+      ],
+      "type": "source_explanatory_footer",
+      "executable_story_text": false
+    }
+  ],
+  "overlays": [],
+  "confidence": 0.92,
+  "notes": [
+    "The large white field is observed narrative panel P02, not a disposable instructional header."
+  ],
+  "layout_id": "SB-031",
+  "source_size": [
+    559,
+    682
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：爆发后留白，强烈动作之后用空白和小人物收尾，放大荒诞或情绪余韵。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Post-Climax Negative Space, intense explosive action followed by generous white space and tiny silhouette, emphasizing absurdity or lingering mood. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "1f7dca77108f1c99458b1ef8c9ef8c11b048b397c37c10ea5beac7638ee73855",
+  "preview_sha256": "15472d9bed0ba9c5cd56c6398ad728a6b197b39a58760bb4dd12d875a9137f18",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-031.webp",
+    "source_note_path": "source-notes/SB-031.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

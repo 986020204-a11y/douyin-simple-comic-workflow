@@ -1,0 +1,191 @@
+{
+  "roi": [
+    10,
+    75,
+    532,
+    534
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        10,
+        75,
+        532,
+        118
+      ],
+      "polygon_px": null,
+      "role": "suspicion eyes"
+    },
+    {
+      "bounds_px": [
+        10,
+        200,
+        532,
+        131
+      ],
+      "polygon_px": null,
+      "role": "hesitation eyes"
+    },
+    {
+      "bounds_px": [
+        10,
+        338,
+        532,
+        129
+      ],
+      "polygon_px": null,
+      "role": "realization eyes"
+    },
+    {
+      "bounds_px": [
+        10,
+        474,
+        532,
+        135
+      ],
+      "polygon_px": null,
+      "role": "tears eyes"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        424,
+        119,
+        118,
+        73
+      ],
+      "source_sample": "你确定是你做的？",
+      "tail_tip_px": [
+        415,
+        184
+      ],
+      "tail_polygon_px": [
+        [
+          432,
+          171
+        ],
+        [
+          415,
+          184
+        ],
+        [
+          438,
+          183
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 2,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        404,
+        254,
+        138,
+        75
+      ],
+      "source_sample": "我……我不确定……",
+      "tail_tip_px": [
+        400,
+        325
+      ],
+      "tail_polygon_px": [
+        [
+          415,
+          314
+        ],
+        [
+          400,
+          325
+        ],
+        [
+          425,
+          325
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 3,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        428,
+        397,
+        114,
+        68
+      ],
+      "source_sample": "原来……是这样！",
+      "tail_tip_px": [
+        425,
+        464
+      ],
+      "tail_polygon_px": [
+        [
+          438,
+          452
+        ],
+        [
+          425,
+          464
+        ],
+        [
+          449,
+          462
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 4,
+      "shape": "ellipse",
+      "bounds_px": [
+        423,
+        540,
+        119,
+        64
+      ],
+      "source_sample": "对不起……",
+      "tail_tip_px": [
+        415,
+        595
+      ],
+      "tail_polygon_px": [
+        [
+          433,
+          584
+        ],
+        [
+          415,
+          595
+        ],
+        [
+          441,
+          596
+        ]
+      ],
+      "text_type": "dialogue"
+    }
+  ],
+  "features": [
+    "eye_closeup_chain"
+  ],
+  "notes": [
+    "All four actual speech bodies exist; numbered emotion strips are excluded explanation."
+  ],
+  "layout_id": "SB-021",
+  "source_size_px": [
+    552,
+    631
+  ],
+  "preview_sha256": "77076f2927f3fb83c6d071fcc5fd97044ce5b892ddf571ea5a1844d0bdabdff7",
+  "note_sha256": "32f565273276aa1c25ef545a8120ae4351b4c02a3d1f80187f195d3c650cf160",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

@@ -1,0 +1,436 @@
+{
+  "layout_id": "SB-060",
+  "source_size": [
+    555,
+    688
+  ],
+  "preview_sha256": "8b05625f83a4bca9d059d11ac98e83ed02ffd4e084fa2a459dfe0947359351fb",
+  "note_sha256": "c47c6795d9f4db233bd0a6357b7d2d17082c8efccd99aba3c94241130b155297",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 61,
+  "panels": [
+    {
+      "bounds_px": [
+        13,
+        126,
+        540,
+        103
+      ],
+      "role": "departure",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 1
+    },
+    {
+      "bounds_px": [
+        13,
+        234,
+        540,
+        112
+      ],
+      "role": "on road",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 2
+    },
+    {
+      "bounds_px": [
+        13,
+        352,
+        540,
+        128
+      ],
+      "role": "meeting",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 3
+    },
+    {
+      "bounds_px": [
+        13,
+        486,
+        245,
+        198
+      ],
+      "role": "continue together",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 4
+    },
+    {
+      "bounds_px": [
+        264,
+        486,
+        289,
+        198
+      ],
+      "role": "farther view",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 5
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        157,
+        131,
+        123,
+        49
+      ],
+      "sample_text": "出发！去看看外面的世界！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            160,
+            158
+          ],
+          [
+            148,
+            166
+          ],
+          [
+            162,
+            168
+          ]
+        ],
+        "anchor_px": [
+          148,
+          166
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        200,
+        254,
+        102,
+        46
+      ],
+      "sample_text": "一路上有美景，也有疲惫……",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            205,
+            279
+          ],
+          [
+            190,
+            285
+          ],
+          [
+            206,
+            289
+          ]
+        ],
+        "anchor_px": [
+          190,
+          285
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        172,
+        359,
+        91,
+        49
+      ],
+      "sample_text": "你好！也在旅行吗？",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            177,
+            390
+          ],
+          [
+            167,
+            402
+          ],
+          [
+            183,
+            398
+          ]
+        ],
+        "anchor_px": [
+          167,
+          402
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        320,
+        359,
+        101,
+        77
+      ],
+      "sample_text": "是啊！风景很好，一路上认识了很多有趣的人！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            324,
+            402
+          ],
+          [
+            310,
+            412
+          ],
+          [
+            325,
+            414
+          ]
+        ],
+        "anchor_px": [
+          310,
+          412
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        100,
+        508,
+        92,
+        56
+      ],
+      "sample_text": "有你同行，旅途更精彩！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            135,
+            557
+          ],
+          [
+            136,
+            573
+          ],
+          [
+            147,
+            561
+          ]
+        ],
+        "anchor_px": [
+          136,
+          573
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        373,
+        510,
+        113,
+        63
+      ],
+      "sample_text": "前方还有更多值得期待的风景！我们继续走吧！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            398,
+            567
+          ],
+          [
+            394,
+            582
+          ],
+          [
+            409,
+            570
+          ]
+        ],
+        "anchor_px": [
+          394,
+          582
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        425,
+        604,
+        121,
+        49
+      ],
+      "sample_text": "没有终点，只有更广阔的世界。",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        24,
+        67,
+        211,
+        49
+      ],
+      "sample_text": "一路向前",
+      "kind": "page_furniture",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred",
+      "font_style": "brush_calligraphy"
+    },
+    {
+      "bounds_px": [
+        240,
+        86,
+        213,
+        22
+      ],
+      "sample_text": "看更大的世界，也遇见更好的自己。",
+      "kind": "page_furniture",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        19,
+        130,
+        55,
+        22
+      ],
+      "sample_text": "1.出发",
+      "kind": "panel_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        19,
+        238,
+        54,
+        22
+      ],
+      "sample_text": "2.路上",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        19,
+        355,
+        55,
+        23
+      ],
+      "sample_text": "3.遇见",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        19,
+        489,
+        93,
+        23
+      ],
+      "sample_text": "4.继续前行",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        271,
+        489,
+        96,
+        23
+      ],
+      "sample_text": "5.更远的风景",
+      "kind": "panel_label",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        487,
+        139,
+        62,
+        43
+      ],
+      "sample_text": "起点 从这里开始",
+      "kind": "physical_carrier",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred",
+      "carrier_kind": "wood_sign"
+    }
+  ],
+  "observed_features": [
+    "three full-width rows then two bottom panels",
+    "continuous riverbank motif across panels"
+  ],
+  "uncertainties": [
+    "Horizontal-scroll name does not make the five bordered panels one image unit."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

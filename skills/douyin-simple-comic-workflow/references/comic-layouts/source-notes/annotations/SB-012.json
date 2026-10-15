@@ -1,0 +1,470 @@
+{
+  "roi": [
+    15,
+    71,
+    538,
+    586
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        15,
+        71,
+        214,
+        207
+      ],
+      "polygon_px": [
+        [
+          15,
+          71
+        ],
+        [
+          187,
+          71
+        ],
+        [
+          229,
+          244
+        ],
+        [
+          193,
+          278
+        ],
+        [
+          15,
+          239
+        ]
+      ],
+      "role": "eye memory"
+    },
+    {
+      "bounds_px": [
+        195,
+        71,
+        213,
+        177
+      ],
+      "polygon_px": [
+        [
+          195,
+          71
+        ],
+        [
+          343,
+          71
+        ],
+        [
+          408,
+          163
+        ],
+        [
+          375,
+          216
+        ],
+        [
+          237,
+          248
+        ]
+      ],
+      "role": "headlights"
+    },
+    {
+      "bounds_px": [
+        353,
+        71,
+        200,
+        231
+      ],
+      "polygon_px": [
+        [
+          353,
+          71
+        ],
+        [
+          553,
+          71
+        ],
+        [
+          553,
+          250
+        ],
+        [
+          425,
+          302
+        ],
+        [
+          383,
+          218
+        ],
+        [
+          415,
+          164
+        ]
+      ],
+      "role": "crash"
+    },
+    {
+      "bounds_px": [
+        15,
+        247,
+        232,
+        248
+      ],
+      "polygon_px": [
+        [
+          15,
+          247
+        ],
+        [
+          194,
+          287
+        ],
+        [
+          247,
+          385
+        ],
+        [
+          209,
+          469
+        ],
+        [
+          110,
+          495
+        ],
+        [
+          15,
+          487
+        ]
+      ],
+      "role": "phone"
+    },
+    {
+      "bounds_px": [
+        203,
+        223,
+        217,
+        264
+      ],
+      "polygon_px": [
+        [
+          241,
+          255
+        ],
+        [
+          377,
+          223
+        ],
+        [
+          420,
+          310
+        ],
+        [
+          354,
+          487
+        ],
+        [
+          211,
+          459
+        ],
+        [
+          250,
+          385
+        ],
+        [
+          203,
+          286
+        ]
+      ],
+      "role": "hooded figure"
+    },
+    {
+      "bounds_px": [
+        360,
+        257,
+        193,
+        277
+      ],
+      "polygon_px": [
+        [
+          427,
+          310
+        ],
+        [
+          553,
+          257
+        ],
+        [
+          553,
+          534
+        ],
+        [
+          360,
+          492
+        ]
+      ],
+      "role": "red umbrella"
+    },
+    {
+      "bounds_px": [
+        15,
+        479,
+        257,
+        178
+      ],
+      "polygon_px": [
+        [
+          15,
+          496
+        ],
+        [
+          107,
+          504
+        ],
+        [
+          209,
+          479
+        ],
+        [
+          272,
+          538
+        ],
+        [
+          205,
+          657
+        ],
+        [
+          15,
+          657
+        ]
+      ],
+      "role": "ground memory"
+    },
+    {
+      "bounds_px": [
+        211,
+        493,
+        342,
+        164
+      ],
+      "polygon_px": [
+        [
+          280,
+          536
+        ],
+        [
+          315,
+          493
+        ],
+        [
+          553,
+          540
+        ],
+        [
+          553,
+          657
+        ],
+        [
+          211,
+          657
+        ]
+      ],
+      "role": "rain memory"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        119,
+        205,
+        84,
+        46
+      ],
+      "source_sample": "那天晚上……我看到了……",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 3,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        456,
+        119,
+        84,
+        63
+      ],
+      "source_sample": "砰！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "sound_effect",
+      "rotation_deg": -14
+    },
+    {
+      "panel": 4,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        34,
+        444,
+        89,
+        42
+      ],
+      "source_sample": "那部手机还在响……",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration",
+      "rotation_deg": -7
+    },
+    {
+      "panel": 5,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        264,
+        411,
+        94,
+        39
+      ],
+      "source_sample": "他穿着帽子……是谁？",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 6,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        452,
+        463,
+        90,
+        41
+      ],
+      "source_sample": "还有……那把红伞……",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration",
+      "rotation_deg": -6
+    },
+    {
+      "panel": 7,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        108,
+        623,
+        95,
+        29
+      ],
+      "source_sample": "我记不清了……",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration",
+      "rotation_deg": -7
+    },
+    {
+      "panel": 8,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        421,
+        589,
+        123,
+        44
+      ],
+      "source_sample": "但我知道……那不是一场意外。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "cracked_glass_texture",
+      "bounds_px": [
+        15,
+        71,
+        538,
+        586
+      ],
+      "cross_panel_allowed": true,
+      "texture_geometry": "unknown"
+    },
+    {
+      "type": "decorative_glass_fragment",
+      "bounds_px": [
+        236,
+        480,
+        64,
+        50
+      ],
+      "polygon_px": [
+        [
+          241,
+          481
+        ],
+        [
+          297,
+          490
+        ],
+        [
+          273,
+          529
+        ],
+        [
+          238,
+          510
+        ]
+      ],
+      "counted_as_narrative_panel": false,
+      "border_required": true
+    },
+    {
+      "type": "decorative_glass_fragment",
+      "bounds_px": [
+        208,
+        584,
+        98,
+        74
+      ],
+      "polygon_px": [
+        [
+          245,
+          585
+        ],
+        [
+          305,
+          658
+        ],
+        [
+          210,
+          658
+        ]
+      ],
+      "counted_as_narrative_panel": false,
+      "border_required": true
+    }
+  ],
+  "features": [
+    "shattered_polygon",
+    "cracked_glass_texture",
+    "unboxed_text",
+    "decorative_fragment_polygons"
+  ],
+  "notes": [
+    "Eight numbered narrative shards. Glass crack texture inside panels is not additional narrative panel segmentation.",
+    "Visible central small glass fragment between P05/P07/P08 contains texture only and is not counted as a ninth scene.",
+    "Hidden/occluded polygon spans manually completed; unknown crack raster cannot be claimed reproduced.",
+    "Two small glass-only fragments at central-bottom and lower-left-bottom have explicit decorative polygon geometry; neither adds a narrative image unit."
+  ],
+  "layout_id": "SB-012",
+  "source_size_px": [
+    561,
+    668
+  ],
+  "preview_sha256": "beedba7f576719cfc83ebbe4b5d97f737050cc8a7c3ba80e3d8bbcc33473d954",
+  "note_sha256": "48cf06660cf2b08ce7cc26746b7f39417651820c1b9b1289b2c00f76fd24f5be",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

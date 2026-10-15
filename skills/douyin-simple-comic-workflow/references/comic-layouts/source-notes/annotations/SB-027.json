@@ -1,0 +1,212 @@
+{
+  "content_roi_px": [
+    11,
+    84,
+    529,
+    392
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        11,
+        84,
+        128,
+        392
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        143,
+        84,
+        132,
+        392
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        280,
+        84,
+        131,
+        392
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        415,
+        84,
+        125,
+        392
+      ],
+      "role": "scene",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        16,
+        86,
+        115,
+        27
+      ],
+      "source_sample_text": "① 准备",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        18,
+        429,
+        111,
+        41
+      ],
+      "source_sample_text": "屈膝，重心下压，准备发力。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        149,
+        86,
+        119,
+        27
+      ],
+      "source_sample_text": "② 腾空",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        151,
+        429,
+        117,
+        41
+      ],
+      "source_sample_text": "向下蹬板，身体腾空。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        285,
+        86,
+        118,
+        27
+      ],
+      "source_sample_text": "③ 空中旋转",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        288,
+        429,
+        115,
+        41
+      ],
+      "source_sample_text": "空中旋转，板身翻转。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        420,
+        86,
+        115,
+        27
+      ],
+      "source_sample_text": "④ 落地",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        424,
+        429,
+        110,
+        41
+      ],
+      "source_sample_text": "稳稳落地，完成动作！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    }
+  ],
+  "features": [
+    "four_vertical_action_steps",
+    "fixed_header_and_footer_inside_each_panel",
+    "motion_arrows_in_third_panel"
+  ],
+  "execution_blockers": [],
+  "text_zones": [
+    {
+      "bounds_px": [
+        13,
+        492,
+        526,
+        137
+      ],
+      "type": "source_explanatory_footer",
+      "executable_story_text": false
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "motion_arrow",
+      "panel_id": "P03",
+      "bounds_px": [
+        292,
+        249,
+        71,
+        127
+      ],
+      "status": "observed",
+      "exact_path_status": "unknown"
+    }
+  ],
+  "confidence": 0.86,
+  "notes": [],
+  "layout_id": "SB-027",
+  "source_size": [
+    557,
+    640
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：动作分解，把一个动作拆成起势、过程、接触、结果几个面板。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Action Breakdown, single dynamic action dissected into preparation, motion, contact, and aftermath across sequential panels. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "03e4d9f1708324a6773a22f34d56b9b2124b6cb8c8cda866a5f48bfd87f9d8c9",
+  "preview_sha256": "efd857e9760a8d2edf96a630789957d1d16da98f3877b8d03c609d7887a5111e",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-027.webp",
+    "source_note_path": "source-notes/SB-027.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

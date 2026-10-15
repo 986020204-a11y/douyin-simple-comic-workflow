@@ -1,0 +1,320 @@
+{
+  "layout_id": "SB-063",
+  "source_size": [
+    544,
+    659
+  ],
+  "preview_sha256": "52a1d900b9ae1b07261f6d1067017aad3230e00332b2bdf80f7ef2701e1d1225",
+  "note_sha256": "be29f7f2371bcd52bbf636e0a8cddabcc16f7f12919d29348a408f799e183793",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 85,
+  "panels": [
+    {
+      "bounds_px": [
+        4,
+        87,
+        259,
+        236
+      ],
+      "role": "bedroom window",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 1
+    },
+    {
+      "bounds_px": [
+        270,
+        87,
+        271,
+        236
+      ],
+      "role": "classroom window",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 2
+    },
+    {
+      "bounds_px": [
+        4,
+        329,
+        259,
+        326
+      ],
+      "role": "metro window",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 3
+    },
+    {
+      "bounds_px": [
+        270,
+        329,
+        271,
+        326
+      ],
+      "role": "apartment window",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 4
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        158,
+        123,
+        90,
+        78
+      ],
+      "sample_text": "新的一天开始了！加油！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            176,
+            193
+          ],
+          [
+            162,
+            205
+          ],
+          [
+            185,
+            197
+          ]
+        ],
+        "anchor_px": [
+          162,
+          205
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        408,
+        113,
+        108,
+        77
+      ],
+      "sample_text": "认真听课，未来一定会有更多可能！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            421,
+            179
+          ],
+          [
+            411,
+            194
+          ],
+          [
+            432,
+            183
+          ]
+        ],
+        "anchor_px": [
+          411,
+          194
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        108,
+        362,
+        122,
+        94
+      ],
+      "sample_text": "看着窗外的风景，突然觉得……城市好大，而我还在路上。",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            117,
+            447
+          ],
+          [
+            109,
+            463
+          ],
+          [
+            129,
+            450
+          ]
+        ],
+        "anchor_px": [
+          109,
+          463
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        144,
+        541,
+        108,
+        51
+      ],
+      "sample_text": "每一扇窗，都是一个世界。",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        398,
+        364,
+        126,
+        62
+      ],
+      "sample_text": "今天也很充实！明天，继续努力！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            427,
+            421
+          ],
+          [
+            425,
+            433
+          ],
+          [
+            440,
+            424
+          ]
+        ],
+        "anchor_px": [
+          425,
+          433
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        435,
+        567,
+        100,
+        75
+      ],
+      "sample_text": "不同的窗口，记录同一个我，成长的每一天。",
+      "shape": "carrier",
+      "text_kind": "note",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "carrier_kind": "desktop_chalkboard",
+      "text_color": "white"
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        14,
+        95,
+        132,
+        26
+      ],
+      "sample_text": "1.清晨·卧室窗",
+      "kind": "panel_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        278,
+        94,
+        83,
+        27
+      ],
+      "sample_text": "2.课堂窗",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        14,
+        334,
+        81,
+        27
+      ],
+      "sample_text": "3.地铁窗",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        278,
+        334,
+        127,
+        28
+      ],
+      "sample_text": "4.夜晚·公寓窗",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    }
+  ],
+  "observed_features": [
+    "four panels with architectural window framing",
+    "foreground sill and mullions are part of art",
+    "chalkboard final note is physical carrier"
+  ],
+  "uncertainties": [
+    "Do not render internal window edges as extra comic panels."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

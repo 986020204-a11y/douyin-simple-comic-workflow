@@ -1,0 +1,583 @@
+{
+  "content_roi_px": [
+    14,
+    84,
+    536,
+    584
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        14,
+        84,
+        536,
+        170
+      ],
+      "role": "cooking_hero",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        16,
+        259,
+        172,
+        216
+      ],
+      "role": "user_orders",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        197,
+        259,
+        163,
+        216
+      ],
+      "role": "merchant_cooks",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        369,
+        259,
+        179,
+        216
+      ],
+      "role": "courier_picks_up",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        16,
+        483,
+        185,
+        185
+      ],
+      "role": "user_enjoys_meal",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        23,
+        102,
+        139,
+        90
+      ],
+      "source_sample_text": "一份外卖的诞生记",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        20,
+        196,
+        142,
+        44
+      ],
+      "source_sample_text": "美味，从这里出发！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "rotation_degrees": -9
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        260,
+        92,
+        117,
+        86
+      ],
+      "source_sample_text": "用好食材，做出让人开心的味道！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          270,
+          155
+        ],
+        [
+          252,
+          159
+        ],
+        [
+          272,
+          166
+        ]
+      ]
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        411,
+        94,
+        129,
+        64
+      ],
+      "source_sample_text": "从下单到送达，每一份外卖都凝聚着很多人的努力！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        433,
+        190,
+        101,
+        58
+      ],
+      "source_sample_text": "美食 连接城市 温暖生活！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        21,
+        261,
+        137,
+        43
+      ],
+      "source_sample_text": "1 用户下单 选好喜欢的美食",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        104,
+        315,
+        71,
+        53
+      ],
+      "source_sample_text": "好饿！下单！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          109,
+          355
+        ],
+        [
+          98,
+          368
+        ],
+        [
+          121,
+          360
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        112,
+        381,
+        66,
+        88
+      ],
+      "source_sample_text": "宫保鸡丁饭 ¥25.0 立即下单",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          109,
+          375
+        ],
+        [
+          179,
+          375
+        ],
+        [
+          179,
+          473
+        ],
+        [
+          109,
+          473
+        ]
+      ],
+      "carrier_id": "ordering_phone_screen"
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        201,
+        261,
+        151,
+        43
+      ],
+      "source_sample_text": "2 商家制作 新鲜食材，用心烹饪",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        283,
+        317,
+        70,
+        43
+      ],
+      "source_sample_text": "马上做好！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          289,
+          347
+        ],
+        [
+          276,
+          359
+        ],
+        [
+          299,
+          351
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        258,
+        417,
+        92,
+        48
+      ],
+      "source_sample_text": "平均制作时长 8分钟",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        374,
+        261,
+        155,
+        43
+      ],
+      "source_sample_text": "3 骑手取餐 准时、安全送达",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        487,
+        315,
+        61,
+        78
+      ],
+      "source_sample_text": "出发！美食送到你手中！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          492,
+          376
+        ],
+        [
+          477,
+          389
+        ],
+        [
+          496,
+          387
+        ]
+      ]
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        432,
+        417,
+        103,
+        48
+      ],
+      "source_sample_text": "平均取餐时长 5分钟",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        21,
+        486,
+        134,
+        40
+      ],
+      "source_sample_text": "4 送达享用 美味完成！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        121,
+        539,
+        77,
+        51
+      ],
+      "source_sample_text": "太好吃了！幸福感！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          125,
+          580
+        ],
+        [
+          116,
+          591
+        ],
+        [
+          136,
+          585
+        ]
+      ]
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        128,
+        613,
+        62,
+        38
+      ],
+      "source_sample_text": "好评！★★★★★",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    }
+  ],
+  "features": [
+    "hero_plus_four_steps",
+    "red_directional_arrows",
+    "statistics_chart",
+    "timing_labels"
+  ],
+  "execution_blockers": [
+    "canvas_story_text",
+    "infographic_chart_symbols",
+    "physical_carrier_screen",
+    "directional_arrow_structure"
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        211,
+        492,
+        181,
+        166
+      ],
+      "source_sample_text": "一组小数据（某平台统计）\n平均配送时长 28分钟\n每月完成订单 120万+\n用户好评率 98%",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "fill": "light_blue",
+      "typography_regions_px": [
+        [
+          218,
+          493,
+          171,
+          19
+        ],
+        [
+          290,
+          526,
+          98,
+          35
+        ],
+        [
+          289,
+          570,
+          100,
+          33
+        ],
+        [
+          291,
+          614,
+          97,
+          33
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        418,
+        492,
+        122,
+        89
+      ],
+      "source_sample_text": "一份外卖 不只是食物，更是一座城市里的温暖接力！",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text",
+      "rotation_degrees": -10
+    },
+    {
+      "bounds_px": [
+        413,
+        640,
+        128,
+        27
+      ],
+      "source_sample_text": "美味不停，生活更好！",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "red_step_arrows",
+      "polygons_px": [
+        [
+          [
+            179,
+            365
+          ],
+          [
+            198,
+            365
+          ],
+          [
+            198,
+            356
+          ],
+          [
+            216,
+            375
+          ],
+          [
+            198,
+            394
+          ],
+          [
+            198,
+            385
+          ],
+          [
+            179,
+            385
+          ]
+        ],
+        [
+          [
+            348,
+            365
+          ],
+          [
+            368,
+            365
+          ],
+          [
+            368,
+            356
+          ],
+          [
+            387,
+            375
+          ],
+          [
+            368,
+            394
+          ],
+          [
+            368,
+            385
+          ],
+          [
+            348,
+            385
+          ]
+        ],
+        [
+          [
+            187,
+            468
+          ],
+          [
+            199,
+            477
+          ],
+          [
+            205,
+            469
+          ],
+          [
+            205,
+            491
+          ],
+          [
+            183,
+            494
+          ],
+          [
+            187,
+            483
+          ],
+          [
+            176,
+            474
+          ]
+        ]
+      ],
+      "status": "observed",
+      "polygon_status": "inferred"
+    },
+    {
+      "kind": "statistics_icons",
+      "bounds_px": [
+        220,
+        524,
+        59,
+        132
+      ],
+      "status": "observed",
+      "exact_artwork_status": "unknown"
+    }
+  ],
+  "confidence": 0.82,
+  "notes": [],
+  "layout_id": "SB-042",
+  "source_size": [
+    555,
+    675
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：信息图漫画，漫画分镜与图表、箭头、数据标签结合，适合知识或说明型故事。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Infographic Comic Hybrid, comic storytelling integrated with statistical charts, flow arrows, and data annotations for educational narrative. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "aa11cf827901dba1c9ec1704c832ef0349fe8df949ee168bb885b2df7a382a47",
+  "preview_sha256": "f25ce6e220a2427c646afeca16e1376ef65c507bd9ab0d1e83f0cc60e8617a77",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-042.webp",
+    "source_note_path": "source-notes/SB-042.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

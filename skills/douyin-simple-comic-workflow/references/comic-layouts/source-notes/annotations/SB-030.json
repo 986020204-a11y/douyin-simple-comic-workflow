@@ -1,0 +1,594 @@
+{
+  "content_roi_px": [
+    11,
+    95,
+    533,
+    471
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        11,
+        95,
+        133,
+        117
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        150,
+        95,
+        125,
+        117
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        281,
+        95,
+        138,
+        117
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        426,
+        95,
+        118,
+        117
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        11,
+        219,
+        143,
+        99
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        160,
+        219,
+        128,
+        99
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        295,
+        219,
+        249,
+        99
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        11,
+        325,
+        533,
+        241
+      ],
+      "role": "scene",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        100,
+        99,
+        40,
+        35
+      ],
+      "source_sample_text": "切！",
+      "kind": "emphasis",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          103,
+          97
+        ],
+        [
+          136,
+          97
+        ],
+        [
+          139,
+          117
+        ],
+        [
+          132,
+          130
+        ],
+        [
+          106,
+          127
+        ],
+        [
+          98,
+          135
+        ],
+        [
+          100,
+          120
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        222,
+        98,
+        49,
+        36
+      ],
+      "source_sample_text": "炒！",
+      "kind": "emphasis",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          225,
+          97
+        ],
+        [
+          268,
+          97
+        ],
+        [
+          271,
+          118
+        ],
+        [
+          262,
+          128
+        ],
+        [
+          229,
+          127
+        ],
+        [
+          221,
+          137
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        356,
+        99,
+        61,
+        34
+      ],
+      "source_sample_text": "装盘！",
+      "kind": "emphasis",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          354,
+          96
+        ],
+        [
+          417,
+          97
+        ],
+        [
+          415,
+          128
+        ],
+        [
+          390,
+          131
+        ],
+        [
+          378,
+          138
+        ],
+        [
+          378,
+          127
+        ],
+        [
+          355,
+          128
+        ]
+      ]
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        458,
+        113,
+        76,
+        33
+      ],
+      "source_sample_text": "00:10",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          450,
+          108
+        ],
+        [
+          541,
+          100
+        ],
+        [
+          541,
+          148
+        ],
+        [
+          451,
+          158
+        ]
+      ],
+      "carrier_id": "countdown_display"
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        458,
+        157,
+        76,
+        49
+      ],
+      "source_sample_text": "只剩10秒！",
+      "kind": "emphasis",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          459,
+          157
+        ],
+        [
+          468,
+          158
+        ],
+        [
+          474,
+          150
+        ],
+        [
+          481,
+          157
+        ],
+        [
+          494,
+          151
+        ],
+        [
+          500,
+          159
+        ],
+        [
+          532,
+          152
+        ],
+        [
+          535,
+          169
+        ],
+        [
+          542,
+          172
+        ],
+        [
+          535,
+          181
+        ],
+        [
+          538,
+          205
+        ],
+        [
+          522,
+          202
+        ],
+        [
+          512,
+          210
+        ],
+        [
+          493,
+          205
+        ],
+        [
+          479,
+          212
+        ],
+        [
+          476,
+          203
+        ],
+        [
+          458,
+          208
+        ]
+      ]
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        103,
+        222,
+        48,
+        30
+      ],
+      "source_sample_text": "调味！",
+      "kind": "emphasis",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          101,
+          219
+        ],
+        [
+          151,
+          219
+        ],
+        [
+          151,
+          245
+        ],
+        [
+          139,
+          250
+        ],
+        [
+          128,
+          245
+        ],
+        [
+          118,
+          253
+        ],
+        [
+          105,
+          247
+        ]
+      ]
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        220,
+        222,
+        65,
+        32
+      ],
+      "source_sample_text": "完成！",
+      "kind": "emphasis",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          220,
+          220
+        ],
+        [
+          285,
+          220
+        ],
+        [
+          285,
+          244
+        ],
+        [
+          274,
+          250
+        ],
+        [
+          258,
+          244
+        ],
+        [
+          247,
+          253
+        ],
+        [
+          239,
+          246
+        ],
+        [
+          220,
+          248
+        ]
+      ]
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        351,
+        222,
+        78,
+        30
+      ],
+      "source_sample_text": "好紧张！",
+      "kind": "emphasis",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          350,
+          219
+        ],
+        [
+          429,
+          219
+        ],
+        [
+          424,
+          244
+        ],
+        [
+          411,
+          240
+        ],
+        [
+          398,
+          249
+        ],
+        [
+          385,
+          242
+        ],
+        [
+          374,
+          247
+        ],
+        [
+          357,
+          241
+        ]
+      ]
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        477,
+        222,
+        61,
+        30
+      ],
+      "source_sample_text": "加油！",
+      "kind": "emphasis",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          477,
+          219
+        ],
+        [
+          541,
+          219
+        ],
+        [
+          538,
+          242
+        ],
+        [
+          522,
+          239
+        ],
+        [
+          514,
+          248
+        ],
+        [
+          502,
+          241
+        ],
+        [
+          482,
+          245
+        ]
+      ]
+    },
+    {
+      "panel": 8,
+      "bounds_px": [
+        56,
+        344,
+        265,
+        140
+      ],
+      "source_sample_text": "呜——呜——呜！！！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "text_color": "red"
+    },
+    {
+      "panel": 8,
+      "bounds_px": [
+        362,
+        430,
+        81,
+        44
+      ],
+      "source_sample_text": "……",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          377,
+          465
+        ],
+        [
+          373,
+          485
+        ],
+        [
+          395,
+          469
+        ]
+      ]
+    }
+  ],
+  "features": [
+    "seven_rapid_small_panels_then_one_large_still_panel",
+    "red_alarm_sound_effects"
+  ],
+  "execution_blockers": [],
+  "text_zones": [
+    {
+      "bounds_px": [
+        14,
+        573,
+        530,
+        61
+      ],
+      "type": "source_explanatory_footer",
+      "executable_story_text": false
+    }
+  ],
+  "overlays": [],
+  "confidence": 0.83,
+  "notes": [],
+  "layout_id": "SB-030",
+  "source_size": [
+    557,
+    643
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：节奏骤停，前面高速密集，突然切到大片留白或静态大格，制造反高潮。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Sudden Pacing Halt, rapid dense action suddenly interrupted by large empty negative space or quiet static frame for comedic anti-climax. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "f745f12a219e27661afad3b0207979a25cf2da738431d8804d4730eafcd35376",
+  "preview_sha256": "e5fbe2e8ac4bc3c1dbd08f1058c5bf2675752ecb7853a0b17969a22e269e00af",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-030.webp",
+    "source_note_path": "source-notes/SB-030.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

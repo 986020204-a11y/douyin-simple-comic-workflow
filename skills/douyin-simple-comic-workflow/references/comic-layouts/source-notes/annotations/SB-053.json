@@ -1,0 +1,184 @@
+{
+  "layout_id": "SB-053",
+  "source_size": [
+    556,
+    681
+  ],
+  "preview_sha256": "d0d59937ee4cbd9cf2edc4d6264794471bde482eafb4310b908c4ca4c39000b7",
+  "note_sha256": "cad8de3efeca05dca54056bc7fe8e1924f5d785893344290f169eb860664ae68",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 82,
+  "panels": [
+    {
+      "bounds_px": [
+        1,
+        83,
+        321,
+        192
+      ],
+      "role": "depart closeup",
+      "geometry_type": "unframed",
+      "cross_panel_allowed": false
+    },
+    {
+      "bounds_px": [
+        321,
+        83,
+        230,
+        198
+      ],
+      "role": "mountain walking",
+      "geometry_type": "unframed",
+      "cross_panel_allowed": false
+    },
+    {
+      "bounds_px": [
+        1,
+        249,
+        550,
+        225
+      ],
+      "role": "open-armed coast",
+      "geometry_type": "unframed",
+      "cross_panel_allowed": false
+    },
+    {
+      "bounds_px": [
+        1,
+        449,
+        550,
+        227
+      ],
+      "role": "sunset seated landscape",
+      "geometry_type": "unframed",
+      "cross_panel_allowed": false
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        190,
+        110,
+        125,
+        78
+      ],
+      "sample_text": "出发吧！去看更大的世界，去遇见更好的自己！",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        438,
+        156,
+        104,
+        87
+      ],
+      "sample_text": "翻过一座山，还有一座山；走过一段路，还有新的风景。",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        17,
+        271,
+        154,
+        77
+      ],
+      "sample_text": "每一次出发，都是和未知的相遇；每一次遇见，都让生命更丰富。",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        442,
+        393,
+        98,
+        41
+      ],
+      "sample_text": "世界很大，而我还年轻！",
+      "shape": "display_text",
+      "text_kind": "emphasis",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        144,
+        487,
+        112,
+        74
+      ],
+      "sample_text": "无边的风景里，有无数种可能，而故事……才刚刚开始。",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        398,
+        599,
+        144,
+        65
+      ],
+      "sample_text": "未来，我们还会再见！",
+      "shape": "display_text",
+      "text_kind": "emphasis",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    }
+  ],
+  "text_zones": [],
+  "observed_features": [
+    "four organic unframed narrative zones separated by clouds and scenery",
+    "all six text zones unboxed"
+  ],
+  "uncertainties": [
+    "No panel borders are present. Four zone bounds/order are interpretive, cannot be audited as exact visible borders.",
+    "Scenic/cloud transition masks require image-aware organic assembly, not rectangular clipping."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

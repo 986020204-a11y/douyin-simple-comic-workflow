@@ -1,0 +1,351 @@
+{
+  "layout_id": "SB-062",
+  "source_size": [
+    555,
+    664
+  ],
+  "preview_sha256": "a13f52e3e3457cb1b46e6b80e97f8995d51121a526361e476cfc915ffff096c0",
+  "note_sha256": "d59a5808ab6ddf30cf0bb865472d9a8e0b129cf18cbe596b6c6b8cfba3f6c7b6",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 85,
+  "panels": [
+    {
+      "bounds_px": [
+        15,
+        86,
+        281,
+        283
+      ],
+      "role": "practice in mirror",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 1
+    },
+    {
+      "bounds_px": [
+        301,
+        86,
+        250,
+        283
+      ],
+      "role": "mirror self",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 2
+    },
+    {
+      "bounds_px": [
+        15,
+        376,
+        253,
+        278
+      ],
+      "role": "face inner self",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 3
+    },
+    {
+      "bounds_px": [
+        275,
+        376,
+        276,
+        278
+      ],
+      "role": "move forward",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 4
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        137,
+        120,
+        127,
+        73
+      ],
+      "sample_text": "还不够好……我要更努力！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            184,
+            183
+          ],
+          [
+            171,
+            207
+          ],
+          [
+            198,
+            188
+          ]
+        ],
+        "anchor_px": [
+          171,
+          207
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        211,
+        279,
+        78,
+        54
+      ],
+      "sample_text": "同一个我，两种心声。",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        427,
+        115,
+        124,
+        82
+      ],
+      "sample_text": "你真的够好吗？总是担心失败，害怕被否定……",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            477,
+            191
+          ],
+          [
+            471,
+            208
+          ],
+          [
+            491,
+            192
+          ]
+        ],
+        "anchor_px": [
+          471,
+          208
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        405,
+        306,
+        140,
+        50
+      ],
+      "sample_text": "镜子里，是我不自信的另一面。",
+      "shape": "rect",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        22,
+        527,
+        128,
+        81
+      ],
+      "sample_text": "没关系。不完美的我，也值得被喜欢。",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            106,
+            534
+          ],
+          [
+            117,
+            521
+          ],
+          [
+            120,
+            537
+          ]
+        ],
+        "anchor_px": [
+          117,
+          521
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        147,
+        589,
+        118,
+        48
+      ],
+      "sample_text": "镜中不只是缺点，还有一直努力的我。",
+      "shape": "rect",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        423,
+        419,
+        128,
+        92
+      ],
+      "sample_text": "我接受所有的自己，然后继续向前！因为热爱，就是最好的答案！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            429,
+            470
+          ],
+          [
+            415,
+            481
+          ],
+          [
+            431,
+            484
+          ]
+        ],
+        "anchor_px": [
+          415,
+          481
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        420,
+        579,
+        122,
+        55
+      ],
+      "sample_text": "看清自己，才能走向更远的光。",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        22,
+        91,
+        116,
+        27
+      ],
+      "sample_text": "1.练习中的我",
+      "kind": "panel_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        308,
+        91,
+        113,
+        27
+      ],
+      "sample_text": "2.镜中的自己",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        22,
+        381,
+        93,
+        26
+      ],
+      "sample_text": "3.直面内心",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        280,
+        381,
+        101,
+        26
+      ],
+      "sample_text": "4.继续前行",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    }
+  ],
+  "observed_features": [
+    "four rectangular narrative panels",
+    "mirror planes and reflections inside panels"
+  ],
+  "uncertainties": [
+    "Mirror is a depicted physical surface, not an additional storyboard panel.",
+    "Lower-right speech body touches page edge; exact clipping from source retained."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

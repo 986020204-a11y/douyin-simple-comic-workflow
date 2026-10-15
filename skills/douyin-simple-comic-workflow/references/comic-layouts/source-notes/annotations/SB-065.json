@@ -1,0 +1,291 @@
+{
+  "layout_id": "SB-065",
+  "source_size": [
+    545,
+    649
+  ],
+  "preview_sha256": "da341db3aaa4661d3e6c3165234bc02032db675d4e8bd5f9125a554b35398bdd",
+  "note_sha256": "1593f28a567eef2abfa42f1133588403cdd688466eeb511e999a0e06410317a8",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 99,
+  "panels": [
+    {
+      "bounds_px": [
+        3,
+        100,
+        539,
+        376
+      ],
+      "role": "main running scene and typographic scaffold",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false
+    },
+    {
+      "bounds_px": [
+        3,
+        478,
+        302,
+        159
+      ],
+      "role": "closeup persistence",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          3,
+          478
+        ],
+        [
+          305,
+          484
+        ],
+        [
+          293,
+          637
+        ],
+        [
+          3,
+          637
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        300,
+        455,
+        241,
+        182
+      ],
+      "role": "finish line",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          319,
+          483
+        ],
+        [
+          541,
+          455
+        ],
+        [
+          541,
+          637
+        ],
+        [
+          300,
+          637
+        ]
+      ]
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        16,
+        108,
+        141,
+        53
+      ],
+      "sample_text": "不只是为了终点……",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        7,
+        101,
+        531,
+        221
+      ],
+      "sample_text": "向前跑！",
+      "shape": "display_text",
+      "text_kind": "emphasis",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "font_style": "brush_calligraphy",
+      "structural_overlay": true
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        391,
+        263,
+        137,
+        51
+      ],
+      "sample_text": "而是为了成为更好的自己！",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        2,
+        376,
+        117,
+        102
+      ],
+      "sample_text": "每一步都在靠近梦想！",
+      "shape": "polygon",
+      "text_kind": "emphasis",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "polygon_px": [
+        [
+          2,
+          377
+        ],
+        [
+          103,
+          376
+        ],
+        [
+          119,
+          455
+        ],
+        [
+          4,
+          478
+        ]
+      ],
+      "fill": "white"
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        179,
+        545,
+        118,
+        77
+      ],
+      "sample_text": "坚持！",
+      "shape": "display_text",
+      "text_kind": "emphasis",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "font_style": "brush_calligraphy"
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        222,
+        604,
+        78,
+        32
+      ],
+      "sample_text": "终点不远了！我做到了！",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        430,
+        537,
+        109,
+        87
+      ],
+      "sample_text": "跑出的不只是距离，还有那个更勇敢的自己！",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        359,
+        477,
+        115,
+        29
+      ],
+      "sample_text": "终点",
+      "kind": "physical_carrier",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred",
+      "carrier_kind": "finish_banner"
+    },
+    {
+      "bounds_px": [
+        219,
+        355,
+        79,
+        68
+      ],
+      "sample_text": "065",
+      "kind": "physical_carrier",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred",
+      "carrier_kind": "runner_bib"
+    },
+    {
+      "bounds_px": [
+        442,
+        408,
+        28,
+        27
+      ],
+      "sample_text": "066",
+      "kind": "physical_carrier",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred",
+      "carrier_kind": "runner_bib"
+    }
+  ],
+  "observed_features": [
+    "three visible image areas",
+    "giant brush title overlays main art and supplies typographic scaffold",
+    "slanted bottom division"
+  ],
+  "uncertainties": [
+    "Original brush font and rough glyph contours unknown; general calligraphy rendering is not a pixel match.",
+    "Exact overlap order of giant text and hair must be checked on artwork."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

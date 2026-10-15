@@ -1,0 +1,244 @@
+{
+  "roi": [
+    16,
+    56,
+    526,
+    591
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        57,
+        60,
+        446,
+        134
+      ],
+      "polygon_px": [
+        [
+          61,
+          60
+        ],
+        [
+          503,
+          68
+        ],
+        [
+          494,
+          194
+        ],
+        [
+          57,
+          184
+        ]
+      ],
+      "role": "rainy street"
+    },
+    {
+      "bounds_px": [
+        50,
+        195,
+        443,
+        141
+      ],
+      "polygon_px": [
+        [
+          56,
+          195
+        ],
+        [
+          493,
+          205
+        ],
+        [
+          488,
+          336
+        ],
+        [
+          50,
+          322
+        ]
+      ],
+      "role": "light cigarette"
+    },
+    {
+      "bounds_px": [
+        44,
+        335,
+        441,
+        143
+      ],
+      "polygon_px": [
+        [
+          50,
+          335
+        ],
+        [
+          485,
+          347
+        ],
+        [
+          480,
+          478
+        ],
+        [
+          44,
+          463
+        ]
+      ],
+      "role": "watch clue"
+    },
+    {
+      "bounds_px": [
+        38,
+        477,
+        440,
+        159
+      ],
+      "polygon_px": [
+        [
+          44,
+          477
+        ],
+        [
+          478,
+          488
+        ],
+        [
+          473,
+          636
+        ],
+        [
+          38,
+          621
+        ]
+      ],
+      "role": "look back"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        368,
+        102,
+        109,
+        39
+      ],
+      "source_sample": "雨还在下，线索就在前方。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 2,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        80,
+        244,
+        106,
+        43
+      ],
+      "source_sample": "点上一支烟，让思绪更清醒。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 3,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        345,
+        394,
+        128,
+        34
+      ],
+      "source_sample": "一枚陌生的徽章……这是关键线索。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 4,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        389,
+        573,
+        61,
+        29
+      ],
+      "source_sample": "有人？！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "dialogue"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "filmstrip_shell",
+      "bounds_px": [
+        16,
+        56,
+        526,
+        591
+      ],
+      "polygon_px": [
+        [
+          25,
+          56
+        ],
+        [
+          542,
+          62
+        ],
+        [
+          517,
+          647
+        ],
+        [
+          5,
+          634
+        ]
+      ],
+      "fill": "black",
+      "perforations_required": true
+    },
+    {
+      "type": "film_frame_numbers",
+      "bounds_px": [
+        47,
+        162,
+        38,
+        462
+      ],
+      "sample_labels": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ]
+    }
+  ],
+  "features": [
+    "filmstrip_shell",
+    "oblique_polygon",
+    "unboxed_text"
+  ],
+  "notes": [
+    "Frame openings and outer filmstrip are slightly tilted. Black shell and white sprocket holes are structural style, not narrative panels.",
+    "Exact per-hole corner radii are not determined from preview."
+  ],
+  "layout_id": "SB-017",
+  "source_size_px": [
+    556,
+    654
+  ],
+  "preview_sha256": "f27b25299eb15118d3fcd9d5f59c4c87c5add072bc6eb2bd312b045b215fb899",
+  "note_sha256": "98dd93890beef7e6a7ca9197afdb7f5615c9b13b505486e81b07c22951d367b9",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

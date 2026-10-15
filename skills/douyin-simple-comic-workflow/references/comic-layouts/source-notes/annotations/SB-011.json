@@ -1,0 +1,399 @@
+{
+  "roi": [
+    8,
+    70,
+    537,
+    589
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        8,
+        70,
+        205,
+        175
+      ],
+      "polygon_px": [
+        [
+          8,
+          70
+        ],
+        [
+          151,
+          70
+        ],
+        [
+          213,
+          245
+        ],
+        [
+          8,
+          184
+        ]
+      ],
+      "role": "artifact"
+    },
+    {
+      "bounds_px": [
+        164,
+        70,
+        236,
+        180
+      ],
+      "polygon_px": [
+        [
+          164,
+          70
+        ],
+        [
+          400,
+          70
+        ],
+        [
+          333,
+          250
+        ],
+        [
+          221,
+          245
+        ]
+      ],
+      "role": "friend memories"
+    },
+    {
+      "bounds_px": [
+        345,
+        70,
+        200,
+        188
+      ],
+      "polygon_px": [
+        [
+          412,
+          70
+        ],
+        [
+          545,
+          70
+        ],
+        [
+          545,
+          184
+        ],
+        [
+          345,
+          258
+        ]
+      ],
+      "role": "tears memory"
+    },
+    {
+      "bounds_px": [
+        353,
+        195,
+        192,
+        282
+      ],
+      "polygon_px": [
+        [
+          545,
+          195
+        ],
+        [
+          545,
+          477
+        ],
+        [
+          355,
+          365
+        ],
+        [
+          353,
+          267
+        ]
+      ],
+      "role": "inner fear"
+    },
+    {
+      "bounds_px": [
+        8,
+        193,
+        203,
+        206
+      ],
+      "polygon_px": [
+        [
+          8,
+          193
+        ],
+        [
+          211,
+          259
+        ],
+        [
+          192,
+          351
+        ],
+        [
+          8,
+          399
+        ]
+      ],
+      "role": "darkness"
+    },
+    {
+      "bounds_px": [
+        8,
+        358,
+        213,
+        301
+      ],
+      "polygon_px": [
+        [
+          8,
+          406
+        ],
+        [
+          186,
+          358
+        ],
+        [
+          221,
+          438
+        ],
+        [
+          8,
+          659
+        ]
+      ],
+      "role": "friends call"
+    },
+    {
+      "bounds_px": [
+        26,
+        438,
+        285,
+        221
+      ],
+      "polygon_px": [
+        [
+          26,
+          659
+        ],
+        [
+          230,
+          438
+        ],
+        [
+          289,
+          466
+        ],
+        [
+          311,
+          659
+        ]
+      ],
+      "role": "memories become light"
+    },
+    {
+      "bounds_px": [
+        88,
+        176,
+        370,
+        362
+      ],
+      "polygon_px": null,
+      "role": "central full-body transformation",
+      "geometry_type": "unframed",
+      "border_visible": false,
+      "z_index": 2,
+      "requires_alpha_art": true
+    },
+    {
+      "bounds_px": [
+        319,
+        451,
+        226,
+        208
+      ],
+      "polygon_px": [
+        [
+          319,
+          451
+        ],
+        [
+          545,
+          486
+        ],
+        [
+          545,
+          659
+        ],
+        [
+          328,
+          659
+        ]
+      ],
+      "role": "transformed resolve"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 4,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        445,
+        395,
+        92,
+        43
+      ],
+      "source_sample": "我……我不能再逃避了！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 6,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        34,
+        454,
+        52,
+        40
+      ],
+      "source_sample": "相信你！加油！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 8,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        291,
+        348,
+        115,
+        49
+      ],
+      "source_sample": "变身！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "display",
+      "rotation_deg": -7,
+      "cross_panel_allowed": true,
+      "allowed_cross_panel_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09"
+      ]
+    },
+    {
+      "panel": 8,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        292,
+        405,
+        118,
+        54
+      ],
+      "source_sample": "——我要守护重要的人！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "display",
+      "rotation_deg": -9,
+      "cross_panel_allowed": true,
+      "allowed_cross_panel_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09"
+      ]
+    },
+    {
+      "panel": 9,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        457,
+        574,
+        81,
+        44
+      ],
+      "source_sample": "这一次，我会更强大！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "dialogue"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "foreground_breakout",
+      "bounds_px": [
+        88,
+        176,
+        370,
+        362
+      ],
+      "cross_panel_allowed": true,
+      "allowed_cross_panel_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "requires_transparent_art": true,
+      "panel_id": "P08",
+      "counted_as_additional_panel": false
+    },
+    {
+      "type": "light_burst",
+      "bounds_px": [
+        138,
+        207,
+        288,
+        305
+      ],
+      "cross_panel_allowed": true
+    }
+  ],
+  "features": [
+    "radial_polygon",
+    "foreground_breakout",
+    "cross_panel_text",
+    "unboxed_text",
+    "unframed_scene"
+  ],
+  "notes": [
+    "Eight numbered surrounding framed wedges plus one central unframed transformation scene make nine narrative image units; visible framed panel count is eight.",
+    "Hidden converging vertices behind central foreground are inferred completions.",
+    "The central full-body transformation follows the memory-light sequence and precedes the final transformed-face closeup; this ninth image unit and its reading position are inferred from visible narrative continuity."
+  ],
+  "layout_id": "SB-011",
+  "source_size_px": [
+    552,
+    668
+  ],
+  "preview_sha256": "c2e2c0d4cd5d5fcce65af69894576b32a6743df593ee42143f803dbe3efb0e02",
+  "note_sha256": "e9216cbcf22a88ea435ad43d1786688e75d1f1f96f22a417d5dc7614652a6240",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

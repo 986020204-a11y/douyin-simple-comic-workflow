@@ -1,0 +1,475 @@
+{
+  "content_roi_px": [
+    6,
+    114,
+    534,
+    551
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        6,
+        114,
+        261,
+        121
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        273,
+        114,
+        267,
+        121
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        6,
+        242,
+        261,
+        116
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        273,
+        242,
+        267,
+        116
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        6,
+        365,
+        261,
+        120
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        273,
+        365,
+        267,
+        120
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        6,
+        492,
+        534,
+        173
+      ],
+      "role": "scene",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        8,
+        115,
+        153,
+        25
+      ],
+      "source_sample_text": "1A. 小偷得手，迅速逃离！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        146,
+        142,
+        107,
+        49
+      ],
+      "source_sample_text": "哈哈！拿到了！快走！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          154,
+          167
+        ],
+        [
+          135,
+          165
+        ],
+        [
+          152,
+          156
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        276,
+        115,
+        154,
+        25
+      ],
+      "source_sample_text": "1B. 保安发现，立刻追击！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        440,
+        153,
+        98,
+        55
+      ],
+      "source_sample_text": "有人偷东西！快拦住他！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          448,
+          184
+        ],
+        [
+          432,
+          184
+        ],
+        [
+          447,
+          173
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        8,
+        243,
+        182,
+        24
+      ],
+      "source_sample_text": "2A. 小偷穿过小巷，继续狂奔！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        154,
+        271,
+        94,
+        51
+      ],
+      "source_sample_text": "还没追上？再拐一个弯！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          160,
+          297
+        ],
+        [
+          145,
+          302
+        ],
+        [
+          160,
+          307
+        ]
+      ]
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        276,
+        243,
+        149,
+        25
+      ],
+      "source_sample_text": "2B. 保安紧追不舍！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        449,
+        272,
+        84,
+        40
+      ],
+      "source_sample_text": "别让他跑了！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          453,
+          291
+        ],
+        [
+          439,
+          296
+        ],
+        [
+          452,
+          303
+        ]
+      ]
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        9,
+        366,
+        151,
+        25
+      ],
+      "source_sample_text": "3A. 小偷翻过围栏！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        162,
+        381,
+        83,
+        51
+      ],
+      "source_sample_text": "马上就能逃出去了！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          171,
+          423
+        ],
+        [
+          153,
+          435
+        ],
+        [
+          175,
+          429
+        ]
+      ]
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        276,
+        366,
+        150,
+        25
+      ],
+      "source_sample_text": "3B. 保安也赶到围栏！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        453,
+        381,
+        80,
+        58
+      ],
+      "source_sample_text": "翻过去！不能放弃！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          458,
+          418
+        ],
+        [
+          441,
+          427
+        ],
+        [
+          459,
+          430
+        ]
+      ]
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        9,
+        496,
+        106,
+        27
+      ],
+      "source_sample_text": "4. 两线相遇！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        99,
+        533,
+        49,
+        62
+      ],
+      "source_sample_text": "！？",
+      "kind": "emphasis",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          106,
+          535
+        ],
+        [
+          121,
+          538
+        ],
+        [
+          133,
+          527
+        ],
+        [
+          136,
+          542
+        ],
+        [
+          151,
+          550
+        ],
+        [
+          140,
+          567
+        ],
+        [
+          145,
+          581
+        ],
+        [
+          132,
+          580
+        ],
+        [
+          126,
+          597
+        ],
+        [
+          116,
+          585
+        ],
+        [
+          101,
+          591
+        ],
+        [
+          105,
+          574
+        ],
+        [
+          94,
+          559
+        ]
+      ]
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        427,
+        502,
+        101,
+        52
+      ],
+      "source_sample_text": "跑不掉了！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          438,
+          530
+        ],
+        [
+          416,
+          537
+        ],
+        [
+          439,
+          541
+        ]
+      ]
+    }
+  ],
+  "features": [
+    "alternating_parallel_action",
+    "six_small_panels_then_shared_bottom",
+    "track_headers"
+  ],
+  "execution_blockers": [],
+  "text_zones": [
+    {
+      "bounds_px": [
+        5,
+        87,
+        262,
+        25
+      ],
+      "type": "source_track_header",
+      "executable_story_text": false
+    },
+    {
+      "bounds_px": [
+        273,
+        87,
+        267,
+        25
+      ],
+      "type": "source_track_header",
+      "executable_story_text": false
+    }
+  ],
+  "overlays": [],
+  "confidence": 0.87,
+  "notes": [],
+  "layout_id": "SB-035",
+  "source_size": [
+    546,
+    670
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：交叉剪辑，A事件与B事件交替出现，通过快速切换制造紧张或误会。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Cross-Cutting Parallel Action, rapid alternating sequence between events A and B, amplifying suspense or misunderstanding. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "6d631f49e34bbe774fd7d7c18ffa139ae9f55c785a102e47a27ebb1645fd519e",
+  "preview_sha256": "c6256bd9160ebe9951477d8a1c6f190f1d3aefa11969725036b3991f02960a7e",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-035.webp",
+    "source_note_path": "source-notes/SB-035.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

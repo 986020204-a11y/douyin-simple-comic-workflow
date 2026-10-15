@@ -1,0 +1,500 @@
+{
+  "content_roi_px": [
+    7,
+    85,
+    539,
+    554
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        8,
+        125,
+        171,
+        154
+      ],
+      "role": "surveillance_feed",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        192,
+        125,
+        171,
+        154
+      ],
+      "role": "surveillance_feed",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        376,
+        125,
+        171,
+        154
+      ],
+      "role": "surveillance_feed",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        8,
+        288,
+        171,
+        154
+      ],
+      "role": "surveillance_feed",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        192,
+        288,
+        171,
+        154
+      ],
+      "role": "surveillance_feed",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        376,
+        288,
+        171,
+        154
+      ],
+      "role": "surveillance_feed",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        8,
+        451,
+        171,
+        187
+      ],
+      "role": "surveillance_feed",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        192,
+        451,
+        171,
+        187
+      ],
+      "role": "surveillance_feed",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        376,
+        451,
+        171,
+        187
+      ],
+      "role": "surveillance_feed",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        13,
+        249,
+        161,
+        27
+      ],
+      "source_sample_text": "一只猫悄悄进入了博物馆……",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "text_color": "black"
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        196,
+        249,
+        141,
+        27
+      ],
+      "source_sample_text": "它在展厅里好奇地游荡。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "text_color": "black"
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        382,
+        249,
+        95,
+        27
+      ],
+      "source_sample_text": "咦？这是什么？",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "text_color": "black"
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        13,
+        414,
+        73,
+        25
+      ],
+      "source_sample_text": "跳上去了！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "text_color": "black"
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        197,
+        414,
+        83,
+        25
+      ],
+      "source_sample_text": "四处探索……",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "text_color": "black"
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        381,
+        414,
+        126,
+        25
+      ],
+      "source_sample_text": "不小心碰到了展台！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "text_color": "black"
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        14,
+        602,
+        88,
+        28
+      ],
+      "source_sample_text": "警报触发！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "text_color": "red"
+    },
+    {
+      "panel": 8,
+      "bounds_px": [
+        196,
+        602,
+        111,
+        28
+      ],
+      "source_sample_text": "全馆警报启动！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "text_color": "red"
+    },
+    {
+      "panel": 9,
+      "bounds_px": [
+        381,
+        602,
+        135,
+        28
+      ],
+      "source_sample_text": "目标：一只不速之客。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "text_color": "black"
+    },
+    {
+      "panel": 9,
+      "bounds_px": [
+        395,
+        487,
+        64,
+        57
+      ],
+      "source_sample_text": "什么？！有猫？！",
+      "kind": "emphasis",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          397,
+          489
+        ],
+        [
+          408,
+          496
+        ],
+        [
+          418,
+          486
+        ],
+        [
+          428,
+          495
+        ],
+        [
+          439,
+          488
+        ],
+        [
+          441,
+          503
+        ],
+        [
+          456,
+          505
+        ],
+        [
+          447,
+          517
+        ],
+        [
+          453,
+          531
+        ],
+        [
+          438,
+          532
+        ],
+        [
+          433,
+          543
+        ],
+        [
+          421,
+          536
+        ],
+        [
+          408,
+          543
+        ],
+        [
+          409,
+          530
+        ],
+        [
+          396,
+          530
+        ],
+        [
+          402,
+          516
+        ],
+        [
+          391,
+          506
+        ]
+      ]
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        12,
+        129,
+        163,
+        20
+      ],
+      "source_sample_text": "CAM 01 / source location and timestamp",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "black",
+      "text_color": "white",
+      "semantic_role": "screen_overlay_metadata"
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        196,
+        129,
+        163,
+        20
+      ],
+      "source_sample_text": "CAM 02 / source location and timestamp",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "black",
+      "text_color": "white",
+      "semantic_role": "screen_overlay_metadata"
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        380,
+        129,
+        163,
+        20
+      ],
+      "source_sample_text": "CAM 03 / source location and timestamp",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "black",
+      "text_color": "white",
+      "semantic_role": "screen_overlay_metadata"
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        12,
+        292,
+        163,
+        20
+      ],
+      "source_sample_text": "CAM 04 / source location and timestamp",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "black",
+      "text_color": "white",
+      "semantic_role": "screen_overlay_metadata"
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        196,
+        292,
+        163,
+        20
+      ],
+      "source_sample_text": "CAM 05 / source location and timestamp",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "black",
+      "text_color": "white",
+      "semantic_role": "screen_overlay_metadata"
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        380,
+        292,
+        163,
+        20
+      ],
+      "source_sample_text": "CAM 06 / source location and timestamp",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "black",
+      "text_color": "white",
+      "semantic_role": "screen_overlay_metadata"
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        12,
+        455,
+        163,
+        20
+      ],
+      "source_sample_text": "CAM 07 / source location and timestamp",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "black",
+      "text_color": "white",
+      "semantic_role": "screen_overlay_metadata"
+    },
+    {
+      "panel": 8,
+      "bounds_px": [
+        196,
+        455,
+        163,
+        20
+      ],
+      "source_sample_text": "CAM 08 / source location and timestamp",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "black",
+      "text_color": "white",
+      "semantic_role": "screen_overlay_metadata"
+    },
+    {
+      "panel": 9,
+      "bounds_px": [
+        380,
+        455,
+        163,
+        20
+      ],
+      "source_sample_text": "CAM 09 / source location and timestamp",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "black",
+      "text_color": "white",
+      "semantic_role": "screen_overlay_metadata"
+    }
+  ],
+  "features": [
+    "nine_cctv_feeds",
+    "dark_monitor_frame",
+    "feed_metadata_headers"
+  ],
+  "execution_blockers": [
+    "cctv_frame_decoration"
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        8,
+        88,
+        533,
+        35
+      ],
+      "type": "source_monitor_system_header",
+      "executable_story_text": false
+    }
+  ],
+  "overlays": [],
+  "confidence": 0.89,
+  "notes": [],
+  "layout_id": "SB-038",
+  "source_size": [
+    550,
+    662
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：监控屏幕式，页面由多个监控视角组成，适合悬疑、职场和观察型叙事。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Multi-CCTV Security Grid, page structured like multi-channel surveillance monitor feeds, ideal for investigation and thriller narrative. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "eba6f9c0602f8a5774f28b85c02f074201e96459f9c31c3229bac0ef8620e39e",
+  "preview_sha256": "c90eb79adf4ca75082c3906e1da76958fe7787d3162e850b8389d8e787928cec",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-038.webp",
+    "source_note_path": "source-notes/SB-038.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

@@ -1,0 +1,436 @@
+{
+  "content_roi_px": [
+    12,
+    104,
+    538,
+    550
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        12,
+        104,
+        266,
+        135
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        286,
+        104,
+        264,
+        135
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        12,
+        246,
+        266,
+        131
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        286,
+        246,
+        264,
+        131
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        12,
+        384,
+        266,
+        129
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        286,
+        384,
+        264,
+        129
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        12,
+        520,
+        538,
+        134
+      ],
+      "role": "scene",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        18,
+        107,
+        124,
+        45
+      ],
+      "source_sample_text": "1. 精心制作蛋糕 希望给她一个惊喜。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        209,
+        180,
+        55,
+        50
+      ],
+      "source_sample_text": "生日快乐 等你回来！",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          204,
+          179
+        ],
+        [
+          264,
+          178
+        ],
+        [
+          266,
+          237
+        ],
+        [
+          194,
+          237
+        ]
+      ],
+      "carrier_id": "birthday_note"
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        290,
+        106,
+        124,
+        44
+      ],
+      "source_sample_text": "1. 下班后立刻出发！不能迟到！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        471,
+        170,
+        77,
+        54
+      ],
+      "source_sample_text": "快一点！好想回家……",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          479,
+          215
+        ],
+        [
+          467,
+          235
+        ],
+        [
+          492,
+          220
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        18,
+        248,
+        134,
+        46
+      ],
+      "source_sample_text": "2. 认真装饰，写上她最喜欢的话。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        154,
+        324,
+        96,
+        32
+      ],
+      "source_sample_text": "欢迎回家",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          170,
+          316
+        ],
+        [
+          219,
+          318
+        ],
+        [
+          265,
+          373
+        ],
+        [
+          141,
+          373
+        ]
+      ],
+      "carrier_id": "cake_icing"
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        291,
+        248,
+        129,
+        46
+      ],
+      "source_sample_text": "2. 路上遇到地铁晚点，但依然不放弃！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        449,
+        302,
+        100,
+        69
+      ],
+      "source_sample_text": "没关系！再等等！我一定要赶回去！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          468,
+          361
+        ],
+        [
+          458,
+          373
+        ],
+        [
+          483,
+          366
+        ]
+      ]
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        18,
+        387,
+        93,
+        49
+      ],
+      "source_sample_text": "3. 点上蜡烛，静静等待。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        151,
+        465,
+        118,
+        39
+      ],
+      "source_sample_text": "一定会喜欢的……",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          156,
+          486
+        ],
+        [
+          144,
+          481
+        ],
+        [
+          155,
+          475
+        ]
+      ]
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        291,
+        387,
+        115,
+        46
+      ],
+      "source_sample_text": "3. 终于到家楼下，加快脚步！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        440,
+        464,
+        110,
+        45
+      ],
+      "source_sample_text": "到了！他还在等我吧？",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          449,
+          501
+        ],
+        [
+          439,
+          510
+        ],
+        [
+          463,
+          505
+        ]
+      ]
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        220,
+        539,
+        101,
+        69
+      ],
+      "source_sample_text": "你回来了！生日快乐！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          226,
+          594
+        ],
+        [
+          212,
+          602
+        ],
+        [
+          230,
+          604
+        ]
+      ]
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        439,
+        542,
+        108,
+        95
+      ],
+      "source_sample_text": "哇……谢谢你！这是我最棒的生日惊喜！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          449,
+          618
+        ],
+        [
+          436,
+          625
+        ],
+        [
+          451,
+          627
+        ]
+      ]
+    }
+  ],
+  "features": [
+    "six_parallel_top_panels",
+    "converging_bottom_wide_panel",
+    "two_colored_track_headers",
+    "physical_note_and_cake_icing"
+  ],
+  "execution_blockers": [
+    "physical_carrier_perspective"
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        12,
+        77,
+        266,
+        24
+      ],
+      "type": "source_track_header",
+      "executable_story_text": false
+    },
+    {
+      "bounds_px": [
+        286,
+        77,
+        264,
+        24
+      ],
+      "type": "source_track_header",
+      "executable_story_text": false
+    }
+  ],
+  "overlays": [],
+  "confidence": 0.85,
+  "notes": [],
+  "layout_id": "SB-034",
+  "source_size": [
+    555,
+    660
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：双线并行，页面同时推进两组人物或两个地点，最终在同一点汇合。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Dual Parallel Storylines, two simultaneous story tracks or locations progressing down page, converging at single point. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "79c34925f2526f222b227a9b8c0d8d64d3f38c741fc06ad402b3a259d9db1763",
+  "preview_sha256": "034a712c56cba01a71140921ad97ba4196d7b8905228f5df85f0b9f85a1a6813",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-034.webp",
+    "source_note_path": "source-notes/SB-034.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

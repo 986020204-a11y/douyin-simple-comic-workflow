@@ -1,0 +1,478 @@
+{
+  "layout_id": "SB-049",
+  "source_size": [
+    546,
+    625
+  ],
+  "preview_sha256": "f875b43f4df2c7098f130ce560118494dd26ba0e0922d7b67d65ec2b0ca45a0e",
+  "note_sha256": "162313425f8b818a324f90ff8eb436cb4709fa4d8541ee397a592dd7aea99ffc",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 58,
+  "panels": [
+    {
+      "bounds_px": [
+        5,
+        59,
+        536,
+        208
+      ],
+      "role": "rooftop edge",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": true,
+      "polygon_px": [
+        [
+          5,
+          59
+        ],
+        [
+          541,
+          59
+        ],
+        [
+          541,
+          267
+        ],
+        [
+          5,
+          190
+        ]
+      ],
+      "source_number": 1
+    },
+    {
+      "bounds_px": [
+        5,
+        195,
+        537,
+        248
+      ],
+      "role": "fall between buildings",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": true,
+      "polygon_px": [
+        [
+          5,
+          195
+        ],
+        [
+          542,
+          273
+        ],
+        [
+          541,
+          443
+        ],
+        [
+          5,
+          368
+        ]
+      ],
+      "source_number": 2
+    },
+    {
+      "bounds_px": [
+        5,
+        371,
+        536,
+        190
+      ],
+      "role": "elevator shaft",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          5,
+          371
+        ],
+        [
+          541,
+          448
+        ],
+        [
+          541,
+          561
+        ],
+        [
+          5,
+          470
+        ]
+      ],
+      "source_number": 3
+    },
+    {
+      "bounds_px": [
+        5,
+        474,
+        536,
+        147
+      ],
+      "role": "landing",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          5,
+          474
+        ],
+        [
+          541,
+          563
+        ],
+        [
+          541,
+          621
+        ],
+        [
+          5,
+          621
+        ]
+      ],
+      "source_number": 4
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        11,
+        62,
+        97,
+        84
+      ],
+      "sample_text": "糟了！跑不掉了！",
+      "shape": "polygon",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            70,
+            128
+          ],
+          [
+            81,
+            155
+          ],
+          [
+            91,
+            139
+          ]
+        ],
+        "anchor_px": [
+          81,
+          155
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      },
+      "polygon_px": [
+        [
+          11,
+          73
+        ],
+        [
+          94,
+          62
+        ],
+        [
+          108,
+          137
+        ],
+        [
+          19,
+          146
+        ]
+      ]
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        379,
+        71,
+        55,
+        34
+      ],
+      "sample_text": "站住！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            381,
+            92
+          ],
+          [
+            366,
+            99
+          ],
+          [
+            382,
+            101
+          ]
+        ],
+        "anchor_px": [
+          366,
+          99
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        431,
+        113,
+        104,
+        76
+      ],
+      "sample_text": "天台边缘 被追上了，只能往下跳！",
+      "shape": "rect",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        37,
+        249,
+        116,
+        57
+      ],
+      "sample_text": "啊——！",
+      "shape": "polygon",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "polygon_px": [
+        [
+          37,
+          260
+        ],
+        [
+          145,
+          249
+        ],
+        [
+          153,
+          286
+        ],
+        [
+          47,
+          306
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        423,
+        288,
+        114,
+        74
+      ],
+      "sample_text": "风在耳边呼啸，整个城市在我眼前迅速下沉……",
+      "shape": "rect",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        40,
+        410,
+        108,
+        45
+      ],
+      "sample_text": "还没结束？！",
+      "shape": "polygon",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "polygon_px": [
+        [
+          40,
+          417
+        ],
+        [
+          148,
+          410
+        ],
+        [
+          137,
+          449
+        ],
+        [
+          49,
+          455
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        375,
+        445,
+        98,
+        57
+      ],
+      "sample_text": "好深……看不到底！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            380,
+            471
+          ],
+          [
+            362,
+            482
+          ],
+          [
+            379,
+            487
+          ]
+        ],
+        "anchor_px": [
+          362,
+          482
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        19,
+        517,
+        94,
+        56
+      ],
+      "sample_text": "呼……我还活着！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            100,
+            544
+          ],
+          [
+            118,
+            548
+          ],
+          [
+            105,
+            555
+          ]
+        ],
+        "anchor_px": [
+          118,
+          548
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        409,
+        558,
+        115,
+        63
+      ],
+      "sample_text": "原来这里是地下停车场……",
+      "shape": "rect",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        15,
+        212,
+        100,
+        31
+      ],
+      "sample_text": "2.跳下高楼",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        15,
+        378,
+        102,
+        29
+      ],
+      "sample_text": "3.坠入电梯井",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        15,
+        488,
+        73,
+        31
+      ],
+      "sample_text": "4.落地",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    }
+  ],
+  "observed_features": [
+    "four slanted horizontal panels",
+    "hands and legs visibly cross first/second edges",
+    "falling action direction downward"
+  ],
+  "uncertainties": [
+    "Exact crossed silhouette must be a separate foreground asset; outlined polygons do not prove breakout."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

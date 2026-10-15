@@ -1,0 +1,162 @@
+{
+  "content_roi_px": [
+    13,
+    80,
+    530,
+    507
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        13,
+        80,
+        530,
+        286
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        13,
+        375,
+        139,
+        212
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        158,
+        375,
+        186,
+        212
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        350,
+        375,
+        193,
+        212
+      ],
+      "role": "scene",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        49,
+        94,
+        238,
+        127
+      ],
+      "source_sample_text": "嗖——！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        394,
+        306,
+        143,
+        52
+      ],
+      "source_sample_text": "不断向前，这就是速度的执着！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        17,
+        554,
+        62,
+        31
+      ],
+      "source_sample_text": "起步！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        166,
+        555,
+        73,
+        30
+      ],
+      "source_sample_text": "加速！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        357,
+        555,
+        69,
+        30
+      ],
+      "source_sample_text": "冲刺！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    }
+  ],
+  "features": [
+    "motion_trail_repeated_subjects",
+    "large_top_action",
+    "three_lower_details"
+  ],
+  "execution_blockers": [
+    "motion_trail_semantic_asset_required"
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        371,
+        570,
+        163,
+        64
+      ],
+      "type": "source_explanatory_footer",
+      "executable_story_text": false
+    }
+  ],
+  "overlays": [],
+  "confidence": 0.88,
+  "notes": [],
+  "layout_id": "SB-028",
+  "source_size": [
+    552,
+    640
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：连续动作残影，同一人物在单个或多个格子中重复出现，表现高速运动轨迹。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Motion Trail Strobe Sequence, character repeated multiple times within panels depicting high-speed kinetic motion. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "c9e1ce25300d216262403ce9e3c00d849576a69bfc24dfcc4a9f65452ce794e8",
+  "preview_sha256": "058cedcae15cfbde02514026671a5e8e3b2e10958fdc2470216d606c3b639a57",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-028.webp",
+    "source_note_path": "source-notes/SB-028.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

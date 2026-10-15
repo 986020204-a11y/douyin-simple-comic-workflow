@@ -1,0 +1,1392 @@
+{
+  "upgraded_count": 63,
+  "scope": "source visual annotation cross checks only",
+  "rows": [
+    {
+      "layout_id": "SB-003",
+      "template_sha256": "14c0326d16286987a95b2b15ed9cf08a40037fec5e3de7382970606e39aa19e1",
+      "preview_sha256": "092e36171e93f0ef8bf5b4842e25f76ef62af7d29bfaf1693d069cbc96c43a6d",
+      "note_sha256": "b19e7037cfc3c2eeb9a1ad9a04ad2fe3c43f44c354661c12e929623c1c0fe328",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "bf4d0afb12fbba0e0cab1c75cef07875462c3f3959da6b4b264d1ffca481f8b6",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-004",
+      "template_sha256": "6f574703bd3a17f0737e92f6943878b70538f3aaad54b3b210183940cf5abb68",
+      "preview_sha256": "6965b9baf03f8cd52a2ccb83a465424b81e1a2ee2d358f394729ce5fa8ae7e09",
+      "note_sha256": "902e87ec19d399016f55fc519033ae2d79717da6e88a9f638b304d0dbf5e6007",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "e1b3fc234ca4e4f551e9fa044b9d43016820c7b55a3f7a0f3e6e5df92ed3bbf4",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-005",
+      "template_sha256": "26416d53e19754c890b16e3f979a37bc9ef4a3919adaf0193c3b0166f3b5f13b",
+      "preview_sha256": "cc8a48a00d11c35eb443bee70cd6ab747e4c2256a9a1334e712d9a6557e1fa70",
+      "note_sha256": "9d9beb57f6fb9245f73f2ab80914d4cbadcedbb5075fe9a0aeaf5f8602e6ca5c",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "fdb24ee5dacb066c7eb3f2ed539badf0d4cbade2414684270a6e66ae86fb1312",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-006",
+      "template_sha256": "7c849a0b8e70a8e7df69234b65098611cc3bc4d5ec4f7fb8d3a9416a527f33f6",
+      "preview_sha256": "bf4ebebcd9ce9d8788586d9bf8a9c9fbaaeafe7030b0b3c15f3a651141de37c0",
+      "note_sha256": "84a6ce16e87e2de875292af069b3fffd0c38b869d6f21106e644dfde98bcf96e",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "61fa3d30fafd82c1fede2e5a0cdb8c506ce052cf27988e6ba5c83cc396592729",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-007",
+      "template_sha256": "20d561dbe0640853fa5637e111c01f076e4b2b575ab03d16cf7dcbf64c87d27a",
+      "preview_sha256": "12056fd4d2f4bf14d063263b120b0c5b6f532061daacefcff16dc4ffb0942a94",
+      "note_sha256": "6380baac954d58e3127155d5b832b3eba373de76db579670e1ade3be9f326051",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "6971058715a04ee252ad921a3dd90828a6daecf791ed71cd239a0b391a25fbb7",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-008",
+      "template_sha256": "6514e51c800c89813ade8a33b35b6d4d7eaa1d5d4372bb53b8f56ab5fc8ccc41",
+      "preview_sha256": "ff6ff7f4ece7882f581c3c02c42db65865addce589b079dca59e868d69b46019",
+      "note_sha256": "2c477d72f2fdd263a3d72f774ab8b084efa7006bf2044f569ccf04705f14a3eb",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "1f7f7405518f56ea284b2cfd15145d0979d98d7ecf2e61ec255338b270b35411",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-009",
+      "template_sha256": "e01b715c96438bda3182fd3c40a80545e178551410a585b3ff60d1ef8783187a",
+      "preview_sha256": "e326738490b8066f26ca68827e32b0fc7ab5c8ed4a2def66c16db80b05ee22df",
+      "note_sha256": "3a5501da65dcccd538bfe63309cf00170d1d4c7baa6a1d1f0b174d838b297f93",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "959ae1d011773e78f0c1b69015af3778d64af8b54c722caa68d66ed57a19165f",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-010",
+      "template_sha256": "c1128df152ef04b060cf51685edd0f6057866d2996270c8c972f1465ef96e833",
+      "preview_sha256": "8a273ca3d05558cf56f689c11a1a49425be0ee4335e2710569e86cfd27e6136e",
+      "note_sha256": "2c81fa1f1ee5599f5a226ba08e9c460d9656a95143e7e08cb71459478a3bad97",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "859f5557157cec1189261b14274c73bb43ede6bb139ecbc36baa291f86a4e6fe",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-011",
+      "template_sha256": "656ce87ad9bc17f571208b3a4998a3b3315d7149061be786f2313a5e0309a367",
+      "preview_sha256": "c2e2c0d4cd5d5fcce65af69894576b32a6743df593ee42143f803dbe3efb0e02",
+      "note_sha256": "e9216cbcf22a88ea435ad43d1786688e75d1f1f96f22a417d5dc7614652a6240",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "5c5a4de21634f956acf9ddc63f3231fd88144f02d551c5522a405ea2fdf640cb",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-012",
+      "template_sha256": "f11adab940b90cdc41d41621920e0245b55ca366c5c7a0a00216d04209e015e5",
+      "preview_sha256": "beedba7f576719cfc83ebbe4b5d97f737050cc8a7c3ba80e3d8bbcc33473d954",
+      "note_sha256": "48cf06660cf2b08ce7cc26746b7f39417651820c1b9b1289b2c00f76fd24f5be",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "9abf788580bca3cea6c8626e693b47a412620423ebc1df7b3655791e7fd50422",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-014",
+      "template_sha256": "a69b672faae64ef1e3675ae5cbaf28ad712df0bec5aa6807341ca37dfb3a8299",
+      "preview_sha256": "5931eab922d3309ee62ea3b7c51a903310c36b4051a55ab62c72ab9a18dcfca0",
+      "note_sha256": "77f702af987413ad69c01a04a61d7c46a432b93ebc958c49772ea084d0fc1ee0",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "a732e65c19408833b1889b2879be98f61503d52e6a382bb5f51e1bd73e847e16",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-015",
+      "template_sha256": "adee694058ab2a64a85c965656b515532b17cc0f77543ce22fe07811ae612a3b",
+      "preview_sha256": "9227770fa48e8a574fb1d502996848525ba46e7817c822c46cbc1b695e9af6c7",
+      "note_sha256": "b3d6dd9856a092c3c6779db06ae0e776a2cea47261ff0d3f852375c87f382f95",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "50f309a0d79975415c5f7f8d751e1d39f3be751be99e3995511581ba10649594",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-016",
+      "template_sha256": "a94ca6a2bde7b005a3661d95c8836e95135666ddeb9f29aaffde5a1a496f0c3a",
+      "preview_sha256": "adc03796acee0ad4bb620c57bf9b5c3edde59b5cb0ea9dd338c0649347b5435f",
+      "note_sha256": "f628c0be35f3981b4d1feb00484eb774d545bb4f034a28d05ccb11feafb7532f",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "e5af46b9a2ac8f01b89d8d88e78574e4af1f8c166bfdc59c91005a2d4e90a473",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-017",
+      "template_sha256": "5e39842584d832c0449ff902b97ea58fc4a9f08d2aafe96a23151ed6ea9c14fe",
+      "preview_sha256": "f27b25299eb15118d3fcd9d5f59c4c87c5add072bc6eb2bd312b045b215fb899",
+      "note_sha256": "98dd93890beef7e6a7ca9197afdb7f5615c9b13b505486e81b07c22951d367b9",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "783a8e9d7bd21b95142cfa62dd9258cde13b91ff79327564ea7d87c5474cc0c2",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-018",
+      "template_sha256": "8577aa7ec8fd136e0d2febf204c4fe13e52ce085f87892777c56ae8d82cee581",
+      "preview_sha256": "3dc4302ccb7cc4949b1d407d53c0680d211eae407a5e8a3829f6193b4277e911",
+      "note_sha256": "4b902c3adaade1e4486e10f1d4401dacc90789bd0d32abc7c6ed394f26b161a1",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "fa7a723568c593969e0318fb266ed2e7da77967f5ba8e27e97f893e21eb9c070",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-019",
+      "template_sha256": "c331757a1af8de4e3fbd5d6019064b281f80a31d6eb0e6c35ad426201f8df7e1",
+      "preview_sha256": "7313f1db58748567dd7a70ba6ba635c76c7f8b68db2a45e6d50185331e7eeadd",
+      "note_sha256": "ab03630b6103cfaf1a505c744faf7ab2942fb12508206d806fbfcc6dc9ab32eb",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "eaeb659792e973802e81c30ae4a8230638942afd23d570a2b4fb4afc7a97dd03",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-020",
+      "template_sha256": "949b785ac255638cfd8be9ad3ab54489bab799258aa334f3ebc393de573b6f51",
+      "preview_sha256": "54741828d230b01bfd20c303164542c362be921db4f99e2ac628ae6c4a6e6da7",
+      "note_sha256": "74d7df3413a295ac3373aa92a0e500ee35e3cd2c0fda4b35c20730f6180a9bd6",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "0586b04bd458569bf6e40b2ac13004aa2fe9bb3b5aeba92b161451935cf1465d",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-021",
+      "template_sha256": "a780998a4369edac58175c339312fc7ee95a7383903dd55802c6892e2d794ab6",
+      "preview_sha256": "77076f2927f3fb83c6d071fcc5fd97044ce5b892ddf571ea5a1844d0bdabdff7",
+      "note_sha256": "32f565273276aa1c25ef545a8120ae4351b4c02a3d1f80187f195d3c650cf160",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "7b8084099497e97131c9a8241cd1ad721b4343ad02238102eacc12320a3f11c8",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-022",
+      "template_sha256": "424c1aac70600bca11838324d70c47a607ec40223a92eb406bdf72b405e6aeb0",
+      "preview_sha256": "f627aa380cec5d585a87ccf925b4b8058547f692dc31d4c4afd0cfff6851aa5f",
+      "note_sha256": "0b0bdf63664f98887f4bc500edad92afeeaba24cfb794872ecbf4f778299d73e",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "b4d0622552e843e5cfc2b70dadeefd219fd55c230965c900b11313917922262b",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-023",
+      "template_sha256": "696d9abf51946a8c151fb3530390747d4c3131a56768145cb7781e1e85c5c207",
+      "preview_sha256": "a80ae5494d89d5bd2f16d812b2b4c8638f73bbfcb8f301fa39d51e81daae76a9",
+      "note_sha256": "df8e5ca6dde17551a16d1ed80b5648c31d72f8147a144de36d8e2ceb3a77ba04",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "93e64f8702eeaebc5b12361855907a449a8d5d6124a4ebbf2be021c7f3740c95",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-024",
+      "template_sha256": "816bc635da47868921c0e893bf714d1f8e116be6fffa74d84692d7806e15c2f9",
+      "preview_sha256": "dcdc4aaa6d4d37d639faec5efdfe6ac48680ce1f73da74936cd673c42d316889",
+      "note_sha256": "cbf1d00f126813bbf1c0338afb453a8ebfe5c844be9f46df5d53af8b36b46e58",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "5913069fdfc11cb7fd8e09a6f5855c7e2975844c1b67fd31eb8f770600440eb8",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-025",
+      "template_sha256": "7fd84a8e00952e07ba7d6cdaa4c5ea0a43dcb23333d25ba6c541b93174beb8e7",
+      "preview_sha256": "bb86c8f8f1778d15e495fe88254ac28773a99652b746a113851eed99962c225e",
+      "note_sha256": "c451848d614ed5b24da83ccb0131bb2a7e90017248dce91019ae59711ecb02f7",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "72e9c8bfd80274b57a42838061c7b5275acdbfe0ff810343fce658a581312b1c",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-026",
+      "template_sha256": "827ba764f38c5cc8b05c746a078cb936b3b4f2dfd4987c8dc5298a5ee03173cc",
+      "preview_sha256": "5155c695ceead71f65111644147cf02417bd3f48eddd72215a51eeb0888d2619",
+      "note_sha256": "dc3de42b20e8b1727ed5d4b44f40c557883a062abe3ee6825c76ac3313e602e8",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "c56839aeffc51fa1f30e0f5db5607d3d603937be0fa52e695604f259660454d3",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-027",
+      "template_sha256": "dbcbe0bbee28312cf83cb8ddc0e615a1e4234d6f263e6f76c65f864b881ebac7",
+      "preview_sha256": "efd857e9760a8d2edf96a630789957d1d16da98f3877b8d03c609d7887a5111e",
+      "note_sha256": "03e4d9f1708324a6773a22f34d56b9b2124b6cb8c8cda866a5f48bfd87f9d8c9",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "53ae1cc7ee9708964b573bf5f6292cb04f5e2e866cce6c6411b9acb24bc5dafa",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-028",
+      "template_sha256": "bd677fc147ccb788b789b8dd1287425e0b5bb729fb746a4f92abd8a493efc033",
+      "preview_sha256": "058cedcae15cfbde02514026671a5e8e3b2e10958fdc2470216d606c3b639a57",
+      "note_sha256": "c9e1ce25300d216262403ce9e3c00d849576a69bfc24dfcc4a9f65452ce794e8",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "c00a6aee4f00bdd37a0807b0b85b094883c86376e3695156e41ca87d84bf2ba7",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-029",
+      "template_sha256": "474ad7bcb855d173e19c32af175b66bf217fa38b6677b229d61c3bdafb25be25",
+      "preview_sha256": "3b17da4337e59c436daf2580b0bb5fea91c5ec1fb6c049e09fd956a7e969b449",
+      "note_sha256": "6007edd1968455127257e2238d64c3c0c114a9520d10947ee4bb1ee330f1c4ab",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "10e26a1cd2b3d99f930896bc9dddee8f83a069a83fc5bffd152021f02f1dffcd",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-030",
+      "template_sha256": "ec34df95dcdb4ae23bc2ed0168f9bcf06541c2bae1262473ed8dbd60cef910f9",
+      "preview_sha256": "e5fbe2e8ac4bc3c1dbd08f1058c5bf2675752ecb7853a0b17969a22e269e00af",
+      "note_sha256": "f745f12a219e27661afad3b0207979a25cf2da738431d8804d4730eafcd35376",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "0844ea14c6e3fcdc3f79a753e6876167d87d54dd8153ce4f88bef828bc4374a7",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-031",
+      "template_sha256": "6c19b05221b66de57b10c857139624e94ca05745dfbfa1d6a7b516bdf45cef96",
+      "preview_sha256": "15472d9bed0ba9c5cd56c6398ad728a6b197b39a58760bb4dd12d875a9137f18",
+      "note_sha256": "1f7dca77108f1c99458b1ef8c9ef8c11b048b397c37c10ea5beac7638ee73855",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "4995ab42486d8a4fd9d6ce9cdae0e38e8ee0e91b44b1c226cf64de4b49f096a0",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-032",
+      "template_sha256": "830c73b05525740c384ba752ba04aff79c90105ca17f7e97853b06d889e47366",
+      "preview_sha256": "c4f43c45497411d4c9c010f4197a4add682af591541ecb5087a7fd9561a76cb9",
+      "note_sha256": "d794ba262a8cc44617b8993073cec6bbe0257d43e3330c9621c73bb5fe01d067",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "b3bc3b2bbae7a5ea75c501b87b8ad590b88d1921fafcf9ac2aa00a786432416b",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-033",
+      "template_sha256": "00c9a51ce3701e6b8ec00a34c2090ae4307b707145cd110756598131fa5656ae",
+      "preview_sha256": "18ea2ae078e2451f8c85fa067c4a0849d34365a37b04a6412c784b9881bf0653",
+      "note_sha256": "065e34bc687575401660861240abb5f9bbab094e218bd6d91c8e9bd9c6a46714",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "67f06c1bb598bd698bbba23564a9c97f3948a18042193880ba0f35cbd4e6f49b",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-034",
+      "template_sha256": "93133d5f5492d552d499de912a356f182186760d4333582e3f58a1a956f124f2",
+      "preview_sha256": "034a712c56cba01a71140921ad97ba4196d7b8905228f5df85f0b9f85a1a6813",
+      "note_sha256": "79c34925f2526f222b227a9b8c0d8d64d3f38c741fc06ad402b3a259d9db1763",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "7bd5fbbc1e0767f0ea5e57bcc201b43307d29624cadd7635fb21f800b5914d8e",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-035",
+      "template_sha256": "521e9ee0344aa3063cf99c622988373553b9363f6982deb4a30ba470ca9c3a52",
+      "preview_sha256": "c6256bd9160ebe9951477d8a1c6f190f1d3aefa11969725036b3991f02960a7e",
+      "note_sha256": "6d631f49e34bbe774fd7d7c18ffa139ae9f55c785a102e47a27ebb1645fd519e",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "4aa246113ec9e3413d5e82be28646db992aff94818f115d9ff327f9d80f23e6f",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-036",
+      "template_sha256": "d047a1a2df7868bb01064e87e1a76afa7d7a58baaeb1fa452be5d4026a35f3f5",
+      "preview_sha256": "8df1ea985798f85fb7ae0ef93f2916bcd2a84a9d723284255f49b9cd7a329299",
+      "note_sha256": "29e513b3aba1525353d323ef11d51fedcaaa0a74eb545b8c9fa38b614f8cb77d",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "84fd962770439ffce33f656520862c7beb0fa6962defd2eed80dcdca1030086d",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-037",
+      "template_sha256": "58ad60706e06af60c7e336ab0e9c0379c1a443af251e7b396e214fdc65ce6d78",
+      "preview_sha256": "7a3faae5c1d049639fa05cccef8cecca0cce7b5fe6fbf6e7fd34fdecd78757db",
+      "note_sha256": "9d72a790f8a5b512abb3b21f6874c2c35bdc6bfb323877d566c09ecaff435d37",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "d2ef0c220fba731323ec15a321cc1ea3606720ce35c17c4c788696ed651e8549",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-038",
+      "template_sha256": "ae2976f604073e6a489dd926c54da84aedec01c9496631e1c1340e18dbdcb1d2",
+      "preview_sha256": "c90eb79adf4ca75082c3906e1da76958fe7787d3162e850b8389d8e787928cec",
+      "note_sha256": "eba6f9c0602f8a5774f28b85c02f074201e96459f9c31c3229bac0ef8620e39e",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "813c47637cc16cd1714bc2006b99b8c0b098dbaac4f4bfb3e47a2ddeb14d2615",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-040",
+      "template_sha256": "32af3c08c3767a85203326b785baee8b09f3c909f89e6e058780cfd87c89c45c",
+      "preview_sha256": "ab583ae0861be5e40e091e0f3ee44c597e1328e8ec6baa69f126882cb0b5e3fc",
+      "note_sha256": "af8825ce72a6f64cf0a812f3fdaeb290471ee870f9be00f0f77a07f25046169d",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "f7d65bae413cfd639bb44073591cfefddf71c425050630e6854e65bd74ed471c",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-041",
+      "template_sha256": "81bdbe99ef7392c8425719a3b5a4da500a4ba1899f642f70d463529632b7b221",
+      "preview_sha256": "ee4b495cb706d8a74746fe0ef225f9c628b4e852fd07bc9e23bbf2b17d7e74e8",
+      "note_sha256": "a9f55865d670b727365a33b8a0865f7295443aef33fd29c21e7f098c6472ae2f",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "095dcd88ff5a3f5d0995708fdb3adf7dc9fe988fd1c3d507d7202b6ecd416780",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-042",
+      "template_sha256": "6ac341db49afc818bf1ee1159434483474db499c9265de81751a429cb0540a3a",
+      "preview_sha256": "f25ce6e220a2427c646afeca16e1376ef65c507bd9ab0d1e83f0cc60e8617a77",
+      "note_sha256": "aa11cf827901dba1c9ec1704c832ef0349fe8df949ee168bb885b2df7a382a47",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "3f523dceebffff5b617f71e0495cd6a2be924317b44f57658dd05f0b4e0d66d1",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-043",
+      "template_sha256": "e5860ee3470253f555cf4440ade8291a1a7cc7a8d74ddf6473d0029ac3d27fff",
+      "preview_sha256": "e536c49bd8077f623e446db4d1d39c300324fa001a9dced21aed96f01e7c5af4",
+      "note_sha256": "0cc5b20d3a1d7635f809fbc51e7ae0e78931d60ea45516b96aa2399cd4c72999",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "9c67ef56b119500e8f65638036daccdec3a94da30baa450803ced18750d80231",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-044",
+      "template_sha256": "7b4b8897ee75d6676ec7b6da9ea4541371124573794bf5064692978af8cb34a9",
+      "preview_sha256": "eb84287f3252086093b4650f282a36661f3eb289628ed3ef15263db1aa69b303",
+      "note_sha256": "42023ea464836694a24c774aba6a0873bb9dd1c4d209d2fd6ae8b25128498d98",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "bdc7de4b6d3ecfe4c1b3828f2753e0b4e7e09f3849d7b3f0f8bf4e8a1808fd5d",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-045",
+      "template_sha256": "3a4168ff5a2c91feb1d8cc0c1ef40cd02555f7357109b26312a23f7affbcfe72",
+      "preview_sha256": "4c11b82b72e570c43802ab3ecbb06e7f2df55a5190f56064df99794a917f65ec",
+      "note_sha256": "20a2edae3b6b277458ba91c7261626f440958b9bc77cd8f5cda07405374b430c",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "75571583a6828102badd48bc500e05d1ceff81da61395f1406e49b747216b1b7",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-046",
+      "template_sha256": "92c9b922249b5584b5242f2a94d6fd7cf54ede7c05a8522b08b129caf659b1ec",
+      "preview_sha256": "5fc5f434f5aa22d90e5ae3c943b33fabfeb6b23b60726e2ad04612a73079ee6b",
+      "note_sha256": "c2c5fd3d62ff38cbbf03af680789cc7392d4f58c0c7946a48a06b2daa00c3144",
+      "source_annotated_individually": true,
+      "cross_checker": "root+annotate_sb_047_068",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "collaboration visual-review findings and root contact-sheet review",
+      "independent_reviewed_snapshot_sha256": null,
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "399823214049a362e2026619189797987f22f8b59f7987f4eee10f98719c4175",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-047",
+      "template_sha256": "40315f75409c78cee2b120f3455b463e5fdc6fa50d7b636371890ffbb6a7b174",
+      "preview_sha256": "8492d6f5ce300390dca1c94e599265e8e0576d0a0f80718b08ea0de05ba70eba",
+      "note_sha256": "fb18af85d1f3ac76366ed2c1af548b91ba426c10dfb9f843150e618d38bab1f8",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "8a8b421b9ca78aec59d165d73b285032d501578f3bfc25e07bfa4c2edac23c5e",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "2735af8c8ea3858d2a40d60ebd653bf06c40364468fd9b5d327970bd9f45e2be",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-048",
+      "template_sha256": "b51a92b3cd16cfbdcc44182290563a4b242610d343c1f81f923419da50f30a0d",
+      "preview_sha256": "f3e129f4aab7de75ef0e0810f00c257b04ce6fb02accf0996732ea061464d460",
+      "note_sha256": "a3343045aee2b0c2b8841559e2ca9672889356c93e173ef0985fd7a51230785e",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "518ff5feb136bf0ff18db4b49844516a6f423af64898465dea65473136e67dc6",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "3c162679a7f0a82992d2f15484df09f8fbc0496b0ee6fffbcaa5921b3967222c",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-049",
+      "template_sha256": "ff901f1ac0cafa1655eec4da6fe94784fe6a5de0274572ddfbb1bbfb4472d37c",
+      "preview_sha256": "f875b43f4df2c7098f130ce560118494dd26ba0e0922d7b67d65ec2b0ca45a0e",
+      "note_sha256": "162313425f8b818a324f90ff8eb436cb4709fa4d8541ee397a592dd7aea99ffc",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "904467aa82aa5f5816d87ab8e27151a3cf020ad8f8c3e547b970b2f104a05461",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "32b8a502c8926ca4899cccadda5ec2f925611e960eae7fe0fdabc0e721fa76cc",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-050",
+      "template_sha256": "76c4b28ad35e12885f0ff39b37ff4afa948a18991004f2f46734a4b2509b6785",
+      "preview_sha256": "86583bbe855f558a43adc7875fdcfb29351ab321748420d10a3a4af8fcae96aa",
+      "note_sha256": "446d992159221ac5e412e23dacc1ee3d3fd2e0ab7064b3ea2497d236f8ba173e",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "ef0b0a9227c301d9169fbdfc03aed246f6e2d70f50db1e0dc4c5ecb5807889dd",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "d91db6d58f00d14fe3bff264f117d215b80dde60581c9a9592622a535a6a0b77",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-051",
+      "template_sha256": "246ab2689e44aea6023ec353f2571456f027762719dd964025dc311481445770",
+      "preview_sha256": "263b2934dd4fddd5b79f9ed9a8d1dcb510d5294a5a46e02dcb9b0b4b167d1cd4",
+      "note_sha256": "7b9721d1871a9750bbe05f6947754211bb4c27494aaae22cf7a91a95a806b3fe",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "178244a5f089ea0cb413fd058e28fec6c18fcb2d19dcd0b91037a3c31e853cce",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "35bd4c1b9e8c35997dc9837751e514a81f428558366afb649ebcacee0260672f",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-052",
+      "template_sha256": "a327b891825e3b7120fc8438807bdeb06761630e8493efc3e7613030282ad622",
+      "preview_sha256": "5a576dde2c021b803ee2013673b0e868a6c153598b4d625620744fd170c72051",
+      "note_sha256": "2637f901ba843b734f89384b89f0705d8184668354983db8bb3c7c99fd030a45",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "4ea4ce298c3209b96062271a991d4feabbe90584d3a1ce97d64ee7f281e75051",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "320f5ad086a121de81fd44348435d07a630efd9db7ffaf2d61e7cf387c11ce30",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-053",
+      "template_sha256": "9a9765011e191992ad94d9d6504fadb28e46db2451268e30fca3448ef2703bbf",
+      "preview_sha256": "d0d59937ee4cbd9cf2edc4d6264794471bde482eafb4310b908c4ca4c39000b7",
+      "note_sha256": "cad8de3efeca05dca54056bc7fe8e1924f5d785893344290f169eb860664ae68",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "3cc6deed54888dbaabedd1ae59e635d32884154878f7a139b76bc0c444b15adc",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "220dfb05606526ff3a4e4cc479eb2b1a82e15722a357581a2cdd50ea502edafc",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-054",
+      "template_sha256": "7d3d9318567d09097c7bd1b63937ad5932c50ec4c0ae4f7be49e97fdc92d6f0c",
+      "preview_sha256": "cae51ea7980b539508a63647d0f2762663167bf013cde627713164dc4f8f26a9",
+      "note_sha256": "06993fe2d8f56d574daf93aea3f1bdb9da78cb145261fdcf347dd5e0f796ad4c",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "30f4462bce9476502d149adff2eddaa5fb5e54f4c99c6fd41d6f13743091261b",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "6b6e4e3e700142f87b52faa91b582e42eeb124b4f01d486d29d24c3d7bdf8f99",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-056",
+      "template_sha256": "d08ba366d4f2e3f9dd3cd37b18df2fffc2d1b7fb389fc0eb5010e609162e7e43",
+      "preview_sha256": "a503e0fba72d69e92c1836f4606f0c57b9687071e4a51719b87c513e96d6deb2",
+      "note_sha256": "06f41c105f64849366a877db052763edb74572a48d2e8fd152cccbc25b54e903",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "775931ede2c174113e7cbfdc4c029a57505ba2a84b067da8a0e9425475483102",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "3e0af9305189f3b5dbaac5dc5a9dbd606b3e607902282955b1a48bdee910f48b",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-057",
+      "template_sha256": "7b67b993fe7825512e80cd6be51510780a8914ed3c2d6838eab78465c82b8e93",
+      "preview_sha256": "c0eefd0dfe52daba85527ff9773bb050e3158cff5960287a9743246993c58e03",
+      "note_sha256": "5f413331ff407de5f451ea3c547426e245ef9fd43f75650160f32ed99048d069",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "1347bac9bfbd27f3ed4fab4f82494d49ce672dc46690a7723d721d353c462e98",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "7a1508e675de59ff7b137948496d1d4edf84abb7a2c7b499b399349201fdd5ef",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-058",
+      "template_sha256": "8110c1d7a0f098a089c2dea630730362e85a02b453eb61d9e910c980512f14fa",
+      "preview_sha256": "7aec2f63dd05f2b860aea5866b4091c3b6fe4f0bfb2a468989cc1fb360bede75",
+      "note_sha256": "0712a4638c270a707f7673efd0c53ddd2be15863c7d4773f55a31b4cc8760ca6",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "dac87bb207d927924ff24c28c45a104207620f5fada469ba1c1545bd997405d6",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "22774ae709d178727953ba66c580ad1ebb7abd6d80ffbca601c2f839b298def4",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-059",
+      "template_sha256": "3599da59a618d6638cae3321db3fe3cc24bda16e176d07ae5d03e9ced3cd3ad6",
+      "preview_sha256": "4f0044d4d67af7d272609f2fae61cd577b63512cef81fd4e79923a12c0017fd7",
+      "note_sha256": "af94afd4bfd6801fde26a217d439834fcbf74a4f54b2ef80c158a3c694fc3cb3",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "b0ce45246aef88d2ecf50afda314f00d551c4b1c36b561506bc16850f20adf03",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "c8db5bbb11c8cdc1ee2ef0b882cc5945e24b94761532deaa72d6456694d068f6",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-060",
+      "template_sha256": "bc716b47276b6ae7bb50763b69137d46a51588a1855d709d19c5403d33673789",
+      "preview_sha256": "8b05625f83a4bca9d059d11ac98e83ed02ffd4e084fa2a459dfe0947359351fb",
+      "note_sha256": "c47c6795d9f4db233bd0a6357b7d2d17082c8efccd99aba3c94241130b155297",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "51582b2e87bf3c326ab66671989d078a9c9fdd1d0893021027c96c4e96adb073",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "385aa5dcc8264c07e63b499cf7fe134a8ea63834f9b2d940b2b2c9f0525e4ee6",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-061",
+      "template_sha256": "0751191dff8194eefd44399b68a1208efa436bb1669287c4d38cb145bf21bb48",
+      "preview_sha256": "104a037d62dff982130dae269ae68646bca1e53e1ef653fcbbd8444fcd254403",
+      "note_sha256": "a3f3165aa9004e72d26c426d5e3bf458042095e7b5a0fbe46868dbd74609b12b",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "b1e51de6f9a2afbeeb0f8704557b0777b331ff3c4613791abb73cc325f1621d2",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "35ff11fce7550bcea48a6d012f324f91f31daf025ed3cdc43ee9abc201a64916",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-062",
+      "template_sha256": "07732084e10dae33e25c2abf2b4d3167028cffbd35613e0932f91559aeee6e35",
+      "preview_sha256": "a13f52e3e3457cb1b46e6b80e97f8995d51121a526361e476cfc915ffff096c0",
+      "note_sha256": "d59a5808ab6ddf30cf0bb865472d9a8e0b129cf18cbe596b6c6b8cfba3f6c7b6",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "aa11fdaa97852c6554fcf9c05d00d98ac7e8ef47e0e5c8b94a0ec23b968e4d70",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "380a2565dbd9811e30c1bf09b0c0cb57eaff07df366ffd5051953c7b28ee3a72",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-063",
+      "template_sha256": "f44a15323231bdaa756223011c13066ab471b41f0934dca2d258fe6d190e600b",
+      "preview_sha256": "52a1d900b9ae1b07261f6d1067017aad3230e00332b2bdf80f7ef2701e1d1225",
+      "note_sha256": "be29f7f2371bcd52bbf636e0a8cddabcc16f7f12919d29348a408f799e183793",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "ecec0b1a65b3aada30e3a04b37fb4a3e7c55ae5df34afe7f3832232d8b3ce67b",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "20ef09c438e28dd5ef5074d74a71acadeb255a1e1f6c469e16dd2bc464d7596b",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-064",
+      "template_sha256": "61dca0a0af529c4830bebdfd8b140c04ed3c8d37de52036c1b4f3b0366ee3550",
+      "preview_sha256": "0c2b020e3a19ed1b453c924d1dde91ab724a3bbee0e11b611105d61b1fed5a2f",
+      "note_sha256": "112334ae22734db543fabc8e3644599e46f23221330d1d2bf76085abe6bf3753",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "e7935383f939459b5c2cedb72a07ba3f896cbc1a08c4c595b5fff4311e79dc19",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "331b373d12a3b20f8e004bec201acd52c6a27b31a60ac7a60560e021ed09b383",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-065",
+      "template_sha256": "3136ada29ad77ef4b340104417f3c6b5cad682ddc2c4faa4807a33dd87c89e15",
+      "preview_sha256": "da341db3aaa4661d3e6c3165234bc02032db675d4e8bd5f9125a554b35398bdd",
+      "note_sha256": "1593f28a567eef2abfa42f1133588403cdd688466eeb511e999a0e06410317a8",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "0651ec47d9ee3a1513161225f51893870a8c50497b2e8c61ddcaca79d528a637",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "e108c9c2c032a3ede7e620882cac2ce6e217806377ee5515672f0fadc4482506",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-066",
+      "template_sha256": "71459ee96343e7be27c958b34de0174f10b9b776c0ef56aba6e5928771d3a2c0",
+      "preview_sha256": "9b06dc80c99e7a488786e1c2ea02b81753866d8a37bcb9f6bcf3aeef8f99827b",
+      "note_sha256": "eb26bbe4816ccfdd452663927c3750319cc2cea2dd42aba94e78f4d3a2d15526",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "712921c29ad486b94e6f09678dac0254448f0f1ed57d64b76424e14c3fecc081",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "fd90ff23e694bc264cad607eb43e1cbaa0514de39b2cc59116d3646926ca9b96",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-067",
+      "template_sha256": "86ae0904be5a50418a662669417f38e144625c83df60ebc24436497734535dbc",
+      "preview_sha256": "50afc273aeef0b7eb4831effa5d8a235fd4abd83fdeae1b68b0075679dc8090a",
+      "note_sha256": "07b784927e7a584c33925a9b6a74152638478fc81cbd25b42bb7229a8ec9cddd",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "19127b9946442505dc5d490229576eb37648f43e1078ace7ea33759e1f943418",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "5f65cce74f2ff089fa6fadd45dea3fa8e9a3f54616d0d4133a25c7c959b73c8f",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    },
+    {
+      "layout_id": "SB-068",
+      "template_sha256": "5d638db5a3b8373e690d7a78551a935b18e479c971844427a8cd11b0f0ce1d36",
+      "preview_sha256": "4bd04dada580fc196d04809abaf50580fd8753dc5ea84e89fbb57c59377d5bb6",
+      "note_sha256": "dd6cc816f6a5a355354d9301bbd20bbc33fdccb04e45bc6e59920c5399161eb9",
+      "source_annotated_individually": true,
+      "cross_checker": "annotate_sb_003_024",
+      "cross_check": "passed_with_explicit_uncertainty",
+      "evidence_source": "independent-047-068.json",
+      "independent_reviewed_snapshot_sha256": "28137da5d1227a59dee8242b05f01ba4fa8d2729d5f0d41880b9a37f67f09e18",
+      "root_post_review_changes": [
+        "portable observation reference",
+        "non-executable source decoration evidence labels",
+        "validation scope and review metadata"
+      ],
+      "exact_numeric_geometry_review": "not_pixel_exact",
+      "actual_comic_tested": false,
+      "repository_template_sha256": "67a3c63452f1c2580e301c5daf6acc9c015298f4126297c5b65b73a64070cbe3",
+      "repository_packaging_changes": [
+        "LF line endings for portable source hashes; source preview/note bytes unchanged"
+      ]
+    }
+  ]
+}

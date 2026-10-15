@@ -1,0 +1,581 @@
+{
+  "content_roi_px": [
+    11,
+    58,
+    540,
+    556
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        12,
+        58,
+        170,
+        167
+      ],
+      "role": "morning_tired",
+      "polygon_px": [
+        [
+          12,
+          58
+        ],
+        [
+          167,
+          58
+        ],
+        [
+          181,
+          225
+        ],
+        [
+          12,
+          225
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        12,
+        230,
+        172,
+        187
+      ],
+      "role": "work_focus",
+      "polygon_px": [
+        [
+          12,
+          230
+        ],
+        [
+          171,
+          230
+        ],
+        [
+          181,
+          414
+        ],
+        [
+          12,
+          417
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        11,
+        421,
+        222,
+        193
+      ],
+      "role": "coworker_conversation",
+      "polygon_px": [
+        [
+          11,
+          421
+        ],
+        [
+          177,
+          412
+        ],
+        [
+          233,
+          532
+        ],
+        [
+          221,
+          614
+        ],
+        [
+          11,
+          614
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        349,
+        58,
+        202,
+        167
+      ],
+      "role": "afternoon_inspiration",
+      "polygon_px": [
+        [
+          372,
+          58
+        ],
+        [
+          551,
+          58
+        ],
+        [
+          551,
+          224
+        ],
+        [
+          349,
+          224
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        349,
+        230,
+        202,
+        178
+      ],
+      "role": "overtime",
+      "polygon_px": [
+        [
+          358,
+          230
+        ],
+        [
+          551,
+          230
+        ],
+        [
+          551,
+          408
+        ],
+        [
+          355,
+          395
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        321,
+        400,
+        230,
+        214
+      ],
+      "role": "small_joy",
+      "polygon_px": [
+        [
+          356,
+          400
+        ],
+        [
+          551,
+          414
+        ],
+        [
+          551,
+          614
+        ],
+        [
+          321,
+          614
+        ],
+        [
+          321,
+          532
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        174,
+        58,
+        193,
+        474
+      ],
+      "role": "central_coffee_machine_anchor",
+      "polygon_px": [
+        [
+          175,
+          58
+        ],
+        [
+          367,
+          58
+        ],
+        [
+          345,
+          214
+        ],
+        [
+          359,
+          428
+        ],
+        [
+          319,
+          532
+        ],
+        [
+          229,
+          532
+        ],
+        [
+          179,
+          431
+        ],
+        [
+          174,
+          214
+        ]
+      ]
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        19,
+        65,
+        108,
+        27
+      ],
+      "source_sample_text": "1. 早晨·困意",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        101,
+        109,
+        90,
+        79
+      ],
+      "source_sample_text": "好困啊……来一杯咖啡提提神！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          108,
+          165
+        ],
+        [
+          92,
+          178
+        ],
+        [
+          112,
+          177
+        ]
+      ],
+      "cross_panel_allowed": true
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        20,
+        236,
+        107,
+        26
+      ],
+      "source_sample_text": "2. 工作·专注",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        68,
+        343,
+        108,
+        69
+      ],
+      "source_sample_text": "思路清晰多了！效率UP！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          79,
+          393
+        ],
+        [
+          67,
+          407
+        ],
+        [
+          91,
+          402
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        19,
+        427,
+        106,
+        26
+      ],
+      "source_sample_text": "3. 同事·交流",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        99,
+        451,
+        100,
+        69
+      ],
+      "source_sample_text": "一杯咖啡，拉近了我们的距离！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          108,
+          502
+        ],
+        [
+          95,
+          513
+        ],
+        [
+          112,
+          514
+        ]
+      ],
+      "cross_panel_allowed": true
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        375,
+        65,
+        109,
+        27
+      ],
+      "source_sample_text": "4. 午后·灵感",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        476,
+        139,
+        75,
+        79
+      ],
+      "source_sample_text": "啊！有了新点子！太棒了！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          480,
+          200
+        ],
+        [
+          465,
+          214
+        ],
+        [
+          484,
+          211
+        ]
+      ]
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        376,
+        237,
+        110,
+        26
+      ],
+      "source_sample_text": "5. 加班·陪伴",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        469,
+        255,
+        82,
+        80
+      ],
+      "source_sample_text": "深夜也有你陪伴！再坚持一下！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          477,
+          318
+        ],
+        [
+          464,
+          332
+        ],
+        [
+          484,
+          329
+        ]
+      ]
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        376,
+        415,
+        111,
+        28
+      ],
+      "source_sample_text": "6. 生活·小确幸",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        454,
+        454,
+        97,
+        68
+      ],
+      "source_sample_text": "一杯好咖啡，让平凡的日子也闪闪发光！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          461,
+          506
+        ],
+        [
+          447,
+          518
+        ],
+        [
+          466,
+          515
+        ]
+      ]
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        484,
+        542,
+        61,
+        62
+      ],
+      "source_sample_text": "好咖啡 好心情 好生活！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "text_color": "white",
+      "rotation_degrees": -13
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        203,
+        91,
+        143,
+        103
+      ],
+      "source_sample_text": "一杯咖啡 连接每个美好的瞬间 COFFEE 让生活更有能量！",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          193,
+          78
+        ],
+        [
+          353,
+          80
+        ],
+        [
+          336,
+          204
+        ],
+        [
+          205,
+          204
+        ]
+      ],
+      "carrier_id": "coffee_machine_chalkboard",
+      "text_color": "white"
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        249,
+        400,
+        41,
+        63
+      ],
+      "source_sample_text": "GOOD DAY",
+      "kind": "carrier",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          234,
+          369
+        ],
+        [
+          302,
+          369
+        ],
+        [
+          288,
+          478
+        ],
+        [
+          249,
+          478
+        ]
+      ],
+      "carrier_id": "coffee_cup_print",
+      "text_color": "#fff4c9"
+    }
+  ],
+  "features": [
+    "six_surrounding_trapezoid_panels",
+    "central_large_anchor_object",
+    "central_anchor_occludes_panel_edges",
+    "diegetic_chalkboard_and_cup_print"
+  ],
+  "execution_blockers": [
+    "central_anchor_occlusion_z_order",
+    "physical_carrier_perspective",
+    "observed_speech_overflow"
+  ],
+  "text_zones": [],
+  "overlays": [],
+  "confidence": 0.81,
+  "notes": [
+    "Central anchor is a genuine framed/contoured story image unit, unlike a blank backing. Its outline occludes edges of six surrounding panels."
+  ],
+  "layout_id": "SB-046",
+  "source_size": [
+    556,
+    627
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：中心物件式，咖啡机、手机、门、车辆等核心物件固定在中央，故事围绕它发生。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Central Anchor Prop, core object (coffee cup, phone, doorway, car) anchored in center with story unfolding around it. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "c2c5fd3d62ff38cbbf03af680789cc7392d4f58c0c7946a48a06b2daa00c3144",
+  "preview_sha256": "5fc5f434f5aa22d90e5ae3c943b33fabfeb6b23b60726e2ad04612a73079ee6b",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-046.webp",
+    "source_note_path": "source-notes/SB-046.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

@@ -1,0 +1,143 @@
+{
+  "roi": [
+    9,
+    58,
+    538,
+    592
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        9,
+        58,
+        164,
+        592
+      ],
+      "polygon_px": null,
+      "role": "target high-rise"
+    },
+    {
+      "bounds_px": [
+        181,
+        58,
+        116,
+        592
+      ],
+      "polygon_px": null,
+      "role": "climb"
+    },
+    {
+      "bounds_px": [
+        305,
+        58,
+        116,
+        592
+      ],
+      "polygon_px": null,
+      "role": "height and wind"
+    },
+    {
+      "bounds_px": [
+        429,
+        58,
+        118,
+        592
+      ],
+      "polygon_px": null,
+      "role": "arrival closeup"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "rect",
+      "bounds_px": [
+        13,
+        67,
+        93,
+        46
+      ],
+      "source_sample": "目标就在顶端。只能向上。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 2,
+      "shape": "rect",
+      "bounds_px": [
+        188,
+        70,
+        80,
+        43
+      ],
+      "source_sample": "一步……再一步……",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 3,
+      "shape": "rect",
+      "bounds_px": [
+        312,
+        69,
+        81,
+        46
+      ],
+      "source_sample": "越往上，风越大……",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 4,
+      "shape": "rect",
+      "bounds_px": [
+        435,
+        69,
+        70,
+        32
+      ],
+      "source_sample": "快到了！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 3,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        324,
+        454,
+        89,
+        47
+      ],
+      "source_sample": "呼——",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "sound_effect",
+      "rotation_deg": -16
+    }
+  ],
+  "features": [
+    "vertical_long_panels",
+    "sound_effect"
+  ],
+  "notes": [
+    "Four vertical panes have unequal widths."
+  ],
+  "layout_id": "SB-019",
+  "source_size_px": [
+    556,
+    662
+  ],
+  "preview_sha256": "7313f1db58748567dd7a70ba6ba635c76c7f8b68db2a45e6d50185331e7eeadd",
+  "note_sha256": "ab03630b6103cfaf1a505c744faf7ab2942fb12508206d806fbfcc6dc9ab32eb",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

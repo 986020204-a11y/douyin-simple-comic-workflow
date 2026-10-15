@@ -1,0 +1,337 @@
+{
+  "content_roi_px": [
+    7,
+    85,
+    531,
+    581
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        165,
+        85,
+        373,
+        303
+      ],
+      "role": "hero_musician",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        166,
+        390,
+        196,
+        190
+      ],
+      "role": "stage_performance",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        367,
+        390,
+        171,
+        94
+      ],
+      "role": "friend_reaction",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        366,
+        489,
+        172,
+        116
+      ],
+      "role": "handwritten_letter",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        407,
+        96,
+        125,
+        109
+      ],
+      "source_sample_text": "人物专访 高一·林宇\n从在房间里弹唱，到站上校园舞台，音乐让我变得勇敢。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        333,
+        267,
+        124,
+        81
+      ],
+      "source_sample_text": "音乐 让世界听见 不一样的我！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "text_color": "white",
+      "rotation_degrees": -16
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        169,
+        397,
+        94,
+        68
+      ],
+      "source_sample_text": "第一次上台好紧张！但好开心！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          252,
+          441
+        ],
+        [
+          270,
+          445
+        ],
+        [
+          256,
+          453
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        467,
+        397,
+        66,
+        70
+      ],
+      "source_sample_text": "加油！你的音乐超棒的！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          476,
+          456
+        ],
+        [
+          469,
+          471
+        ],
+        [
+          489,
+          462
+        ]
+      ]
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        387,
+        512,
+        143,
+        63
+      ],
+      "source_sample_text": "未来的我：想写出更多打动人的歌，让更多人听见！",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          387,
+          491
+        ],
+        [
+          537,
+          513
+        ],
+        [
+          536,
+          602
+        ],
+        [
+          367,
+          598
+        ]
+      ],
+      "carrier_id": "musician_letter"
+    }
+  ],
+  "features": [
+    "editorial_left_typography_column",
+    "four_image_units",
+    "angled_hero_display_text",
+    "bottom_music_player_decoration"
+  ],
+  "execution_blockers": [
+    "canvas_story_text",
+    "physical_carrier_perspective",
+    "rotated_display_text"
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        8,
+        91,
+        149,
+        165
+      ],
+      "source_sample_text": "青春 音乐人",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text",
+      "text_color": "black_pink"
+    },
+    {
+      "bounds_px": [
+        13,
+        257,
+        143,
+        50
+      ],
+      "source_sample_text": "用喜欢的音乐，点亮平凡的日子！",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text"
+    },
+    {
+      "bounds_px": [
+        13,
+        319,
+        140,
+        57
+      ],
+      "source_sample_text": "01 热爱 从兴趣开始，一把吉他就能出发。",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "caption",
+      "shape": "display_text"
+    },
+    {
+      "bounds_px": [
+        13,
+        388,
+        139,
+        54
+      ],
+      "source_sample_text": "02 坚持 每天练习一点，积累看得见的进步。",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "caption",
+      "shape": "display_text"
+    },
+    {
+      "bounds_px": [
+        13,
+        456,
+        143,
+        53
+      ],
+      "source_sample_text": "03 表达 用音乐记录情绪，也连接更多同频的朋友。",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "caption",
+      "shape": "display_text"
+    },
+    {
+      "bounds_px": [
+        19,
+        528,
+        141,
+        51
+      ],
+      "source_sample_text": "音乐不只是爱好，更是一种生活方式。",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text",
+      "rotation_degrees": -9
+    },
+    {
+      "bounds_px": [
+        15,
+        596,
+        128,
+        69
+      ],
+      "source_sample_text": "Music Changes Everything!",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text",
+      "rotation_degrees": -11
+    },
+    {
+      "bounds_px": [
+        150,
+        596,
+        187,
+        61
+      ],
+      "source_sample_text": "保持热爱，声音会抵达远方。",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text",
+      "text_color": "white",
+      "rotation_degrees": -9
+    },
+    {
+      "bounds_px": [
+        465,
+        623,
+        65,
+        34
+      ],
+      "source_sample_text": "GOOD MUSIC BETTER ME",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text",
+      "text_color": "white"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "music_player_controls",
+      "bounds_px": [
+        365,
+        619,
+        91,
+        43
+      ],
+      "status": "observed",
+      "counts_as_panel": false
+    }
+  ],
+  "confidence": 0.83,
+  "notes": [],
+  "layout_id": "SB-041",
+  "source_size": [
+    545,
+    675
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：杂志编辑式，大标题、人物、说明文字和漫画格共同参与页面构成。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Editorial Magazine Layout, bold headlines, character cutouts, captions, and narrative panels composed like high-end editorial spread. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "a9f55865d670b727365a33b8a0865f7295443aef33fd29c21e7f098c6472ae2f",
+  "preview_sha256": "ee4b495cb706d8a74746fe0ef225f9c628b4e852fd07bc9e23bbf2b17d7e74e8",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-041.webp",
+    "source_note_path": "source-notes/SB-041.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

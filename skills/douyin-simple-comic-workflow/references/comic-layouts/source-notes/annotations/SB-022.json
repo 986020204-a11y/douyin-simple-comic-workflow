@@ -1,0 +1,167 @@
+{
+  "roi": [
+    17,
+    75,
+    534,
+    537
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        17,
+        75,
+        266,
+        172
+      ],
+      "polygon_px": null,
+      "role": "cut"
+    },
+    {
+      "bounds_px": [
+        293,
+        75,
+        258,
+        172
+      ],
+      "polygon_px": null,
+      "role": "take ingredients"
+    },
+    {
+      "bounds_px": [
+        17,
+        253,
+        254,
+        162
+      ],
+      "polygon_px": null,
+      "role": "press ignition"
+    },
+    {
+      "bounds_px": [
+        279,
+        253,
+        272,
+        162
+      ],
+      "polygon_px": null,
+      "role": "turn flame"
+    },
+    {
+      "bounds_px": [
+        17,
+        423,
+        534,
+        189
+      ],
+      "polygon_px": null,
+      "role": "plate food"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 3,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        190,
+        348,
+        72,
+        41
+      ],
+      "source_sample": "咔嗒！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "sound_effect",
+      "rotation_deg": -10
+    },
+    {
+      "panel": 5,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        411,
+        529,
+        133,
+        75
+      ],
+      "source_sample": "完成！美味上桌！",
+      "tail_tip_px": [
+        493,
+        511
+      ],
+      "tail_polygon_px": [
+        [
+          486,
+          536
+        ],
+        [
+          493,
+          511
+        ],
+        [
+          504,
+          535
+        ]
+      ],
+      "text_type": "dialogue"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "action_arrow",
+      "bounds_px": [
+        358,
+        271,
+        48,
+        107
+      ],
+      "path_px": [
+        [
+          372,
+          375
+        ],
+        [
+          361,
+          348
+        ],
+        [
+          363,
+          317
+        ],
+        [
+          377,
+          290
+        ],
+        [
+          397,
+          278
+        ]
+      ],
+      "arrow_tip_px": [
+        403,
+        273
+      ],
+      "stroke_color": "red",
+      "stroke_width_px": 7
+    }
+  ],
+  "features": [
+    "action_arrow",
+    "sound_effect"
+  ],
+  "notes": [
+    "Five panels, top four details and wide bottom reveal.",
+    "Stove dial labels belong the environment and are not newly authored speech balloons."
+  ],
+  "layout_id": "SB-022",
+  "source_size_px": [
+    559,
+    631
+  ],
+  "preview_sha256": "f627aa380cec5d585a87ccf925b4b8058547f692dc31d4c4afd0cfff6851aa5f",
+  "note_sha256": "0b0bdf63664f98887f4bc500edad92afeeaba24cfb794872ecbf4f778299d73e",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

@@ -1,0 +1,256 @@
+{
+  "roi": [
+    8,
+    53,
+    538,
+    622
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        8,
+        53,
+        538,
+        226
+      ],
+      "polygon_px": [
+        [
+          8,
+          53
+        ],
+        [
+          546,
+          53
+        ],
+        [
+          546,
+          104
+        ],
+        [
+          8,
+          279
+        ]
+      ],
+      "role": "target setup"
+    },
+    {
+      "bounds_px": [
+        8,
+        112,
+        538,
+        326
+      ],
+      "polygon_px": [
+        [
+          8,
+          286
+        ],
+        [
+          546,
+          112
+        ],
+        [
+          546,
+          247
+        ],
+        [
+          8,
+          438
+        ]
+      ],
+      "role": "leap"
+    },
+    {
+      "bounds_px": [
+        8,
+        255,
+        538,
+        324
+      ],
+      "polygon_px": [
+        [
+          8,
+          445
+        ],
+        [
+          546,
+          255
+        ],
+        [
+          546,
+          416
+        ],
+        [
+          8,
+          579
+        ]
+      ],
+      "role": "grapple"
+    },
+    {
+      "bounds_px": [
+        8,
+        425,
+        538,
+        250
+      ],
+      "polygon_px": [
+        [
+          8,
+          587
+        ],
+        [
+          546,
+          425
+        ],
+        [
+          546,
+          675
+        ],
+        [
+          8,
+          675
+        ]
+      ],
+      "role": "landing"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "rect",
+      "bounds_px": [
+        27,
+        79,
+        97,
+        46
+      ],
+      "source_sample": "目标就在前方的天台。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 2,
+      "shape": "rect",
+      "bounds_px": [
+        314,
+        194,
+        109,
+        31
+      ],
+      "source_sample": "跨过这座楼……",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 2,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        114,
+        279,
+        46,
+        39
+      ],
+      "source_sample": "跳！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "sound_effect",
+      "rotation_deg": -9
+    },
+    {
+      "panel": 3,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        384,
+        365,
+        44,
+        42
+      ],
+      "source_sample": "嗖！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "sound_effect",
+      "rotation_deg": -8
+    },
+    {
+      "panel": 3,
+      "shape": "rect",
+      "bounds_px": [
+        454,
+        359,
+        66,
+        40
+      ],
+      "source_sample": "抓钩！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 3,
+      "shape": "rect",
+      "bounds_px": [
+        47,
+        480,
+        128,
+        38
+      ],
+      "source_sample": "向下一个目标——",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 4,
+      "shape": "rect",
+      "bounds_px": [
+        196,
+        596,
+        103,
+        68
+      ],
+      "source_sample": "落地！追击继续！",
+      "tail_tip_px": [
+        287,
+        584
+      ],
+      "tail_polygon_px": [
+        [
+          274,
+          602
+        ],
+        [
+          287,
+          584
+        ],
+        [
+          289,
+          601
+        ]
+      ],
+      "text_type": "dialogue"
+    }
+  ],
+  "features": [
+    "oblique_polygon",
+    "sound_effect"
+  ],
+  "notes": [
+    "Diagonal bands have distinct trapezoid/polygon boundaries and unequal source geometry."
+  ],
+  "layout_id": "SB-007",
+  "source_size_px": [
+    554,
+    684
+  ],
+  "preview_sha256": "12056fd4d2f4bf14d063263b120b0c5b6f532061daacefcff16dc4ffb0942a94",
+  "note_sha256": "6380baac954d58e3127155d5b832b3eba373de76db579670e1ade3be9f326051",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

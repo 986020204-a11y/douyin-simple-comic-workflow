@@ -1,0 +1,629 @@
+{
+  "content_roi_px": [
+    3,
+    85,
+    544,
+    571
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        319,
+        94,
+        150,
+        167
+      ],
+      "role": "cake_evidence_photo",
+      "polygon_px": [
+        [
+          319,
+          105
+        ],
+        [
+          452,
+          94
+        ],
+        [
+          469,
+          249
+        ],
+        [
+          327,
+          261
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        15,
+        321,
+        59,
+        67
+      ],
+      "role": "suspect_cat_photo",
+      "polygon_px": [
+        [
+          15,
+          326
+        ],
+        [
+          68,
+          321
+        ],
+        [
+          74,
+          383
+        ],
+        [
+          20,
+          388
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        77,
+        318,
+        61,
+        71
+      ],
+      "role": "suspect_father_photo",
+      "polygon_px": [
+        [
+          77,
+          321
+        ],
+        [
+          133,
+          318
+        ],
+        [
+          138,
+          385
+        ],
+        [
+          82,
+          389
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        18,
+        430,
+        61,
+        70
+      ],
+      "role": "suspect_sister_photo",
+      "polygon_px": [
+        [
+          18,
+          433
+        ],
+        [
+          74,
+          430
+        ],
+        [
+          79,
+          495
+        ],
+        [
+          23,
+          500
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        82,
+        427,
+        62,
+        70
+      ],
+      "role": "unknown_suspect_photo",
+      "polygon_px": [
+        [
+          82,
+          431
+        ],
+        [
+          138,
+          427
+        ],
+        [
+          144,
+          493
+        ],
+        [
+          88,
+          497
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        291,
+        469,
+        172,
+        162
+      ],
+      "role": "cat_cake_solution_photo",
+      "polygon_px": [
+        [
+          291,
+          481
+        ],
+        [
+          447,
+          469
+        ],
+        [
+          463,
+          617
+        ],
+        [
+          307,
+          631
+        ]
+      ]
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 6,
+      "bounds_px": [
+        441,
+        480,
+        95,
+        79
+      ],
+      "source_sample_text": "……我只是闻了一下……",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          447,
+          528
+        ],
+        [
+          434,
+          543
+        ],
+        [
+          449,
+          540
+        ]
+      ],
+      "cross_panel_allowed": true
+    }
+  ],
+  "features": [
+    "case_file_paper_collage",
+    "six_evidence_photos",
+    "sticky_notes",
+    "floor_map_route",
+    "receipt",
+    "pawprint_evidence"
+  ],
+  "execution_blockers": [
+    "rotated_paper_and_photo_carriers",
+    "canvas_story_text",
+    "map_route_decoration",
+    "source_photo_bubble_overflow"
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        15,
+        105,
+        189,
+        176
+      ],
+      "source_sample_text": "案件档案\n案件编号：2024-0516\n案件名称：消失的蛋糕\n报案人：林小煜\n报案时间：5月16日 20:30\n案件描述：放在冰箱里的草莓蛋糕不见了！",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "carrier",
+      "shape": "polygon",
+      "polygon_px": [
+        [
+          10,
+          105
+        ],
+        [
+          212,
+          91
+        ],
+        [
+          226,
+          273
+        ],
+        [
+          17,
+          290
+        ]
+      ],
+      "carrier_id": "case_file"
+    },
+    {
+      "bounds_px": [
+        214,
+        108,
+        92,
+        66
+      ],
+      "source_sample_text": "谁偷走了蛋糕？",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text",
+      "text_color": "red",
+      "rotation_degrees": -9
+    },
+    {
+      "bounds_px": [
+        205,
+        226,
+        84,
+        45
+      ],
+      "source_sample_text": "机密",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text",
+      "text_color": "red",
+      "rotation_degrees": 8
+    },
+    {
+      "bounds_px": [
+        464,
+        101,
+        62,
+        42
+      ],
+      "source_sample_text": "原始照片（案发前）",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "carrier",
+      "shape": "polygon",
+      "polygon_px": [
+        [
+          459,
+          90
+        ],
+        [
+          529,
+          87
+        ],
+        [
+          537,
+          138
+        ],
+        [
+          466,
+          147
+        ]
+      ],
+      "carrier_id": "photo_note"
+    },
+    {
+      "bounds_px": [
+        401,
+        178,
+        130,
+        90
+      ],
+      "source_sample_text": "失踪物品：草莓蛋糕（6寸）\n特征：白色奶油，[部分小字无法确认]\n生日快乐",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "carrier",
+      "shape": "polygon",
+      "polygon_px": [
+        [
+          400,
+          169
+        ],
+        [
+          538,
+          177
+        ],
+        [
+          534,
+          269
+        ],
+        [
+          404,
+          264
+        ]
+      ],
+      "carrier_id": "missing_item_note",
+      "transcription_status": "partial_unknown"
+    },
+    {
+      "bounds_px": [
+        13,
+        293,
+        119,
+        25
+      ],
+      "source_sample_text": "嫌疑人名单",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "caption",
+      "shape": "display_text"
+    },
+    {
+      "bounds_px": [
+        16,
+        390,
+        58,
+        31
+      ],
+      "source_sample_text": "1. 咪咪（爱舔）",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "caption",
+      "shape": "display_text"
+    },
+    {
+      "bounds_px": [
+        80,
+        390,
+        66,
+        31
+      ],
+      "source_sample_text": "2. 爸爸（甜食爱好者）",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "caption",
+      "shape": "display_text"
+    },
+    {
+      "bounds_px": [
+        19,
+        502,
+        68,
+        35
+      ],
+      "source_sample_text": "3. 妹妹（有偷吃前科）",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "caption",
+      "shape": "display_text"
+    },
+    {
+      "bounds_px": [
+        163,
+        286,
+        170,
+        23
+      ],
+      "source_sample_text": "现场示意图（家中）",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "caption",
+      "shape": "display_text"
+    },
+    {
+      "bounds_px": [
+        178,
+        335,
+        153,
+        119
+      ],
+      "source_sample_text": "厨房\n客厅\n冰箱（蛋糕原处）\n桌子（纸盒留置）\n阳台\n卧室",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "carrier",
+      "shape": "polygon",
+      "polygon_px": [
+        [
+          162,
+          323
+        ],
+        [
+          366,
+          307
+        ],
+        [
+          382,
+          446
+        ],
+        [
+          172,
+          465
+        ]
+      ],
+      "carrier_id": "floorplan"
+    },
+    {
+      "bounds_px": [
+        345,
+        327,
+        91,
+        62
+      ],
+      "source_sample_text": "发现猫爪印！但真的只有猫吗？",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "carrier",
+      "shape": "polygon",
+      "polygon_px": [
+        [
+          329,
+          321
+        ],
+        [
+          434,
+          303
+        ],
+        [
+          449,
+          398
+        ],
+        [
+          344,
+          416
+        ]
+      ],
+      "carrier_id": "paw_note",
+      "text_color": "red"
+    },
+    {
+      "bounds_px": [
+        429,
+        399,
+        108,
+        21
+      ],
+      "source_sample_text": "现场拍到的爪印",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "caption",
+      "shape": "display_text"
+    },
+    {
+      "bounds_px": [
+        108,
+        503,
+        169,
+        142
+      ],
+      "source_sample_text": "便利店小票\n2024-05-16 19:42\n草莓蛋糕 1 ¥68.00\n塑料叉 1 ¥2.00\n合计 ¥70.00\n有人提前买了蛋糕？",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "carrier",
+      "shape": "polygon",
+      "polygon_px": [
+        [
+          83,
+          498
+        ],
+        [
+          265,
+          471
+        ],
+        [
+          299,
+          647
+        ],
+        [
+          114,
+          657
+        ]
+      ],
+      "carrier_id": "receipt"
+    },
+    {
+      "bounds_px": [
+        286,
+        480,
+        72,
+        29
+      ],
+      "source_sample_text": "真相！",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text",
+      "text_color": "red",
+      "rotation_degrees": -8
+    },
+    {
+      "bounds_px": [
+        452,
+        579,
+        81,
+        65
+      ],
+      "source_sample_text": "吃了一半 原来是咪咪偷吃了！",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "carrier",
+      "shape": "polygon",
+      "polygon_px": [
+        [
+          439,
+          571
+        ],
+        [
+          544,
+          564
+        ],
+        [
+          545,
+          651
+        ],
+        [
+          449,
+          658
+        ]
+      ],
+      "carrier_id": "solution_note",
+      "text_color": "red"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "corkboard_backing",
+      "bounds_px": [
+        3,
+        85,
+        544,
+        571
+      ],
+      "status": "observed",
+      "counts_as_panel": false
+    },
+    {
+      "kind": "red_dotted_floorplan_route",
+      "bounds_px": [
+        189,
+        375,
+        113,
+        74
+      ],
+      "status": "observed",
+      "exact_path_status": "unknown"
+    },
+    {
+      "kind": "pawprint_evidence",
+      "bounds_px": [
+        439,
+        292,
+        103,
+        101
+      ],
+      "status": "observed",
+      "counts_as_panel": false
+    }
+  ],
+  "confidence": 0.78,
+  "notes": [
+    "Four suspect photographs plus cake and solution photographs are the six actual image units; corkboard and paper backings are not invented panels.",
+    "Small source receipt wording is partly unreadable; exact source wording remains unknown where illegible."
+  ],
+  "layout_id": "SB-040",
+  "source_size": [
+    550,
+    659
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：档案拼贴式，照片、便签、文件、地图、漫画格混排，适合调查和设定展示。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Detective Case File Collage, mix of photos, sticky notes, confidential memos, evidence pins, and comic panels for investigative stories. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "af8825ce72a6f64cf0a812f3fdaeb290471ee870f9be00f0f77a07f25046169d",
+  "preview_sha256": "ab583ae0861be5e40e091e0f3ee44c597e1328e8ec6baa69f126882cb0b5e3fc",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-040.webp",
+    "source_note_path": "source-notes/SB-040.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

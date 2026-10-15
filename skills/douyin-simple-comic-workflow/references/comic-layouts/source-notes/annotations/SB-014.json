@@ -1,0 +1,187 @@
+{
+  "roi": [
+    8,
+    103,
+    537,
+    545
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        8,
+        103,
+        128,
+        545
+      ],
+      "polygon_px": null,
+      "role": "start spin",
+      "cross_panel_allowed": true
+    },
+    {
+      "bounds_px": [
+        141,
+        103,
+        130,
+        545
+      ],
+      "polygon_px": null,
+      "role": "turn",
+      "cross_panel_allowed": true
+    },
+    {
+      "bounds_px": [
+        276,
+        103,
+        130,
+        545
+      ],
+      "polygon_px": null,
+      "role": "extension",
+      "cross_panel_allowed": true
+    },
+    {
+      "bounds_px": [
+        411,
+        103,
+        134,
+        545
+      ],
+      "polygon_px": null,
+      "role": "flight",
+      "cross_panel_allowed": true
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        30,
+        137,
+        92,
+        92
+      ],
+      "source_sample": "旋转，是让梦想继续发光。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration",
+      "rotation_deg": -9
+    },
+    {
+      "panel": 4,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        420,
+        473,
+        117,
+        90
+      ],
+      "source_sample": "同一个舞步，跨越格子，也跨越更远的自己。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration",
+      "rotation_deg": -10
+    },
+    {
+      "panel": 1,
+      "shape": "rect",
+      "bounds_px": [
+        20,
+        600,
+        57,
+        36
+      ],
+      "source_sample": "起身",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "caption"
+    },
+    {
+      "panel": 2,
+      "shape": "rect",
+      "bounds_px": [
+        152,
+        600,
+        56,
+        36
+      ],
+      "source_sample": "转身",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "caption"
+    },
+    {
+      "panel": 3,
+      "shape": "rect",
+      "bounds_px": [
+        299,
+        600,
+        56,
+        36
+      ],
+      "source_sample": "舒展",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "caption"
+    },
+    {
+      "panel": 4,
+      "shape": "rect",
+      "bounds_px": [
+        423,
+        600,
+        56,
+        36
+      ],
+      "source_sample": "飞舞",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "caption"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "continuous_character",
+      "bounds_px": [
+        46,
+        121,
+        457,
+        525
+      ],
+      "cross_panel_allowed": true,
+      "requires_shared_canvas_art": true
+    },
+    {
+      "type": "continuous_ribbon",
+      "bounds_px": [
+        9,
+        105,
+        535,
+        425
+      ],
+      "cross_panel_allowed": true
+    }
+  ],
+  "features": [
+    "shared_canvas_background",
+    "continuous_character",
+    "cross_panel_overlay"
+  ],
+  "notes": [
+    "The same dancer body and ribbon continue across four vertical panes; generating four unrelated people fails this source treatment.",
+    "Black/red partial shape at left source edge is an unexplained clipped graphic, recorded unknown, not invented as a fifth panel."
+  ],
+  "layout_id": "SB-014",
+  "source_size_px": [
+    553,
+    671
+  ],
+  "preview_sha256": "5931eab922d3309ee62ea3b7c51a903310c36b4051a55ab62c72ab9a18dcfca0",
+  "note_sha256": "77f702af987413ad69c01a04a61d7c46a432b93ebc958c49772ea084d0fc1ee0",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

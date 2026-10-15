@@ -1,0 +1,371 @@
+{
+  "content_roi_px": [
+    13,
+    89,
+    537,
+    575
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        13,
+        89,
+        537,
+        575
+      ],
+      "role": "present_day_background",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        241,
+        101,
+        303,
+        173
+      ],
+      "role": "childhood_memory",
+      "polygon_px": [
+        [
+          266,
+          101
+        ],
+        [
+          540,
+          103
+        ],
+        [
+          544,
+          271
+        ],
+        [
+          267,
+          274
+        ],
+        [
+          247,
+          263
+        ],
+        [
+          241,
+          240
+        ],
+        [
+          244,
+          141
+        ],
+        [
+          252,
+          115
+        ]
+      ],
+      "parent_panel_id": "P01"
+    },
+    {
+      "bounds_px": [
+        267,
+        276,
+        277,
+        165
+      ],
+      "role": "farewell_memory",
+      "polygon_px": [
+        [
+          284,
+          277
+        ],
+        [
+          541,
+          276
+        ],
+        [
+          544,
+          437
+        ],
+        [
+          284,
+          441
+        ],
+        [
+          268,
+          427
+        ],
+        [
+          267,
+          304
+        ]
+      ],
+      "parent_panel_id": "P01"
+    },
+    {
+      "bounds_px": [
+        286,
+        443,
+        258,
+        198
+      ],
+      "role": "unfulfilled_memory",
+      "polygon_px": [
+        [
+          306,
+          444
+        ],
+        [
+          542,
+          443
+        ],
+        [
+          544,
+          633
+        ],
+        [
+          526,
+          640
+        ],
+        [
+          305,
+          641
+        ],
+        [
+          289,
+          629
+        ],
+        [
+          286,
+          471
+        ]
+      ],
+      "parent_panel_id": "P01"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        24,
+        96,
+        164,
+        68
+      ],
+      "source_sample_text": "现在 老人轻抚着那块旧手表，思绪又回到了过去……",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        34,
+        418,
+        138,
+        59
+      ],
+      "source_sample_text": "……已经这么多年了。",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          153,
+          426
+        ],
+        [
+          165,
+          414
+        ],
+        [
+          155,
+          441
+        ]
+      ]
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        24,
+        570,
+        180,
+        86
+      ],
+      "source_sample_text": "有些回忆，从未真正远去，它们一直藏在时光的缝隙里，陪伴着我们走到今天。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        270,
+        108,
+        141,
+        26
+      ],
+      "source_sample_text": "回忆一：童年时光",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        410,
+        122,
+        128,
+        95
+      ],
+      "source_sample_text": "爷爷，这块表以后也送给我吧！我也要像您一样成为一个可靠的人！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          416,
+          188
+        ],
+        [
+          399,
+          198
+        ],
+        [
+          419,
+          203
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        387,
+        239,
+        150,
+        27
+      ],
+      "source_sample_text": "那是我最快乐的时光……",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        285,
+        283,
+        168,
+        27
+      ],
+      "source_sample_text": "回忆二：分别前的约定",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        353,
+        311,
+        99,
+        39
+      ],
+      "source_sample_text": "我会回来看你的！一定！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          360,
+          340
+        ],
+        [
+          346,
+          355
+        ],
+        [
+          372,
+          345
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        380,
+        410,
+        159,
+        28
+      ],
+      "source_sample_text": "临走时，我们约定好……",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        303,
+        450,
+        165,
+        26
+      ],
+      "source_sample_text": "回忆三：未完成的遗憾",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        314,
+        494,
+        106,
+        42
+      ],
+      "source_sample_text": "可是……他再也没有回来。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        366,
+        601,
+        172,
+        29
+      ],
+      "source_sample_text": "这块表，成了我唯一的念想。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    }
+  ],
+  "features": [
+    "full_background_with_three_nested_memories",
+    "ragged_memory_edges"
+  ],
+  "execution_blockers": [
+    "nested_parent_z_order",
+    "ragged_memory_edge_texture"
+  ],
+  "text_zones": [],
+  "overlays": [],
+  "confidence": 0.84,
+  "notes": [],
+  "layout_id": "SB-036",
+  "source_size": [
+    555,
+    670
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：闪回嵌套，主面板内嵌小格表现记忆、回忆或过去片段。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Inset Memory Flashback, main panels embedded with smaller vintage or bordered insets representing memories or past events. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "29e513b3aba1525353d323ef11d51fedcaaa0a74eb545b8c9fa38b614f8cb77d",
+  "preview_sha256": "8df1ea985798f85fb7ae0ef93f2916bcd2a84a9d723284255f49b9cd7a329299",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-036.webp",
+    "source_note_path": "source-notes/SB-036.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

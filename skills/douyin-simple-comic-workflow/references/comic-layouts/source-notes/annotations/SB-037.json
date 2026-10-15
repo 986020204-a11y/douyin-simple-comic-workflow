@@ -1,0 +1,476 @@
+{
+  "content_roi_px": [
+    1,
+    84,
+    533,
+    568
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        1,
+        84,
+        282,
+        568
+      ],
+      "role": "classroom_reality",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        125,
+        84,
+        409,
+        197
+      ],
+      "role": "fantasy_dragon",
+      "polygon_px": [
+        [
+          149,
+          94
+        ],
+        [
+          166,
+          85
+        ],
+        [
+          534,
+          84
+        ],
+        [
+          534,
+          248
+        ],
+        [
+          277,
+          249
+        ],
+        [
+          267,
+          263
+        ],
+        [
+          248,
+          268
+        ],
+        [
+          231,
+          276
+        ],
+        [
+          208,
+          271
+        ],
+        [
+          192,
+          277
+        ],
+        [
+          177,
+          269
+        ],
+        [
+          159,
+          267
+        ],
+        [
+          149,
+          251
+        ],
+        [
+          137,
+          245
+        ],
+        [
+          139,
+          226
+        ],
+        [
+          129,
+          217
+        ],
+        [
+          135,
+          202
+        ],
+        [
+          125,
+          187
+        ],
+        [
+          133,
+          173
+        ],
+        [
+          127,
+          155
+        ],
+        [
+          138,
+          141
+        ],
+        [
+          133,
+          123
+        ]
+      ],
+      "parent_panel_id": "P01"
+    },
+    {
+      "bounds_px": [
+        241,
+        251,
+        293,
+        199
+      ],
+      "role": "fantasy_award",
+      "polygon_px": [
+        [
+          267,
+          262
+        ],
+        [
+          534,
+          251
+        ],
+        [
+          534,
+          448
+        ],
+        [
+          285,
+          449
+        ],
+        [
+          270,
+          438
+        ],
+        [
+          263,
+          420
+        ],
+        [
+          260,
+          397
+        ],
+        [
+          249,
+          376
+        ],
+        [
+          253,
+          353
+        ],
+        [
+          243,
+          331
+        ],
+        [
+          247,
+          312
+        ],
+        [
+          241,
+          296
+        ],
+        [
+          248,
+          280
+        ]
+      ],
+      "parent_panel_id": "P01"
+    },
+    {
+      "bounds_px": [
+        292,
+        458,
+        242,
+        194
+      ],
+      "role": "return_to_classroom",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        5,
+        233,
+        142,
+        102
+      ],
+      "source_sample_text": "好无聊啊……要是我能去冒险就好了！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          103,
+          324
+        ],
+        [
+          115,
+          345
+        ],
+        [
+          119,
+          325
+        ]
+      ]
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        131,
+        600,
+        150,
+        52
+      ],
+      "source_sample_text": "……回到现实。还是得好好上课啊！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        248,
+        86,
+        119,
+        71
+      ],
+      "source_sample_text": "看我击败你吧！",
+      "kind": "emphasis",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          248,
+          89
+        ],
+        [
+          263,
+          95
+        ],
+        [
+          275,
+          84
+        ],
+        [
+          288,
+          92
+        ],
+        [
+          305,
+          84
+        ],
+        [
+          318,
+          93
+        ],
+        [
+          341,
+          85
+        ],
+        [
+          346,
+          101
+        ],
+        [
+          364,
+          103
+        ],
+        [
+          353,
+          121
+        ],
+        [
+          361,
+          138
+        ],
+        [
+          344,
+          139
+        ],
+        [
+          336,
+          151
+        ],
+        [
+          318,
+          144
+        ],
+        [
+          301,
+          153
+        ],
+        [
+          290,
+          144
+        ],
+        [
+          271,
+          151
+        ],
+        [
+          272,
+          136
+        ],
+        [
+          253,
+          135
+        ],
+        [
+          260,
+          119
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        357,
+        193,
+        170,
+        46
+      ],
+      "source_sample_text": "在想象的世界里，我是一名勇敢的骑士！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        384,
+        396,
+        145,
+        45
+      ],
+      "source_sample_text": "我打败了恶龙，获得了至高的荣誉！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        399,
+        468,
+        120,
+        54
+      ],
+      "source_sample_text": "李明同学？你在想什么？",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          423,
+          514
+        ],
+        [
+          417,
+          531
+        ],
+        [
+          437,
+          517
+        ]
+      ]
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        444,
+        548,
+        86,
+        64
+      ],
+      "source_sample_text": "啊！我…我在听！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          447,
+          578
+        ],
+        [
+          433,
+          582
+        ],
+        [
+          448,
+          590
+        ]
+      ]
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        11,
+        139,
+        109,
+        61
+      ],
+      "source_sample_text": "历史课 公元前221年…",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          3,
+          122
+        ],
+        [
+          125,
+          112
+        ],
+        [
+          125,
+          221
+        ],
+        [
+          3,
+          234
+        ]
+      ],
+      "carrier_id": "classroom_blackboard"
+    }
+  ],
+  "features": [
+    "two_cloud_fantasy_insets",
+    "reality_and_fantasy_z_order",
+    "bottom_right_reaction"
+  ],
+  "execution_blockers": [
+    "cloud_outline_mask",
+    "nested_parent_z_order",
+    "physical_carrier_perspective"
+  ],
+  "text_zones": [],
+  "overlays": [],
+  "confidence": 0.82,
+  "notes": [],
+  "layout_id": "SB-037",
+  "source_size": [
+    545,
+    662
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：想象嵌套，现实画面中插入角色脑内幻想格，适合喜剧和主观叙事。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Inset Fantasy Bubble, reality scenes overlaid with dream-bubble panels depicting character's internal imagination or comic thoughts. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "9d72a790f8a5b512abb3b21f6874c2c35bdc6bfb323877d566c09ecaff435d37",
+  "preview_sha256": "7a3faae5c1d049639fa05cccef8cecca0cce7b5fe6fbf6e7fd34fdecd78757db",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-037.webp",
+    "source_note_path": "source-notes/SB-037.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

@@ -1,63 +1,77 @@
-# douyin-simple-comic-workflow 0.2.0-rc.1
+# douyin-simple-comic-workflow 0.7.0-rc.1
 
-这是 `douyin-simple-comic-workflow` 的独立发布候选包。它把中文文案转换为静态漫画组图：分析故事，选择内置分镜，生成角色参考图和无字底图，再按分镜、文字类型及实际留白调用正式文字合成器，最后输出带字 PNG、手机预览和交付清单。
+这是 `douyin-simple-comic-workflow` 的独立发布候选包，内含 Skill 版本 `0.7-library-68`。它把中文文案转换为静态抖音漫画组图：逐页选择内置 SB 模板，先验证画格和文字结构，再生成画格素材、确定性拼版，最后合成中文文字并检查实际图片。
 
-## 调用方式
+## 当前完成范围
 
-直接提供一段中文文案，并明确要求使用 `douyin-simple-comic-workflow`。工作流会读取本包内的资源，不调用外部分镜 Skill。
+SB-001 至 SB-068 均提供原始预览、来源说明和程序可读取的 YAML 模板。每个模板记录原生画布、画格数量和几何、阅读顺序、具体气泡或文字区域、约束、回退规则及 `observed`、`inferred`、`unknown` 证据。
 
-## 自动流程
+本轮补齐剩余 63 个模板，保留先前 5 个模板。68 个模板共记录 350 个叙事图像单元、547 个画格绑定文字实例和 62 个可执行额外文字区。编号组、可见图像单元与有边框画格分别记录，不能仅凭 SB 名称或编号推算画格数。
 
-1. 分析文案，决定页面和故事单元。
-2. 从内置 68 个 SB 分镜中选择布局。
-3. 生成角色参考图和无字漫画底图。
-4. 根据布局约束、对白/旁白/思考/喊话/音效/手机对白等文字类型，以及底图的真实留白，选择 `bubble_style: auto` 的气泡候选、尺寸、位置和尾巴。
-5. 调用正式 `scripts/text_compositor.py` 合成文字，并进行遮挡、避脸、避手、避动作和避道具检查。
-6. 输出带字 PNG、手机预览、统计信息和交付报告。
+| 验证层级 | 当前范围 |
+| --- | --- |
+| 模板、预览、说明齐全及字段/绑定/索引检查 | 68/68 通过 |
+| 原生画布编译及独立 3:4 适配编译 | 各 68/68 通过 |
+| 纯色网格素材结构拼版和 PNG 像素检查 | 68/68 通过 |
+| 空白图、重绑哈希空白图、删格、移格反例 | 272/272 正确拒绝 |
+| 新增文字处理与原 5 个模板回归 | 14/14 通过 |
+| 本轮新增 63 个模板的真实漫画成图验收 | 63 个待验证 |
 
-## 输出规格
+这些结果验证模板和确定性结构执行能力。纯色诊断图不是漫画成图，不能证明角色连续性、对白归属、特殊效果、完整文字排版或与原预览像素相等。模板有值、编译成功或结构检查通过，都不能单独建立 `full_template_execution: passed`。
 
-- 漫画 PNG：1080×1440，3:4。
-- 手机预览：360×480。
-- 交付清单同时记录规划数量、最终可见画格数量和检查状态。
+9 个布局仍包含当前文字渲染器不支持的旋转文字或多区域配色：**SB-006、SB-040、SB-041、SB-042、SB-043、SB-044、SB-045、SB-046、SB-057**。相关文字实例会被预检和渲染阻止；程序不会默认为普通长框。其他模板仍需实际说话者、载体、安全区、字体容量和所需特殊机制的证据。
 
-## 统计口径
+## 调用与执行流程
 
-`planned_story_units` 是故事规划单元数；`planned_panel_count` 是分镜规划中的画格数；`visible_panel_count` 是最终无字底图中实际可见的画格数；`panel_count_delta` 是可见画格数减规划画格数；`panel_count_reconciliation` 记录两者的依据、差异原因和是否已解释。
+提供中文文案并明确要求使用 `douyin-simple-comic-workflow`。工作流读取包内 68 个 SB 资源，在新的隔离输出目录中执行：
 
-规划数量不等于最终可见画格数量。当前发布候选案例记录为：
+1. 分析故事，建立角色与来源边界，运行内置分镜选择器。
+2. 读取选中 SB 的真实 YAML 模板，编译明确的画格边界、数量、比例与阅读顺序。
+3. 按已有文字实例和真实几何制作完整结构与文字验证稿，处理容量、语义及绑定问题。
+4. 生成每个声明画格的场景素材，由程序执行遮罩、画格边界、层次和拼版；生图模型不能自行增删、合并或拆分画格。
+5. 先审核实际无字底图，再绑定实际说话者、实体载体及保护区，按模板合成中文文字。
+6. 检查气泡形状、位置、尾巴和遮挡，并交付每页唯一的最终 PNG 与报告。
 
-```yaml
-page_count: 8
-planned_story_units: 24
-planned_panel_count: 24
-visible_panel_count: 37
-panel_count_delta: 13
-panel_count_reconciliation:
-  status: explained
-  reason: 所选 SB 的展开、插格、嵌套格或分格结构使最终可见画格多于 8×3 的规划基数
+无需调用外部分镜 Skill。生图需要运行环境提供图像生成能力；缺失时只能完成模板、提示和验证，不应把提示文件标记为图片。
+
+## 文字与证据规则
+
+- 每个气泡绑定真实 `panel_id`；无框文字、思考链、实体表面文字及页边文字分别执行，不统一替换为长框。
+- 画格外的真实文字使用明确的 `CANVAS` 文字区，不创建虚构画格。
+- 保持对白、旁白、思考、喊话、音效、手机对白和便笺的来源语义，不能为了匹配容器而改写成另一种类型。
+- 说话者、尾巴方向、载体或保护区无法确认时阻止相关实例，不伪造证据。
+- 跨格及页边文字需要所有受影响画格的脸部、手部与关键道具保护；未知或不支持的效果不能静默降级。
+- 直接看到的形态标为 `observed`；手描坐标、隐藏轮廓、程序规则等标为 `inferred`；原字体、笔触和无法判断的内容保留 `unknown`。
+
+完整契约见 [Skill 使用说明](skills/douyin-simple-comic-workflow/SKILL.md)、[模板库规则](skills/douyin-simple-comic-workflow/references/comic-layouts/executable-library.md)和[模板索引](skills/douyin-simple-comic-workflow/references/comic-layouts/template-index.yaml)。
+
+## 画布与验收
+
+源模板保留原生预览比例。选择 3:4 满版时，必须使用显式适配：去除顶部说明区后等比例放大并记录裁切、边界和文字调整，不能把源模板直接拉伸成 3:4。适配可以通过目标检查，但源预览严格几何匹配仍标为失败；目标合规、源预览一致与人工视觉接受分别报告。
+
+最终交付 PNG 为 1080×1440，每页仅有一个规范最终文件。`planned_story_units`、`planned_panel_count`、`visible_panel_count`、`panel_count_delta` 和 `panel_count_reconciliation` 分别记录规划与实际画格，不能通过改数字隐藏偏差。
+
+## 本地检查
+
+运行环境使用 Python 3.10+、PyYAML、Pillow 和 NumPy，依赖见 `requirements.txt`。正式中文文字合成与预检默认使用 Windows 微软雅黑，可在文字布局配置中指定可用的中文 `font_file`。包内另附马善政字体及其 OFL 许可证；选用该字体也不能证明它与原预览字体相同。
+
+在仓库根目录执行以下检查，输出写到新的临时目录，避免覆盖旧结果：
+
+```powershell
+python -X utf8 -m pip install -r requirements.txt
+python -X utf8 skills/douyin-simple-comic-workflow/scripts/check_executable_templates.py --root skills/douyin-simple-comic-workflow/references/comic-layouts --check-index --output .local-validation/template-check.json
+python -X utf8 skills/douyin-simple-comic-workflow/scripts/verify_template_library.py --root skills/douyin-simple-comic-workflow/references/comic-layouts --output .local-validation/native-geometry
 ```
 
-只有差异有可追溯的 SB 结构解释时才可继续；无法解释的差异必须阻断发布，不能通过改数字掩盖分镜结构。
+第二项检查只产生纯色网格结构诊断图，不生成漫画。实际漫画仍须逐页通过图片几何、完整文字、特殊效果与人工视觉验收。
 
-## 文字框规则
+## 包结构与历史记录
 
-- 默认使用 `bubble_style: auto`，由布局约束、文字类型、说话者位置和真实保护区共同决定。
-- 普通对白、旁白、思考、喊话、音效和手机对白可以使用不同候选样式；不能为了增加样式而错误改变文字类型。
-- 气泡边框和尾巴不得遮挡文字、人脸、手部、关键动作或道具，也不得跨格误指。
-- 无法确认说话者或实际保护区时必须暂停该文字块，并报告原因，不伪造人物绑定或尾巴。
+根目录 `plugin.json` 与 `.codex-plugin/plugin.json` 均为 `0.7.0-rc.1` 并指向 `./skills/`。当前包没有 MCP、hook 或外部服务配置。Skill 自身以 `0.7-library-68` 标识本次模板库升级；插件候选包版本与 Skill 内部版本分别记录。
 
-## 证据边界和当前案例
+`examples/`、`tests/` 和 `delivery/` 保留此前发布候选的案例与报告。旧案例的人工验收结果只适用于对应案例，不能替代当前新增 63 个模板的真实成图验收。历史漫画图片不作为本次升级内容打包。
 
-68 个 SB 说明、索引和气泡约束均随包提供，并额外随候选包提供 68 张一一对应的预览图，路径记录在 `references/comic-layouts/layouts.json`。预览图来自候选包外部的相关本地图库，源路径不随仓库发布；它们只用于视觉参考，不能被当作 SB 文字说明、气泡规则或外部分镜来源。索引和气泡约束审计不能替代人工查看大图和手机预览。本案例的人工视觉验收已通过，用户已确认这些预览资产可随候选包再分发；`published` 仍为 `false`。
-
-`comic-production-001-luzhaoling` 是本包的发布候选示例，包含 8 页和 24/37 统计解释。其状态为 `human_visual_acceptance: passed`、`published: false`。示例只保留可复用的说明、统计和关键验收报告，不捆绑历史漫画图片。
-
-## 包格式说明
-
-根目录 `plugin.json` 是便携插件清单，`.codex-plugin/plugin.json` 是 Codex 兼容清单；两者都指向包内的 `./skills/`。不同加载器可能只读取其中一种格式，因此本候选包保留双清单并在 README 中明确这项兼容差异。本候选包没有配置 MCP、hook 或外部服务。源 Skill 没有可靠的作者、许可证或仓库信息，因此清单不编造这些字段。源目录没有 `templates/` 目录；运行时 `text-layout.yaml` 只作为示例案例中的项目配置保留，不冒充 Skill 资源。
-
-源 Skill 的版本仍是 `0.2-draft`。发布前核对发现镜像 Skill 在三个统计规则文档上落后于源目录；差异先记录后，已仅同步这三份文档，镜像其余资源未被覆盖。
+预览资产的再分发授权在此前候选包准备时已记录。本轮保持原始预览内容不变。新模板读取 `references/comic-layouts/previews/`，下面的历史图库继续链接既有 `preview-images/` 路径。
 
 ## 68 个内置漫画分镜预览
 

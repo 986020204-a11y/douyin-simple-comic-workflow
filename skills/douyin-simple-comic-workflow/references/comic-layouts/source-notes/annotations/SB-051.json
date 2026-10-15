@@ -1,0 +1,761 @@
+{
+  "layout_id": "SB-051",
+  "source_size": [
+    546,
+    700
+  ],
+  "preview_sha256": "263b2934dd4fddd5b79f9ed9a8d1dcb510d5294a5a46e02dcb9b0b4b167d1cd4",
+  "note_sha256": "7b9721d1871a9750bbe05f6947754211bb4c27494aaae22cf7a91a95a806b3fe",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 66,
+  "panels": [
+    {
+      "bounds_px": [
+        3,
+        125,
+        190,
+        262
+      ],
+      "role": "prepare",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          3,
+          169
+        ],
+        [
+          55,
+          158
+        ],
+        [
+          112,
+          145
+        ],
+        [
+          173,
+          125
+        ],
+        [
+          193,
+          291
+        ],
+        [
+          151,
+          321
+        ],
+        [
+          90,
+          356
+        ],
+        [
+          3,
+          387
+        ]
+      ],
+      "source_number": 1,
+      "curve": true
+    },
+    {
+      "bounds_px": [
+        177,
+        69,
+        207,
+        216
+      ],
+      "role": "meet wave",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          177,
+          126
+        ],
+        [
+          195,
+          104
+        ],
+        [
+          233,
+          81
+        ],
+        [
+          273,
+          69
+        ],
+        [
+          311,
+          71
+        ],
+        [
+          347,
+          85
+        ],
+        [
+          378,
+          103
+        ],
+        [
+          384,
+          270
+        ],
+        [
+          349,
+          255
+        ],
+        [
+          307,
+          246
+        ],
+        [
+          268,
+          246
+        ],
+        [
+          227,
+          262
+        ],
+        [
+          197,
+          285
+        ]
+      ],
+      "source_number": 2,
+      "curve": true
+    },
+    {
+      "bounds_px": [
+        382,
+        78,
+        161,
+        267
+      ],
+      "role": "rise",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          382,
+          103
+        ],
+        [
+          425,
+          88
+        ],
+        [
+          474,
+          78
+        ],
+        [
+          514,
+          81
+        ],
+        [
+          543,
+          90
+        ],
+        [
+          543,
+          341
+        ],
+        [
+          514,
+          345
+        ],
+        [
+          477,
+          334
+        ],
+        [
+          437,
+          309
+        ],
+        [
+          404,
+          280
+        ],
+        [
+          385,
+          270
+        ]
+      ],
+      "source_number": 3,
+      "curve": true
+    },
+    {
+      "bounds_px": [
+        3,
+        248,
+        540,
+        224
+      ],
+      "role": "high tide",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          3,
+          391
+        ],
+        [
+          91,
+          359
+        ],
+        [
+          154,
+          324
+        ],
+        [
+          201,
+          286
+        ],
+        [
+          251,
+          255
+        ],
+        [
+          287,
+          248
+        ],
+        [
+          332,
+          253
+        ],
+        [
+          368,
+          269
+        ],
+        [
+          400,
+          297
+        ],
+        [
+          449,
+          329
+        ],
+        [
+          492,
+          345
+        ],
+        [
+          543,
+          350
+        ],
+        [
+          543,
+          407
+        ],
+        [
+          500,
+          390
+        ],
+        [
+          457,
+          389
+        ],
+        [
+          416,
+          401
+        ],
+        [
+          373,
+          425
+        ],
+        [
+          323,
+          451
+        ],
+        [
+          270,
+          468
+        ],
+        [
+          229,
+          472
+        ],
+        [
+          184,
+          465
+        ],
+        [
+          135,
+          449
+        ],
+        [
+          90,
+          436
+        ],
+        [
+          52,
+          438
+        ],
+        [
+          3,
+          460
+        ]
+      ],
+      "source_number": 4,
+      "curve": true
+    },
+    {
+      "bounds_px": [
+        3,
+        444,
+        268,
+        253
+      ],
+      "role": "calm",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          3,
+          466
+        ],
+        [
+          42,
+          447
+        ],
+        [
+          83,
+          444
+        ],
+        [
+          129,
+          457
+        ],
+        [
+          171,
+          479
+        ],
+        [
+          209,
+          512
+        ],
+        [
+          239,
+          553
+        ],
+        [
+          258,
+          598
+        ],
+        [
+          271,
+          648
+        ],
+        [
+          265,
+          697
+        ],
+        [
+          3,
+          697
+        ]
+      ],
+      "source_number": 5,
+      "curve": true
+    },
+    {
+      "bounds_px": [
+        147,
+        390,
+        396,
+        307
+      ],
+      "role": "afterglow",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          147,
+          460
+        ],
+        [
+          199,
+          477
+        ],
+        [
+          249,
+          478
+        ],
+        [
+          301,
+          466
+        ],
+        [
+          349,
+          448
+        ],
+        [
+          400,
+          417
+        ],
+        [
+          446,
+          397
+        ],
+        [
+          486,
+          390
+        ],
+        [
+          543,
+          412
+        ],
+        [
+          543,
+          697
+        ],
+        [
+          271,
+          697
+        ],
+        [
+          275,
+          643
+        ],
+        [
+          262,
+          587
+        ],
+        [
+          236,
+          533
+        ],
+        [
+          197,
+          491
+        ]
+      ],
+      "source_number": 6,
+      "curve": true
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        6,
+        193,
+        64,
+        64
+      ],
+      "sample_text": "出发！今天也要冲浪！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            59,
+            222
+          ],
+          [
+            73,
+            221
+          ],
+          [
+            66,
+            233
+          ]
+        ],
+        "anchor_px": [
+          73,
+          221
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        199,
+        136,
+        73,
+        62
+      ],
+      "sample_text": "来了！看准时机！冲——！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            264,
+            170
+          ],
+          [
+            278,
+            181
+          ],
+          [
+            268,
+            181
+          ]
+        ],
+        "anchor_px": [
+          278,
+          181
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        425,
+        135,
+        96,
+        68
+      ],
+      "sample_text": "哇！好刺激！随着海浪上下起伏！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            470,
+            195
+          ],
+          [
+            469,
+            212
+          ],
+          [
+            483,
+            201
+          ]
+        ],
+        "anchor_px": [
+          469,
+          212
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        140,
+        355,
+        71,
+        85
+      ],
+      "sample_text": "抓住了！这一刻太棒了！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            206,
+            400
+          ],
+          [
+            224,
+            410
+          ],
+          [
+            208,
+            418
+          ]
+        ],
+        "anchor_px": [
+          224,
+          410
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        7,
+        500,
+        96,
+        78
+      ],
+      "sample_text": "呼——海浪带走了所有烦恼……",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            85,
+            567
+          ],
+          [
+            101,
+            584
+          ],
+          [
+            96,
+            562
+          ]
+        ],
+        "anchor_px": [
+          101,
+          584
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        315,
+        479,
+        115,
+        63
+      ],
+      "sample_text": "明天，还会有新的海浪，也会有新的我！",
+      "shape": "rect",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        6,
+        170,
+        50,
+        24
+      ],
+      "sample_text": "1.准备",
+      "kind": "panel_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        203,
+        100,
+        56,
+        26
+      ],
+      "sample_text": "2.迎浪",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        403,
+        113,
+        50,
+        26
+      ],
+      "sample_text": "3.起伏",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        145,
+        330,
+        50,
+        27
+      ],
+      "sample_text": "4.高潮",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        10,
+        473,
+        53,
+        26
+      ],
+      "sample_text": "5.平静",
+      "kind": "panel_label",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        326,
+        453,
+        55,
+        24
+      ],
+      "sample_text": "6.余韵",
+      "kind": "panel_label",
+      "panel": 6,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        14,
+        80,
+        161,
+        71
+      ],
+      "sample_text": "乘着海浪，找回真实的自己！",
+      "kind": "page_furniture",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        284,
+        599,
+        219,
+        87
+      ],
+      "sample_text": "生活就像海浪，有起有落，但总会带来新的风景。",
+      "kind": "page_furniture",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    }
+  ],
+  "observed_features": [
+    "six wave-curved panels",
+    "wavy gutters and top unboxed page text"
+  ],
+  "uncertainties": [
+    "Only polygon approximation of curves supplied; original spline parameters unknown."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

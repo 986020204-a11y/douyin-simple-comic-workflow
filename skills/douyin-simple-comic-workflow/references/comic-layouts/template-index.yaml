@@ -1,0 +1,2317 @@
+version: 1.4.0
+source_root: references/comic-layouts
+count_basis: distinct narrative image units; source numbering and bordered counts
+  retained separately
+scope: source annotation plus synthetic geometry verification; actual-image acceptance
+  is separate
+templates:
+- layout_id: SB-001
+  template_path: executable-templates/SB-001.yaml
+  preview_path: previews/SB-001.webp
+  panel_count: 4
+  bubble_count: 6
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_visual_annotation_complete_pending_independent_review
+  text_zone_count: 0
+  text_container_count: 6
+  source_native_canvas:
+    width: 554
+    height: 629
+    aspect_ratio: 554:629
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms: []
+  text_renderer_preflight_blockers: []
+- layout_id: SB-002
+  template_path: executable-templates/SB-002.yaml
+  preview_path: previews/SB-002.webp
+  panel_count: 4
+  bubble_count: 8
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_visual_annotation_complete_pending_independent_review
+  text_zone_count: 0
+  text_container_count: 8
+  source_native_canvas:
+    width: 546
+    height: 629
+    aspect_ratio: 546:629
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms: []
+  text_renderer_preflight_blockers: []
+- layout_id: SB-003
+  template_path: executable-templates/SB-003.yaml
+  preview_path: previews/SB-003.webp
+  panel_count: 4
+  bubble_count: 7
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 7
+  source_native_canvas:
+    width: 554
+    height: 690
+    aspect_ratio: 554:690
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - inset_scene
+    - unboxed_text
+    - rotated_text
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - White numbered strips describe source example panels and are excluded from executable
+      story containers.
+    - P04 is a genuine inset on P03; the underlying hero image continues behind it.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-004
+  template_path: executable-templates/SB-004.yaml
+  preview_path: previews/SB-004.webp
+  panel_count: 4
+  bubble_count: 11
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 11
+  source_native_canvas:
+    width: 546
+    height: 690
+    aspect_ratio: 546:690
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - physical_carrier
+    - unboxed_text
+    - rotated_text
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Numbered panel labels are source explanation only.
+    - Sign held by clerk is an observed physical carrier; a tail is not invented.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-005
+  template_path: executable-templates/SB-005.yaml
+  preview_path: previews/SB-005.webp
+  panel_count: 4
+  bubble_count: 7
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 7
+  source_native_canvas:
+    width: 554
+    height: 642
+    aspect_ratio: 554:642
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - thought_dots
+    - sound_effect
+    - unboxed_text
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Thought-dot positions are observed tiny circles, with exact raster outline unknown.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-006
+  template_path: executable-templates/SB-006.yaml
+  preview_path: previews/SB-006.webp
+  panel_count: 6
+  bubble_count: 8
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 8
+  source_native_canvas:
+    width: 561
+    height: 642
+    aspect_ratio: 561:642
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - oblique_polygon
+    - sound_effect
+    - central_focal_panel
+    - impact_polygon
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Manual polygon traces interpolate covered borders; central action is clipped
+      to its polygon, not an equal grid.
+    - Visible unboxed shout lettering is not automatically enclosed in speech balloons.
+    - 'Independent visual review confirms four white jagged/scalloped shout bodies:
+      突破, 防住他, 太帅了, 北辰10号. Their observed bodies are preserved rather than rendered
+      as bare display lettering. No unsupported speaker pointers are invented.'
+  text_renderer_preflight_blockers:
+  - bubble_id: B04
+    panel_id: P04
+    unsupported_visual_treatments:
+    - text_color_requires_explicit_color_region_renderer
+- layout_id: SB-007
+  template_path: executable-templates/SB-007.yaml
+  preview_path: previews/SB-007.webp
+  panel_count: 4
+  bubble_count: 7
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 7
+  source_native_canvas:
+    width: 554
+    height: 684
+    aspect_ratio: 554:684
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - oblique_polygon
+    - sound_effect
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Diagonal bands have distinct trapezoid/polygon boundaries and unequal source
+      geometry.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-008
+  template_path: executable-templates/SB-008.yaml
+  preview_path: previews/SB-008.webp
+  panel_count: 4
+  bubble_count: 7
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 7
+  source_native_canvas:
+    width: 561
+    height: 684
+    aspect_ratio: 561:684
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - physical_carrier
+    - thought_dots
+    - reading_arrow
+    - cross_panel_overlay
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Red Z-route arrows are real source overlays; coordinates are manually traced.
+    - Numbered title strips and ambient floor sign are source decorations rather than
+      new-story bubbles.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-009
+  template_path: executable-templates/SB-009.yaml
+  preview_path: previews/SB-009.webp
+  panel_count: 6
+  bubble_count: 4
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.79
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 4
+  source_native_canvas:
+    width: 552
+    height: 659
+    aspect_ratio: 552:659
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - oblique_polygon
+    - concave_polygon
+    - reading_route
+    - unboxed_text
+    - inset_scene
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - S-curve overlay obscures portions of scene edges; invisible border completion
+      is inferred.
+    - Tiny ellipsis bubble tail is visible to the left on enlarged preview; see explicit
+      traced polygon correction below.
+    - 'Five numbered labels describe six visible scene regions: a lower-left closer
+      romantic angle is additional to the eye-contact closeup. Lower-left seam is
+      partly hidden by label/route and must be independently reviewed.'
+    - Numbered white narrative-descriptor strips are excluded consistently with other
+      storyboard explanation labels.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-010
+  template_path: executable-templates/SB-010.yaml
+  preview_path: previews/SB-010.webp
+  panel_count: 6
+  bubble_count: 5
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.79
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 5
+  source_native_canvas:
+    width: 561
+    height: 659
+    aspect_ratio: 561:659
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - curved_panel_mask
+    - spiral_reading
+    - reading_arrow
+    - physical_carrier
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Center is an observed elliptical frame, not a rectangular inset. Its ellipse
+      bounds are manually measured, and exact source curve fitting remains inferred.
+    - Outer spiral separators contain curved spans; manual multi-vertex approximations
+      remain inferred and need contour review.
+    - Six numbered white labels are explanatory source labels; stone inscription is
+      a true physical carrier.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-011
+  template_path: executable-templates/SB-011.yaml
+  preview_path: previews/SB-011.webp
+  panel_count: 9
+  bubble_count: 5
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.79
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 5
+  source_native_canvas:
+    width: 552
+    height: 668
+    aspect_ratio: 552:668
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - radial_polygon
+    - foreground_breakout
+    - cross_panel_text
+    - unboxed_text
+    - unframed_scene
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Eight numbered surrounding framed wedges plus one central unframed transformation
+      scene make nine narrative image units; visible framed panel count is eight.
+    - Hidden converging vertices behind central foreground are inferred completions.
+    - The central full-body transformation follows the memory-light sequence and precedes
+      the final transformed-face closeup; this ninth image unit and its reading position
+      are inferred from visible narrative continuity.
+    central_unit_alpha_required: true
+    central_unit_id: P08
+  text_renderer_preflight_blockers: []
+- layout_id: SB-012
+  template_path: executable-templates/SB-012.yaml
+  preview_path: previews/SB-012.webp
+  panel_count: 8
+  bubble_count: 7
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.79
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 7
+  source_native_canvas:
+    width: 561
+    height: 668
+    aspect_ratio: 561:668
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - shattered_polygon
+    - cracked_glass_texture
+    - unboxed_text
+    - decorative_fragment_polygons
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Eight numbered narrative shards. Glass crack texture inside panels is not additional
+      narrative panel segmentation.
+    - Visible central small glass fragment between P05/P07/P08 contains texture only
+      and is not counted as a ninth scene.
+    - Hidden/occluded polygon spans manually completed; unknown crack raster cannot
+      be claimed reproduced.
+    - Two small glass-only fragments at central-bottom and lower-left-bottom have
+      explicit decorative polygon geometry; neither adds a narrative image unit.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-013
+  template_path: executable-templates/SB-013.yaml
+  preview_path: previews/SB-013.webp
+  panel_count: 3
+  bubble_count: 3
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.86
+  review_status: source_visual_annotation_complete_pending_independent_review
+  text_zone_count: 0
+  text_container_count: 3
+  source_native_canvas:
+    width: 559
+    height: 671
+    aspect_ratio: 559:671
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms: []
+  text_renderer_preflight_blockers: []
+- layout_id: SB-014
+  template_path: executable-templates/SB-014.yaml
+  preview_path: previews/SB-014.webp
+  panel_count: 4
+  bubble_count: 6
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 6
+  source_native_canvas:
+    width: 553
+    height: 671
+    aspect_ratio: 553:671
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - shared_canvas_background
+    - continuous_character
+    - cross_panel_overlay
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - The same dancer body and ribbon continue across four vertical panes; generating
+      four unrelated people fails this source treatment.
+    - Black/red partial shape at left source edge is an unexplained clipped graphic,
+      recorded unknown, not invented as a fifth panel.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-015
+  template_path: executable-templates/SB-015.yaml
+  preview_path: previews/SB-015.webp
+  panel_count: 4
+  bubble_count: 8
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 1
+  text_container_count: 9
+  source_native_canvas:
+    width: 559
+    height: 632
+    aspect_ratio: 559:632
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - shared_canvas_background
+    - cross_panel_text
+    - physical_carrier
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Kitchen geometry continues across all four panes while character appears at
+      four different times.
+    - Bottom strips contain actual sample narrative/caption text, unlike the standalone
+      explanatory labels in other sources.
+    - Top card is a graphical title card, not an inferred in-world held sign; carrier
+      subtype overlay_card is explicit.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-016
+  template_path: executable-templates/SB-016.yaml
+  preview_path: previews/SB-016.webp
+  panel_count: 5
+  bubble_count: 8
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.79
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 2
+  text_container_count: 10
+  source_native_canvas:
+    width: 553
+    height: 632
+    aspect_ratio: 553:632
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - shared_canvas_background
+    - partial_panel_separators
+    - cross_panel_text
+    - physical_carrier
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Five storyboard units occupy one continuous supermarket panorama. Their vertical
+      separators begin at varying y near 240, leaving an open shared top scene.
+    - Unit bounds include the shared top canvas for ownership only; actual frame edges
+      require partial-separator segments.
+    - Yellow upper-right note is an overlay, not an in-world object.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-017
+  template_path: executable-templates/SB-017.yaml
+  preview_path: previews/SB-017.webp
+  panel_count: 4
+  bubble_count: 4
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 4
+  source_native_canvas:
+    width: 556
+    height: 654
+    aspect_ratio: 556:654
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - filmstrip_shell
+    - oblique_polygon
+    - unboxed_text
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Frame openings and outer filmstrip are slightly tilted. Black shell and white
+      sprocket holes are structural style, not narrative panels.
+    - Exact per-hole corner radii are not determined from preview.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-018
+  template_path: executable-templates/SB-018.yaml
+  preview_path: previews/SB-018.webp
+  panel_count: 4
+  bubble_count: 7
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 7
+  source_native_canvas:
+    width: 557
+    height: 654
+    aspect_ratio: 557:654
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - widescreen
+    - sound_effect
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Four unequal-height horizontal panels, not equal vertical stack.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-019
+  template_path: executable-templates/SB-019.yaml
+  preview_path: previews/SB-019.webp
+  panel_count: 4
+  bubble_count: 5
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 5
+  source_native_canvas:
+    width: 556
+    height: 662
+    aspect_ratio: 556:662
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - vertical_long_panels
+    - sound_effect
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Four vertical panes have unequal widths.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-020
+  template_path: executable-templates/SB-020.yaml
+  preview_path: previews/SB-020.webp
+  panel_count: 10
+  bubble_count: 5
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 5
+  source_native_canvas:
+    width: 557
+    height: 662
+    aspect_ratio: 557:662
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - ultra_slim_panels
+    - impact_polygon
+    - sound_effect
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Eight narrow micro-panels between top and bottom make ten scene panels total.
+    - Micro-panel words above the strips label facial reactions rather than providing
+      dialogue.
+    - Narrow-panel exact x borders manually measured to tolerance 3 px.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-021
+  template_path: executable-templates/SB-021.yaml
+  preview_path: previews/SB-021.webp
+  panel_count: 4
+  bubble_count: 4
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 4
+  source_native_canvas:
+    width: 552
+    height: 631
+    aspect_ratio: 552:631
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - eye_closeup_chain
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - All four actual speech bodies exist; numbered emotion strips are excluded explanation.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-022
+  template_path: executable-templates/SB-022.yaml
+  preview_path: previews/SB-022.webp
+  panel_count: 5
+  bubble_count: 2
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 2
+  source_native_canvas:
+    width: 559
+    height: 631
+    aspect_ratio: 559:631
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - action_arrow
+    - sound_effect
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Five panels, top four details and wide bottom reveal.
+    - Stove dial labels belong the environment and are not newly authored speech balloons.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-023
+  template_path: executable-templates/SB-023.yaml
+  preview_path: previews/SB-023.webp
+  panel_count: 5
+  bubble_count: 1
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 1
+  source_native_canvas:
+    width: 552
+    height: 684
+    aspect_ratio: 552:684
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - camera_progression
+    - unboxed_text
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Only one narrative text zone is visible. Do not invent speech balloons in the
+      four silent panels.
+    - Five numbered camera shot strips are explanatory source decorations.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-024
+  template_path: executable-templates/SB-024.yaml
+  preview_path: previews/SB-024.webp
+  panel_count: 4
+  bubble_count: 4
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 4
+  source_native_canvas:
+    width: 559
+    height: 684
+    aspect_ratio: 559:684
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+    required_mechanisms:
+    - tech_chamfered_boxes
+    - camera_progression
+    source_annotation_complete: true
+    render_support_status: pending_capability_validation
+    layout_proof_status: not_rendered
+    real_image_validation_status: not_run
+    unknown_required_details_policy: block exact claims; require explicit adaptation
+      or review
+    source_notes:
+    - Three chamfered UI-like dialogue boxes have no reliably identified speaker tails;
+      angular corners are body geometry, not fabricated pointers.
+    - System-message channel inferred from context; exact in-story sender is unknown.
+  text_renderer_preflight_blockers: []
+- layout_id: SB-025
+  template_path: executable-templates/SB-025.yaml
+  preview_path: previews/SB-025.webp
+  panel_count: 6
+  bubble_count: 6
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.86
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 6
+  source_native_canvas:
+    width: 557
+    height: 664
+    aspect_ratio: 557:664
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: six_rect_panels
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: alternating_shot_reverse_shot
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  text_renderer_preflight_blockers: []
+- layout_id: SB-026
+  template_path: executable-templates/SB-026.yaml
+  preview_path: previews/SB-026.webp
+  panel_count: 4
+  bubble_count: 7
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.84
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 7
+  source_native_canvas:
+    width: 552
+    height: 664
+    aspect_ratio: 552:664
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: four_horizontal_panels
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: three_detail_then_result
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: speech_overflows_image_rect
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: diegetic_score_sheet
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: explicit_text_overflow_into_source_explanatory_margin
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: physical_carrier_perspective
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers: []
+- layout_id: SB-027
+  template_path: executable-templates/SB-027.yaml
+  preview_path: previews/SB-027.webp
+  panel_count: 4
+  bubble_count: 8
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.86
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 8
+  source_native_canvas:
+    width: 557
+    height: 640
+    aspect_ratio: 557:640
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: four_vertical_action_steps
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: fixed_header_and_footer_inside_each_panel
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: motion_arrows_in_third_panel
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  text_renderer_preflight_blockers: []
+- layout_id: SB-028
+  template_path: executable-templates/SB-028.yaml
+  preview_path: previews/SB-028.webp
+  panel_count: 4
+  bubble_count: 5
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.88
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 5
+  source_native_canvas:
+    width: 552
+    height: 640
+    aspect_ratio: 552:640
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: motion_trail_repeated_subjects
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: large_top_action
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: three_lower_details
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: motion_trail_semantic_asset_required
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers: []
+- layout_id: SB-029
+  template_path: executable-templates/SB-029.yaml
+  preview_path: previews/SB-029.webp
+  panel_count: 6
+  bubble_count: 19
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.87
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 19
+  source_native_canvas:
+    width: 559
+    height: 643
+    aspect_ratio: 559:643
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: static_repeated_composition
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: elevator_floor_diegetic_digits
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: final_reaction_breaks_repetition
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  text_renderer_preflight_blockers: []
+- layout_id: SB-030
+  template_path: executable-templates/SB-030.yaml
+  preview_path: previews/SB-030.webp
+  panel_count: 8
+  bubble_count: 11
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.83
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 11
+  source_native_canvas:
+    width: 557
+    height: 643
+    aspect_ratio: 557:643
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: seven_rapid_small_panels_then_one_large_still_panel
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: red_alarm_sound_effects
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  text_renderer_preflight_blockers: []
+- layout_id: SB-031
+  template_path: executable-templates/SB-031.yaml
+  preview_path: previews/SB-031.webp
+  panel_count: 2
+  bubble_count: 2
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.92
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 2
+  source_native_canvas:
+    width: 559
+    height: 682
+    aspect_ratio: 559:682
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: two_horizontal_panels
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: intentional_large_negative_space_in_second_panel
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: tiny_subject_in_lower_panel
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  text_renderer_preflight_blockers: []
+- layout_id: SB-032
+  template_path: executable-templates/SB-032.yaml
+  preview_path: previews/SB-032.webp
+  panel_count: 2
+  bubble_count: 5
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.86
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 5
+  source_native_canvas:
+    width: 557
+    height: 682
+    aspect_ratio: 557:682
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: two_mirrored_horizontal_panels
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: colored_left_annotation_strips
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: diegetic_stage_signs
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: physical_carrier_perspective
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers: []
+- layout_id: SB-033
+  template_path: executable-templates/SB-033.yaml
+  preview_path: previews/SB-033.webp
+  panel_count: 3
+  bubble_count: 9
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.84
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 9
+  source_native_canvas:
+    width: 546
+    height: 660
+    aspect_ratio: 546:660
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: opposing_sides
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: central_vs_burst
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: crowd_bottom_wide_panel
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: cross_panel_vs_decorative_overlay
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers: []
+- layout_id: SB-034
+  template_path: executable-templates/SB-034.yaml
+  preview_path: previews/SB-034.webp
+  panel_count: 7
+  bubble_count: 14
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.85
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 14
+  source_native_canvas:
+    width: 555
+    height: 660
+    aspect_ratio: 555:660
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: six_parallel_top_panels
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: converging_bottom_wide_panel
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: two_colored_track_headers
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: physical_note_and_cake_icing
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: physical_carrier_perspective
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers: []
+- layout_id: SB-035
+  template_path: executable-templates/SB-035.yaml
+  preview_path: previews/SB-035.webp
+  panel_count: 7
+  bubble_count: 15
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.87
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 15
+  source_native_canvas:
+    width: 546
+    height: 670
+    aspect_ratio: 546:670
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: alternating_parallel_action
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: six_small_panels_then_shared_bottom
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: track_headers
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  text_renderer_preflight_blockers: []
+- layout_id: SB-036
+  template_path: executable-templates/SB-036.yaml
+  preview_path: previews/SB-036.webp
+  panel_count: 4
+  bubble_count: 12
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.84
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 12
+  source_native_canvas:
+    width: 555
+    height: 670
+    aspect_ratio: 555:670
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: full_background_with_three_nested_memories
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: ragged_memory_edges
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: nested_parent_z_order
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: ragged_memory_edge_texture
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers: []
+- layout_id: SB-037
+  template_path: executable-templates/SB-037.yaml
+  preview_path: previews/SB-037.webp
+  panel_count: 4
+  bubble_count: 8
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.82
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 8
+  source_native_canvas:
+    width: 545
+    height: 662
+    aspect_ratio: 545:662
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: two_cloud_fantasy_insets
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: reality_and_fantasy_z_order
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: bottom_right_reaction
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: cloud_outline_mask
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: nested_parent_z_order
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: physical_carrier_perspective
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers: []
+- layout_id: SB-038
+  template_path: executable-templates/SB-038.yaml
+  preview_path: previews/SB-038.webp
+  panel_count: 9
+  bubble_count: 19
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.89
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 19
+  source_native_canvas:
+    width: 550
+    height: 662
+    aspect_ratio: 550:662
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: nine_cctv_feeds
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: dark_monitor_frame
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: feed_metadata_headers
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: cctv_frame_decoration
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers: []
+- layout_id: SB-039
+  template_path: executable-templates/SB-039.yaml
+  preview_path: previews/SB-039.webp
+  panel_count: 6
+  bubble_count: 18
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.84
+  review_status: source_visual_annotation_complete_pending_independent_review
+  text_zone_count: 0
+  text_container_count: 18
+  source_native_canvas:
+    width: 545
+    height: 659
+    aspect_ratio: 545:659
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms: []
+  text_renderer_preflight_blockers: []
+- layout_id: SB-040
+  template_path: executable-templates/SB-040.yaml
+  preview_path: previews/SB-040.webp
+  panel_count: 6
+  bubble_count: 1
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.78
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 16
+  text_container_count: 17
+  source_native_canvas:
+    width: 550
+    height: 659
+    aspect_ratio: 550:659
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: case_file_paper_collage
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: six_evidence_photos
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: sticky_notes
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: floor_map_route
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: receipt
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: pawprint_evidence
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: rotated_paper_and_photo_carriers
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: canvas_story_text
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: map_route_decoration
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: source_photo_bubble_overflow
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers:
+  - bubble_id: TZ-Z02
+    panel_id: CANVAS
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+  - bubble_id: TZ-Z03
+    panel_id: CANVAS
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+  - bubble_id: TZ-Z15
+    panel_id: CANVAS
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+- layout_id: SB-041
+  template_path: executable-templates/SB-041.yaml
+  preview_path: previews/SB-041.webp
+  panel_count: 4
+  bubble_count: 5
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.83
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 9
+  text_container_count: 14
+  source_native_canvas:
+    width: 545
+    height: 675
+    aspect_ratio: 545:675
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: editorial_left_typography_column
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: four_image_units
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: angled_hero_display_text
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: bottom_music_player_decoration
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: canvas_story_text
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: physical_carrier_perspective
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: rotated_display_text
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers:
+  - bubble_id: B02
+    panel_id: P01
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+  - bubble_id: TZ-Z01
+    panel_id: CANVAS
+    unsupported_visual_treatments:
+    - text_color_requires_explicit_color_region_renderer
+  - bubble_id: TZ-Z06
+    panel_id: CANVAS
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+  - bubble_id: TZ-Z07
+    panel_id: CANVAS
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+  - bubble_id: TZ-Z08
+    panel_id: CANVAS
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+- layout_id: SB-042
+  template_path: executable-templates/SB-042.yaml
+  preview_path: previews/SB-042.webp
+  panel_count: 5
+  bubble_count: 17
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.82
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 3
+  text_container_count: 20
+  source_native_canvas:
+    width: 555
+    height: 675
+    aspect_ratio: 555:675
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: hero_plus_four_steps
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: red_directional_arrows
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: statistics_chart
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: timing_labels
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: canvas_story_text
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: infographic_chart_symbols
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: physical_carrier_screen
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: directional_arrow_structure
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers:
+  - bubble_id: B02
+    panel_id: P01
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+  - bubble_id: TZ-Z02
+    panel_id: CANVAS
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+- layout_id: SB-043
+  template_path: executable-templates/SB-043.yaml
+  preview_path: previews/SB-043.webp
+  panel_count: 6
+  bubble_count: 26
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.81
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 26
+  source_native_canvas:
+    width: 545
+    height: 651
+    aspect_ratio: 545:651
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: narrative_map_parent
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: five_nested_insets
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: dotted_route_and_direction_arrows
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: compass
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: nested_parent_z_order
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: map_route_structure
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: text_overflows_inset_panels
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: rotated_display_text
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers:
+  - bubble_id: B02
+    panel_id: P01
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+  - bubble_id: B03
+    panel_id: P01
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+  - bubble_id: B05
+    panel_id: P01
+    unsupported_visual_treatments:
+    - text_color_requires_explicit_color_region_renderer
+  - bubble_id: B26
+    panel_id: P01
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+- layout_id: SB-044
+  template_path: executable-templates/SB-044.yaml
+  preview_path: previews/SB-044.webp
+  panel_count: 6
+  bubble_count: 18
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.85
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 3
+  text_container_count: 21
+  source_native_canvas:
+    width: 555
+    height: 651
+    aspect_ratio: 555:651
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: five_colored_time_columns
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: bottom_night_city_panel
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: checklist_note
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: physical_carrier_perspective
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: rotated_display_text
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers:
+  - bubble_id: B01
+    panel_id: P01
+    unsupported_visual_treatments:
+    - fill_requires_explicit_color_region_renderer
+  - bubble_id: B04
+    panel_id: P02
+    unsupported_visual_treatments:
+    - fill_requires_explicit_color_region_renderer
+  - bubble_id: B07
+    panel_id: P03
+    unsupported_visual_treatments:
+    - fill_requires_explicit_color_region_renderer
+  - bubble_id: B10
+    panel_id: P04
+    unsupported_visual_treatments:
+    - fill_requires_explicit_color_region_renderer
+  - bubble_id: B13
+    panel_id: P05
+    unsupported_visual_treatments:
+    - fill_requires_explicit_color_region_renderer
+  - bubble_id: B17
+    panel_id: P06
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+  - bubble_id: B18
+    panel_id: P06
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+  - bubble_id: TZ-Z03
+    panel_id: CANVAS
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+- layout_id: SB-045
+  template_path: executable-templates/SB-045.yaml
+  preview_path: previews/SB-045.webp
+  panel_count: 8
+  bubble_count: 16
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.76
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 2
+  text_container_count: 18
+  source_native_canvas:
+    width: 543
+    height: 627
+    aspect_ratio: 543:627
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: seven_radial_story_sectors
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: central_circular_clock_hero
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: clock_marks
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: chronological_clockwise_flow
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: curved_sector_panel_masks
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: clock_face_ticks_and_numerals
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: physical_carrier_clock_face
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: rotated_display_text
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers:
+  - bubble_id: B15
+    panel_id: P08
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+  - bubble_id: TZ-Z01
+    panel_id: CANVAS
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+- layout_id: SB-046
+  template_path: executable-templates/SB-046.yaml
+  preview_path: previews/SB-046.webp
+  panel_count: 7
+  bubble_count: 15
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.81
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 15
+  source_native_canvas:
+    width: 556
+    height: 627
+    aspect_ratio: 556:627
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - feature: six_surrounding_trapezoid_panels
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: central_large_anchor_object
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: central_anchor_occludes_panel_edges
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: diegetic_chalkboard_and_cup_print
+    evidence: observed
+    renderer_support: requires_validation
+    real_image_verified: false
+  - feature: central_anchor_occlusion_z_order
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: physical_carrier_perspective
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  - feature: observed_speech_overflow
+    evidence: inferred
+    renderer_support: block_until_verified
+    real_image_verified: false
+  text_renderer_preflight_blockers:
+  - bubble_id: B13
+    panel_id: P06
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+- layout_id: SB-047
+  template_path: executable-templates/SB-047.yaml
+  preview_path: previews/SB-047.webp
+  panel_count: 10
+  bubble_count: 11
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.8
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 11
+  source_native_canvas:
+    width: 543
+    height: 689
+    aspect_ratio: 543:689
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: foreground_cross_panel_art
+    source_status: observed
+    execution_status: pending_actual_transparent_asset_validation
+  - mechanism: layered_page_backdrop
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-048
+  template_path: executable-templates/SB-048.yaml
+  preview_path: previews/SB-048.webp
+  panel_count: 8
+  bubble_count: 9
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.8
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 2
+  text_container_count: 11
+  source_native_canvas:
+    width: 556
+    height: 689
+    aspect_ratio: 556:689
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: curved_panel_masks
+    source_status: observed
+    execution_status: pending_mechanism_validation
+    precision: manual_polygon_approximation
+  - mechanism: source_bubble_bleed_to_canvas
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  - mechanism: layered_page_backdrop
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  - mechanism: ellipse_panel_mask
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  - mechanism: canvas_text_zones
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-049
+  template_path: executable-templates/SB-049.yaml
+  preview_path: previews/SB-049.webp
+  panel_count: 4
+  bubble_count: 9
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 9
+  source_native_canvas:
+    width: 546
+    height: 625
+    aspect_ratio: 546:625
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: foreground_cross_panel_art
+    source_status: observed
+    execution_status: pending_actual_transparent_asset_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-050
+  template_path: executable-templates/SB-050.yaml
+  preview_path: previews/SB-050.webp
+  panel_count: 5
+  bubble_count: 5
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 4
+  text_container_count: 9
+  source_native_canvas:
+    width: 556
+    height: 625
+    aspect_ratio: 556:625
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: layered_page_backdrop
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  - mechanism: physical_carrier_text_binding
+    source_status: observed
+    execution_status: pending_actual_carrier_validation
+  - mechanism: canvas_text_zones
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-051
+  template_path: executable-templates/SB-051.yaml
+  preview_path: previews/SB-051.webp
+  panel_count: 6
+  bubble_count: 6
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.8
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 2
+  text_container_count: 8
+  source_native_canvas:
+    width: 546
+    height: 700
+    aspect_ratio: 546:700
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: curved_panel_masks
+    source_status: observed
+    execution_status: pending_mechanism_validation
+    precision: manual_polygon_approximation
+  - mechanism: canvas_text_zones
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-052
+  template_path: executable-templates/SB-052.yaml
+  preview_path: previews/SB-052.webp
+  panel_count: 7
+  bubble_count: 6
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.8
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 3
+  text_container_count: 9
+  source_native_canvas:
+    width: 556
+    height: 700
+    aspect_ratio: 556:700
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: organic_unframed_scene_assembly
+    source_status: observed
+    execution_status: pending_actual_art_validation
+  - mechanism: layered_page_backdrop
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  - mechanism: canvas_text_zones
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-053
+  template_path: executable-templates/SB-053.yaml
+  preview_path: previews/SB-053.webp
+  panel_count: 4
+  bubble_count: 6
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.8
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 6
+  source_native_canvas:
+    width: 556
+    height: 681
+    aspect_ratio: 556:681
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: organic_unframed_scene_assembly
+    source_status: observed
+    execution_status: pending_actual_art_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-054
+  template_path: executable-templates/SB-054.yaml
+  preview_path: previews/SB-054.webp
+  panel_count: 5
+  bubble_count: 6
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.8
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 2
+  text_container_count: 8
+  source_native_canvas:
+    width: 544
+    height: 681
+    aspect_ratio: 544:681
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: organic_unframed_scene_assembly
+    source_status: observed
+    execution_status: pending_actual_art_validation
+  - mechanism: canvas_text_zones
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-055
+  template_path: executable-templates/SB-055.yaml
+  preview_path: previews/SB-055.webp
+  panel_count: 1
+  bubble_count: 3
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.95
+  review_status: source_visual_annotation_complete_pending_independent_review
+  text_zone_count: 0
+  text_container_count: 3
+  source_native_canvas:
+    width: 556
+    height: 643
+    aspect_ratio: 556:643
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms: []
+  text_renderer_preflight_blockers: []
+- layout_id: SB-056
+  template_path: executable-templates/SB-056.yaml
+  preview_path: previews/SB-056.webp
+  panel_count: 1
+  bubble_count: 5
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 5
+  source_native_canvas:
+    width: 544
+    height: 643
+    aspect_ratio: 544:643
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: physical_carrier_text_binding
+    source_status: observed
+    execution_status: pending_actual_carrier_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-057
+  template_path: executable-templates/SB-057.yaml
+  preview_path: previews/SB-057.webp
+  panel_count: 7
+  bubble_count: 8
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 8
+  source_native_canvas:
+    width: 545
+    height: 635
+    aspect_ratio: 545:635
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: red_brush_underline
+    source_status: observed
+    execution_status: pending_mechanism_validation
+    rough_edge_texture: unknown
+  text_renderer_preflight_blockers:
+  - bubble_id: B07
+    panel_id: P01
+    unsupported_visual_treatments:
+    - source_rotated_glyph_renderer_not_implemented
+- layout_id: SB-058
+  template_path: executable-templates/SB-058.yaml
+  preview_path: previews/SB-058.webp
+  panel_count: 6
+  bubble_count: 9
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 1
+  text_container_count: 10
+  source_native_canvas:
+    width: 555
+    height: 635
+    aspect_ratio: 555:635
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: thought_dot_tail
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-059
+  template_path: executable-templates/SB-059.yaml
+  preview_path: previews/SB-059.webp
+  panel_count: 5
+  bubble_count: 10
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 3
+  text_container_count: 13
+  source_native_canvas:
+    width: 545
+    height: 688
+    aspect_ratio: 545:688
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: physical_carrier_text_binding
+    source_status: observed
+    execution_status: pending_actual_carrier_validation
+  - mechanism: canvas_text_zones
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-060
+  template_path: executable-templates/SB-060.yaml
+  preview_path: previews/SB-060.webp
+  panel_count: 5
+  bubble_count: 7
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 3
+  text_container_count: 10
+  source_native_canvas:
+    width: 555
+    height: 688
+    aspect_ratio: 555:688
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: physical_carrier_text_binding
+    source_status: observed
+    execution_status: pending_actual_carrier_validation
+  - mechanism: canvas_text_zones
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-061
+  template_path: executable-templates/SB-061.yaml
+  preview_path: previews/SB-061.webp
+  panel_count: 5
+  bubble_count: 7
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 1
+  text_container_count: 8
+  source_native_canvas:
+    width: 544
+    height: 664
+    aspect_ratio: 544:664
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: physical_carrier_text_binding
+    source_status: observed
+    execution_status: pending_actual_carrier_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-062
+  template_path: executable-templates/SB-062.yaml
+  preview_path: previews/SB-062.webp
+  panel_count: 4
+  bubble_count: 8
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 8
+  source_native_canvas:
+    width: 555
+    height: 664
+    aspect_ratio: 555:664
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms: []
+  text_renderer_preflight_blockers: []
+- layout_id: SB-063
+  template_path: executable-templates/SB-063.yaml
+  preview_path: previews/SB-063.webp
+  panel_count: 4
+  bubble_count: 6
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 6
+  source_native_canvas:
+    width: 544
+    height: 659
+    aspect_ratio: 544:659
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: physical_carrier_text_binding
+    source_status: observed
+    execution_status: pending_actual_carrier_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-064
+  template_path: executable-templates/SB-064.yaml
+  preview_path: previews/SB-064.webp
+  panel_count: 3
+  bubble_count: 6
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 1
+  text_container_count: 7
+  source_native_canvas:
+    width: 555
+    height: 659
+    aspect_ratio: 555:659
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: physical_carrier_text_binding
+    source_status: observed
+    execution_status: pending_actual_carrier_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-065
+  template_path: executable-templates/SB-065.yaml
+  preview_path: previews/SB-065.webp
+  panel_count: 3
+  bubble_count: 7
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 3
+  text_container_count: 10
+  source_native_canvas:
+    width: 545
+    height: 649
+    aspect_ratio: 545:649
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: physical_carrier_text_binding
+    source_status: observed
+    execution_status: pending_actual_carrier_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-066
+  template_path: executable-templates/SB-066.yaml
+  preview_path: previews/SB-066.webp
+  panel_count: 6
+  bubble_count: 5
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.8
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 5
+  source_native_canvas:
+    width: 555
+    height: 649
+    aspect_ratio: 555:649
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: cross_panel_typographic_overlay
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  text_renderer_preflight_blockers: []
+- layout_id: SB-067
+  template_path: executable-templates/SB-067.yaml
+  preview_path: previews/SB-067.webp
+  panel_count: 7
+  bubble_count: 8
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.9
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 0
+  text_container_count: 8
+  source_native_canvas:
+    width: 545
+    height: 674
+    aspect_ratio: 545:674
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms: []
+  text_renderer_preflight_blockers: []
+- layout_id: SB-068
+  template_path: executable-templates/SB-068.yaml
+  preview_path: previews/SB-068.webp
+  panel_count: 7
+  bubble_count: 5
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  missing_fields: []
+  confidence: 0.8
+  review_status: source_cross_checked_with_explicit_uncertainty
+  text_zone_count: 1
+  text_container_count: 6
+  source_native_canvas:
+    width: 555
+    height: 674
+    aspect_ratio: 555:674
+  native_geometry_proof: synthetic_passed
+  full_template_execution: not_proven_by_library_upgrade
+  real_image_validation: not_tested_this_run
+  required_mechanisms:
+  - mechanism: source_bubble_bleed_to_canvas
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  - mechanism: ellipse_panel_mask
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  - mechanism: canvas_text_zones
+    source_status: observed
+    execution_status: pending_mechanism_validation
+  text_renderer_preflight_blockers: []

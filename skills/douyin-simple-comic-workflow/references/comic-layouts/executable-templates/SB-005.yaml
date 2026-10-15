@@ -1,0 +1,832 @@
+layout_id: SB-005
+version: 1.4.0
+source:
+  preview_image: previews/SB-005.webp
+  source_note: source-notes/SB-005.md
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  visual_reference_only: true
+  preview_sha256: cc8a48a00d11c35eb443bee70cd6ab747e4c2256a9a1334e712d9a6557e1fa70
+  note_sha256: 9d9beb57f6fb9245f73f2ab80914d4cbadcedbb5075fe9a0aeaf5f8602e6ca5c
+  annotation_scope: native full preview; manual observed structure, no implicit 3:4
+    adaptation
+  observation_record: source-notes/annotations/SB-005.json
+canvas:
+  aspect_ratio: 554:642
+  source_aspect_ratio: 554:642
+  coordinate_system: normalized_xywh_0_to_1 (x,y,width,height)
+  width: 554
+  height: 642
+  dimensions_evidence: observed
+  aspect_ratio_evidence: observed
+panels:
+- panel_id: P01
+  order: 1
+  bounds:
+  - 0.027076
+  - 0.087227
+  - 0.404332
+  - 0.28972
+  geometry_type: rect
+  role: quiet thought
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: inferred
+    geometry_type: observed
+    order: observed
+    role: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+- panel_id: P02
+  order: 2
+  bounds:
+  - 0.440433
+  - 0.087227
+  - 0.220217
+  - 0.28972
+  geometry_type: rect
+  role: careful action
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: inferred
+    geometry_type: observed
+    order: observed
+    role: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+- panel_id: P03
+  order: 3
+  bounds:
+  - 0.673285
+  - 0.087227
+  - 0.303249
+  - 0.28972
+  geometry_type: rect
+  role: taste reaction
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: inferred
+    geometry_type: observed
+    order: observed
+    role: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+- panel_id: P04
+  order: 4
+  bounds:
+  - 0.027076
+  - 0.384735
+  - 0.949458
+  - 0.590343
+  geometry_type: rect
+  role: large ending reveal
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: inferred
+    geometry_type: observed
+    order: observed
+    role: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+bubbles:
+- bubble_id: B01
+  panel_id: P01
+  allowed_text_types:
+  - thought
+  shape: rounded_rect
+  position: upper-left
+  bounds:
+  - 0.032491
+  - 0.0919
+  - 0.211191
+  - 0.158879
+  tail:
+    mode: observed_dots
+    anchor: null
+    dots:
+    - - 0.191336
+      - 0.244548
+      - 0.01444
+      - 0.009346
+    - - 0.205776
+      - 0.252336
+      - 0.009025
+      - 0.006231
+    dots_px:
+    - - 106
+      - 157
+      - 8
+      - 6
+    - - 114
+      - 162
+      - 5
+      - 4
+    coordinate_space: template_normalized
+    dot_format: xywh
+    required: true
+    anchor_kind: thought_owner
+    owner_binding_required: true
+    evidence: observed
+    anchor_evidence: unknown
+    geometry_precision: inferred_manual_trace
+  max_width_ratio: 0.522321
+  avoid:
+  - face
+  - hands
+  - key_props
+  cross_panel_allowed: false
+  visual_style:
+    renderer: preview_rounded_speech
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    renderer_evidence: inferred
+    padding_ratio: 0.06
+    padding_ratio_evidence: inferred
+    repeatable: false
+    tail_shape: observed_dots
+    font_family: unknown
+    font_family_evidence: unknown
+    corner_radius_ratio: 0.24
+    corner_radius_ratio_evidence: inferred
+  source_sample_text: 嘘…大家都睡了，偷偷吃点泡面应该没事吧！
+  source_text_semantics: thought
+  field_evidence:
+    panel_id: observed
+    bounds: inferred
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    tail_anchor: unknown
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    cross_panel_allowed: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+- bubble_id: B02
+  panel_id: P02
+  allowed_text_types:
+  - thought
+  shape: ellipse
+  position: upper-center
+  bounds:
+  - 0.480144
+  - 0.093458
+  - 0.15704
+  - 0.066978
+  tail:
+    mode: observed_dots
+    anchor: null
+    dots:
+    - - 0.546931
+      - 0.163551
+      - 0.009025
+      - 0.007788
+    - - 0.545126
+      - 0.176012
+      - 0.005415
+      - 0.004673
+    dots_px:
+    - - 303
+      - 105
+      - 5
+      - 5
+    - - 302
+      - 113
+      - 3
+      - 3
+    coordinate_space: template_normalized
+    dot_format: xywh
+    required: true
+    anchor_kind: thought_owner
+    owner_binding_required: true
+    evidence: observed
+    anchor_evidence: unknown
+    geometry_precision: inferred_manual_trace
+  max_width_ratio: 0.713115
+  avoid:
+  - face
+  - hands
+  - key_props
+  cross_panel_allowed: false
+  visual_style:
+    renderer: preview_rounded_speech
+    shape: ellipse
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    renderer_evidence: inferred
+    padding_ratio: 0.06
+    padding_ratio_evidence: inferred
+    repeatable: false
+    tail_shape: observed_dots
+    font_family: unknown
+    font_family_evidence: unknown
+  source_sample_text: 轻一点…
+  source_text_semantics: thought
+  field_evidence:
+    panel_id: observed
+    bounds: inferred
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    tail_anchor: unknown
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    cross_panel_allowed: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+- bubble_id: B03
+  panel_id: P03
+  allowed_text_types:
+  - emphasis
+  shape: display_text
+  position: upper-left
+  bounds:
+  - 0.687726
+  - 0.104361
+  - 0.15704
+  - 0.095016
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  max_width_ratio: 0.517857
+  avoid:
+  - face
+  - hands
+  - key_props
+  cross_panel_allowed: false
+  visual_style:
+    renderer: preview_display
+    shape: display_text
+    fill: null
+    border: none
+    text_color: white
+    evidence: observed
+    renderer_evidence: inferred
+    padding_ratio: 0.06
+    padding_ratio_evidence: inferred
+    repeatable: false
+    tail_shape: none
+    font_family: unknown
+    font_family_evidence: unknown
+    lettering_class: hand_lettering_or_brush
+    lettering_class_evidence: inferred
+    text_outline: black
+    text_outline_evidence: observed
+    rotation_deg: -15
+    rotation_deg_evidence: inferred
+  source_sample_text: 滋～～
+  source_text_semantics: sound_effect
+  field_evidence:
+    panel_id: observed
+    bounds: inferred
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    tail_anchor: not_applicable
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    cross_panel_allowed: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+- bubble_id: B04
+  panel_id: P03
+  allowed_text_types:
+  - dialogue
+  shape: rounded_rect
+  position: upper-right
+  bounds:
+  - 0.864621
+  - 0.090343
+  - 0.111913
+  - 0.109034
+  tail:
+    mode: observed_polygon
+    anchor:
+    - 0.909747
+    - 0.216511
+    polygon:
+    - - 0.893502
+      - 0.186916
+    - - 0.909747
+      - 0.216511
+    - - 0.925993
+      - 0.191589
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    geometry_precision: inferred_manual_trace
+    replacement_speaker_identity: unknown
+  max_width_ratio: 0.369048
+  avoid:
+  - face
+  - hands
+  - key_props
+  cross_panel_allowed: false
+  visual_style:
+    renderer: preview_rounded_speech
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    renderer_evidence: inferred
+    padding_ratio: 0.06
+    padding_ratio_evidence: inferred
+    repeatable: false
+    tail_shape: observed_polygon
+    font_family: unknown
+    font_family_evidence: unknown
+    corner_radius_ratio: 0.24
+    corner_radius_ratio_evidence: inferred
+  source_sample_text: 啊…真香！
+  source_text_semantics: dialogue
+  field_evidence:
+    panel_id: observed
+    bounds: inferred
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    tail_anchor: observed
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    cross_panel_allowed: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+- bubble_id: B05
+  panel_id: P04
+  allowed_text_types:
+  - dialogue
+  shape: rounded_rect
+  position: upper-center
+  bounds:
+  - 0.462094
+  - 0.401869
+  - 0.303249
+  - 0.168224
+  tail:
+    mode: observed_polygon
+    anchor:
+    - 0.436823
+    - 0.542056
+    polygon:
+    - - 0.48917
+      - 0.503115
+    - - 0.436823
+      - 0.542056
+    - - 0.480144
+      - 0.53271
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    geometry_precision: inferred_manual_trace
+    replacement_speaker_identity: unknown
+  max_width_ratio: 0.319392
+  avoid:
+  - face
+  - hands
+  - key_props
+  cross_panel_allowed: false
+  visual_style:
+    renderer: preview_rounded_speech
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    renderer_evidence: inferred
+    padding_ratio: 0.06
+    padding_ratio_evidence: inferred
+    repeatable: false
+    tail_shape: observed_polygon
+    font_family: unknown
+    font_family_evidence: unknown
+    corner_radius_ratio: 0.24
+    corner_radius_ratio_evidence: inferred
+  source_sample_text: 这么晚还在吃？……能给我来一口吗？
+  source_text_semantics: dialogue
+  field_evidence:
+    panel_id: observed
+    bounds: inferred
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    tail_anchor: observed
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    cross_panel_allowed: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+- bubble_id: B06
+  panel_id: P04
+  allowed_text_types:
+  - emphasis
+  shape: display_text
+  position: center-right
+  bounds:
+  - 0.83213
+  - 0.548287
+  - 0.111913
+  - 0.133956
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  max_width_ratio: 0.117871
+  avoid:
+  - face
+  - hands
+  - key_props
+  cross_panel_allowed: false
+  visual_style:
+    renderer: preview_display
+    shape: display_text
+    fill: null
+    border: none
+    text_color: white
+    evidence: observed
+    renderer_evidence: inferred
+    padding_ratio: 0.06
+    padding_ratio_evidence: inferred
+    repeatable: false
+    tail_shape: none
+    font_family: unknown
+    font_family_evidence: unknown
+    lettering_class: hand_lettering_or_brush
+    lettering_class_evidence: inferred
+    text_outline: black
+    text_outline_evidence: observed
+    rotation_deg: 8
+    rotation_deg_evidence: inferred
+  source_sample_text: '!?'
+  source_text_semantics: sound_effect
+  field_evidence:
+    panel_id: observed
+    bounds: inferred
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    tail_anchor: not_applicable
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    cross_panel_allowed: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+- bubble_id: B07
+  panel_id: P04
+  allowed_text_types:
+  - narration
+  - caption
+  shape: rect
+  position: lower-right
+  bounds:
+  - 0.629964
+  - 0.876947
+  - 0.326715
+  - 0.080997
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  max_width_ratio: 0.344106
+  avoid:
+  - face
+  - hands
+  - key_props
+  cross_panel_allowed: false
+  visual_style:
+    renderer: preview_caption_box
+    shape: rect
+    fill: pale_yellow
+    border: none
+    text_color: black
+    evidence: observed
+    renderer_evidence: inferred
+    padding_ratio: 0.06
+    padding_ratio_evidence: inferred
+    repeatable: false
+    tail_shape: none
+    font_family: unknown
+    font_family_evidence: unknown
+  source_sample_text: 有时候，美味真的能化解一切……
+  source_text_semantics: narration
+  field_evidence:
+    panel_id: observed
+    bounds: inferred
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    tail_anchor: not_applicable
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    cross_panel_allowed: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+constraints:
+  panel_count_exact: true
+  preserve_reading_order: true
+  allow_add_panels: false
+  allow_delete_panels: false
+  allow_merge_panels: false
+  allow_split_panels: false
+  allow_generic_long_box: false
+  cross_panel_bubble_default: false
+  source_rule: false
+  evidence: inferred
+  origin: workflow safety and fidelity policy; not asserted as an original preview
+    instruction
+fallback:
+  policy: block_unresolved_required_geometry_or_binding
+  reason_required: true
+  evidence: inferred
+  origin: workflow execution policy
+evidence:
+  panel_geometry: observed
+  bubble_shape: observed
+  bubble_position: observed
+  tail_anchor: observed_with_explicit_unknown_thought_anchors
+  confidence: 0.88
+  numeric_geometry: inferred_manual_trace
+  font_family: unknown
+review_status: source_cross_checked_with_explicit_uncertainty
+missing_fields: []
+preview_contract:
+  source_size:
+  - 554
+  - 642
+  content_roi:
+  - 0.027076
+  - 0.087227
+  - 0.949458
+  - 0.88785
+  header:
+    bounds:
+    - 0.0
+    - 0.0
+    - 1.0
+    - 0.087227
+    status: observed
+    writable: false
+  coordinate_space: full_preview_normalized_xywh
+  crop_policy:
+    type: external_target_transform_only
+    evidence: inferred
+    source_rule: false
+    note: Any crop, uniform 3:4 cover, bubble fitting or rearrangement is an explicit
+      adapted target, never a native source observation.
+  evidence: observed
+structure:
+  units:
+  - order: 1
+    bounds:
+    - 0.027076
+    - 0.087227
+    - 0.404332
+    - 0.28972
+    geometry_type: rect
+    role: quiet thought
+    cross_panel_allowed: false
+    field_evidence:
+      bounds: inferred
+      geometry_type: observed
+      order: observed
+      role: inferred
+      cross_panel_allowed: inferred
+    annotation_precision:
+      method: manual_visual_trace
+      tolerance_source_pixels: 3
+      status: inferred
+    unit_id: P01
+    evidence: inferred_manual_trace
+  - order: 2
+    bounds:
+    - 0.440433
+    - 0.087227
+    - 0.220217
+    - 0.28972
+    geometry_type: rect
+    role: careful action
+    cross_panel_allowed: false
+    field_evidence:
+      bounds: inferred
+      geometry_type: observed
+      order: observed
+      role: inferred
+      cross_panel_allowed: inferred
+    annotation_precision:
+      method: manual_visual_trace
+      tolerance_source_pixels: 3
+      status: inferred
+    unit_id: P02
+    evidence: inferred_manual_trace
+  - order: 3
+    bounds:
+    - 0.673285
+    - 0.087227
+    - 0.303249
+    - 0.28972
+    geometry_type: rect
+    role: taste reaction
+    cross_panel_allowed: false
+    field_evidence:
+      bounds: inferred
+      geometry_type: observed
+      order: observed
+      role: inferred
+      cross_panel_allowed: inferred
+    annotation_precision:
+      method: manual_visual_trace
+      tolerance_source_pixels: 3
+      status: inferred
+    unit_id: P03
+    evidence: inferred_manual_trace
+  - order: 4
+    bounds:
+    - 0.027076
+    - 0.384735
+    - 0.949458
+    - 0.590343
+    geometry_type: rect
+    role: large ending reveal
+    cross_panel_allowed: false
+    field_evidence:
+      bounds: inferred
+      geometry_type: observed
+      order: observed
+      role: inferred
+      cross_panel_allowed: inferred
+    annotation_precision:
+      method: manual_visual_trace
+      tolerance_source_pixels: 3
+      status: inferred
+    unit_id: P04
+    evidence: inferred_manual_trace
+  nested_units: []
+  reading_order:
+    type: explicit_order
+    evidence: observed
+    note: Derived from visible numbering/path and visual sequence; no generic reading
+      grid replaces the source.
+style_contract:
+  border:
+    required: true
+    color: black
+    width_ratio: 0.005415
+    evidence: observed
+    width_evidence: inferred
+  gutter:
+    required: true
+    color: white
+    width_ratio: 0.009025
+    evidence: observed
+    width_evidence: inferred
+  sample_content_policy: omit explanatory labels and sample wording; preserve observed
+    container treatments
+  sample_content_policy_evidence: inferred
+  unknown_policy: do_not_invent
+  observed_mechanisms: &id001
+  - thought_dots
+  - sound_effect
+  - unboxed_text
+text_zones: []
+overlays: []
+field_evidence:
+  source.preview_image: observed
+  source.source_note: observed
+  canvas: observed
+  constraints: inferred
+  fallback: inferred
+  panel_roles: inferred
+  renderer_selection: inferred
+  sample_content_policy: inferred
+annotation_uncertainties:
+- field: font_family
+  status: unknown
+  reason: Preview does not identify original font files or precise hand lettering.
+- field: replacement_speaker_prop_or_carrier_identity
+  status: unknown
+  reason: New story ownership requires separately confirmed same-panel or canvas binding.
+- field: numeric_geometries
+  status: inferred
+  reason: Manual trace of visible source pixels at 3 px tolerance; hidden edges interpolated,
+    not directly observed.
+annotation_coverage:
+  executable_text_instances: 7
+  panel_bound_text_instances: 7
+  canvas_text_instances: 0
+  complete_for_visible_story_containers: true
+  excluded_source_decorations:
+  - page title and explanatory subtitle
+  - white numbered source-explanation strips
+  - incidental environment signage except explicit authored note carriers
+  evidence: observed
+execution_requirements:
+  required_mechanisms: *id001
+  source_annotation_complete: true
+  render_support_status: pending_capability_validation
+  layout_proof_status: not_rendered
+  real_image_validation_status: not_run
+  unknown_required_details_policy: block exact claims; require explicit adaptation
+    or review
+  source_notes:
+  - Thought-dot positions are observed tiny circles, with exact raster outline unknown.
+annotation_record:
+  observer: annotate_sb_003_024
+  preview_read: true
+  preview_viewed: true
+  preview_tool: tools.view_image original untouched source
+  note_read: true
+  note_encoding: utf-8
+  raw_observation_path: source-notes/annotations/SB-005.json
+  image_sha256: cc8a48a00d11c35eb443bee70cd6ab747e4c2256a9a1334e712d9a6557e1fa70
+  note_sha256: 9d9beb57f6fb9245f73f2ab80914d4cbadcedbb5075fe9a0aeaf5f8602e6ca5c
+workflow_output_preference:
+  aspect_ratio: '3:4'
+  evidence: inferred_workflow_output_target
+  requires_explicit_adaptation: true
+actual_art_validation_status: not_tested
+validation_scope:
+  source_annotation: complete
+  source_visual_cross_check: passed_with_explicit_uncertainty
+  native_geometry_synthetic_proof: passed
+  real_artwork: not_tested
+  complete_text_effect_execution: not_tested
+  pixel_identity_to_original_preview: not_claimed
+  human_final_acceptance: pending
+source_review_notes:
+  cross_check_scope: visible image units, text containers, ownership and explicit
+    uncertainty; not exact numeric or font identity
+  evidence_origin: independent annotator cross-review plus root source contact-sheet
+    review; see bundled annotation-review.json

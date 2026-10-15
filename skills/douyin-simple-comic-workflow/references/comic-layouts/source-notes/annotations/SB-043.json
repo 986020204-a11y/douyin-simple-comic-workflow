@@ -1,0 +1,573 @@
+{
+  "content_roi_px": [
+    3,
+    77,
+    538,
+    569
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        3,
+        77,
+        538,
+        569
+      ],
+      "role": "narrative_map_background",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        11,
+        191,
+        141,
+        121
+      ],
+      "role": "school_inset",
+      "polygon_px": null,
+      "parent_panel_id": "P01"
+    },
+    {
+      "bounds_px": [
+        312,
+        195,
+        144,
+        120
+      ],
+      "role": "library_inset",
+      "polygon_px": null,
+      "parent_panel_id": "P01"
+    },
+    {
+      "bounds_px": [
+        418,
+        334,
+        117,
+        159
+      ],
+      "role": "track_inset",
+      "polygon_px": null,
+      "parent_panel_id": "P01"
+    },
+    {
+      "bounds_px": [
+        11,
+        444,
+        145,
+        164
+      ],
+      "role": "cafeteria_inset",
+      "polygon_px": null,
+      "parent_panel_id": "P01"
+    },
+    {
+      "bounds_px": [
+        213,
+        458,
+        157,
+        176
+      ],
+      "role": "laboratory_inset",
+      "polygon_px": null,
+      "parent_panel_id": "P01"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        13,
+        105,
+        240,
+        54
+      ],
+      "source_sample_text": "校园寻宝记",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        19,
+        158,
+        188,
+        27
+      ],
+      "source_sample_text": "跟着地图，寻找隐藏的宝藏！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "fill": "pink",
+      "text_color": "white",
+      "rotation_degrees": -7
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        220,
+        135,
+        123,
+        61
+      ],
+      "source_sample_text": "线索就在校园的每一个角落！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "rotation_degrees": -9
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        449,
+        86,
+        89,
+        80
+      ],
+      "source_sample_text": "出发！寻找传说中的“青春宝藏”！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          452,
+          146
+        ],
+        [
+          434,
+          155
+        ],
+        [
+          456,
+          158
+        ]
+      ]
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        37,
+        377,
+        63,
+        27
+      ],
+      "source_sample_text": "START 从这里出发！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "red",
+      "text_color": "yellow_white"
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        178,
+        276,
+        53,
+        20
+      ],
+      "source_sample_text": "教学楼",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        236,
+        312,
+        43,
+        22
+      ],
+      "source_sample_text": "图书馆",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        244,
+        403,
+        41,
+        23
+      ],
+      "source_sample_text": "食堂",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        373,
+        445,
+        27,
+        23
+      ],
+      "source_sample_text": "操场",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        276,
+        452,
+        35,
+        18
+      ],
+      "source_sample_text": "实验楼",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        17,
+        194,
+        129,
+        32
+      ],
+      "source_sample_text": "1 教学楼 找到第一条线索！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        77,
+        234,
+        72,
+        57
+      ],
+      "source_sample_text": "啊！在黑板后面发现纸条了！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          81,
+          273
+        ],
+        [
+          71,
+          282
+        ],
+        [
+          85,
+          285
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        17,
+        299,
+        130,
+        39
+      ],
+      "source_sample_text": "线索1：知识是通往未来的钥匙。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "pale_yellow",
+      "cross_panel_allowed": true
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        316,
+        198,
+        136,
+        32
+      ],
+      "source_sample_text": "2 图书馆 寻找下一条线索",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        391,
+        247,
+        61,
+        45
+      ],
+      "source_sample_text": "在书架上找到了！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          396,
+          278
+        ],
+        [
+          386,
+          288
+        ],
+        [
+          400,
+          286
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        317,
+        316,
+        84,
+        44
+      ],
+      "source_sample_text": "线索2：真正的宝藏，藏在坚持里。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "pale_yellow",
+      "cross_panel_allowed": true
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        422,
+        337,
+        107,
+        37
+      ],
+      "source_sample_text": "3 操场 完成跑步挑战",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        474,
+        382,
+        57,
+        50
+      ],
+      "source_sample_text": "完成1000米！超越自己！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          478,
+          418
+        ],
+        [
+          468,
+          428
+        ],
+        [
+          483,
+          426
+        ]
+      ]
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        440,
+        457,
+        89,
+        45
+      ],
+      "source_sample_text": "线索3：健康的身体，是最大的财富。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "pale_yellow",
+      "cross_panel_allowed": true
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        17,
+        446,
+        133,
+        36
+      ],
+      "source_sample_text": "4 食堂 解开美食谜题",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        93,
+        490,
+        59,
+        40
+      ],
+      "source_sample_text": "太好吃了！线索找到了！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          98,
+          521
+        ],
+        [
+          89,
+          532
+        ],
+        [
+          104,
+          527
+        ]
+      ]
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        18,
+        571,
+        119,
+        52
+      ],
+      "source_sample_text": "线索4：和朋友一起分享，就是最好的宝藏！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "pale_yellow",
+      "cross_panel_allowed": true
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        218,
+        461,
+        145,
+        34
+      ],
+      "source_sample_text": "5 实验楼 最后的宝藏",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        305,
+        503,
+        66,
+        50
+      ],
+      "source_sample_text": "找到了！原来宝藏是——",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          310,
+          540
+        ],
+        [
+          297,
+          550
+        ],
+        [
+          315,
+          549
+        ]
+      ]
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        294,
+        570,
+        94,
+        57
+      ],
+      "source_sample_text": "线索5：不断探索的好奇，就是最珍贵的宝藏！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null,
+      "fill": "pale_yellow",
+      "cross_panel_allowed": true
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        441,
+        552,
+        94,
+        67
+      ],
+      "source_sample_text": "探索仍在继续，校园里还有更多精彩等你发现！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "rotation_degrees": -9
+    }
+  ],
+  "features": [
+    "narrative_map_parent",
+    "five_nested_insets",
+    "dotted_route_and_direction_arrows",
+    "compass"
+  ],
+  "execution_blockers": [
+    "nested_parent_z_order",
+    "map_route_structure",
+    "text_overflows_inset_panels",
+    "rotated_display_text"
+  ],
+  "text_zones": [],
+  "overlays": [
+    {
+      "kind": "dotted_map_route",
+      "bounds_px": [
+        72,
+        234,
+        422,
+        345
+      ],
+      "status": "observed",
+      "exact_path_status": "unknown"
+    },
+    {
+      "kind": "compass",
+      "bounds_px": [
+        462,
+        233,
+        69,
+        73
+      ],
+      "status": "observed",
+      "exact_artwork_status": "unknown"
+    }
+  ],
+  "confidence": 0.81,
+  "notes": [
+    "Inset clue notes visibly extend beyond the photographic/story inset border; this is an observed source treatment, not silently clipped to panel."
+  ],
+  "layout_id": "SB-043",
+  "source_size": [
+    545,
+    651
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：地图路线式，角色沿地图、道路或空间路径移动，读者顺着路线完成阅读。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Map & Trail Journey, characters navigate along route map or spatial path, guiding reader's eye through the journey. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "0cc5b20d3a1d7635f809fbc51e7ae0e78931d60ea45516b96aa2399cd4c72999",
+  "preview_sha256": "e536c49bd8077f623e446db4d1d39c300324fa001a9dced21aed96f01e7c5af4",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-043.webp",
+    "source_note_path": "source-notes/SB-043.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

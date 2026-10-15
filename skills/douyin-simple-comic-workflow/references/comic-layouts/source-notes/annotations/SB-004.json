@@ -1,0 +1,397 @@
+{
+  "roi": [
+    8,
+    68,
+    533,
+    615
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        8,
+        68,
+        533,
+        319
+      ],
+      "polygon_px": null,
+      "role": "wide establishing scene"
+    },
+    {
+      "bounds_px": [
+        8,
+        393,
+        169,
+        290
+      ],
+      "polygon_px": null,
+      "role": "discovery"
+    },
+    {
+      "bounds_px": [
+        183,
+        393,
+        160,
+        290
+      ],
+      "polygon_px": null,
+      "role": "simultaneous reach"
+    },
+    {
+      "bounds_px": [
+        349,
+        393,
+        192,
+        290
+      ],
+      "polygon_px": null,
+      "role": "shopkeeper resolution"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        20,
+        86,
+        161,
+        92
+      ],
+      "source_sample": "加班到这么晚，幸好还有一盏灯为我们亮着。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "display",
+      "rotation_deg": -7
+    },
+    {
+      "panel": 1,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        330,
+        84,
+        190,
+        62
+      ],
+      "source_sample": "疲惫的夜晚，总有小小的温暖。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "display",
+      "rotation_deg": -8
+    },
+    {
+      "panel": 1,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        11,
+        235,
+        105,
+        86
+      ],
+      "source_sample": "还好有24小时便利店……走吧！",
+      "tail_tip_px": [
+        127,
+        278
+      ],
+      "tail_polygon_px": [
+        [
+          108,
+          260
+        ],
+        [
+          127,
+          278
+        ],
+        [
+          111,
+          283
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 1,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        267,
+        304,
+        87,
+        66
+      ],
+      "source_sample": "有热饮就太好了……",
+      "tail_tip_px": [
+        259,
+        322
+      ],
+      "tail_polygon_px": [
+        [
+          276,
+          311
+        ],
+        [
+          259,
+          322
+        ],
+        [
+          270,
+          330
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 2,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        11,
+        427,
+        101,
+        78
+      ],
+      "source_sample": "哇！只剩最后一杯热可可了！",
+      "tail_tip_px": [
+        63,
+        518
+      ],
+      "tail_polygon_px": [
+        [
+          48,
+          494
+        ],
+        [
+          63,
+          518
+        ],
+        [
+          69,
+          498
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 2,
+      "shape": "ellipse",
+      "bounds_px": [
+        99,
+        469,
+        74,
+        50
+      ],
+      "source_sample": "我来拿！",
+      "tail_tip_px": [
+        139,
+        531
+      ],
+      "tail_polygon_px": [
+        [
+          129,
+          511
+        ],
+        [
+          139,
+          531
+        ],
+        [
+          148,
+          514
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 3,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        187,
+        432,
+        93,
+        49
+      ],
+      "source_sample": "我先拿到！",
+      "tail_tip_px": [
+        206,
+        498
+      ],
+      "tail_polygon_px": [
+        [
+          200,
+          475
+        ],
+        [
+          206,
+          498
+        ],
+        [
+          215,
+          479
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 3,
+      "shape": "ellipse",
+      "bounds_px": [
+        279,
+        462,
+        62,
+        44
+      ],
+      "source_sample": "等等！",
+      "tail_tip_px": [
+        313,
+        518
+      ],
+      "tail_polygon_px": [
+        [
+          300,
+          499
+        ],
+        [
+          313,
+          518
+        ],
+        [
+          316,
+          501
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 4,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        351,
+        424,
+        131,
+        78
+      ],
+      "source_sample": "不用抢～刚好新补了一批！还有很多哦！",
+      "tail_tip_px": [
+        491,
+        470
+      ],
+      "tail_polygon_px": [
+        [
+          474,
+          454
+        ],
+        [
+          491,
+          470
+        ],
+        [
+          478,
+          475
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 4,
+      "shape": "physical_carrier",
+      "bounds_px": [
+        374,
+        511,
+        54,
+        66
+      ],
+      "source_sample": "温暖不限量",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "note",
+      "carrier": {
+        "carrier_id": "sign_held_by_clerk",
+        "polygon_px": [
+          [
+            365,
+            501
+          ],
+          [
+            432,
+            498
+          ],
+          [
+            443,
+            584
+          ],
+          [
+            373,
+            588
+          ]
+        ],
+        "writable_rect_px": [
+          374,
+          511,
+          54,
+          66
+        ]
+      }
+    },
+    {
+      "panel": 1,
+      "shape": "physical_carrier",
+      "bounds_px": [
+        478,
+        278,
+        47,
+        75
+      ],
+      "source_sample": "生活总会有光。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "note",
+      "text_color": "white",
+      "carrier": {
+        "carrier_id": "right_vertical_chalkboard",
+        "polygon_px": [
+          [
+            469,
+            248
+          ],
+          [
+            539,
+            237
+          ],
+          [
+            539,
+            384
+          ],
+          [
+            469,
+            384
+          ]
+        ],
+        "writable_rect_px": [
+          478,
+          278,
+          47,
+          75
+        ]
+      }
+    }
+  ],
+  "features": [
+    "physical_carrier",
+    "unboxed_text",
+    "rotated_text"
+  ],
+  "notes": [
+    "Numbered panel labels are source explanation only.",
+    "Sign held by clerk is an observed physical carrier; a tail is not invented."
+  ],
+  "layout_id": "SB-004",
+  "source_size_px": [
+    546,
+    690
+  ],
+  "preview_sha256": "6965b9baf03f8cd52a2ccb83a465424b81e1a2ee2d358f394729ce5fa8ae7e09",
+  "note_sha256": "902e87ec19d399016f55fc519033ae2d79717da6e88a9f638b304d0dbf5e6007",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

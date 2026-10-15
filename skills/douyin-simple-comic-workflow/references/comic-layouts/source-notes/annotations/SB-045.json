@@ -1,0 +1,1164 @@
+{
+  "content_roi_px": [
+    2,
+    54,
+    538,
+    557
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        2,
+        305.79,
+        171.46,
+        226.20999999999998
+      ],
+      "role": "0700_wake",
+      "polygon_px": [
+        [
+          2,
+          307
+        ],
+        [
+          138,
+          307
+        ],
+        [
+          138.32,
+          305.79
+        ],
+        [
+          138.03,
+          317.82
+        ],
+        [
+          138.83,
+          329.82
+        ],
+        [
+          140.73,
+          341.69
+        ],
+        [
+          143.69,
+          353.35
+        ],
+        [
+          147.71,
+          364.69
+        ],
+        [
+          152.74,
+          375.61
+        ],
+        [
+          158.74,
+          386.03
+        ],
+        [
+          165.67,
+          395.86
+        ],
+        [
+          173.46,
+          405.02
+        ],
+        [
+          90,
+          532
+        ],
+        [
+          3,
+          443
+        ]
+      ],
+      "geometry_type": "approximate_polygon"
+    },
+    {
+      "bounds_px": [
+        2,
+        58,
+        206.03,
+        249
+      ],
+      "role": "0900_work",
+      "polygon_px": [
+        [
+          2,
+          307
+        ],
+        [
+          138,
+          307
+        ],
+        [
+          138.32,
+          305.79
+        ],
+        [
+          139.93,
+          292.53
+        ],
+        [
+          142.86,
+          279.5
+        ],
+        [
+          147.1,
+          266.84
+        ],
+        [
+          152.6,
+          254.66
+        ],
+        [
+          159.3,
+          243.11
+        ],
+        [
+          167.13,
+          232.29
+        ],
+        [
+          176.01,
+          222.32
+        ],
+        [
+          185.86,
+          213.29
+        ],
+        [
+          196.57,
+          205.31
+        ],
+        [
+          208.03,
+          198.45
+        ],
+        [
+          150,
+          58
+        ],
+        [
+          63,
+          113
+        ],
+        [
+          3,
+          228
+        ]
+      ],
+      "geometry_type": "approximate_polygon"
+    },
+    {
+      "bounds_px": [
+        150,
+        54,
+        262,
+        148
+      ],
+      "role": "1200_lunch",
+      "polygon_px": [
+        [
+          150,
+          58
+        ],
+        [
+          204,
+          202
+        ],
+        [
+          204.0,
+          200.68
+        ],
+        [
+          216.52,
+          194.32
+        ],
+        [
+          229.65,
+          189.32
+        ],
+        [
+          243.23,
+          185.74
+        ],
+        [
+          257.12,
+          183.63
+        ],
+        [
+          271.15,
+          183.01
+        ],
+        [
+          285.17,
+          183.87
+        ],
+        [
+          299.02,
+          186.23
+        ],
+        [
+          312.54,
+          190.04
+        ],
+        [
+          325.58,
+          195.27
+        ],
+        [
+          337.99,
+          201.85
+        ],
+        [
+          412,
+          89
+        ],
+        [
+          337,
+          60
+        ],
+        [
+          244,
+          54
+        ]
+      ],
+      "geometry_type": "approximate_polygon"
+    },
+    {
+      "bounds_px": [
+        337.99,
+        89,
+        202.01,
+        209.91000000000003
+      ],
+      "role": "1500_study",
+      "polygon_px": [
+        [
+          412,
+          89
+        ],
+        [
+          338,
+          201
+        ],
+        [
+          337.99,
+          201.85
+        ],
+        [
+          347.96,
+          208.48
+        ],
+        [
+          357.29,
+          215.99
+        ],
+        [
+          365.91,
+          224.3
+        ],
+        [
+          373.73,
+          233.37
+        ],
+        [
+          380.7,
+          243.11
+        ],
+        [
+          386.76,
+          253.44
+        ],
+        [
+          391.86,
+          264.27
+        ],
+        [
+          395.96,
+          275.53
+        ],
+        [
+          399.02,
+          287.11
+        ],
+        [
+          401.02,
+          298.91
+        ],
+        [
+          540,
+          281
+        ],
+        [
+          509,
+          191
+        ],
+        [
+          471,
+          131
+        ]
+      ],
+      "geometry_type": "approximate_polygon"
+    },
+    {
+      "bounds_px": [
+        138.04,
+        183.91,
+        401.96000000000004,
+        324.09000000000003
+      ],
+      "role": "1800_exercise",
+      "polygon_px": [
+        [
+          540,
+          281
+        ],
+        [
+          401,
+          299
+        ],
+        [
+          401.02,
+          298.91
+        ],
+        [
+          388.58,
+          257.01
+        ],
+        [
+          363.13,
+          221.46
+        ],
+        [
+          327.48,
+          196.17
+        ],
+        [
+          285.51,
+          183.91
+        ],
+        [
+          241.85,
+          186.04
+        ],
+        [
+          201.28,
+          202.3
+        ],
+        [
+          168.24,
+          230.93
+        ],
+        [
+          146.36,
+          268.77
+        ],
+        [
+          138.04,
+          311.69
+        ],
+        [
+          144.2,
+          354.97
+        ],
+        [
+          164.15,
+          393.86
+        ],
+        [
+          195.71,
+          424.11
+        ],
+        [
+          235.42,
+          442.39
+        ],
+        [
+          278.92,
+          446.7
+        ],
+        [
+          321.44,
+          436.56
+        ],
+        [
+          358.33,
+          413.1
+        ],
+        [
+          468,
+          508
+        ],
+        [
+          523,
+          421
+        ],
+        [
+          540,
+          348
+        ]
+      ],
+      "geometry_type": "approximate_polygon"
+    },
+    {
+      "bounds_px": [
+        270.0,
+        413,
+        198.0,
+        194
+      ],
+      "role": "2100_relax",
+      "polygon_px": [
+        [
+          468,
+          508
+        ],
+        [
+          358,
+          413
+        ],
+        [
+          358.33,
+          413.1
+        ],
+        [
+          350.05,
+          419.96
+        ],
+        [
+          341.25,
+          426.12
+        ],
+        [
+          331.97,
+          431.55
+        ],
+        [
+          322.28,
+          436.2
+        ],
+        [
+          312.25,
+          440.06
+        ],
+        [
+          301.93,
+          443.08
+        ],
+        [
+          291.41,
+          445.25
+        ],
+        [
+          280.74,
+          446.56
+        ],
+        [
+          270.0,
+          447.0
+        ],
+        [
+          272,
+          607
+        ],
+        [
+          371,
+          583
+        ],
+        [
+          427,
+          546
+        ]
+      ],
+      "geometry_type": "approximate_polygon"
+    },
+    {
+      "bounds_px": [
+        90,
+        405.02,
+        182,
+        201.98000000000002
+      ],
+      "role": "2300_sleep",
+      "polygon_px": [
+        [
+          272,
+          607
+        ],
+        [
+          270,
+          447
+        ],
+        [
+          270.0,
+          447.0
+        ],
+        [
+          257.99,
+          446.45
+        ],
+        [
+          246.07,
+          444.81
+        ],
+        [
+          234.35,
+          442.1
+        ],
+        [
+          222.93,
+          438.32
+        ],
+        [
+          211.91,
+          433.53
+        ],
+        [
+          201.36,
+          427.75
+        ],
+        [
+          191.38,
+          421.03
+        ],
+        [
+          182.06,
+          413.44
+        ],
+        [
+          173.46,
+          405.02
+        ],
+        [
+          90,
+          532
+        ],
+        [
+          165,
+          580
+        ]
+      ],
+      "geometry_type": "approximate_polygon"
+    },
+    {
+      "bounds_px": [
+        140.0,
+        185.0,
+        260.0,
+        260.0
+      ],
+      "role": "central_clock_hero",
+      "polygon_px": [
+        [
+          400.0,
+          315.0
+        ],
+        [
+          398.89,
+          331.97
+        ],
+        [
+          395.57,
+          348.65
+        ],
+        [
+          390.1,
+          364.75
+        ],
+        [
+          382.58,
+          380.0
+        ],
+        [
+          373.14,
+          394.14
+        ],
+        [
+          361.92,
+          406.92
+        ],
+        [
+          349.14,
+          418.14
+        ],
+        [
+          335.0,
+          427.58
+        ],
+        [
+          319.75,
+          435.1
+        ],
+        [
+          303.65,
+          440.57
+        ],
+        [
+          286.97,
+          443.89
+        ],
+        [
+          270.0,
+          445.0
+        ],
+        [
+          253.03,
+          443.89
+        ],
+        [
+          236.35,
+          440.57
+        ],
+        [
+          220.25,
+          435.1
+        ],
+        [
+          205.0,
+          427.58
+        ],
+        [
+          190.86,
+          418.14
+        ],
+        [
+          178.08,
+          406.92
+        ],
+        [
+          166.86,
+          394.14
+        ],
+        [
+          157.42,
+          380.0
+        ],
+        [
+          149.9,
+          364.75
+        ],
+        [
+          144.43,
+          348.65
+        ],
+        [
+          141.11,
+          331.97
+        ],
+        [
+          140.0,
+          315.0
+        ],
+        [
+          141.11,
+          298.03
+        ],
+        [
+          144.43,
+          281.35
+        ],
+        [
+          149.9,
+          265.25
+        ],
+        [
+          157.42,
+          250.0
+        ],
+        [
+          166.86,
+          235.86
+        ],
+        [
+          178.08,
+          223.08
+        ],
+        [
+          190.86,
+          211.86
+        ],
+        [
+          205.0,
+          202.42
+        ],
+        [
+          220.25,
+          194.9
+        ],
+        [
+          236.35,
+          189.43
+        ],
+        [
+          253.03,
+          186.11
+        ],
+        [
+          270.0,
+          185.0
+        ],
+        [
+          286.97,
+          186.11
+        ],
+        [
+          303.65,
+          189.43
+        ],
+        [
+          319.75,
+          194.9
+        ],
+        [
+          335.0,
+          202.42
+        ],
+        [
+          349.14,
+          211.86
+        ],
+        [
+          361.92,
+          223.08
+        ],
+        [
+          373.14,
+          235.86
+        ],
+        [
+          382.58,
+          250.0
+        ],
+        [
+          390.1,
+          265.25
+        ],
+        [
+          395.57,
+          281.35
+        ],
+        [
+          398.89,
+          298.03
+        ],
+        [
+          400.0,
+          315.0
+        ]
+      ],
+      "geometry_type": "approximate_polygon"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        10,
+        316,
+        55,
+        35
+      ],
+      "source_sample_text": "07:00 起床",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        5,
+        356,
+        76,
+        65
+      ],
+      "source_sample_text": "新的一天开始了！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          60,
+          410
+        ],
+        [
+          73,
+          426
+        ],
+        [
+          72,
+          411
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        45,
+        192,
+        58,
+        35
+      ],
+      "source_sample_text": "09:00 开始工作",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        22,
+        235,
+        78,
+        68
+      ],
+      "source_sample_text": "专注！一步一步来！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          91,
+          267
+        ],
+        [
+          106,
+          273
+        ],
+        [
+          93,
+          280
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        242,
+        63,
+        66,
+        39
+      ],
+      "source_sample_text": "12:00 午餐时间",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        303,
+        82,
+        88,
+        61
+      ],
+      "source_sample_text": "好好吃！补充能量！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          308,
+          123
+        ],
+        [
+          294,
+          137
+        ],
+        [
+          314,
+          135
+        ]
+      ]
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        398,
+        131,
+        64,
+        36
+      ],
+      "source_sample_text": "15:00 学习提升",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        453,
+        182,
+        81,
+        62
+      ],
+      "source_sample_text": "再学一会！我能行！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          461,
+          231
+        ],
+        [
+          445,
+          245
+        ],
+        [
+          469,
+          240
+        ]
+      ]
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        454,
+        284,
+        66,
+        36
+      ],
+      "source_sample_text": "18:00 运动健身",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        449,
+        328,
+        83,
+        66
+      ],
+      "source_sample_text": "流汗吧！更强的自己！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          455,
+          375
+        ],
+        [
+          440,
+          389
+        ],
+        [
+          461,
+          385
+        ]
+      ]
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        353,
+        445,
+        63,
+        38
+      ],
+      "source_sample_text": "21:00 放松时光",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        375,
+        503,
+        82,
+        64
+      ],
+      "source_sample_text": "玩一会儿 放松一下！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          383,
+          550
+        ],
+        [
+          368,
+          562
+        ],
+        [
+          391,
+          560
+        ]
+      ]
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        189,
+        449,
+        58,
+        35
+      ],
+      "source_sample_text": "23:00 准备睡觉",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        90,
+        505,
+        81,
+        57
+      ],
+      "source_sample_text": "明天也要加油！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          159,
+          536
+        ],
+        [
+          177,
+          540
+        ],
+        [
+          161,
+          548
+        ]
+      ]
+    },
+    {
+      "panel": 8,
+      "bounds_px": [
+        222,
+        354,
+        131,
+        72
+      ],
+      "source_sample_text": "加油！每一天都很棒！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "rotation_degrees": -12
+    },
+    {
+      "panel": 8,
+      "bounds_px": [
+        151,
+        208,
+        236,
+        230
+      ],
+      "source_sample_text": "12 3 6 9",
+      "kind": "carrier",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "carrier_id": "clock_face_numerals",
+      "typography_regions_px": [
+        [
+          258,
+          209,
+          28,
+          28
+        ],
+        [
+          372,
+          304,
+          15,
+          23
+        ],
+        [
+          261,
+          410,
+          20,
+          28
+        ],
+        [
+          151,
+          305,
+          19,
+          23
+        ]
+      ]
+    }
+  ],
+  "features": [
+    "seven_radial_story_sectors",
+    "central_circular_clock_hero",
+    "clock_marks",
+    "chronological_clockwise_flow"
+  ],
+  "execution_blockers": [
+    "curved_sector_panel_masks",
+    "clock_face_ticks_and_numerals",
+    "physical_carrier_clock_face",
+    "rotated_display_text"
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        13,
+        66,
+        170,
+        63
+      ],
+      "source_sample_text": "高效的一天 从计划开始！",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text",
+      "rotation_degrees": -8
+    },
+    {
+      "bounds_px": [
+        13,
+        137,
+        119,
+        46
+      ],
+      "source_sample_text": "把24小时过成想要的样子！",
+      "type": "canvas_story_text",
+      "executable_story_text": true,
+      "kind": "display",
+      "shape": "display_text"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "clock_tick_marks",
+      "bounds_px": [
+        138,
+        186,
+        264,
+        260
+      ],
+      "status": "observed",
+      "exact_geometry_status": "unknown"
+    }
+  ],
+  "confidence": 0.76,
+  "notes": [
+    "Seven surrounding sectors and one central circular image unit are observed. Sector curves are traced/sampled inferred geometry; exact curve fit unknown.",
+    "Central clock hero is last in serialized order for coherent 07→23 reading, with source radial order inferred."
+  ],
+  "layout_id": "SB-045",
+  "source_size": [
+    543,
+    627
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：时钟式，面板围绕钟表、圆盘或时间刻度组织，适合一天或倒计时主题。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Clock Face Radial Layout, panels organized around circular clock face or timeline dial, ideal for 24-hour cycle or countdown motif. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "20a2edae3b6b277458ba91c7261626f440958b9bc77cd8f5cda07405374b430c",
+  "preview_sha256": "4c11b82b72e570c43802ab3ecbb06e7f2df55a5190f56064df99794a917f65ec",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-045.webp",
+    "source_note_path": "source-notes/SB-045.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

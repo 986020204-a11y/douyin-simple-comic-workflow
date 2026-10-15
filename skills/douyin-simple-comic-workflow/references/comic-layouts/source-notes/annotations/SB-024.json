@@ -1,0 +1,219 @@
+{
+  "roi": [
+    19,
+    69,
+    531,
+    605
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        19,
+        69,
+        531,
+        113
+      ],
+      "polygon_px": null,
+      "role": "eye macro"
+    },
+    {
+      "bounds_px": [
+        19,
+        189,
+        531,
+        115
+      ],
+      "polygon_px": null,
+      "role": "pilot near shot"
+    },
+    {
+      "bounds_px": [
+        19,
+        312,
+        531,
+        140
+      ],
+      "polygon_px": null,
+      "role": "bridge medium shot"
+    },
+    {
+      "bounds_px": [
+        19,
+        459,
+        531,
+        215
+      ],
+      "polygon_px": null,
+      "role": "spaceship wide reveal"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "observed_polygon",
+      "bounds_px": [
+        454,
+        137,
+        89,
+        41
+      ],
+      "source_sample": "启动。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "dialogue",
+      "body_polygon_px": [
+        [
+          463,
+          137
+        ],
+        [
+          535,
+          137
+        ],
+        [
+          543,
+          144
+        ],
+        [
+          543,
+          170
+        ],
+        [
+          536,
+          178
+        ],
+        [
+          454,
+          178
+        ],
+        [
+          454,
+          148
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "shape": "observed_polygon",
+      "bounds_px": [
+        433,
+        257,
+        109,
+        41
+      ],
+      "source_sample": "系统正常。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "dialogue",
+      "body_polygon_px": [
+        [
+          444,
+          257
+        ],
+        [
+          536,
+          257
+        ],
+        [
+          542,
+          264
+        ],
+        [
+          542,
+          289
+        ],
+        [
+          534,
+          298
+        ],
+        [
+          433,
+          298
+        ],
+        [
+          433,
+          267
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "shape": "observed_polygon",
+      "bounds_px": [
+        435,
+        406,
+        108,
+        41
+      ],
+      "source_sample": "准备出发。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "dialogue",
+      "body_polygon_px": [
+        [
+          445,
+          406
+        ],
+        [
+          536,
+          406
+        ],
+        [
+          543,
+          413
+        ],
+        [
+          543,
+          439
+        ],
+        [
+          535,
+          447
+        ],
+        [
+          435,
+          447
+        ],
+        [
+          435,
+          416
+        ]
+      ]
+    },
+    {
+      "panel": 4,
+      "shape": "rect",
+      "bounds_px": [
+        428,
+        612,
+        114,
+        50
+      ],
+      "source_sample": "向更广阔的宇宙进发。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    }
+  ],
+  "features": [
+    "tech_chamfered_boxes",
+    "camera_progression"
+  ],
+  "notes": [
+    "Three chamfered UI-like dialogue boxes have no reliably identified speaker tails; angular corners are body geometry, not fabricated pointers.",
+    "System-message channel inferred from context; exact in-story sender is unknown."
+  ],
+  "layout_id": "SB-024",
+  "source_size_px": [
+    559,
+    684
+  ],
+  "preview_sha256": "dcdc4aaa6d4d37d639faec5efdfe6ac48680ce1f73da74936cd673c42d316889",
+  "note_sha256": "cbf1d00f126813bbf1c0338afb453a8ebfe5c844be9f46df5d53af8b36b46e58",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

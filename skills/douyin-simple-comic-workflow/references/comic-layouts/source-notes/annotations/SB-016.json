@@ -1,0 +1,325 @@
+{
+  "roi": [
+    7,
+    106,
+    541,
+    514
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        7,
+        106,
+        101,
+        514
+      ],
+      "polygon_px": null,
+      "role": "enter shop",
+      "cross_panel_allowed": true
+    },
+    {
+      "bounds_px": [
+        110,
+        106,
+        116,
+        514
+      ],
+      "polygon_px": null,
+      "role": "choose snacks",
+      "cross_panel_allowed": true
+    },
+    {
+      "bounds_px": [
+        231,
+        106,
+        116,
+        514
+      ],
+      "polygon_px": null,
+      "role": "queue",
+      "cross_panel_allowed": true
+    },
+    {
+      "bounds_px": [
+        352,
+        106,
+        79,
+        514
+      ],
+      "polygon_px": null,
+      "role": "pay",
+      "cross_panel_allowed": true
+    },
+    {
+      "bounds_px": [
+        436,
+        106,
+        112,
+        514
+      ],
+      "polygon_px": null,
+      "role": "exit",
+      "cross_panel_allowed": true
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        24,
+        123,
+        244,
+        55
+      ],
+      "source_sample": "从进门到离开，生活就是一场顺畅的旅程。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration",
+      "rotation_deg": -4,
+      "cross_panel_allowed": true,
+      "allowed_cross_panel_ids": [
+        "P02",
+        "P03"
+      ]
+    },
+    {
+      "panel": 5,
+      "shape": "physical_carrier",
+      "bounds_px": [
+        427,
+        124,
+        102,
+        59
+      ],
+      "source_sample": "同一个空间，同一个人，一气呵成。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "note",
+      "carrier": {
+        "carrier_id": "top_yellow_overlay_note",
+        "polygon_px": [
+          [
+            412,
+            116
+          ],
+          [
+            536,
+            111
+          ],
+          [
+            541,
+            190
+          ],
+          [
+            414,
+            201
+          ]
+        ],
+        "writable_rect_px": [
+          427,
+          124,
+          102,
+          59
+        ]
+      }
+    },
+    {
+      "panel": 3,
+      "shape": "ellipse",
+      "bounds_px": [
+        254,
+        314,
+        28,
+        30
+      ],
+      "source_sample": "♪",
+      "tail_tip_px": [
+        273,
+        353
+      ],
+      "tail_polygon_px": [
+        [
+          266,
+          340
+        ],
+        [
+          273,
+          353
+        ],
+        [
+          276,
+          341
+        ]
+      ],
+      "text_type": "sound_effect"
+    },
+    {
+      "panel": 4,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        367,
+        287,
+        60,
+        62
+      ],
+      "source_sample": "一共￥52.0，谢谢！",
+      "tail_tip_px": [
+        394,
+        363
+      ],
+      "tail_polygon_px": [
+        [
+          385,
+          343
+        ],
+        [
+          394,
+          363
+        ],
+        [
+          401,
+          347
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 5,
+      "shape": "ellipse",
+      "bounds_px": [
+        508,
+        312,
+        33,
+        35
+      ],
+      "source_sample": "♪",
+      "tail_tip_px": [
+        514,
+        360
+      ],
+      "tail_polygon_px": [
+        [
+          511,
+          342
+        ],
+        [
+          514,
+          360
+        ],
+        [
+          520,
+          345
+        ]
+      ],
+      "text_type": "sound_effect"
+    },
+    {
+      "panel": 1,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        12,
+        559,
+        89,
+        59
+      ],
+      "source_sample": "①进入超市 开启采购！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "caption"
+    },
+    {
+      "panel": 2,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        115,
+        559,
+        108,
+        59
+      ],
+      "source_sample": "②挑选零食 这个也要！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "caption"
+    },
+    {
+      "panel": 3,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        236,
+        559,
+        107,
+        59
+      ],
+      "source_sample": "③排队结账 马上就好！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "caption"
+    },
+    {
+      "panel": 4,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        357,
+        559,
+        69,
+        59
+      ],
+      "source_sample": "④付款 搞定！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "caption"
+    },
+    {
+      "panel": 5,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        440,
+        559,
+        104,
+        59
+      ],
+      "source_sample": "⑤离开超市 满载而归！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "caption"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "shared_architecture_header",
+      "bounds_px": [
+        7,
+        106,
+        541,
+        145
+      ],
+      "cross_panel_allowed": true,
+      "requires_shared_canvas_art": true
+    }
+  ],
+  "features": [
+    "shared_canvas_background",
+    "partial_panel_separators",
+    "cross_panel_text",
+    "physical_carrier"
+  ],
+  "notes": [
+    "Five storyboard units occupy one continuous supermarket panorama. Their vertical separators begin at varying y near 240, leaving an open shared top scene.",
+    "Unit bounds include the shared top canvas for ownership only; actual frame edges require partial-separator segments.",
+    "Yellow upper-right note is an overlay, not an in-world object."
+  ],
+  "layout_id": "SB-016",
+  "source_size_px": [
+    553,
+    632
+  ],
+  "preview_sha256": "adc03796acee0ad4bb620c57bf9b5c3edde59b5cb0ea9dd338c0649347b5435f",
+  "note_sha256": "f628c0be35f3981b4d1feb00484eb774d545bb4f034a28d05ccb11feafb7532f",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

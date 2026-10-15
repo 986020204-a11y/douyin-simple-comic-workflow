@@ -1,0 +1,391 @@
+{
+  "layout_id": "SB-066",
+  "source_size": [
+    555,
+    649
+  ],
+  "preview_sha256": "9b06dc80c99e7a488786e1c2ea02b81753866d8a37bcb9f6bcf3aeef8f99827b",
+  "note_sha256": "eb26bbe4816ccfdd452663927c3750319cc2cea2dd42aba94e78f4d3a2d15526",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 102,
+  "panels": [
+    {
+      "bounds_px": [
+        14,
+        104,
+        233,
+        198
+      ],
+      "role": "windup",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          14,
+          104
+        ],
+        [
+          223,
+          104
+        ],
+        [
+          247,
+          302
+        ],
+        [
+          14,
+          302
+        ]
+      ],
+      "source_number": 1
+    },
+    {
+      "bounds_px": [
+        232,
+        104,
+        322,
+        198
+      ],
+      "role": "first punch",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          232,
+          104
+        ],
+        [
+          554,
+          104
+        ],
+        [
+          554,
+          302
+        ],
+        [
+          270,
+          302
+        ]
+      ],
+      "source_number": 2
+    },
+    {
+      "bounds_px": [
+        14,
+        310,
+        260,
+        132
+      ],
+      "role": "punch trail background",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          14,
+          310
+        ],
+        [
+          274,
+          310
+        ],
+        [
+          259,
+          442
+        ],
+        [
+          14,
+          425
+        ]
+      ],
+      "source_number": 3
+    },
+    {
+      "bounds_px": [
+        264,
+        310,
+        290,
+        127
+      ],
+      "role": "punch contact",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          280,
+          310
+        ],
+        [
+          554,
+          310
+        ],
+        [
+          554,
+          417
+        ],
+        [
+          264,
+          437
+        ]
+      ],
+      "source_number": 3
+    },
+    {
+      "bounds_px": [
+        14,
+        437,
+        264,
+        199
+      ],
+      "role": "victory foreground boxer",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          14,
+          437
+        ],
+        [
+          264,
+          463
+        ],
+        [
+          278,
+          636
+        ],
+        [
+          14,
+          636
+        ]
+      ],
+      "source_number": 4
+    },
+    {
+      "bounds_px": [
+        285,
+        426,
+        269,
+        210
+      ],
+      "role": "victory raised fists",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          309,
+          454
+        ],
+        [
+          554,
+          426
+        ],
+        [
+          554,
+          636
+        ],
+        [
+          285,
+          636
+        ]
+      ],
+      "source_number": 4
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        221,
+        98,
+        228,
+        194
+      ],
+      "sample_text": "砰！",
+      "shape": "display_text",
+      "text_kind": "sfx",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "font_style": "brush_calligraphy",
+      "text_color": "red",
+      "outline_color": "black",
+      "structural_overlay": true
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        103,
+        269,
+        206,
+        195
+      ],
+      "sample_text": "砰！",
+      "shape": "display_text",
+      "text_kind": "sfx",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "font_style": "brush_calligraphy",
+      "text_color": "red",
+      "outline_color": "black",
+      "structural_overlay": true
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        190,
+        436,
+        182,
+        179
+      ],
+      "sample_text": "砰！",
+      "shape": "display_text",
+      "text_kind": "sfx",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "font_style": "brush_calligraphy",
+      "text_color": "red",
+      "outline_color": "black",
+      "structural_overlay": true
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        404,
+        431,
+        126,
+        63
+      ],
+      "sample_text": "耶——！！",
+      "shape": "display_text",
+      "text_kind": "emphasis",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        406,
+        575,
+        140,
+        60
+      ],
+      "sample_text": "每一声砰！都是更强的我！",
+      "shape": "polygon",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "polygon_px": [
+        [
+          406,
+          592
+        ],
+        [
+          546,
+          575
+        ],
+        [
+          546,
+          626
+        ],
+        [
+          425,
+          635
+        ]
+      ],
+      "fill": "white"
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        24,
+        110,
+        67,
+        55
+      ],
+      "sample_text": "1.蓄力 深呼吸，集中精神！",
+      "kind": "panel_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        466,
+        110,
+        84,
+        56
+      ],
+      "sample_text": "2.出拳 把所有的力量打出去！",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        26,
+        361,
+        82,
+        63
+      ],
+      "sample_text": "3.连击 一拳接一拳！不要停！",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        28,
+        553,
+        88,
+        77
+      ],
+      "sample_text": "4.胜利 我做到了！这就是努力的声音！",
+      "kind": "panel_label",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    }
+  ],
+  "observed_features": [
+    "six bordered image regions",
+    "four source-numbered action groups",
+    "three giant red outlined SFX cross multiple panel boundaries"
+  ],
+  "uncertainties": [
+    "SFX are genuine cross-panel overlays. Binding panel is ownership only; allow crossing explicitly and preserve full source polygon.",
+    "Three SFX overlap gutters; ordinary same-panel bubble placement cannot execute them.",
+    "Exact giant hand-painted glyph outlines and texture unknown."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

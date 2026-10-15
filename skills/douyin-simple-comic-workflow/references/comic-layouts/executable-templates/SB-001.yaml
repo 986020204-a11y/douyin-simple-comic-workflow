@@ -1,0 +1,657 @@
+layout_id: SB-001
+version: 1.3.1
+source:
+  preview_image: previews/SB-001.webp
+  source_note: source-notes/SB-001.md
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  visual_reference_only: true
+  preview_sha256: 1bbb75f2c1dad9554014dab572e3175fe3a073d28cc422ef24659ad326d87044
+  note_sha256: bdf8f6cb457424a22566dad7f0ec82a357e5e0d35e010559c2dc2b82a022d483
+  annotation_scope: native_full_preview; no crop or adapted target geometry stored
+    here
+canvas:
+  aspect_ratio: 554:629
+  coordinate_system: normalized_xywh_0_to_1 (x,y,width,height)
+  source_aspect_ratio: 554:629
+  aspect_ratio_evidence: observed
+  source_aspect_ratio_evidence: observed
+  width: 554
+  height: 629
+  dimensions_evidence: observed
+panels:
+- panel_id: P01
+  order: 1
+  bounds:
+  - 0.01444
+  - 0.098569
+  - 0.474729
+  - 0.408585
+  role: upper-left dialogue beat
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: observed
+    role: inferred
+    order: observed
+    cross_panel_allowed: inferred
+- panel_id: P02
+  order: 2
+  bounds:
+  - 0.5
+  - 0.098569
+  - 0.474729
+  - 0.408585
+  role: upper-right dialogue beat
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: observed
+    role: inferred
+    order: observed
+    cross_panel_allowed: inferred
+- panel_id: P03
+  order: 3
+  bounds:
+  - 0.01444
+  - 0.516693
+  - 0.474729
+  - 0.461049
+  role: lower-left response beat
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: observed
+    role: inferred
+    order: observed
+    cross_panel_allowed: inferred
+- panel_id: P04
+  order: 4
+  bounds:
+  - 0.5
+  - 0.516693
+  - 0.474729
+  - 0.461049
+  role: lower-right response beat
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: observed
+    role: inferred
+    order: observed
+    cross_panel_allowed: inferred
+bubbles:
+- bubble_id: B01
+  panel_id: P01
+  allowed_text_types:
+  - dialogue
+  shape: rounded_rect
+  position: upper-right
+  max_width_ratio: 0.3916
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon:
+    - - 0.319495
+      - 0.255962
+    - - 0.299639
+      - 0.279809
+    - - 0.341155
+      - 0.267091
+    anchor: &id001
+    - 0.299639
+    - 0.279809
+  visual_style:
+    renderer: preview_rounded_speech
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: observed_polygon
+    padding_ratio: 0.07
+    repeatable: false
+    tail_anchor: *id001
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  bounds:
+  - 0.283394
+  - 0.155803
+  - 0.185921
+  - 0.112878
+- bubble_id: B02
+  panel_id: P02
+  allowed_text_types:
+  - dialogue
+  shape: rounded_rect
+  position: upper-right
+  max_width_ratio: 0.4677
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon:
+    - - 0.767148
+      - 0.240064
+    - - 0.779783
+      - 0.263911
+    - - 0.799639
+      - 0.249603
+    anchor: &id002
+    - 0.779783
+    - 0.263911
+  visual_style:
+    renderer: preview_rounded_speech
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: observed_polygon
+    padding_ratio: 0.07
+    repeatable: false
+    tail_anchor: *id002
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  bounds:
+  - 0.729242
+  - 0.111288
+  - 0.222022
+  - 0.141494
+- bubble_id: B03
+  panel_id: P03
+  allowed_text_types:
+  - dialogue
+  shape: rounded_rect
+  position: upper-right
+  max_width_ratio: 0.4525
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon:
+    - - 0.310469
+      - 0.662957
+    - - 0.292419
+      - 0.688394
+    - - 0.33213
+      - 0.672496
+    anchor: &id003
+    - 0.292419
+    - 0.688394
+  visual_style:
+    renderer: preview_rounded_speech
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: observed_polygon
+    padding_ratio: 0.07
+    repeatable: false
+    tail_anchor: *id003
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  bounds:
+  - 0.263538
+  - 0.524642
+  - 0.214801
+  - 0.157393
+- bubble_id: B04
+  panel_id: P04
+  allowed_text_types:
+  - dialogue
+  shape: rounded_rect
+  position: upper-right
+  max_width_ratio: 0.3118
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon:
+    - - 0.830325
+      - 0.63434
+    - - 0.81769
+      - 0.662957
+    - - 0.851986
+      - 0.648649
+    anchor: &id004
+    - 0.81769
+    - 0.662957
+  visual_style:
+    renderer: preview_rounded_speech
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: observed_polygon
+    padding_ratio: 0.07
+    repeatable: false
+    tail_anchor: *id004
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  bounds:
+  - 0.801444
+  - 0.538951
+  - 0.148014
+  - 0.111288
+- bubble_id: B05
+  panel_id: P04
+  allowed_text_types:
+  - dialogue
+  shape: rounded_rect
+  position: center-right
+  max_width_ratio: 0.3688
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon:
+    - - 0.808664
+      - 0.774245
+    - - 0.790614
+      - 0.801272
+    - - 0.826715
+      - 0.788553
+    anchor: &id005
+    - 0.790614
+    - 0.801272
+  visual_style:
+    renderer: preview_rounded_speech
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: observed_polygon
+    padding_ratio: 0.07
+    repeatable: false
+    tail_anchor: *id005
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  bounds:
+  - 0.792419
+  - 0.680445
+  - 0.17509
+  - 0.114467
+- bubble_id: B06
+  panel_id: P04
+  allowed_text_types:
+  - caption
+  shape: rounded_rect
+  position: lower-right
+  max_width_ratio: 0.365
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: prop
+    speaker_binding_required: false
+    evidence: observed
+    prop_binding_required: true
+    polygon:
+    - - 0.787004
+      - 0.874404
+    - - 0.736462
+      - 0.861685
+    - - 0.787004
+      - 0.903021
+    anchor: &id006
+    - 0.736462
+    - 0.861685
+  visual_style:
+    renderer: preview_caption_box
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.0
+    tail_shape: observed_polygon
+    padding_ratio: 0.07
+    repeatable: false
+    tail_anchor: *id006
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  caption_semantics: prop_label
+  bounds:
+  - 0.787004
+  - 0.861685
+  - 0.173285
+  - 0.077901
+constraints:
+  panel_count_exact: true
+  preserve_reading_order: true
+  allow_add_panels: false
+  allow_delete_panels: false
+  allow_merge_panels: false
+  allow_split_panels: false
+  allow_generic_long_box: false
+fallback:
+  policy: block_until_annotated
+  reason_required: true
+evidence:
+  panel_geometry: observed
+  bubble_shape: observed
+  bubble_position: observed
+  tail_anchor: observed
+  confidence: 0.9
+  font_family: unknown
+review_status: source_visual_annotation_complete_pending_independent_review
+missing_fields: []
+preview_contract:
+  source_size:
+  - 554
+  - 629
+  content_roi:
+  - 0.01444
+  - 0.098569
+  - 0.960289
+  - 0.879173
+  header:
+    bounds:
+    - 0
+    - 0
+    - 1
+    - 0.099
+    status: observed
+    writable: false
+  coordinate_space: full_preview_normalized_xywh
+  crop_policy:
+    type: external_target_transform_only
+    evidence: inferred
+    source_rule: false
+    note: Any 3:4 cover, clipped boundary, moved bubble, or resized bubble is an adapted
+      target, never a source observation.
+  evidence: observed
+structure:
+  units:
+  - unit_id: P01
+    order: 1
+    bounds:
+    - 0.01444
+    - 0.098569
+    - 0.474729
+    - 0.408585
+    geometry_type: rect
+    role: upper-left dialogue beat
+    cross_panel_allowed: false
+    evidence: observed
+  - unit_id: P02
+    order: 2
+    bounds:
+    - 0.5
+    - 0.098569
+    - 0.474729
+    - 0.408585
+    geometry_type: rect
+    role: upper-right dialogue beat
+    cross_panel_allowed: false
+    evidence: observed
+  - unit_id: P03
+    order: 3
+    bounds:
+    - 0.01444
+    - 0.516693
+    - 0.474729
+    - 0.461049
+    geometry_type: rect
+    role: lower-left response beat
+    cross_panel_allowed: false
+    evidence: observed
+  - unit_id: P04
+    order: 4
+    bounds:
+    - 0.5
+    - 0.516693
+    - 0.474729
+    - 0.461049
+    geometry_type: rect
+    role: lower-right response beat
+    cross_panel_allowed: false
+    evidence: observed
+  nested_units: []
+  reading_order:
+    type: explicit_order
+    evidence: observed
+style_contract:
+  border:
+    required: true
+    color: black
+    width_ratio: 0.006
+    evidence: observed
+  gutter:
+    required: true
+    color: white
+    width_ratio: 0.006
+    evidence: observed
+  sample_content_policy: omit_story_text_preserve_zone_style
+  unknown_policy: do_not_invent
+  panel_label:
+    required: true
+    shape: rect_label
+    fill: white
+    border: black
+    evidence: observed
+  bubble_default:
+    renderer: rounded_speech_oval
+    shape: rounded_speech_oval
+    fill: white
+    border: black
+    tail_shape: single_point_observed
+    evidence: observed
+    tail_anchor: unknown
+text_zones:
+- zone_id: L01
+  panel_id: P01
+  type: panel_label
+  bounds:
+  - 0.027
+  - 0.113
+  - 0.26
+  - 0.054
+  shape: rect_label
+  evidence: observed
+- zone_id: L02
+  panel_id: P02
+  type: panel_label
+  bounds:
+  - 0.516
+  - 0.113
+  - 0.238
+  - 0.054
+  shape: rect_label
+  evidence: observed
+- zone_id: L03
+  panel_id: P03
+  type: panel_label
+  bounds:
+  - 0.025
+  - 0.529
+  - 0.256
+  - 0.049
+  shape: rect_label
+  evidence: observed
+- zone_id: L04
+  panel_id: P04
+  type: panel_label
+  bounds:
+  - 0.512
+  - 0.529
+  - 0.245
+  - 0.049
+  shape: rect_label
+  evidence: observed
+- zone_id: A01
+  panel_id: P02
+  type: heart_accent
+  bounds:
+  - 0.935
+  - 0.307
+  - 0.036
+  - 0.045
+  shape: heart
+  evidence: observed
+field_evidence:
+  constraints: inferred
+  fallback: inferred
+  canvas.aspect_ratio: inferred
+  source.preview_image: observed
+  source.source_note: observed
+  panel_roles: inferred
+  renderer_selection: inferred
+  sample_content_policy: inferred
+annotation_uncertainties:
+- field: font_family
+  status: unknown
+  reason: The preview does not identify the font file or exact original hand lettering.
+- field: new_story_speaker_or_prop_identity
+  status: unknown
+  reason: Observed source tail geometry does not identify a replacement story speaker
+    or prop; execution requires a separate confirmed binding.
+annotation_coverage:
+  speech_bubble_instances: 5
+  prop_label_instances: 1
+  executable_text_instances: 6
+  complete_for_visible_story_containers: true
+  excluded_source_decorations:
+  - page heading
+  - four panel explanatory labels
+  - heart accent
+  evidence: observed
+workflow_output_preference:
+  aspect_ratio: '3:4'
+  evidence: inferred_workflow_output_target
+  requires_explicit_adaptation: Source canvas dimensions and geometry must not be
+    implicitly stretched to this ratio.

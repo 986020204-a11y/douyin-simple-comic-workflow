@@ -1,19 +1,23 @@
 asset_type: storyboard_preview_images
-status: packaged_reference_assets
+status: bundled_observation_sources_with_executable_annotations
 preview_image_count: 68
 preview_image_missing: []
-preview_image_pattern: preview-images/SB-###.webp
-source_skill_bundled: false
-source_skill_preview_image_count: 0
+preview_image_pattern: previews/SB-###.webp
+legacy_gallery_pattern: preview-images/SB-###.webp
+source_skill_bundled: true
+source_skill_preview_image_count: 68
 provenance:
-  kind: related_local_gallery
-  gallery_directory: D:\A抖音\.tmp_handraw_style\images\layouts\comic-storyboards
-  gallery_index: D:\A抖音\.tmp_handraw_style\skills\handdraw-style-prompter\references\layouts.json
+  kind: bundled_internal_comic_layout_previews
+  original_collection: related_local_gallery
+  original_location: not_bundled_or_required_at_runtime
   mapping_status: one_to_one_verified
   content_status: all_files_readable
   content_hash_match_with_gallery: true
   external_storyboard_skill_invoked: false
+redistribution_permission: previously_confirmed_by_user
 evidence_boundary:
-  - These files are visual previews only and are not source evidence for bubble shape, position, tail, or writable area.
-  - The source Skill and its original layouts.json remain unchanged; package paths are additive metadata in this candidate copy.
+  - Previews are visual observation sources for annotated panel and text-container geometry; hand-traced numbers retain explicit uncertainty.
+  - Execute the corresponding YAML template, not a layout name or the preview image alone.
+  - Preview observations do not establish speaker ownership, writable areas, or layout compliance in newly generated artwork.
+  - Source preview bytes and their SHA values are preserved; source-note text and workflow-authored constraints remain separately identified.
   - Preview images do not authorize choosing an external storyboard layout or replacing the bundled SB descriptions.

@@ -1,0 +1,291 @@
+{
+  "layout_id": "SB-064",
+  "source_size": [
+    555,
+    659
+  ],
+  "preview_sha256": "0c2b020e3a19ed1b453c924d1dde91ab724a3bbee0e11b611105d61b1fed5a2f",
+  "note_sha256": "112334ae22734db543fabc8e3644599e46f23221330d1d2bf76085abe6bf3753",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 85,
+  "panels": [
+    {
+      "bounds_px": [
+        15,
+        87,
+        537,
+        157
+      ],
+      "role": "beyond bookshelf",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 1
+    },
+    {
+      "bounds_px": [
+        15,
+        251,
+        537,
+        187
+      ],
+      "role": "through plants",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 2
+    },
+    {
+      "bounds_px": [
+        15,
+        447,
+        537,
+        208
+      ],
+      "role": "under umbrella",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 3
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        305,
+        109,
+        147,
+        65
+      ],
+      "sample_text": "沉浸在书的世界里，感觉时间都变慢了。",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            322,
+            159
+          ],
+          [
+            306,
+            174
+          ],
+          [
+            337,
+            164
+          ]
+        ],
+        "anchor_px": [
+          306,
+          174
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        424,
+        162,
+        122,
+        75
+      ],
+      "sample_text": "有些风景，需要穿过遮挡，才能看见。",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        315,
+        288,
+        132,
+        74
+      ],
+      "sample_text": "和喜欢的人聊天，连普通的日子都变得闪闪发光！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            325,
+            352
+          ],
+          [
+            309,
+            364
+          ],
+          [
+            339,
+            357
+          ]
+        ],
+        "anchor_px": [
+          309,
+          364
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        443,
+        336,
+        96,
+        88
+      ],
+      "sample_text": "生活不止眼前的书本，还有身边的温暖—♡",
+      "shape": "carrier",
+      "text_kind": "note",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "carrier_kind": "cafe_chalkboard",
+      "text_color": "white"
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        58,
+        512,
+        128,
+        78
+      ],
+      "sample_text": "即使下雨，也有属于自己的节奏和方向。",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            178,
+            538
+          ],
+          [
+            201,
+            530
+          ],
+          [
+            182,
+            550
+          ]
+        ],
+        "anchor_px": [
+          201,
+          530
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        404,
+        537,
+        142,
+        77
+      ],
+      "sample_text": "被遮挡的，不只是视线，还有更丰富的故事。",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        23,
+        95,
+        127,
+        25
+      ],
+      "sample_text": "1.书架的另一侧",
+      "kind": "panel_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        23,
+        259,
+        114,
+        24
+      ],
+      "sample_text": "2.绿植的缝隙",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        23,
+        451,
+        124,
+        25
+      ],
+      "sample_text": "3.雨伞下的街道",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        121,
+        176,
+        58,
+        40
+      ],
+      "sample_text": "梦想",
+      "kind": "physical_carrier",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred",
+      "carrier_kind": "book_spine"
+    }
+  ],
+  "observed_features": [
+    "three horizontal scenes",
+    "foreground bookshelf foliage and umbrellas visually obscure scene",
+    "physical chalkboard note"
+  ],
+  "uncertainties": [
+    "Foreground occluders are art, not independent story-panel borders."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

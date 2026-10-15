@@ -25,6 +25,7 @@ profiles:
     ideal for slice-of-life and dialogue-driven stories.
   source_evidence: 源说明明确写出适合 dialogue-driven stories；未说明具体气泡形状或尾巴。
   source_rule_level: explicit
+  visual_reference_only: true
   preferred_bubble_candidates:
   - rounded_speech
   - narration_box
@@ -46,6 +47,7 @@ profiles:
     twist, and punchline, ideal for short comedic stories.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -72,6 +74,7 @@ profiles:
     smaller secondary panels for reactions or details.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -98,6 +101,7 @@ profiles:
     before subsequent sequential narrative below.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -124,6 +128,7 @@ profiles:
     bottom panel for climax or reveal.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -150,6 +155,7 @@ profiles:
     action climax or core reveal.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -176,6 +182,7 @@ profiles:
     pursuit, and confrontation.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -202,6 +209,7 @@ profiles:
     bottom-right) for clear storytelling.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -228,6 +236,7 @@ profiles:
     for whimsical, romantic, or journey narratives.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -254,6 +263,7 @@ profiles:
     in on core event.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -280,6 +290,7 @@ profiles:
     revelations, and high-impact moments.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -306,6 +317,7 @@ profiles:
     expressing chaos, combat, memories, and psychological shock.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -332,6 +344,7 @@ profiles:
     amplifying power, speed, and dimensional presence.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -358,6 +371,7 @@ profiles:
     continuous fluid action.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -384,6 +398,7 @@ profiles:
     with characters shown at different moments.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -410,6 +425,7 @@ profiles:
     appearing at multiple positions sequentially.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -436,6 +452,7 @@ profiles:
     time progression and cinematic pacing.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -462,6 +479,7 @@ profiles:
     vehicle chases, and expansive scenes.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -488,6 +506,7 @@ profiles:
     full-body figures, or upward motion.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -514,6 +533,7 @@ profiles:
     or micro-reactions, boosting pacing.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -540,6 +560,7 @@ profiles:
     or escalating tension.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -566,6 +587,7 @@ profiles:
     key tactical actions forward.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -592,6 +614,7 @@ profiles:
     emotional tension.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -618,6 +641,7 @@ profiles:
     reveal, creating contrast.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -644,6 +668,7 @@ profiles:
     verbal sparring, and psychological duel.
   source_evidence: 源说明明确写出适合 dialogue、verbal sparring；未说明具体气泡形状、位置或尾巴。
   source_rule_level: explicit
+  visual_reference_only: true
   preferred_bubble_candidates:
   - rounded_speech
   - narration_box
@@ -665,6 +690,7 @@ profiles:
     eyes, finger, trigger).
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -691,6 +717,7 @@ profiles:
     and aftermath across sequential panels.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -717,6 +744,7 @@ profiles:
     kinetic motion.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -743,6 +771,7 @@ profiles:
     deadpan comedy, awkward pause, and comedic timing.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -769,6 +798,7 @@ profiles:
     space or quiet static frame for comedic anti-climax.
   source_evidence: 源说明明确写出 large empty negative space；没有气泡规则。
   source_rule_level: explicit
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -790,6 +820,7 @@ profiles:
     tiny silhouette, emphasizing absurdity or lingering mood.
   source_evidence: 源说明明确写出 generous white space；没有气泡规则。
   source_rule_level: explicit
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -811,6 +842,7 @@ profiles:
     or inverted content for before-after comparison.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -837,6 +869,7 @@ profiles:
     page, creating direct visual tension.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -863,6 +896,7 @@ profiles:
     converging at single point.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -889,6 +923,7 @@ profiles:
     suspense or misunderstanding.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -915,6 +950,7 @@ profiles:
     memories or past events.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -941,6 +977,7 @@ profiles:
     internal imagination or comic thoughts.
   source_evidence: 源说明明确写出 dream-bubble panels 与 comic thoughts；这是布局中的幻想/思绪画格说明，不等同于所有文字都使用思考气泡。
   source_rule_level: explicit
+  visual_reference_only: true
   preferred_bubble_candidates:
   - thought_bubble
   - narration_box
@@ -962,6 +999,7 @@ profiles:
     ideal for investigation and thriller narrative.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -988,6 +1026,7 @@ profiles:
     bubbles for modern social media narrative.
   source_evidence: 源说明明确写出 phone messaging screens 与 speech bubbles；未规定具体尾巴坐标。
   source_rule_level: explicit
+  visual_reference_only: true
   preferred_bubble_candidates:
   - phone_dialogue
   - rounded_speech
@@ -1010,6 +1049,7 @@ profiles:
     and comic panels for investigative stories.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1036,6 +1076,7 @@ profiles:
     composed like high-end editorial spread.
   source_evidence: 源说明明确写出 captions 与 narrative panels；未规定具体气泡形状。
   source_rule_level: explicit
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - emphasis_box
@@ -1058,6 +1099,7 @@ profiles:
     and data annotations for educational narrative.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1084,6 +1126,7 @@ profiles:
     eye through the journey.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1110,6 +1153,7 @@ profiles:
     or past to future).
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1136,6 +1180,7 @@ profiles:
     ideal for 24-hour cycle or countdown motif.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1162,6 +1207,7 @@ profiles:
     with story unfolding around it.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1188,6 +1234,7 @@ profiles:
     panels rotate around their perspective.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1214,6 +1261,7 @@ profiles:
     cycle, time loop, or karmic fate.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1240,6 +1288,7 @@ profiles:
     falling, vertigo, and freefall chase.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1266,6 +1315,7 @@ profiles:
     struggle, ascending journey, or level progression.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1292,6 +1342,7 @@ profiles:
     dreamy states, and lighthearted moods.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1318,6 +1369,7 @@ profiles:
     guided by eyelines and speech balloons.
   source_evidence: 源说明明确写出 white space 与 speech balloons；未规定具体尾巴坐标。
   source_rule_level: explicit
+  visual_reference_only: true
   preferred_bubble_candidates:
   - rounded_speech
   - thought_bubble
@@ -1340,6 +1392,7 @@ profiles:
     and negative space form organic reading zones.
   source_evidence: 源说明明确写出 negative space organic reading zones；没有气泡规则。
   source_rule_level: explicit
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1361,6 +1414,7 @@ profiles:
     conveying quiet, poetic, or awkward atmosphere.
   source_evidence: 源说明明确写出 abundant white space 与 sparse dialogue；未规定具体气泡形状。
   source_rule_level: explicit
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1382,6 +1436,7 @@ profiles:
     delivering peak climax and iconic visual impact.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1408,6 +1463,7 @@ profiles:
     epic cinematic widescreen feel on single page.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1434,6 +1490,7 @@ profiles:
     narrative panels.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1460,6 +1517,7 @@ profiles:
     episodic panels telling complete story.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1486,6 +1544,7 @@ profiles:
     and exit while environment remains stationary.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1512,6 +1571,7 @@ profiles:
     multiple times across continuous landscape.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1538,6 +1598,7 @@ profiles:
     continuously down single tall space.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1564,6 +1625,7 @@ profiles:
     twin perspectives and psychological duality.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1590,6 +1652,7 @@ profiles:
     visual panels.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1616,6 +1679,7 @@ profiles:
     partitioning scene into narrative panels.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1642,6 +1706,7 @@ profiles:
     skeleton, with panels built around lettering.
   source_evidence: 源说明明确写出 lettering 作为结构骨架；不等于普通对白气泡规则。
   source_rule_level: explicit
+  visual_reference_only: true
   preferred_bubble_candidates:
   - emphasis_box
   - narration_box
@@ -1664,6 +1729,7 @@ profiles:
     rhythm and visual direction.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1690,6 +1756,7 @@ profiles:
     mood zones rather than black lines.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech
@@ -1716,6 +1783,7 @@ profiles:
     stylized geometric rhythm.
   source_evidence: 源说明只描述画格结构/叙事功能，没有提供独有气泡形状、位置、尾巴或可写区域规则。
   source_rule_level: none
+  visual_reference_only: true
   preferred_bubble_candidates:
   - narration_box
   - rounded_speech

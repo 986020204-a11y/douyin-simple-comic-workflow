@@ -1,0 +1,752 @@
+{
+  "roi": [
+    19,
+    57,
+    528,
+    568
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        19,
+        58,
+        168,
+        149
+      ],
+      "polygon_px": [
+        [
+          19,
+          58
+        ],
+        [
+          187,
+          58
+        ],
+        [
+          184,
+          171
+        ],
+        [
+          19,
+          207
+        ]
+      ],
+      "role": "drive"
+    },
+    {
+      "bounds_px": [
+        194,
+        58,
+        192,
+        117
+      ],
+      "polygon_px": [
+        [
+          194,
+          58
+        ],
+        [
+          384,
+          58
+        ],
+        [
+          386,
+          151
+        ],
+        [
+          194,
+          175
+        ]
+      ],
+      "role": "defense"
+    },
+    {
+      "bounds_px": [
+        392,
+        58,
+        154,
+        126
+      ],
+      "polygon_px": [
+        [
+          392,
+          58
+        ],
+        [
+          546,
+          58
+        ],
+        [
+          546,
+          173
+        ],
+        [
+          395,
+          184
+        ]
+      ],
+      "role": "eye closeup"
+    },
+    {
+      "bounds_px": [
+        19,
+        158,
+        422,
+        466
+      ],
+      "polygon_px": [
+        [
+          19,
+          215
+        ],
+        [
+          387,
+          158
+        ],
+        [
+          441,
+          478
+        ],
+        [
+          313,
+          521
+        ],
+        [
+          313,
+          624
+        ],
+        [
+          19,
+          624
+        ]
+      ],
+      "role": "central dunk climax"
+    },
+    {
+      "bounds_px": [
+        401,
+        179,
+        145,
+        294
+      ],
+      "polygon_px": [
+        [
+          401,
+          191
+        ],
+        [
+          546,
+          179
+        ],
+        [
+          546,
+          444
+        ],
+        [
+          443,
+          473
+        ]
+      ],
+      "role": "crowd reaction"
+    },
+    {
+      "bounds_px": [
+        316,
+        449,
+        231,
+        175
+      ],
+      "polygon_px": [
+        [
+          316,
+          524
+        ],
+        [
+          547,
+          449
+        ],
+        [
+          547,
+          624
+        ],
+        [
+          316,
+          624
+        ]
+      ],
+      "role": "aftermath"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "observed_polygon",
+      "bounds_px": [
+        120,
+        58,
+        64,
+        57
+      ],
+      "source_sample": "突破！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "dialogue",
+      "body_polygon_px": [
+        [
+          126,
+          58
+        ],
+        [
+          184,
+          58
+        ],
+        [
+          184,
+          105
+        ],
+        [
+          179,
+          104
+        ],
+        [
+          176,
+          110
+        ],
+        [
+          169,
+          107
+        ],
+        [
+          164,
+          111
+        ],
+        [
+          158,
+          108
+        ],
+        [
+          153,
+          113
+        ],
+        [
+          150,
+          107
+        ],
+        [
+          145,
+          109
+        ],
+        [
+          140,
+          104
+        ],
+        [
+          130,
+          101
+        ],
+        [
+          126,
+          90
+        ],
+        [
+          121,
+          85
+        ],
+        [
+          124,
+          79
+        ],
+        [
+          120,
+          72
+        ],
+        [
+          125,
+          65
+        ]
+      ],
+      "source_body_class": "jagged_burst",
+      "text_color": "black"
+    },
+    {
+      "panel": 2,
+      "shape": "observed_polygon",
+      "bounds_px": [
+        303,
+        58,
+        81,
+        45
+      ],
+      "source_sample": "防住他！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "dialogue",
+      "body_polygon_px": [
+        [
+          313,
+          58
+        ],
+        [
+          384,
+          58
+        ],
+        [
+          384,
+          91
+        ],
+        [
+          378,
+          92
+        ],
+        [
+          373,
+          98
+        ],
+        [
+          367,
+          95
+        ],
+        [
+          361,
+          102
+        ],
+        [
+          355,
+          99
+        ],
+        [
+          350,
+          103
+        ],
+        [
+          345,
+          99
+        ],
+        [
+          338,
+          101
+        ],
+        [
+          333,
+          96
+        ],
+        [
+          326,
+          97
+        ],
+        [
+          322,
+          91
+        ],
+        [
+          313,
+          91
+        ],
+        [
+          312,
+          84
+        ],
+        [
+          305,
+          84
+        ],
+        [
+          309,
+          77
+        ],
+        [
+          305,
+          73
+        ],
+        [
+          310,
+          67
+        ],
+        [
+          303,
+          65
+        ]
+      ],
+      "source_body_class": "jagged_burst",
+      "text_color": "black"
+    },
+    {
+      "panel": 3,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        448,
+        59,
+        97,
+        43
+      ],
+      "source_sample": "就是现在！",
+      "tail_tip_px": [
+        466,
+        108
+      ],
+      "tail_polygon_px": [
+        [
+          461,
+          95
+        ],
+        [
+          466,
+          108
+        ],
+        [
+          474,
+          98
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 4,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        34,
+        200,
+        173,
+        184
+      ],
+      "source_sample": "砰!!",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "sound_effect",
+      "rotation_deg": -15
+    },
+    {
+      "panel": 4,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        263,
+        411,
+        162,
+        75
+      ],
+      "source_sample": "灌篮——！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "sound_effect",
+      "rotation_deg": -18
+    },
+    {
+      "panel": 5,
+      "shape": "observed_polygon",
+      "bounds_px": [
+        456,
+        186,
+        91,
+        57
+      ],
+      "source_sample": "太帅了！！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "dialogue",
+      "body_polygon_px": [
+        [
+          465,
+          189
+        ],
+        [
+          477,
+          191
+        ],
+        [
+          482,
+          187
+        ],
+        [
+          490,
+          191
+        ],
+        [
+          497,
+          187
+        ],
+        [
+          505,
+          190
+        ],
+        [
+          512,
+          186
+        ],
+        [
+          520,
+          190
+        ],
+        [
+          530,
+          187
+        ],
+        [
+          535,
+          194
+        ],
+        [
+          546,
+          193
+        ],
+        [
+          546,
+          229
+        ],
+        [
+          539,
+          230
+        ],
+        [
+          537,
+          237
+        ],
+        [
+          529,
+          236
+        ],
+        [
+          523,
+          242
+        ],
+        [
+          516,
+          239
+        ],
+        [
+          508,
+          243
+        ],
+        [
+          501,
+          239
+        ],
+        [
+          492,
+          242
+        ],
+        [
+          488,
+          237
+        ],
+        [
+          478,
+          238
+        ],
+        [
+          475,
+          232
+        ],
+        [
+          466,
+          232
+        ],
+        [
+          467,
+          225
+        ],
+        [
+          458,
+          221
+        ],
+        [
+          463,
+          215
+        ],
+        [
+          456,
+          210
+        ],
+        [
+          463,
+          205
+        ],
+        [
+          460,
+          198
+        ]
+      ],
+      "source_body_class": "jagged_burst",
+      "text_color": "black"
+    },
+    {
+      "panel": 5,
+      "shape": "observed_polygon",
+      "bounds_px": [
+        469,
+        329,
+        78,
+        99
+      ],
+      "source_sample": "北辰10号！牛啊！！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "dialogue",
+      "body_polygon_px": [
+        [
+          480,
+          333
+        ],
+        [
+          489,
+          332
+        ],
+        [
+          495,
+          329
+        ],
+        [
+          501,
+          333
+        ],
+        [
+          509,
+          330
+        ],
+        [
+          517,
+          333
+        ],
+        [
+          527,
+          330
+        ],
+        [
+          532,
+          338
+        ],
+        [
+          545,
+          340
+        ],
+        [
+          546,
+          409
+        ],
+        [
+          540,
+          411
+        ],
+        [
+          536,
+          419
+        ],
+        [
+          528,
+          418
+        ],
+        [
+          523,
+          425
+        ],
+        [
+          514,
+          422
+        ],
+        [
+          508,
+          428
+        ],
+        [
+          501,
+          424
+        ],
+        [
+          494,
+          427
+        ],
+        [
+          490,
+          420
+        ],
+        [
+          480,
+          420
+        ],
+        [
+          479,
+          413
+        ],
+        [
+          471,
+          410
+        ],
+        [
+          474,
+          402
+        ],
+        [
+          469,
+          394
+        ],
+        [
+          474,
+          388
+        ],
+        [
+          471,
+          379
+        ],
+        [
+          475,
+          374
+        ],
+        [
+          472,
+          365
+        ],
+        [
+          477,
+          359
+        ],
+        [
+          473,
+          349
+        ],
+        [
+          479,
+          344
+        ]
+      ],
+      "source_body_class": "jagged_burst",
+      "text_color": "black"
+    },
+    {
+      "panel": 6,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        331,
+        533,
+        73,
+        62
+      ],
+      "source_sample": "这一刻，所有的努力都值得！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    }
+  ],
+  "features": [
+    "oblique_polygon",
+    "sound_effect",
+    "central_focal_panel",
+    "impact_polygon"
+  ],
+  "notes": [
+    "Manual polygon traces interpolate covered borders; central action is clipped to its polygon, not an equal grid.",
+    "Visible unboxed shout lettering is not automatically enclosed in speech balloons.",
+    "Independent visual review confirms four white jagged/scalloped shout bodies: 突破, 防住他, 太帅了, 北辰10号. Their observed bodies are preserved rather than rendered as bare display lettering. No unsupported speaker pointers are invented."
+  ],
+  "layout_id": "SB-006",
+  "source_size_px": [
+    561,
+    642
+  ],
+  "preview_sha256": "bf4ebebcd9ce9d8788586d9bf8a9c9fbaaeafe7030b0b3c15f3a651141de37c0",
+  "note_sha256": "84a6ce16e87e2de875292af069b3fffd0c38b869d6f21106e644dfde98bcf96e",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

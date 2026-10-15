@@ -1,0 +1,290 @@
+{
+  "roi": [
+    6,
+    65,
+    533,
+    619
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        6,
+        65,
+        231,
+        155
+      ],
+      "polygon_px": null,
+      "role": "countdown detail"
+    },
+    {
+      "bounds_px": [
+        242,
+        65,
+        297,
+        155
+      ],
+      "polygon_px": null,
+      "role": "departure preparation"
+    },
+    {
+      "bounds_px": [
+        6,
+        224,
+        533,
+        460
+      ],
+      "polygon_px": null,
+      "role": "dominant rainy delivery journey"
+    },
+    {
+      "bounds_px": [
+        239,
+        504,
+        300,
+        180
+      ],
+      "polygon_px": null,
+      "role": "customer inset",
+      "parent_panel_id": "P03",
+      "z_index": 1,
+      "geometry_type": "inset_scene"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "ellipse",
+      "bounds_px": [
+        164,
+        115,
+        70,
+        82
+      ],
+      "source_sample": "还有2分钟出发！",
+      "tail_tip_px": [
+        185,
+        205
+      ],
+      "tail_polygon_px": [
+        [
+          176,
+          190
+        ],
+        [
+          185,
+          205
+        ],
+        [
+          194,
+          190
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 2,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        247,
+        103,
+        91,
+        75
+      ],
+      "source_sample": "不管多晚，也要送到！出发！",
+      "tail_tip_px": [
+        344,
+        151
+      ],
+      "tail_polygon_px": [
+        [
+          328,
+          134
+        ],
+        [
+          344,
+          151
+        ],
+        [
+          331,
+          150
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 2,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        447,
+        110,
+        87,
+        78
+      ],
+      "source_sample": "风雨无阻，是承诺！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "display",
+      "rotation_deg": -8
+    },
+    {
+      "panel": 3,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        24,
+        275,
+        156,
+        91
+      ],
+      "source_sample": "无论天气怎样，总有人在等待",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "display",
+      "rotation_deg": -14
+    },
+    {
+      "panel": 3,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        402,
+        298,
+        127,
+        94
+      ],
+      "source_sample": "城市的灯火，有一份温暖是我送去的。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "display",
+      "rotation_deg": -10
+    },
+    {
+      "panel": 4,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        246,
+        544,
+        103,
+        117
+      ],
+      "source_sample": "哇！一点都没洒出来！太厉害了！辛苦了！",
+      "tail_tip_px": [
+        356,
+        594
+      ],
+      "tail_polygon_px": [
+        [
+          338,
+          581
+        ],
+        [
+          356,
+          594
+        ],
+        [
+          342,
+          603
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 4,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        466,
+        537,
+        73,
+        118
+      ],
+      "source_sample": "谢谢！你们真的很棒！",
+      "tail_tip_px": [
+        456,
+        578
+      ],
+      "tail_polygon_px": [
+        [
+          472,
+          566
+        ],
+        [
+          456,
+          578
+        ],
+        [
+          472,
+          590
+        ]
+      ],
+      "text_type": "dialogue"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "instructional_panel_labels",
+      "bounds_px": [
+        6,
+        65,
+        333,
+        29
+      ],
+      "story_writable": false
+    },
+    {
+      "type": "inset_frame",
+      "bounds_px": [
+        239,
+        504,
+        300,
+        180
+      ],
+      "parent_panel_id": "P03"
+    }
+  ],
+  "scene_carriers": [
+    {
+      "panel_id": "P01",
+      "type": "phone_screen",
+      "bounds_px": [
+        49,
+        101,
+        125,
+        118
+      ],
+      "status": "observed",
+      "replaceable_story_text": false
+    },
+    {
+      "panel_id": "P03",
+      "type": "delivery_bag_logo",
+      "bounds_px": [
+        161,
+        367,
+        121,
+        67
+      ],
+      "status": "observed",
+      "replaceable_story_text": false
+    }
+  ],
+  "features": [
+    "inset_scene",
+    "unboxed_text",
+    "rotated_text"
+  ],
+  "notes": [
+    "White numbered strips describe source example panels and are excluded from executable story containers.",
+    "P04 is a genuine inset on P03; the underlying hero image continues behind it."
+  ],
+  "layout_id": "SB-003",
+  "source_size_px": [
+    554,
+    690
+  ],
+  "preview_sha256": "092e36171e93f0ef8bf5b4842e25f76ef62af7d29bfaf1693d069cbc96c43a6d",
+  "note_sha256": "b19e7037cfc3c2eeb9a1ad9a04ad2fe3c43f44c354661c12e929623c1c0fe328",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

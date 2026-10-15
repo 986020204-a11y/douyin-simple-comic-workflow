@@ -1,0 +1,379 @@
+{
+  "roi": [
+    10,
+    61,
+    538,
+    588
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        10,
+        61,
+        538,
+        151
+      ],
+      "polygon_px": null,
+      "role": "before spicy bite"
+    },
+    {
+      "bounds_px": [
+        10,
+        243,
+        60,
+        140
+      ],
+      "polygon_px": null,
+      "role": "micro reaction 1"
+    },
+    {
+      "bounds_px": [
+        76,
+        243,
+        60,
+        140
+      ],
+      "polygon_px": null,
+      "role": "micro reaction 2"
+    },
+    {
+      "bounds_px": [
+        141,
+        243,
+        60,
+        140
+      ],
+      "polygon_px": null,
+      "role": "micro reaction 3"
+    },
+    {
+      "bounds_px": [
+        207,
+        243,
+        60,
+        140
+      ],
+      "polygon_px": null,
+      "role": "micro reaction 4"
+    },
+    {
+      "bounds_px": [
+        273,
+        243,
+        60,
+        140
+      ],
+      "polygon_px": null,
+      "role": "micro reaction 5"
+    },
+    {
+      "bounds_px": [
+        338,
+        243,
+        60,
+        140
+      ],
+      "polygon_px": null,
+      "role": "micro reaction 6"
+    },
+    {
+      "bounds_px": [
+        404,
+        243,
+        68,
+        140
+      ],
+      "polygon_px": null,
+      "role": "micro reaction 7"
+    },
+    {
+      "bounds_px": [
+        478,
+        243,
+        70,
+        140
+      ],
+      "polygon_px": null,
+      "role": "micro reaction 8"
+    },
+    {
+      "bounds_px": [
+        10,
+        392,
+        538,
+        257
+      ],
+      "polygon_px": null,
+      "role": "large spicy climax"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        17,
+        75,
+        112,
+        95
+      ],
+      "source_sample": "传说中的地狱辣面！我来试试！",
+      "tail_tip_px": [
+        151,
+        125
+      ],
+      "tail_polygon_px": [
+        [
+          120,
+          112
+        ],
+        [
+          151,
+          125
+        ],
+        [
+          125,
+          132
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 8,
+      "shape": "ellipse",
+      "bounds_px": [
+        410,
+        356,
+        51,
+        25
+      ],
+      "source_sample": "咽……",
+      "tail_tip_px": [
+        426,
+        350
+      ],
+      "tail_polygon_px": [
+        [
+          420,
+          360
+        ],
+        [
+          426,
+          350
+        ],
+        [
+          433,
+          359
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 9,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        503,
+        352,
+        28,
+        30
+      ],
+      "source_sample": "!!",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "sound_effect"
+    },
+    {
+      "panel": 10,
+      "shape": "observed_polygon",
+      "bounds_px": [
+        12,
+        400,
+        177,
+        147
+      ],
+      "source_sample": "好辣——！！但……好好吃！！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "dialogue",
+      "body_polygon_px": [
+        [
+          12,
+          411
+        ],
+        [
+          41,
+          419
+        ],
+        [
+          42,
+          399
+        ],
+        [
+          61,
+          413
+        ],
+        [
+          78,
+          397
+        ],
+        [
+          88,
+          416
+        ],
+        [
+          111,
+          397
+        ],
+        [
+          119,
+          418
+        ],
+        [
+          143,
+          405
+        ],
+        [
+          146,
+          424
+        ],
+        [
+          179,
+          423
+        ],
+        [
+          169,
+          447
+        ],
+        [
+          188,
+          458
+        ],
+        [
+          171,
+          470
+        ],
+        [
+          185,
+          489
+        ],
+        [
+          165,
+          495
+        ],
+        [
+          177,
+          517
+        ],
+        [
+          149,
+          513
+        ],
+        [
+          148,
+          537
+        ],
+        [
+          128,
+          526
+        ],
+        [
+          112,
+          547
+        ],
+        [
+          97,
+          529
+        ],
+        [
+          77,
+          540
+        ],
+        [
+          70,
+          520
+        ],
+        [
+          44,
+          531
+        ],
+        [
+          44,
+          512
+        ],
+        [
+          16,
+          523
+        ],
+        [
+          20,
+          497
+        ],
+        [
+          10,
+          487
+        ],
+        [
+          28,
+          475
+        ],
+        [
+          12,
+          453
+        ],
+        [
+          30,
+          438
+        ]
+      ]
+    },
+    {
+      "panel": 10,
+      "shape": "rect",
+      "bounds_px": [
+        399,
+        466,
+        145,
+        55
+      ],
+      "source_sample": "痛并快乐着，这就是美食的力量！",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "instructional_micro_labels",
+      "bounds_px": [
+        13,
+        222,
+        534,
+        16
+      ],
+      "story_writable": false
+    }
+  ],
+  "features": [
+    "ultra_slim_panels",
+    "impact_polygon",
+    "sound_effect"
+  ],
+  "notes": [
+    "Eight narrow micro-panels between top and bottom make ten scene panels total.",
+    "Micro-panel words above the strips label facial reactions rather than providing dialogue.",
+    "Narrow-panel exact x borders manually measured to tolerance 3 px."
+  ],
+  "layout_id": "SB-020",
+  "source_size_px": [
+    557,
+    662
+  ],
+  "preview_sha256": "54741828d230b01bfd20c303164542c362be921db4f99e2ac628ae6c4a6e6da7",
+  "note_sha256": "74d7df3413a295ac3373aa92a0e500ee35e3cd2c0fda4b35c20730f6180a9bd6",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

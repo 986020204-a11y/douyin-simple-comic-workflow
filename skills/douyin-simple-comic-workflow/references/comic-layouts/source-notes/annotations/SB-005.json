@@ -1,0 +1,251 @@
+{
+  "roi": [
+    15,
+    56,
+    526,
+    570
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        15,
+        56,
+        224,
+        186
+      ],
+      "polygon_px": null,
+      "role": "quiet thought"
+    },
+    {
+      "bounds_px": [
+        244,
+        56,
+        122,
+        186
+      ],
+      "polygon_px": null,
+      "role": "careful action"
+    },
+    {
+      "bounds_px": [
+        373,
+        56,
+        168,
+        186
+      ],
+      "polygon_px": null,
+      "role": "taste reaction"
+    },
+    {
+      "bounds_px": [
+        15,
+        247,
+        526,
+        379
+      ],
+      "polygon_px": null,
+      "role": "large ending reveal"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        18,
+        59,
+        117,
+        102
+      ],
+      "source_sample": "嘘…大家都睡了，偷偷吃点泡面应该没事吧！",
+      "tail_tip_px": [
+        111,
+        164
+      ],
+      "tail_polygon_px": [
+        [
+          105,
+          155
+        ],
+        [
+          113,
+          162
+        ],
+        [
+          107,
+          167
+        ]
+      ],
+      "text_type": "thought",
+      "thought_dots_px": [
+        [
+          106,
+          157,
+          8,
+          6
+        ],
+        [
+          114,
+          162,
+          5,
+          4
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "shape": "ellipse",
+      "bounds_px": [
+        266,
+        60,
+        87,
+        43
+      ],
+      "source_sample": "轻一点…",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "thought",
+      "thought_dots_px": [
+        [
+          303,
+          105,
+          5,
+          5
+        ],
+        [
+          302,
+          113,
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "panel": 3,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        381,
+        67,
+        87,
+        61
+      ],
+      "source_sample": "滋～～",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "sound_effect",
+      "rotation_deg": -15
+    },
+    {
+      "panel": 3,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        479,
+        58,
+        62,
+        70
+      ],
+      "source_sample": "啊…真香！",
+      "tail_tip_px": [
+        504,
+        139
+      ],
+      "tail_polygon_px": [
+        [
+          495,
+          120
+        ],
+        [
+          504,
+          139
+        ],
+        [
+          513,
+          123
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 4,
+      "shape": "rounded_rect",
+      "bounds_px": [
+        256,
+        258,
+        168,
+        108
+      ],
+      "source_sample": "这么晚还在吃？……能给我来一口吗？",
+      "tail_tip_px": [
+        242,
+        348
+      ],
+      "tail_polygon_px": [
+        [
+          271,
+          323
+        ],
+        [
+          242,
+          348
+        ],
+        [
+          266,
+          342
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 4,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        461,
+        352,
+        62,
+        86
+      ],
+      "source_sample": "!?",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "sound_effect",
+      "rotation_deg": 8
+    },
+    {
+      "panel": 4,
+      "shape": "rect",
+      "bounds_px": [
+        349,
+        563,
+        181,
+        52
+      ],
+      "source_sample": "有时候，美味真的能化解一切……",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration",
+      "fill": "pale_yellow",
+      "border": "none"
+    }
+  ],
+  "features": [
+    "thought_dots",
+    "sound_effect",
+    "unboxed_text"
+  ],
+  "notes": [
+    "Thought-dot positions are observed tiny circles, with exact raster outline unknown."
+  ],
+  "layout_id": "SB-005",
+  "source_size_px": [
+    554,
+    642
+  ],
+  "preview_sha256": "cc8a48a00d11c35eb443bee70cd6ab747e4c2256a9a1334e712d9a6557e1fa70",
+  "note_sha256": "9d9beb57f6fb9245f73f2ab80914d4cbadcedbb5075fe9a0aeaf5f8602e6ca5c",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

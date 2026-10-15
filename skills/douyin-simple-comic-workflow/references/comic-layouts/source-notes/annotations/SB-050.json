@@ -1,0 +1,385 @@
+{
+  "layout_id": "SB-050",
+  "source_size": [
+    556,
+    625
+  ],
+  "preview_sha256": "86583bbe855f558a43adc7875fdcfb29351ab321748420d10a3a4af8fcae96aa",
+  "note_sha256": "446d992159221ac5e412e23dacc1ee3d3fd2e0ab7064b3ea2497d236f8ba173e",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 61,
+  "panels": [
+    {
+      "bounds_px": [
+        18,
+        435,
+        161,
+        187
+      ],
+      "role": "departure",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 1,
+      "layer": 1
+    },
+    {
+      "bounds_px": [
+        132,
+        324,
+        155,
+        209
+      ],
+      "role": "on route",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          132,
+          324
+        ],
+        [
+          224,
+          324
+        ],
+        [
+          224,
+          343
+        ],
+        [
+          287,
+          343
+        ],
+        [
+          287,
+          533
+        ],
+        [
+          180,
+          533
+        ],
+        [
+          180,
+          435
+        ],
+        [
+          132,
+          435
+        ]
+      ],
+      "source_number": 2,
+      "layer": 2
+    },
+    {
+      "bounds_px": [
+        227,
+        234,
+        168,
+        179
+      ],
+      "role": "challenge",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 3,
+      "layer": 3
+    },
+    {
+      "bounds_px": [
+        288,
+        139,
+        132,
+        327
+      ],
+      "role": "near summit",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          314,
+          139
+        ],
+        [
+          420,
+          139
+        ],
+        [
+          420,
+          234
+        ],
+        [
+          395,
+          234
+        ],
+        [
+          395,
+          413
+        ],
+        [
+          316,
+          413
+        ],
+        [
+          316,
+          466
+        ],
+        [
+          288,
+          466
+        ],
+        [
+          288,
+          343
+        ],
+        [
+          314,
+          343
+        ]
+      ],
+      "source_number": 4,
+      "layer": 4
+    },
+    {
+      "bounds_px": [
+        416,
+        62,
+        135,
+        309
+      ],
+      "role": "summit",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 5,
+      "layer": 5
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        30,
+        444,
+        82,
+        61
+      ],
+      "sample_text": "从山脚开始！有点紧张，但我可以的！",
+      "shape": "rect",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        137,
+        350,
+        83,
+        61
+      ],
+      "sample_text": "虽然很累，但风景真美！再向上！",
+      "shape": "rect",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        234,
+        261,
+        71,
+        62
+      ],
+      "sample_text": "好陡……但我不能放弃！坚持就是胜利！",
+      "shape": "rect",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        321,
+        166,
+        67,
+        63
+      ],
+      "sample_text": "已经看到山顶了！加油！",
+      "shape": "rect",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        422,
+        92,
+        81,
+        46
+      ],
+      "sample_text": "我做到了！好棒！",
+      "shape": "rect",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        25,
+        420,
+        68,
+        27
+      ],
+      "sample_text": "1.出发",
+      "kind": "panel_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        139,
+        328,
+        59,
+        24
+      ],
+      "sample_text": "2.途中",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        235,
+        240,
+        59,
+        24
+      ],
+      "sample_text": "3.挑战",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        320,
+        144,
+        83,
+        24
+      ],
+      "sample_text": "4.接近山顶",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        423,
+        69,
+        62,
+        24
+      ],
+      "sample_text": "5.登顶",
+      "kind": "panel_label",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        25,
+        83,
+        249,
+        91
+      ],
+      "sample_text": "一步一个台阶，也是一种成长！",
+      "kind": "page_furniture",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        38,
+        181,
+        195,
+        64
+      ],
+      "sample_text": "山顶的风景，属于坚持到最后的人！",
+      "kind": "page_furniture",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        425,
+        326,
+        121,
+        90
+      ],
+      "sample_text": "每一次向上的努力，都让我成为更好的自己！",
+      "kind": "page_note",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        445,
+        229,
+        57,
+        77
+      ],
+      "sample_text": "山顶 海拔3260m",
+      "kind": "physical_carrier",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred",
+      "carrier_kind": "stone_marker"
+    }
+  ],
+  "observed_features": [
+    "five stair-stepped panels over a continuous mountain background",
+    "visible overlap and stair-notch panel outlines",
+    "upward-left-to-right explicit 1–5 order"
+  ],
+  "uncertainties": [
+    "Background is scenery and page furniture, not a sixth story panel.",
+    "Partially occluded staircase outlines are traced only where visible."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

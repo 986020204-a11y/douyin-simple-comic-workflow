@@ -1,0 +1,649 @@
+{
+  "layout_id": "SB-067",
+  "source_size": [
+    545,
+    674
+  ],
+  "preview_sha256": "50afc273aeef0b7eb4831effa5d8a235fd4abd83fdeae1b68b0075679dc8090a",
+  "note_sha256": "07b784927e7a584c33925a9b6a74152638478fc81cbd25b42bb7229a8ec9cddd",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 99,
+  "panels": [
+    {
+      "bounds_px": [
+        3,
+        100,
+        190,
+        198
+      ],
+      "role": "morning blue",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          3,
+          100
+        ],
+        [
+          168,
+          107
+        ],
+        [
+          193,
+          193
+        ],
+        [
+          169,
+          298
+        ],
+        [
+          3,
+          280
+        ]
+      ],
+      "source_number": 1
+    },
+    {
+      "bounds_px": [
+        172,
+        104,
+        195,
+        197
+      ],
+      "role": "class yellow",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          173,
+          106
+        ],
+        [
+          355,
+          104
+        ],
+        [
+          367,
+          195
+        ],
+        [
+          349,
+          279
+        ],
+        [
+          172,
+          301
+        ],
+        [
+          194,
+          195
+        ]
+      ],
+      "source_number": 2
+    },
+    {
+      "bounds_px": [
+        352,
+        92,
+        188,
+        195
+      ],
+      "role": "noon red",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          360,
+          105
+        ],
+        [
+          540,
+          92
+        ],
+        [
+          540,
+          287
+        ],
+        [
+          352,
+          279
+        ],
+        [
+          368,
+          196
+        ]
+      ],
+      "source_number": 3
+    },
+    {
+      "bounds_px": [
+        3,
+        286,
+        176,
+        205
+      ],
+      "role": "afternoon purple",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          3,
+          286
+        ],
+        [
+          169,
+          305
+        ],
+        [
+          179,
+          390
+        ],
+        [
+          166,
+          491
+        ],
+        [
+          3,
+          477
+        ]
+      ],
+      "source_number": 4
+    },
+    {
+      "bounds_px": [
+        171,
+        284,
+        195,
+        213
+      ],
+      "role": "evening green",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          176,
+          305
+        ],
+        [
+          335,
+          284
+        ],
+        [
+          366,
+          390
+        ],
+        [
+          340,
+          497
+        ],
+        [
+          171,
+          497
+        ],
+        [
+          182,
+          389
+        ]
+      ],
+      "source_number": 5
+    },
+    {
+      "bounds_px": [
+        342,
+        285,
+        198,
+        210
+      ],
+      "role": "night orange",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          342,
+          285
+        ],
+        [
+          540,
+          310
+        ],
+        [
+          540,
+          493
+        ],
+        [
+          344,
+          495
+        ],
+        [
+          369,
+          390
+        ]
+      ],
+      "source_number": 6
+    },
+    {
+      "bounds_px": [
+        3,
+        484,
+        537,
+        185
+      ],
+      "role": "deep night navy",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          3,
+          484
+        ],
+        [
+          170,
+          502
+        ],
+        [
+          342,
+          502
+        ],
+        [
+          540,
+          497
+        ],
+        [
+          540,
+          669
+        ],
+        [
+          3,
+          669
+        ]
+      ],
+      "source_number": 7
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        107,
+        141,
+        75,
+        58
+      ],
+      "sample_text": "今天也要加油！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            116,
+            189
+          ],
+          [
+            108,
+            204
+          ],
+          [
+            128,
+            194
+          ]
+        ],
+        "anchor_px": [
+          108,
+          204
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        283,
+        140,
+        77,
+        62
+      ],
+      "sample_text": "我可以学得更好！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            303,
+            192
+          ],
+          [
+            300,
+            205
+          ],
+          [
+            317,
+            198
+          ]
+        ],
+        "anchor_px": [
+          300,
+          205
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        462,
+        133,
+        77,
+        58
+      ],
+      "sample_text": "好好吃！有你真好！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            478,
+            184
+          ],
+          [
+            473,
+            197
+          ],
+          [
+            490,
+            189
+          ]
+        ],
+        "anchor_px": [
+          473,
+          197
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        91,
+        333,
+        76,
+        80
+      ],
+      "sample_text": "唉……好难啊！我是不是不行？",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            99,
+            399
+          ],
+          [
+            84,
+            410
+          ],
+          [
+            109,
+            405
+          ]
+        ],
+        "anchor_px": [
+          84,
+          410
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        276,
+        332,
+        77,
+        76
+      ],
+      "sample_text": "没关系！再试一次！我可以的！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            286,
+            396
+          ],
+          [
+            272,
+            410
+          ],
+          [
+            297,
+            402
+          ]
+        ],
+        "anchor_px": [
+          272,
+          410
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        459,
+        331,
+        78,
+        72
+      ],
+      "sample_text": "虽然很累，但今天也很充实！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            468,
+            392
+          ],
+          [
+            453,
+            402
+          ],
+          [
+            479,
+            397
+          ]
+        ],
+        "anchor_px": [
+          453,
+          402
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        222,
+        523,
+        90,
+        66
+      ],
+      "sample_text": "明天……又会是更好的一天！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            232,
+            579
+          ],
+          [
+            217,
+            592
+          ],
+          [
+            244,
+            585
+          ]
+        ],
+        "anchor_px": [
+          217,
+          592
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        380,
+        546,
+        150,
+        75
+      ],
+      "sample_text": "生活可能有很多颜色，但每一种，都是我成长的一部分。",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        17,
+        114,
+        83,
+        40
+      ],
+      "sample_text": "清晨·蓝色 新的一天！",
+      "kind": "panel_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        192,
+        114,
+        83,
+        39
+      ],
+      "sample_text": "上课·黄色 专注学习！",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        377,
+        111,
+        83,
+        37
+      ],
+      "sample_text": "中午·红色 和朋友一起！",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        16,
+        298,
+        107,
+        36
+      ],
+      "sample_text": "下午·紫色 遇到困难……",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        192,
+        313,
+        107,
+        36
+      ],
+      "sample_text": "傍晚·绿色 重新振作！",
+      "kind": "panel_label",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        360,
+        300,
+        108,
+        38
+      ],
+      "sample_text": "夜晚·橙色 收获与成长！",
+      "kind": "panel_label",
+      "panel": 6,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        18,
+        498,
+        113,
+        38
+      ],
+      "sample_text": "深夜·深蓝 面向明天……",
+      "kind": "panel_label",
+      "panel": 7,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    }
+  ],
+  "observed_features": [
+    "seven panels divided by color blocks and white irregular gutters",
+    "no conventional black border lines",
+    "explicit time-of-day color labels"
+  ],
+  "uncertainties": [
+    "Color block corners and curved edges are approximate polygons.",
+    "Reading order inferred from observed time labels, not printed numeric sequence."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

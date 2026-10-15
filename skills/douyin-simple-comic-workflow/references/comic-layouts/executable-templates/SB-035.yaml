@@ -1,0 +1,1334 @@
+layout_id: SB-035
+version: 1.4.0
+source:
+  preview_image: previews/SB-035.webp
+  source_note: source-notes/SB-035.md
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  visual_reference_only: true
+  preview_sha256: c6256bd9160ebe9951477d8a1c6f190f1d3aefa11969725036b3991f02960a7e
+  note_sha256: 6d631f49e34bbe774fd7d7c18ffa139ae9f55c785a102e47a27ebb1645fd519e
+  annotation_scope: native_full_preview; no crop/adapted target stored
+  observation_record: source-notes/annotations/SB-035.json
+canvas:
+  aspect_ratio: 546:670
+  source_aspect_ratio: 546:670
+  coordinate_system: normalized_xywh_0_to_1 (x,y,width,height)
+  width: 546
+  height: 670
+  dimensions_evidence: observed
+  aspect_ratio_evidence: observed
+panels:
+- panel_id: P01
+  order: 1
+  bounds: &id008
+  - 0.010989
+  - 0.170149
+  - 0.478022
+  - 0.180597
+  role: scene
+  geometry_type: rect
+  cross_panel_allowed: false
+  field_evidence: &id009
+    bounds: observed
+    geometry_type: observed
+    polygon: not_applicable
+    role: inferred
+    order: inferred
+    cross_panel_allowed: inferred
+  annotation_precision: &id010
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+- panel_id: P02
+  order: 2
+  bounds: &id011
+  - 0.5
+  - 0.170149
+  - 0.489011
+  - 0.180597
+  role: scene
+  geometry_type: rect
+  cross_panel_allowed: false
+  field_evidence: &id012
+    bounds: observed
+    geometry_type: observed
+    polygon: not_applicable
+    role: inferred
+    order: inferred
+    cross_panel_allowed: inferred
+  annotation_precision: &id013
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+- panel_id: P03
+  order: 3
+  bounds: &id014
+  - 0.010989
+  - 0.361194
+  - 0.478022
+  - 0.173134
+  role: scene
+  geometry_type: rect
+  cross_panel_allowed: false
+  field_evidence: &id015
+    bounds: observed
+    geometry_type: observed
+    polygon: not_applicable
+    role: inferred
+    order: inferred
+    cross_panel_allowed: inferred
+  annotation_precision: &id016
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+- panel_id: P04
+  order: 4
+  bounds: &id017
+  - 0.5
+  - 0.361194
+  - 0.489011
+  - 0.173134
+  role: scene
+  geometry_type: rect
+  cross_panel_allowed: false
+  field_evidence: &id018
+    bounds: observed
+    geometry_type: observed
+    polygon: not_applicable
+    role: inferred
+    order: inferred
+    cross_panel_allowed: inferred
+  annotation_precision: &id019
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+- panel_id: P05
+  order: 5
+  bounds: &id020
+  - 0.010989
+  - 0.544776
+  - 0.478022
+  - 0.179104
+  role: scene
+  geometry_type: rect
+  cross_panel_allowed: false
+  field_evidence: &id021
+    bounds: observed
+    geometry_type: observed
+    polygon: not_applicable
+    role: inferred
+    order: inferred
+    cross_panel_allowed: inferred
+  annotation_precision: &id022
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+- panel_id: P06
+  order: 6
+  bounds: &id023
+  - 0.5
+  - 0.544776
+  - 0.489011
+  - 0.179104
+  role: scene
+  geometry_type: rect
+  cross_panel_allowed: false
+  field_evidence: &id024
+    bounds: observed
+    geometry_type: observed
+    polygon: not_applicable
+    role: inferred
+    order: inferred
+    cross_panel_allowed: inferred
+  annotation_precision: &id025
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+- panel_id: P07
+  order: 7
+  bounds: &id026
+  - 0.010989
+  - 0.734328
+  - 0.978022
+  - 0.258209
+  role: scene
+  geometry_type: rect
+  cross_panel_allowed: false
+  field_evidence: &id027
+    bounds: observed
+    geometry_type: observed
+    polygon: not_applicable
+    role: inferred
+    order: inferred
+    cross_panel_allowed: inferred
+  annotation_precision: &id028
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+bubbles:
+- bubble_id: B01
+  panel_id: P01
+  allowed_text_types:
+  - narration
+  - caption
+  shape: rounded_rect
+  position: source_observed
+  bounds:
+  - 0.014652
+  - 0.171642
+  - 0.28022
+  - 0.037313
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  max_width_ratio: 0.58621
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_caption_note
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.03
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: 1A. 小偷得手，迅速逃离！
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+- bubble_id: B02
+  panel_id: P01
+  allowed_text_types:
+  - dialogue
+  shape: ellipse
+  position: source_observed
+  bounds:
+  - 0.267399
+  - 0.21194
+  - 0.195971
+  - 0.073134
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    polygon:
+    - - 0.282051
+      - 0.249254
+    - &id001
+      - 0.247253
+      - 0.246269
+    - - 0.278388
+      - 0.232836
+    anchor: *id001
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon_precision: inferred
+    new_story_speaker_identity: unknown
+  max_width_ratio: 0.40996
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_ellipse_speech
+    shape: ellipse
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.0
+    repeatable: false
+    tail_shape: observed_polygon
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: inferred
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: 哈哈！拿到了！快走！
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+- bubble_id: B03
+  panel_id: P02
+  allowed_text_types:
+  - narration
+  - caption
+  shape: rounded_rect
+  position: source_observed
+  bounds:
+  - 0.505495
+  - 0.171642
+  - 0.282051
+  - 0.037313
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  max_width_ratio: 0.57678
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_caption_note
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.03
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: 1B. 保安发现，立刻追击！
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+- bubble_id: B04
+  panel_id: P02
+  allowed_text_types:
+  - dialogue
+  shape: ellipse
+  position: source_observed
+  bounds:
+  - 0.805861
+  - 0.228358
+  - 0.179487
+  - 0.08209
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    polygon:
+    - - 0.820513
+      - 0.274627
+    - &id002
+      - 0.791209
+      - 0.274627
+    - - 0.818681
+      - 0.258209
+    anchor: *id002
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon_precision: inferred
+    new_story_speaker_identity: unknown
+  max_width_ratio: 0.36704
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_ellipse_speech
+    shape: ellipse
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.0
+    repeatable: false
+    tail_shape: observed_polygon
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: inferred
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: 有人偷东西！快拦住他！
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+- bubble_id: B05
+  panel_id: P03
+  allowed_text_types:
+  - narration
+  - caption
+  shape: rounded_rect
+  position: source_observed
+  bounds:
+  - 0.014652
+  - 0.362687
+  - 0.333333
+  - 0.035821
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  max_width_ratio: 0.69732
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_caption_note
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.03
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: 2A. 小偷穿过小巷，继续狂奔！
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+- bubble_id: B06
+  panel_id: P03
+  allowed_text_types:
+  - dialogue
+  shape: ellipse
+  position: source_observed
+  bounds:
+  - 0.282051
+  - 0.404478
+  - 0.172161
+  - 0.076119
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    polygon:
+    - - 0.29304
+      - 0.443284
+    - &id003
+      - 0.265568
+      - 0.450746
+    - - 0.29304
+      - 0.458209
+    anchor: *id003
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon_precision: inferred
+    new_story_speaker_identity: unknown
+  max_width_ratio: 0.36015
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_ellipse_speech
+    shape: ellipse
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.0
+    repeatable: false
+    tail_shape: observed_polygon
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: inferred
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: 还没追上？再拐一个弯！
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+- bubble_id: B07
+  panel_id: P04
+  allowed_text_types:
+  - narration
+  - caption
+  shape: rounded_rect
+  position: source_observed
+  bounds:
+  - 0.505495
+  - 0.362687
+  - 0.272894
+  - 0.037313
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  max_width_ratio: 0.55805
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_caption_note
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.03
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: 2B. 保安紧追不舍！
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+- bubble_id: B08
+  panel_id: P04
+  allowed_text_types:
+  - dialogue
+  shape: ellipse
+  position: source_observed
+  bounds:
+  - 0.822344
+  - 0.40597
+  - 0.153846
+  - 0.059701
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    polygon:
+    - - 0.82967
+      - 0.434328
+    - &id004
+      - 0.804029
+      - 0.441791
+    - - 0.827839
+      - 0.452239
+    anchor: *id004
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon_precision: inferred
+    new_story_speaker_identity: unknown
+  max_width_ratio: 0.31461
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_ellipse_speech
+    shape: ellipse
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.0
+    repeatable: false
+    tail_shape: observed_polygon
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: inferred
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: 别让他跑了！
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+- bubble_id: B09
+  panel_id: P05
+  allowed_text_types:
+  - narration
+  - caption
+  shape: rounded_rect
+  position: source_observed
+  bounds:
+  - 0.016484
+  - 0.546269
+  - 0.276557
+  - 0.037313
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  max_width_ratio: 0.57854
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_caption_note
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.03
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: 3A. 小偷翻过围栏！
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+- bubble_id: B10
+  panel_id: P05
+  allowed_text_types:
+  - dialogue
+  shape: ellipse
+  position: source_observed
+  bounds:
+  - 0.296703
+  - 0.568657
+  - 0.152015
+  - 0.076119
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    polygon:
+    - - 0.313187
+      - 0.631343
+    - &id005
+      - 0.28022
+      - 0.649254
+    - - 0.320513
+      - 0.640299
+    anchor: *id005
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon_precision: inferred
+    new_story_speaker_identity: unknown
+  max_width_ratio: 0.31801
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_ellipse_speech
+    shape: ellipse
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.0
+    repeatable: false
+    tail_shape: observed_polygon
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: inferred
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: 马上就能逃出去了！
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+- bubble_id: B11
+  panel_id: P06
+  allowed_text_types:
+  - narration
+  - caption
+  shape: rounded_rect
+  position: source_observed
+  bounds:
+  - 0.505495
+  - 0.546269
+  - 0.274725
+  - 0.037313
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  max_width_ratio: 0.5618
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_caption_note
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.03
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: 3B. 保安也赶到围栏！
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+- bubble_id: B12
+  panel_id: P06
+  allowed_text_types:
+  - dialogue
+  shape: ellipse
+  position: source_observed
+  bounds:
+  - 0.82967
+  - 0.568657
+  - 0.14652
+  - 0.086567
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    polygon:
+    - - 0.838828
+      - 0.623881
+    - &id006
+      - 0.807692
+      - 0.637313
+    - - 0.840659
+      - 0.641791
+    anchor: *id006
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon_precision: inferred
+    new_story_speaker_identity: unknown
+  max_width_ratio: 0.29963
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_ellipse_speech
+    shape: ellipse
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.0
+    repeatable: false
+    tail_shape: observed_polygon
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: inferred
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: 翻过去！不能放弃！
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+- bubble_id: B13
+  panel_id: P07
+  allowed_text_types:
+  - narration
+  - caption
+  shape: rounded_rect
+  position: source_observed
+  bounds:
+  - 0.016484
+  - 0.740299
+  - 0.194139
+  - 0.040299
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  max_width_ratio: 0.1985
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_caption_note
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.03
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: 4. 两线相遇！
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+- bubble_id: B14
+  panel_id: P07
+  allowed_text_types:
+  - dialogue
+  - emphasis
+  shape: polygon
+  position: source_observed
+  bounds:
+  - 0.181319
+  - 0.795522
+  - 0.089744
+  - 0.092537
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  max_width_ratio: 0.09176
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_polygon
+    shape: polygon
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.0
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    polygon: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: ！？
+  polygon:
+  - - 0.194139
+    - 0.798507
+  - - 0.221612
+    - 0.802985
+  - - 0.24359
+    - 0.786567
+  - - 0.249084
+    - 0.808955
+  - - 0.276557
+    - 0.820896
+  - - 0.25641
+    - 0.846269
+  - - 0.265568
+    - 0.867164
+  - - 0.241758
+    - 0.865672
+  - - 0.230769
+    - 0.891045
+  - - 0.212454
+    - 0.873134
+  - - 0.184982
+    - 0.88209
+  - - 0.192308
+    - 0.856716
+  - - 0.172161
+    - 0.834328
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+- bubble_id: B15
+  panel_id: P07
+  allowed_text_types:
+  - dialogue
+  shape: ellipse
+  position: source_observed
+  bounds:
+  - 0.782051
+  - 0.749254
+  - 0.184982
+  - 0.077612
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    polygon:
+    - - 0.802198
+      - 0.791045
+    - &id007
+      - 0.761905
+      - 0.801493
+    - - 0.804029
+      - 0.807463
+    anchor: *id007
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon_precision: inferred
+    new_story_speaker_identity: unknown
+  max_width_ratio: 0.18914
+  avoid:
+  - face
+  - hands
+  - key_props
+  visual_style:
+    renderer: preview_ellipse_speech
+    shape: ellipse
+    fill: white
+    border: black
+    text_color: black
+    font_family: unknown
+    evidence: observed
+    padding_ratio: 0.05
+    corner_radius_ratio: 0.0
+    repeatable: false
+    tail_shape: observed_polygon
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: inferred
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    cross_panel_allowed: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 4
+    status: inferred
+  source_sample_text: 跑不掉了！
+  source_sample_text_evidence: observed_readable_sample
+  cross_panel_allowed: false
+constraints:
+  panel_count_exact: true
+  preserve_reading_order: true
+  allow_add_panels: false
+  allow_delete_panels: false
+  allow_merge_panels: false
+  allow_split_panels: false
+  allow_generic_long_box: false
+fallback:
+  policy: block_until_required_mechanisms_and_actual_bindings_verified
+  reason_required: true
+evidence:
+  panel_geometry: observed
+  bubble_shape: observed
+  bubble_position: observed
+  tail_anchor: observed
+  confidence: 0.87
+  font_family: unknown
+preview_contract:
+  source_size:
+  - 546
+  - 670
+  content_roi:
+  - 0.010989
+  - 0.170149
+  - 0.978022
+  - 0.822388
+  header:
+    bounds:
+    - 0
+    - 0
+    - 1
+    - 0.170149
+    status: observed
+    writable: false
+  coordinate_space: full_preview_normalized_xywh
+  crop_policy:
+    type: external_target_transform_only
+    source_rule: false
+    evidence: inferred
+    note: Any 3:4 crop or resized/moved text geometry is an adapted target, not a
+      source observation.
+  evidence: observed
+structure:
+  units:
+  - panel_id: P01
+    order: 1
+    bounds: *id008
+    role: scene
+    geometry_type: rect
+    cross_panel_allowed: false
+    field_evidence: *id009
+    annotation_precision: *id010
+    unit_id: P01
+  - panel_id: P02
+    order: 2
+    bounds: *id011
+    role: scene
+    geometry_type: rect
+    cross_panel_allowed: false
+    field_evidence: *id012
+    annotation_precision: *id013
+    unit_id: P02
+  - panel_id: P03
+    order: 3
+    bounds: *id014
+    role: scene
+    geometry_type: rect
+    cross_panel_allowed: false
+    field_evidence: *id015
+    annotation_precision: *id016
+    unit_id: P03
+  - panel_id: P04
+    order: 4
+    bounds: *id017
+    role: scene
+    geometry_type: rect
+    cross_panel_allowed: false
+    field_evidence: *id018
+    annotation_precision: *id019
+    unit_id: P04
+  - panel_id: P05
+    order: 5
+    bounds: *id020
+    role: scene
+    geometry_type: rect
+    cross_panel_allowed: false
+    field_evidence: *id021
+    annotation_precision: *id022
+    unit_id: P05
+  - panel_id: P06
+    order: 6
+    bounds: *id023
+    role: scene
+    geometry_type: rect
+    cross_panel_allowed: false
+    field_evidence: *id024
+    annotation_precision: *id025
+    unit_id: P06
+  - panel_id: P07
+    order: 7
+    bounds: *id026
+    role: scene
+    geometry_type: rect
+    cross_panel_allowed: false
+    field_evidence: *id027
+    annotation_precision: *id028
+    unit_id: P07
+  nested_units: []
+  reading_order:
+    type: explicit_order
+    evidence: inferred
+  count_basis: actual_story_image_units_only; paper/page backing excluded; genuine
+    narrative background and inset images each count once
+  visible_story_image_unit_count: 7
+  framed_panel_count: 7
+  parent_child_semantics: parent_id records observed overlays; listed units are not
+    duplicated in nested_units
+style_contract:
+  border:
+    required: true
+    color: black
+    width_ratio: 0.0035
+    evidence: observed
+  gutter:
+    required: true
+    color: white
+    width_ratio: 0.007
+    evidence: observed
+  sample_content_policy: omit_sample_story_words_preserve_declared_text_zone_style
+  unknown_policy: do_not_invent
+  observed_mechanisms:
+  - alternating_parallel_action
+  - six_small_panels_then_shared_bottom
+  - track_headers
+text_zones:
+- zone_id: Z01
+  panel_id: null
+  bounds:
+  - 0.009158
+  - 0.129851
+  - 0.479853
+  - 0.037313
+  type: source_track_header
+  shape: plain_text
+  evidence: observed
+  executable_story_text: false
+  counts_as_panel: false
+  executable: false
+  field_evidence:
+    existence: observed
+    bounds: inferred
+    semantics: inferred
+    execution_policy: inferred
+- zone_id: Z02
+  panel_id: null
+  bounds:
+  - 0.5
+  - 0.129851
+  - 0.489011
+  - 0.037313
+  type: source_track_header
+  shape: plain_text
+  evidence: observed
+  executable_story_text: false
+  counts_as_panel: false
+  executable: false
+  field_evidence:
+    existence: observed
+    bounds: inferred
+    semantics: inferred
+    execution_policy: inferred
+overlays: []
+field_evidence:
+  constraints: inferred
+  fallback: inferred
+  source.preview_image: observed
+  source.source_note: observed
+  canvas.aspect_ratio: observed
+  renderer_selection: inferred
+  sample_content_policy: inferred
+annotation_uncertainties:
+- field: font_family
+  status: unknown
+  reason: Source preview does not identify original font file or exact hand lettering.
+- field: new_story_speaker_or_carrier_identity
+  status: unknown
+  reason: New-story speaker/physical carrier ownership requires actual scene evidence;
+    source observation cannot bind a replacement character.
+- field: manual_contour_precision
+  status: inferred
+  reason: Source native pixel contours are hand traced; curved/ragged silhouettes
+    are approximations within declared manual tolerance.
+annotation_coverage:
+  visible_story_text_instances: 15
+  bubble_instances: 15
+  canvas_story_text_instances: 0
+  complete_for_visible_story_containers: true
+  excluded_source_decorations:
+  - page title and explanatory top subtitle
+  - explicit non-executable source explanation zones
+  evidence: observed
+execution_requirements:
+- feature: alternating_parallel_action
+  evidence: observed
+  renderer_support: requires_validation
+  real_image_verified: false
+- feature: six_small_panels_then_shared_bottom
+  evidence: observed
+  renderer_support: requires_validation
+  real_image_verified: false
+- feature: track_headers
+  evidence: observed
+  renderer_support: requires_validation
+  real_image_verified: false
+execution_status: source_annotated_not_real_image_verified
+review_status: source_cross_checked_with_explicit_uncertainty
+missing_fields: []
+workflow_output_preference:
+  aspect_ratio: '3:4'
+  evidence: inferred_workflow_target
+  requires_explicit_adaptation: true
+source_annotation_notes: []
+actual_art_validation_status: not_tested
+validation_scope:
+  source_annotation: complete
+  source_visual_cross_check: passed_with_explicit_uncertainty
+  native_geometry_synthetic_proof: passed
+  real_artwork: not_tested
+  complete_text_effect_execution: not_tested
+  pixel_identity_to_original_preview: not_claimed
+  human_final_acceptance: pending
+source_review_notes:
+  cross_check_scope: visible image units, text containers, ownership and explicit
+    uncertainty; not exact numeric or font identity
+  evidence_origin: independent annotator cross-review plus root source contact-sheet
+    review; see bundled annotation-review.json

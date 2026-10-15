@@ -1,0 +1,776 @@
+{
+  "layout_id": "SB-047",
+  "source_size": [
+    543,
+    689
+  ],
+  "preview_sha256": "8492d6f5ce300390dca1c94e599265e8e0576d0a0f80718b08ea0de05ba70eba",
+  "note_sha256": "fb18af85d1f3ac76366ed2c1af548b91ba426c10dfb9f843150e618d38bab1f8",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 59,
+  "panels": [
+    {
+      "bounds_px": [
+        96,
+        59,
+        442,
+        470
+      ],
+      "role": "central hero and source diagram",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": true,
+      "polygon_px": [
+        [
+          96,
+          59
+        ],
+        [
+          384,
+          59
+        ],
+        [
+          390,
+          286
+        ],
+        [
+          538,
+          296
+        ],
+        [
+          538,
+          505
+        ],
+        [
+          105,
+          529
+        ]
+      ],
+      "layer": 0
+    },
+    {
+      "bounds_px": [
+        8,
+        63,
+        169,
+        157
+      ],
+      "role": "clue A",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          12,
+          63
+        ],
+        [
+          154,
+          77
+        ],
+        [
+          177,
+          210
+        ],
+        [
+          8,
+          220
+        ]
+      ],
+      "layer": 1
+    },
+    {
+      "bounds_px": [
+        7,
+        224,
+        151,
+        157
+      ],
+      "role": "clue B",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          10,
+          224
+        ],
+        [
+          145,
+          227
+        ],
+        [
+          158,
+          365
+        ],
+        [
+          7,
+          381
+        ]
+      ],
+      "layer": 1
+    },
+    {
+      "bounds_px": [
+        7,
+        381,
+        149,
+        145
+      ],
+      "role": "clue C",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          10,
+          387
+        ],
+        [
+          150,
+          381
+        ],
+        [
+          156,
+          502
+        ],
+        [
+          7,
+          526
+        ]
+      ],
+      "layer": 1
+    },
+    {
+      "bounds_px": [
+        381,
+        60,
+        151,
+        95
+      ],
+      "role": "suspect 1",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          386,
+          60
+        ],
+        [
+          532,
+          71
+        ],
+        [
+          532,
+          134
+        ],
+        [
+          381,
+          155
+        ]
+      ],
+      "layer": 1
+    },
+    {
+      "bounds_px": [
+        376,
+        137,
+        156,
+        85
+      ],
+      "role": "suspect 2",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          380,
+          155
+        ],
+        [
+          532,
+          137
+        ],
+        [
+          532,
+          222
+        ],
+        [
+          376,
+          214
+        ]
+      ],
+      "layer": 1
+    },
+    {
+      "bounds_px": [
+        392,
+        215,
+        140,
+        75
+      ],
+      "role": "suspect 3",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          394,
+          215
+        ],
+        [
+          532,
+          224
+        ],
+        [
+          531,
+          290
+        ],
+        [
+          392,
+          280
+        ]
+      ],
+      "layer": 1
+    },
+    {
+      "bounds_px": [
+        397,
+        292,
+        136,
+        119
+      ],
+      "role": "floor-plan reconstruction inset",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          397,
+          292
+        ],
+        [
+          532,
+          298
+        ],
+        [
+          533,
+          411
+        ],
+        [
+          398,
+          407
+        ]
+      ],
+      "layer": 1
+    },
+    {
+      "bounds_px": [
+        4,
+        525,
+        294,
+        160
+      ],
+      "role": "revelation closeup",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          4,
+          534
+        ],
+        [
+          298,
+          525
+        ],
+        [
+          290,
+          684
+        ],
+        [
+          4,
+          685
+        ]
+      ],
+      "layer": 2
+    },
+    {
+      "bounds_px": [
+        291,
+        504,
+        246,
+        180
+      ],
+      "role": "closing group scene",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          299,
+          524
+        ],
+        [
+          537,
+          504
+        ],
+        [
+          537,
+          684
+        ],
+        [
+          291,
+          684
+        ]
+      ],
+      "layer": 2
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 2,
+      "bounds_px": [
+        8,
+        125,
+        93,
+        90
+      ],
+      "sample_text": "这里有奇怪的脚印，好像不是人的……",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            85,
+            202
+          ],
+          [
+            105,
+            207
+          ],
+          [
+            96,
+            188
+          ]
+        ],
+        "anchor_px": [
+          105,
+          207
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        7,
+        310,
+        94,
+        70
+      ],
+      "sample_text": "衣服的纽扣？看来凶手很匆忙……",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            84,
+            314
+          ],
+          [
+            109,
+            310
+          ],
+          [
+            95,
+            327
+          ]
+        ],
+        "anchor_px": [
+          109,
+          310
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        7,
+        457,
+        103,
+        51
+      ],
+      "sample_text": "这个身影看起来很眼熟！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            93,
+            461
+          ],
+          [
+            122,
+            455
+          ],
+          [
+            104,
+            475
+          ]
+        ],
+        "anchor_px": [
+          122,
+          455
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        463,
+        78,
+        63,
+        54
+      ],
+      "sample_text": "我没有做过！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            465,
+            111
+          ],
+          [
+            449,
+            116
+          ],
+          [
+            466,
+            121
+          ]
+        ],
+        "anchor_px": [
+          449,
+          116
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        381,
+        157,
+        71,
+        55
+      ],
+      "sample_text": "我一直在图书馆！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            440,
+            186
+          ],
+          [
+            455,
+            193
+          ],
+          [
+            448,
+            201
+          ]
+        ],
+        "anchor_px": [
+          455,
+          193
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        472,
+        224,
+        58,
+        57
+      ],
+      "sample_text": "真的不是我！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            475,
+            260
+          ],
+          [
+            461,
+            265
+          ],
+          [
+            475,
+            271
+          ]
+        ],
+        "anchor_px": [
+          461,
+          265
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        418,
+        389,
+        119,
+        64
+      ],
+      "sample_text": "结合所有线索，答案已经很清晰了！凶手就是……",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            426,
+            405
+          ],
+          [
+            414,
+            391
+          ],
+          [
+            421,
+            416
+          ]
+        ],
+        "anchor_px": [
+          414,
+          391
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 9,
+      "bounds_px": [
+        145,
+        585,
+        141,
+        66
+      ],
+      "sample_text": "原来是你！一切都说得通了！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            210,
+            640
+          ],
+          [
+            208,
+            659
+          ],
+          [
+            225,
+            644
+          ]
+        ],
+        "anchor_px": [
+          208,
+          659
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        186,
+        70,
+        184,
+        111
+      ],
+      "sample_text": "真相只有一个！",
+      "shape": "display_text",
+      "text_kind": "emphasis",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        204,
+        471,
+        118,
+        48
+      ],
+      "sample_text": "用观察发现细节，用推理揭开真相！",
+      "shape": "rect",
+      "text_kind": "caption",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "fill": "paper_yellow"
+    },
+    {
+      "panel": 10,
+      "bounds_px": [
+        334,
+        516,
+        179,
+        68
+      ],
+      "sample_text": "正义也许会迟到，但不会缺席！",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        14,
+        69,
+        87,
+        55
+      ],
+      "sample_text": "线索A：神秘的脚印",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        14,
+        227,
+        85,
+        46
+      ],
+      "sample_text": "线索B：掉落的纽扣",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        15,
+        394,
+        85,
+        48
+      ],
+      "sample_text": "线索C：监控画面",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        382,
+        64,
+        74,
+        25
+      ],
+      "sample_text": "嫌疑人们",
+      "kind": "panel_label",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        397,
+        287,
+        77,
+        27
+      ],
+      "sample_text": "现场还原",
+      "kind": "panel_label",
+      "panel": 8,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        209,
+        428,
+        106,
+        40
+      ],
+      "sample_text": "见习侦探 江小明",
+      "kind": "panel_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        13,
+        535,
+        92,
+        30
+      ],
+      "sample_text": "真相大白！",
+      "kind": "panel_label",
+      "panel": 9,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    }
+  ],
+  "observed_features": [
+    "central base image with overlapping satellite insets",
+    "red evidence arrows",
+    "hero silhouette breaks central inferred polygon",
+    "bottom two slanted panels"
+  ],
+  "uncertainties": [
+    "Central hero base image extends behind insets; hidden boundary cannot be measured.",
+    "Reading order among parallel clue and suspect insets is not uniquely directed."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

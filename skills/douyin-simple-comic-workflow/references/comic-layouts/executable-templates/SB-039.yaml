@@ -1,0 +1,1316 @@
+layout_id: SB-039
+version: 1.3.1
+source:
+  preview_image: previews/SB-039.webp
+  source_note: source-notes/SB-039.md
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  visual_reference_only: true
+  preview_sha256: 28ffad45a1f66a99f0d073fdd7e9bf4a9f0ea385db6510b961ef4bc8ea596467
+  note_sha256: c27f7251af82c2288ae99bb963bfe43f144ae39fda90063b78ca64b5bdc9ce5a
+  annotation_scope: native_full_preview; no crop or adapted target geometry stored
+    here
+canvas:
+  aspect_ratio: 545:659
+  coordinate_system: normalized_xywh_0_to_1 (x,y,width,height)
+  source_aspect_ratio: 545:659
+  aspect_ratio_evidence: observed
+  source_aspect_ratio_evidence: observed
+  width: 545
+  height: 659
+  dimensions_evidence: observed
+panels:
+- panel_id: P01
+  order: 1
+  bounds:
+  - 0.001835
+  - 0.135053
+  - 0.326606
+  - 0.849772
+  geometry_type: phone_column
+  role: left phone/chat screen
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: observed
+    role: inferred
+    order: inferred
+    cross_panel_allowed: inferred
+- panel_id: P02
+  order: 2
+  bounds:
+  - 0.33945
+  - 0.197269
+  - 0.317431
+  - 0.195751
+  geometry_type: inset_scene
+  role: central top scene
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: observed
+    role: inferred
+    order: inferred
+    cross_panel_allowed: inferred
+- panel_id: P03
+  order: 3
+  bounds:
+  - 0.33945
+  - 0.39909
+  - 0.317431
+  - 0.204856
+  geometry_type: inset_scene
+  role: central second scene
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: observed
+    role: inferred
+    order: inferred
+    cross_panel_allowed: inferred
+- panel_id: P04
+  order: 4
+  bounds:
+  - 0.33945
+  - 0.60698
+  - 0.317431
+  - 0.177542
+  geometry_type: inset_scene
+  role: central third scene
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: observed
+    role: inferred
+    order: inferred
+    cross_panel_allowed: inferred
+- panel_id: P05
+  order: 5
+  bounds:
+  - 0.33945
+  - 0.790592
+  - 0.317431
+  - 0.185129
+  geometry_type: inset_scene
+  role: central bottom scene
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: observed
+    role: inferred
+    order: inferred
+    cross_panel_allowed: inferred
+- panel_id: P06
+  order: 6
+  bounds:
+  - 0.666055
+  - 0.135053
+  - 0.330275
+  - 0.849772
+  geometry_type: phone_column
+  role: right phone/chat screen
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: observed
+    role: inferred
+    order: inferred
+    cross_panel_allowed: inferred
+bubbles:
+- bubble_id: B01
+  panel_id: P01
+  allowed_text_types:
+  - phone_dialogue
+  shape: rounded_rect
+  position: screen-left
+  max_width_ratio: 0.6742
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  visual_style:
+    renderer: preview_phone_message
+    shape: rounded_rect
+    fill: '#d6fcb6'
+    border: none
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: none
+    padding_ratio: 0.07
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  source_sample_text: 晚上吃什么？
+  channel_binding_required: true
+  bounds:
+  - 0.022018
+  - 0.261002
+  - 0.220183
+  - 0.050076
+- bubble_id: B02
+  panel_id: P06
+  allowed_text_types:
+  - phone_dialogue
+  shape: rounded_rect
+  position: screen-left
+  max_width_ratio: 0.5722
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  visual_style:
+    renderer: preview_phone_message
+    shape: rounded_rect
+    fill: '#ffffff'
+    border: none
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: none
+    padding_ratio: 0.07
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  source_sample_text: 你到哪了？
+  channel_binding_required: true
+  bounds:
+  - 0.693578
+  - 0.265554
+  - 0.188991
+  - 0.048558
+- bubble_id: B03
+  panel_id: P02
+  allowed_text_types:
+  - narration
+  shape: rounded_rect
+  position: lower-right
+  max_width_ratio: 0.7341
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  visual_style:
+    renderer: preview_caption_box
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.0
+    tail_shape: none
+    padding_ratio: 0.07
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  bounds:
+  - 0.420183
+  - 0.341426
+  - 0.233028
+  - 0.051593
+- bubble_id: B04
+  panel_id: P03
+  allowed_text_types:
+  - narration
+  shape: rounded_rect
+  position: lower-left
+  max_width_ratio: 0.7399
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  visual_style:
+    renderer: preview_caption_box
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.0
+    tail_shape: none
+    padding_ratio: 0.07
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  bounds:
+  - 0.341284
+  - 0.543247
+  - 0.234862
+  - 0.059181
+- bubble_id: B05
+  panel_id: P04
+  allowed_text_types:
+  - narration
+  shape: rounded_rect
+  position: lower-center
+  max_width_ratio: 0.4277
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  visual_style:
+    renderer: preview_caption_box
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.0
+    tail_shape: none
+    padding_ratio: 0.07
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  bounds:
+  - 0.427523
+  - 0.737481
+  - 0.13578
+  - 0.045524
+- bubble_id: B06
+  panel_id: P05
+  allowed_text_types:
+  - dialogue
+  shape: ellipse
+  position: upper-left
+  max_width_ratio: 0.2717
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon:
+    - - 0.385321
+      - 0.861912
+    - - 0.4
+      - 0.880121
+    - - 0.401835
+      - 0.861912
+    anchor: &id001
+    - 0.4
+    - 0.880121
+  visual_style:
+    renderer: preview_rounded_speech
+    shape: ellipse
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.0
+    tail_shape: observed_polygon
+    padding_ratio: 0.07
+    repeatable: false
+    tail_anchor: *id001
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  bounds:
+  - 0.344954
+  - 0.807284
+  - 0.086239
+  - 0.060698
+- bubble_id: B07
+  panel_id: P05
+  allowed_text_types:
+  - dialogue
+  shape: ellipse
+  position: upper-right
+  max_width_ratio: 0.2832
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon:
+    - - 0.59633
+      - 0.860395
+    - - 0.594495
+      - 0.883156
+    - - 0.618349
+      - 0.864947
+    anchor: &id002
+    - 0.594495
+    - 0.883156
+  visual_style:
+    renderer: preview_rounded_speech
+    shape: ellipse
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.0
+    tail_shape: observed_polygon
+    padding_ratio: 0.07
+    repeatable: false
+    tail_anchor: *id002
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  bounds:
+  - 0.555963
+  - 0.805766
+  - 0.089908
+  - 0.062215
+- bubble_id: B08
+  panel_id: P01
+  allowed_text_types:
+  - phone_dialogue
+  shape: rounded_rect
+  position: screen-left
+  max_width_ratio: 0.3933
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  visual_style:
+    renderer: preview_phone_message
+    shape: rounded_rect
+    fill: '#d6fcb6'
+    border: none
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: none
+    padding_ratio: 0.07
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  source_sample_text: 我好饿！
+  channel_binding_required: true
+  bounds:
+  - 0.022018
+  - 0.314112
+  - 0.12844
+  - 0.048558
+- bubble_id: B09
+  panel_id: P01
+  allowed_text_types:
+  - phone_dialogue
+  shape: rounded_rect
+  position: screen-right
+  max_width_ratio: 0.5674
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: chat_ui_nib
+    speaker_binding_required: false
+    evidence: observed
+    channel_binding_required: true
+    polygon:
+    - - 0.097248
+      - 0.420334
+    - - 0.095413
+      - 0.438543
+    - - 0.137615
+      - 0.429439
+    anchor: &id003
+    - 0.095413
+    - 0.438543
+  visual_style:
+    renderer: preview_phone_message
+    shape: rounded_rect
+    fill: '#b5e2fa'
+    border: none
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: observed_polygon
+    padding_ratio: 0.07
+    repeatable: false
+    tail_anchor: *id003
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  source_sample_text: 火锅怎么样？
+  channel_binding_required: true
+  bounds:
+  - 0.093578
+  - 0.379363
+  - 0.185321
+  - 0.051593
+- bubble_id: B10
+  panel_id: P01
+  allowed_text_types:
+  - phone_dialogue
+  shape: rounded_rect
+  position: screen-left
+  max_width_ratio: 0.6292
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  visual_style:
+    renderer: preview_phone_message
+    shape: rounded_rect
+    fill: '#d6fcb6'
+    border: none
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: none
+    padding_ratio: 0.07
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  source_sample_text: 好像太热了…要不要吃日料？
+  channel_binding_required: true
+  bounds:
+  - 0.020183
+  - 0.449165
+  - 0.205505
+  - 0.080425
+- bubble_id: B11
+  panel_id: P01
+  allowed_text_types:
+  - phone_dialogue
+  shape: rounded_rect
+  position: screen-right
+  max_width_ratio: 0.6629
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: chat_ui_nib
+    speaker_binding_required: false
+    evidence: observed
+    channel_binding_required: true
+    polygon:
+    - - 0.088073
+      - 0.61912
+    - - 0.089908
+      - 0.635812
+    - - 0.115596
+      - 0.628225
+    anchor: &id004
+    - 0.089908
+    - 0.635812
+  visual_style:
+    renderer: preview_phone_message
+    shape: rounded_rect
+    fill: '#b5e2fa'
+    border: none
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: observed_polygon
+    padding_ratio: 0.07
+    repeatable: false
+    tail_anchor: *id004
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  source_sample_text: 也行！你在哪？我先过去～
+  channel_binding_required: true
+  bounds:
+  - 0.084404
+  - 0.5478
+  - 0.216514
+  - 0.08346
+- bubble_id: B12
+  panel_id: P01
+  allowed_text_types:
+  - phone_dialogue
+  shape: rounded_rect
+  position: screen-left
+  max_width_ratio: 0.6124
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  visual_style:
+    renderer: preview_phone_message
+    shape: rounded_rect
+    fill: '#d6fcb6'
+    border: none
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: none
+    padding_ratio: 0.07
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  source_sample_text: 我在商场附近，你呢？
+  channel_binding_required: true
+  bounds:
+  - 0.020183
+  - 0.646434
+  - 0.2
+  - 0.081942
+- bubble_id: B13
+  panel_id: P01
+  allowed_text_types:
+  - phone_dialogue
+  shape: rounded_rect
+  position: screen-right
+  max_width_ratio: 0.6236
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: chat_ui_nib
+    speaker_binding_required: false
+    evidence: observed
+    channel_binding_required: true
+    polygon:
+    - - 0.288073
+      - 0.758725
+    - - 0.306422
+      - 0.766313
+    - - 0.291743
+      - 0.772382
+    anchor: &id005
+    - 0.306422
+    - 0.766313
+  visual_style:
+    renderer: preview_phone_message
+    shape: rounded_rect
+    fill: '#b5e2fa'
+    border: none
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: observed_polygon
+    padding_ratio: 0.07
+    repeatable: false
+    tail_anchor: *id005
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  source_sample_text: 我也在这附近！我们马上见面！
+  channel_binding_required: true
+  bounds:
+  - 0.093578
+  - 0.748103
+  - 0.20367
+  - 0.080425
+- bubble_id: B14
+  panel_id: P06
+  allowed_text_types:
+  - phone_dialogue
+  shape: rounded_rect
+  position: screen-left
+  max_width_ratio: 0.6944
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  visual_style:
+    renderer: preview_phone_message
+    shape: rounded_rect
+    fill: '#ffffff'
+    border: none
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: none
+    padding_ratio: 0.07
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  source_sample_text: 我好像看到你了？穿黑色外套？！
+  channel_binding_required: true
+  bounds:
+  - 0.693578
+  - 0.330804
+  - 0.229358
+  - 0.074355
+- bubble_id: B15
+  panel_id: P06
+  allowed_text_types:
+  - phone_dialogue
+  shape: rounded_rect
+  position: screen-right
+  max_width_ratio: 0.7556
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: chat_ui_nib
+    speaker_binding_required: false
+    evidence: observed
+    channel_binding_required: true
+    polygon:
+    - - 0.954128
+      - 0.437026
+    - - 0.976147
+      - 0.443096
+    - - 0.961468
+      - 0.456753
+    anchor: &id006
+    - 0.976147
+    - 0.443096
+  visual_style:
+    renderer: preview_phone_message
+    shape: rounded_rect
+    fill: '#d6fcb6'
+    border: none
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: observed_polygon
+    padding_ratio: 0.07
+    repeatable: false
+    tail_anchor: *id006
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  source_sample_text: 咦？我怎么看没看到你？我在星巴克门口！
+  channel_binding_required: true
+  bounds:
+  - 0.717431
+  - 0.424886
+  - 0.249541
+  - 0.092564
+- bubble_id: B16
+  panel_id: P06
+  allowed_text_types:
+  - phone_dialogue
+  shape: rounded_rect
+  position: screen-left
+  max_width_ratio: 0.6722
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  visual_style:
+    renderer: preview_phone_message
+    shape: rounded_rect
+    fill: '#ffffff'
+    border: none
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: none
+    padding_ratio: 0.07
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  source_sample_text: 什么？！我刚从那儿走过！
+  channel_binding_required: true
+  bounds:
+  - 0.693578
+  - 0.538695
+  - 0.222018
+  - 0.074355
+- bubble_id: B17
+  panel_id: P06
+  allowed_text_types:
+  - phone_dialogue
+  shape: rounded_rect
+  position: screen-right
+  max_width_ratio: 0.6278
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  visual_style:
+    renderer: preview_phone_message
+    shape: rounded_rect
+    fill: '#d6fcb6'
+    border: none
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: none
+    padding_ratio: 0.07
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  source_sample_text: ……我们是不是错过了？
+  channel_binding_required: true
+  bounds:
+  - 0.722936
+  - 0.637329
+  - 0.207339
+  - 0.084977
+- bubble_id: B18
+  panel_id: P06
+  allowed_text_types:
+  - phone_dialogue
+  shape: rounded_rect
+  position: screen-left
+  max_width_ratio: 0.7389
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  visual_style:
+    renderer: preview_phone_message
+    shape: rounded_rect
+    fill: '#ffffff'
+    border: none
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: none
+    padding_ratio: 0.07
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  source_sample_text: 算了！直接在“那家拉面店”见吧！我现在过去！
+  channel_binding_required: true
+  bounds:
+  - 0.693578
+  - 0.742033
+  - 0.244037
+  - 0.101669
+constraints:
+  panel_count_exact: true
+  preserve_reading_order: true
+  allow_add_panels: false
+  allow_delete_panels: false
+  allow_merge_panels: false
+  allow_split_panels: false
+  allow_generic_long_box: false
+fallback:
+  policy: block_until_annotated
+  reason_required: true
+evidence:
+  panel_geometry: observed
+  bubble_shape: observed
+  bubble_position: observed
+  tail_anchor: observed
+  confidence: 0.84
+  font_family: unknown
+review_status: source_visual_annotation_complete_pending_independent_review
+missing_fields: []
+preview_contract:
+  source_size:
+  - 545
+  - 659
+  content_roi:
+  - 0.001835
+  - 0.135053
+  - 0.994495
+  - 0.849772
+  header:
+    bounds:
+    - 0
+    - 0
+    - 1
+    - 0.136
+    status: observed
+    writable: false
+  coordinate_space: full_preview_normalized_xywh
+  crop_policy:
+    type: external_target_transform_only
+    evidence: inferred
+    source_rule: false
+    note: Any 3:4 cover, clipped boundary, moved bubble, or resized bubble is an adapted
+      target, never a source observation.
+  evidence: observed
+structure:
+  units:
+  - unit_id: P01
+    order: 1
+    bounds:
+    - 0.001835
+    - 0.135053
+    - 0.326606
+    - 0.849772
+    geometry_type: phone_column
+    role: left phone/chat screen
+    cross_panel_allowed: false
+    evidence: observed
+  - unit_id: P02
+    order: 2
+    bounds:
+    - 0.33945
+    - 0.197269
+    - 0.317431
+    - 0.195751
+    geometry_type: inset_scene
+    role: central top scene
+    cross_panel_allowed: false
+    evidence: observed
+  - unit_id: P03
+    order: 3
+    bounds:
+    - 0.33945
+    - 0.39909
+    - 0.317431
+    - 0.204856
+    geometry_type: inset_scene
+    role: central second scene
+    cross_panel_allowed: false
+    evidence: observed
+  - unit_id: P04
+    order: 4
+    bounds:
+    - 0.33945
+    - 0.60698
+    - 0.317431
+    - 0.177542
+    geometry_type: inset_scene
+    role: central third scene
+    cross_panel_allowed: false
+    evidence: observed
+  - unit_id: P05
+    order: 5
+    bounds:
+    - 0.33945
+    - 0.790592
+    - 0.317431
+    - 0.185129
+    geometry_type: inset_scene
+    role: central bottom scene
+    cross_panel_allowed: false
+    evidence: observed
+  - unit_id: P06
+    order: 6
+    bounds:
+    - 0.666055
+    - 0.135053
+    - 0.330275
+    - 0.849772
+    geometry_type: phone_column
+    role: right phone/chat screen
+    cross_panel_allowed: false
+    evidence: observed
+  nested_units: []
+  reading_order:
+    type: explicit_order
+    evidence: inferred
+style_contract:
+  border:
+    required: true
+    color: black
+    width_ratio: 0.006
+    evidence: observed
+  gutter:
+    required: true
+    color: white
+    width_ratio: 0.006
+    evidence: observed
+  sample_content_policy: omit_story_text_preserve_zone_style
+  unknown_policy: do_not_invent
+  phone_shell:
+    required: true
+    frame: rounded_smartphone
+    left_header_fill: cyan_blue
+    right_header_fill: pink
+    evidence: observed
+  phone_message:
+    shape: rounded_chat_rect
+    tail: none
+    repeatable: false
+    fill_colors_observed:
+    - light_green
+    - light_blue
+    - white
+    evidence: observed
+    instance_policy: Use the 13 enumerated source instances; do not treat a sample
+      style region as complete preview coverage.
+  central_caption:
+    shape: rect_label
+    fill: white
+    border: black
+    evidence: observed
+  bubble_default:
+    renderer: preview_rounded_speech
+    shape: preview_rounded_speech
+    fill: white
+    border: black
+    tail_shape: single_point_observed
+    evidence: observed
+    tail_anchor: unknown
+text_zones:
+- zone_id: H01
+  panel_id: null
+  type: source_explanatory_subtitle
+  bounds:
+  - 0.361468
+  - 0.135053
+  - 0.293578
+  - 0.053111
+  shape: plain_text
+  evidence: observed
+  executable_story_text: false
+field_evidence:
+  constraints: inferred
+  fallback: inferred
+  canvas.aspect_ratio: inferred
+  source.preview_image: observed
+  source.source_note: observed
+  panel_roles: inferred
+  renderer_selection: inferred
+  sample_content_policy: inferred
+annotation_uncertainties:
+- field: font_family
+  status: unknown
+  reason: The preview does not identify the font file or exact original hand lettering.
+- field: new_story_speaker_or_prop_identity
+  status: unknown
+  reason: Observed source tail geometry does not identify a replacement story speaker
+    or prop; execution requires a separate confirmed binding.
+- field: cross_column_message_reading_order
+  status: inferred
+  reason: Each column reads top to bottom; some displayed timestamps are inconsistent
+    or unreadable, so an exact global message timeline cannot be claimed from the
+    preview.
+annotation_coverage:
+  left_phone_message_instances: 7
+  right_phone_message_instances: 6
+  central_caption_instances: 3
+  central_speech_instances: 2
+  executable_text_instances: 18
+  complete_for_visible_story_containers: true
+  excluded_source_decorations:
+  - page title
+  - central explanatory subtitle
+  - phone status bars
+  - phone contact headers
+  - timestamp labels
+  - phone input placeholder and UI icons
+  evidence: observed
+workflow_output_preference:
+  aspect_ratio: '3:4'
+  evidence: inferred_workflow_output_target
+  requires_explicit_adaptation: Source canvas dimensions and geometry must not be
+    implicitly stretched to this ratio.

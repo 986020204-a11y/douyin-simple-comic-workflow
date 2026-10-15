@@ -1,0 +1,476 @@
+{
+  "layout_id": "SB-068",
+  "source_size": [
+    555,
+    674
+  ],
+  "preview_sha256": "4bd04dada580fc196d04809abaf50580fd8753dc5ea84e89fbb57c59377d5bb6",
+  "note_sha256": "dd6cc816f6a5a355354d9301bbd20bbc33fdccb04e45bc6e59920c5399161eb9",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 103,
+  "panels": [
+    {
+      "bounds_px": [
+        14,
+        104,
+        191,
+        274
+      ],
+      "role": "target-lock closeup triangle",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          14,
+          104
+        ],
+        [
+          205,
+          104
+        ],
+        [
+          14,
+          378
+        ]
+      ],
+      "source_number": 1
+    },
+    {
+      "bounds_px": [
+        14,
+        104,
+        306,
+        293
+      ],
+      "role": "museum establishing triangle",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          205,
+          104
+        ],
+        [
+          320,
+          267
+        ],
+        [
+          227,
+          362
+        ],
+        [
+          269,
+          397
+        ],
+        [
+          14,
+          378
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        278,
+        101,
+        180,
+        155
+      ],
+      "role": "infiltration circle",
+      "geometry_type": "ellipse",
+      "cross_panel_allowed": false,
+      "source_number": 2,
+      "layer": 1
+    },
+    {
+      "bounds_px": [
+        227,
+        225,
+        326,
+        242
+      ],
+      "role": "disarm polygon",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          311,
+          268
+        ],
+        [
+          499,
+          225
+        ],
+        [
+          553,
+          272
+        ],
+        [
+          553,
+          425
+        ],
+        [
+          360,
+          467
+        ],
+        [
+          227,
+          362
+        ]
+      ],
+      "source_number": 3,
+      "layer": 2
+    },
+    {
+      "bounds_px": [
+        14,
+        382,
+        201,
+        289
+      ],
+      "role": "alarm polygon",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          14,
+          382
+        ],
+        [
+          215,
+          393
+        ],
+        [
+          55,
+          671
+        ],
+        [
+          14,
+          671
+        ]
+      ],
+      "source_number": 4
+    },
+    {
+      "bounds_px": [
+        55,
+        395,
+        363,
+        270
+      ],
+      "role": "escape triangle",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          215,
+          395
+        ],
+        [
+          418,
+          655
+        ],
+        [
+          55,
+          665
+        ]
+      ],
+      "source_number": 5
+    },
+    {
+      "bounds_px": [
+        338,
+        418,
+        215,
+        210
+      ],
+      "role": "aftermath circle",
+      "geometry_type": "ellipse",
+      "cross_panel_allowed": false,
+      "source_number": 6,
+      "layer": 3
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 3,
+      "bounds_px": [
+        447,
+        165,
+        85,
+        50
+      ],
+      "sample_text": "一切正常，继续前进。",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            457,
+            205
+          ],
+          [
+            444,
+            215
+          ],
+          [
+            469,
+            211
+          ]
+        ],
+        "anchor_px": [
+          444,
+          215
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        294,
+        367,
+        106,
+        44
+      ],
+      "sample_text": "3……2……1……完成！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            386,
+            377
+          ],
+          [
+            402,
+            366
+          ],
+          [
+            392,
+            387
+          ]
+        ],
+        "anchor_px": [
+          402,
+          366
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        27,
+        449,
+        111,
+        47
+      ],
+      "sample_text": "警报响起！全部进入戒备！",
+      "shape": "display_text",
+      "text_kind": "sfx",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        252,
+        551,
+        90,
+        57
+      ],
+      "sample_text": "直升机来了！快走！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            262,
+            597
+          ],
+          [
+            249,
+            610
+          ],
+          [
+            276,
+            603
+          ]
+        ],
+        "anchor_px": [
+          249,
+          610
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        450,
+        497,
+        86,
+        63
+      ],
+      "sample_text": "任务完成，下次……会更完美。",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            456,
+            547
+          ],
+          [
+            443,
+            558
+          ],
+          [
+            469,
+            553
+          ]
+        ],
+        "anchor_px": [
+          443,
+          558
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        19,
+        106,
+        158,
+        41
+      ],
+      "sample_text": "1.目标锁定（三角形）锁定目标，开始行动。",
+      "kind": "panel_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        426,
+        104,
+        123,
+        40
+      ],
+      "sample_text": "2.潜入（圆形）悄无声息。",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        413,
+        250,
+        124,
+        41
+      ],
+      "sample_text": "3.解除（多边形）冷静，精准。",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        20,
+        396,
+        156,
+        40
+      ],
+      "sample_text": "4.警报（不规则四边形）糟了！快撤！",
+      "kind": "panel_label",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        191,
+        429,
+        117,
+        42
+      ],
+      "sample_text": "5.逃离（三角形）速度就是一切！",
+      "kind": "panel_label",
+      "panel": 6,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        401,
+        439,
+        127,
+        40
+      ],
+      "sample_text": "6.余味（圆形）任务完成。",
+      "kind": "panel_label",
+      "panel": 7,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        453,
+        624,
+        93,
+        43
+      ],
+      "sample_text": "有些故事，只留在夜色里。",
+      "kind": "page_furniture",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    }
+  ],
+  "observed_features": [
+    "seven visible image units in six source-numbered groups",
+    "target-lock boy triangle and adjacent unnumbered museum triangle are separated by a visible white diagonal",
+    "two circular scenes and a triangular escape unit",
+    "white geometric separators"
+  ],
+  "uncertainties": [
+    "Source captions overlap circular image edges into adjacent dark page background; keep as canvas furniture when necessary.",
+    "Museum establishing unit has partly occluded edges under infiltration circle and disarm polygon.",
+    "Exact nonrectangular masks manually approximated."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

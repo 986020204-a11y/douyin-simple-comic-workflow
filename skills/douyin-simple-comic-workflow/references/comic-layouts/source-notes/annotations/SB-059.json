@@ -1,0 +1,563 @@
+{
+  "layout_id": "SB-059",
+  "source_size": [
+    545,
+    688
+  ],
+  "preview_sha256": "4f0044d4d67af7d272609f2fae61cd577b63512cef81fd4e79923a12c0017fd7",
+  "note_sha256": "af94afd4bfd6801fde26a217d439834fcbf74a4f54b2ef80c158a3c694fc3cb3",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 59,
+  "panels": [
+    {
+      "bounds_px": [
+        6,
+        132,
+        277,
+        159
+      ],
+      "role": "customer enters left",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 1
+    },
+    {
+      "bounds_px": [
+        289,
+        132,
+        252,
+        159
+      ],
+      "role": "customer enters right",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 2
+    },
+    {
+      "bounds_px": [
+        6,
+        297,
+        277,
+        163
+      ],
+      "role": "more customers left",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 3
+    },
+    {
+      "bounds_px": [
+        289,
+        297,
+        252,
+        163
+      ],
+      "role": "more customers right",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 4
+    },
+    {
+      "bounds_px": [
+        6,
+        467,
+        535,
+        217
+      ],
+      "role": "all customers together",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 5
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        66,
+        157,
+        90,
+        65
+      ],
+      "sample_text": "唉……加班到这么晚，好饿啊……",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            73,
+            204
+          ],
+          [
+            60,
+            216
+          ],
+          [
+            79,
+            211
+          ]
+        ],
+        "anchor_px": [
+          60,
+          216
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        198,
+        162,
+        75,
+        55
+      ],
+      "sample_text": "欢迎光临！来碗什么？",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            204,
+            199
+          ],
+          [
+            189,
+            204
+          ],
+          [
+            204,
+            209
+          ]
+        ],
+        "anchor_px": [
+          189,
+          204
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        323,
+        169,
+        68,
+        54
+      ],
+      "sample_text": "好的！一如既往？",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            376,
+            210
+          ],
+          [
+            391,
+            217
+          ],
+          [
+            384,
+            203
+          ]
+        ],
+        "anchor_px": [
+          391,
+          217
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        438,
+        143,
+        92,
+        66
+      ],
+      "sample_text": "今晚也辛苦了……来一碗吧。",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            481,
+            204
+          ],
+          [
+            488,
+            219
+          ],
+          [
+            491,
+            206
+          ]
+        ],
+        "anchor_px": [
+          488,
+          219
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        87,
+        326,
+        68,
+        70
+      ],
+      "sample_text": "老板！老样子！多加蛋！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            100,
+            384
+          ],
+          [
+            85,
+            398
+          ],
+          [
+            108,
+            390
+          ]
+        ],
+        "anchor_px": [
+          85,
+          398
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        191,
+        334,
+        72,
+        49
+      ],
+      "sample_text": "来了来了！马上！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            199,
+            369
+          ],
+          [
+            189,
+            381
+          ],
+          [
+            207,
+            377
+          ]
+        ],
+        "anchor_px": [
+          189,
+          381
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        304,
+        328,
+        90,
+        61
+      ],
+      "sample_text": "下班后来一碗面，果然最治愈……",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            383,
+            374
+          ],
+          [
+            399,
+            386
+          ],
+          [
+            391,
+            371
+          ]
+        ],
+        "anchor_px": [
+          399,
+          386
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        443,
+        351,
+        51,
+        35
+      ],
+      "sample_text": "好嘞！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            445,
+            372
+          ],
+          [
+            433,
+            378
+          ],
+          [
+            445,
+            380
+          ]
+        ],
+        "anchor_px": [
+          433,
+          378
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        76,
+        493,
+        114,
+        61
+      ],
+      "sample_text": "不同的人，不同的故事……",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            113,
+            546
+          ],
+          [
+            112,
+            562
+          ],
+          [
+            129,
+            550
+          ]
+        ],
+        "anchor_px": [
+          112,
+          562
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        302,
+        492,
+        142,
+        60
+      ],
+      "sample_text": "但在这里，都能找到一天的温暖。",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            344,
+            547
+          ],
+          [
+            343,
+            561
+          ],
+          [
+            356,
+            550
+          ]
+        ],
+        "anchor_px": [
+          343,
+          561
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        13,
+        134,
+        140,
+        23
+      ],
+      "sample_text": "1.客人上场（左）",
+      "kind": "panel_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        295,
+        134,
+        121,
+        23
+      ],
+      "sample_text": "2.客人上场（右）",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        13,
+        299,
+        135,
+        23
+      ],
+      "sample_text": "3.更多客人（左）",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        295,
+        299,
+        133,
+        23
+      ],
+      "sample_text": "4.更多客人（右）",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        13,
+        468,
+        111,
+        24
+      ],
+      "sample_text": "5.今晚的舞台",
+      "kind": "panel_label",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        167,
+        65,
+        204,
+        55
+      ],
+      "sample_text": "深夜食堂 一碗面，温暖每一个人",
+      "kind": "physical_carrier",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred",
+      "carrier_kind": "shop_sign"
+    },
+    {
+      "bounds_px": [
+        500,
+        63,
+        28,
+        70
+      ],
+      "sample_text": "营业中",
+      "kind": "physical_carrier",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred",
+      "carrier_kind": "door_sign"
+    },
+    {
+      "bounds_px": [
+        454,
+        510,
+        65,
+        70
+      ],
+      "sample_text": "美味 治愈生活 —深夜食堂",
+      "kind": "physical_carrier",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred",
+      "carrier_kind": "chalkboard"
+    }
+  ],
+  "observed_features": [
+    "five actual panels with stable stage viewpoint",
+    "top shop facade outside panel grid is source scenery header",
+    "ten speech bodies"
+  ],
+  "uncertainties": [
+    "Shop facade/title area is decorative world text, not an additional numbered narrative scene.",
+    "Signs require carrier assets if relettered."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

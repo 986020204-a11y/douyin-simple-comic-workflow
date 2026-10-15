@@ -1,0 +1,239 @@
+{
+  "content_roi_px": [
+    11,
+    83,
+    538,
+    495
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        11,
+        83,
+        538,
+        235
+      ],
+      "role": "scene",
+      "polygon_px": null
+    },
+    {
+      "bounds_px": [
+        11,
+        326,
+        538,
+        252
+      ],
+      "role": "scene",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        142,
+        95,
+        145,
+        57
+      ],
+      "source_sample_text": "看好了！我要变出一只兔子！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          167,
+          145
+        ],
+        [
+          162,
+          164
+        ],
+        [
+          187,
+          149
+        ]
+      ]
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        434,
+        94,
+        88,
+        59
+      ],
+      "source_sample_text": "瞧！成功了！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          454,
+          147
+        ],
+        [
+          442,
+          169
+        ],
+        [
+          472,
+          150
+        ]
+      ]
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        487,
+        218,
+        47,
+        71
+      ],
+      "source_sample_text": "魔术 创造奇迹！",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          486,
+          202
+        ],
+        [
+          541,
+          196
+        ],
+        [
+          541,
+          311
+        ],
+        [
+          469,
+          311
+        ]
+      ],
+      "carrier_id": "stage_sign_upper"
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        165,
+        333,
+        130,
+        67
+      ],
+      "source_sample_text": "啊——！等等！别追我！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          187,
+          390
+        ],
+        [
+          178,
+          407
+        ],
+        [
+          200,
+          395
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        486,
+        448,
+        53,
+        82
+      ],
+      "source_sample_text": "魔术 有时也会创造噩梦！",
+      "kind": "carrier",
+      "shape": "polygon",
+      "tail_polygon_px": null,
+      "polygon_px": [
+        [
+          480,
+          428
+        ],
+        [
+          546,
+          420
+        ],
+        [
+          546,
+          568
+        ],
+        [
+          459,
+          568
+        ]
+      ],
+      "carrier_id": "stage_sign_lower"
+    }
+  ],
+  "features": [
+    "two_mirrored_horizontal_panels",
+    "colored_left_annotation_strips",
+    "diegetic_stage_signs"
+  ],
+  "execution_blockers": [
+    "physical_carrier_perspective"
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        12,
+        83,
+        36,
+        235
+      ],
+      "type": "source_explanatory_panel_label",
+      "executable_story_text": false
+    },
+    {
+      "bounds_px": [
+        12,
+        326,
+        36,
+        252
+      ],
+      "type": "source_explanatory_panel_label",
+      "executable_story_text": false
+    },
+    {
+      "bounds_px": [
+        15,
+        594,
+        529,
+        69
+      ],
+      "type": "source_explanatory_footer",
+      "executable_story_text": false
+    }
+  ],
+  "overlays": [],
+  "confidence": 0.86,
+  "notes": [],
+  "layout_id": "SB-032",
+  "source_size": [
+    557,
+    682
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：上下镜像，上下两部分构图相似但内容反转，用于前后对比。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Vertical Mirroring, top and bottom halves feature symmetrical compositions with contrasted or inverted content for before-after comparison. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "d794ba262a8cc44617b8993073cec6bbe0257d43e3330c9621c73bb5fe01d067",
+  "preview_sha256": "c4f43c45497411d4c9c010f4197a4add682af591541ecb5087a7fd9561a76cb9",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-032.webp",
+    "source_note_path": "source-notes/SB-032.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

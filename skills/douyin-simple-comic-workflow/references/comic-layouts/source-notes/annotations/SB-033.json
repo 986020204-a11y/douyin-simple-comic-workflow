@@ -1,0 +1,271 @@
+{
+  "content_roi_px": [
+    6,
+    78,
+    534,
+    576
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        6,
+        78,
+        271,
+        389
+      ],
+      "role": "scene",
+      "polygon_px": [
+        [
+          6,
+          78
+        ],
+        [
+          277,
+          78
+        ],
+        [
+          272,
+          467
+        ],
+        [
+          6,
+          467
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        282,
+        78,
+        258,
+        389
+      ],
+      "role": "scene",
+      "polygon_px": [
+        [
+          288,
+          78
+        ],
+        [
+          540,
+          78
+        ],
+        [
+          540,
+          467
+        ],
+        [
+          282,
+          467
+        ]
+      ]
+    },
+    {
+      "bounds_px": [
+        6,
+        473,
+        534,
+        181
+      ],
+      "role": "scene",
+      "polygon_px": null
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        133,
+        84,
+        137,
+        98
+      ],
+      "source_sample_text": "说大话谁都会，但实力不会骗！我才是这座城市真正的声音！",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          223,
+          174
+        ],
+        [
+          237,
+          193
+        ],
+        [
+          246,
+          176
+        ]
+      ]
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        14,
+        87,
+        122,
+        101
+      ],
+      "source_sample_text": "REAL STAY REAL",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "text_color": "red"
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        19,
+        413,
+        135,
+        48
+      ],
+      "source_sample_text": "左：老K ——用真实说话。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        299,
+        84,
+        119,
+        99
+      ],
+      "source_sample_text": "你很努力，但还不够。在我面前，你永远是第二。",
+      "kind": "speech",
+      "shape": "ellipse",
+      "tail_polygon_px": [
+        [
+          316,
+          171
+        ],
+        [
+          326,
+          199
+        ],
+        [
+          340,
+          179
+        ]
+      ]
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        421,
+        86,
+        112,
+        82
+      ],
+      "source_sample_text": "FLOW HIGHER",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "text_color": "blue"
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        396,
+        414,
+        131,
+        47
+      ],
+      "source_sample_text": "右：阿辰 ——用天赋碾压。",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        170,
+        475,
+        193,
+        51
+      ],
+      "source_sample_text": "音乐响起——谁能赢？观众说了算！",
+      "kind": "caption",
+      "shape": "rounded_rect",
+      "tail_polygon_px": null
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        30,
+        497,
+        74,
+        40
+      ],
+      "source_sample_text": "左边！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "text_color": "white"
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        442,
+        498,
+        77,
+        39
+      ],
+      "source_sample_text": "右边！",
+      "kind": "display",
+      "shape": "display_text",
+      "tail_polygon_px": null,
+      "text_color": "white"
+    }
+  ],
+  "features": [
+    "opposing_sides",
+    "central_vs_burst",
+    "crowd_bottom_wide_panel"
+  ],
+  "execution_blockers": [
+    "cross_panel_vs_decorative_overlay"
+  ],
+  "text_zones": [],
+  "overlays": [
+    {
+      "kind": "versus_burst",
+      "bounds_px": [
+        225,
+        205,
+        113,
+        219
+      ],
+      "sample_text": "VS",
+      "status": "observed",
+      "polygon_status": "unknown",
+      "role": "non_story_decorative_divider"
+    }
+  ],
+  "confidence": 0.84,
+  "notes": [],
+  "layout_id": "SB-033",
+  "source_size": [
+    546,
+    660
+  ],
+  "source_note": "<!-- zh -->\n漫画分镜。排版：左右对峙，左右两方人物或势力分别占据页面两侧，中间形成视觉冲突。让该分镜机制决定页面结构、阅读顺序、主次画格和镜头节奏；输出一张完整单页漫画页面，画格共同讲述连续情节，角色外观在各格保持一致。\n\n<!-- en -->\nComic storyboard. Layout: Split-Side Confrontation, opposing characters or factions occupy left and right sides of page, creating direct visual tension. Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, and pacing; output a complete single-page comic where panels tell a continuous story with consistent characters.\n",
+  "source_note_sha256": "065e34bc687575401660861240abb5f9bbab094e218bd6d91c8e9bd9c6a46714",
+  "preview_sha256": "18ea2ae078e2451f8c85fa067c4a0849d34365a37b04a6412c784b9881bf0653",
+  "source_read_evidence": {
+    "preview_image_path": "previews/SB-033.webp",
+    "source_note_path": "source-notes/SB-033.md",
+    "preview_opened_with": "functions.exec/tools.view_image",
+    "preview_visually_reviewed": true,
+    "note_read": true,
+    "annotation_agent": "annotate_sb_025_046",
+    "coordinate_basis": "source_native_pixels_xywh",
+    "annotation_method": "manual_visual_observation_and_contour_trace",
+    "trace_tolerance_source_pixels": 4,
+    "trace_precision_status": "inferred"
+  },
+  "repository_path_base": "references/comic-layouts (relative to this Skill root)",
+  "repository_portability_note": "Local observation labels were made relative; original preview/note SHA values are unchanged."
+}

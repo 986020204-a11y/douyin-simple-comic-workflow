@@ -1,0 +1,603 @@
+layout_id: SB-013
+version: 1.3.1
+source:
+  preview_image: previews/SB-013.webp
+  source_note: source-notes/SB-013.md
+  annotation_status: annotated_complete_instances_with_explicit_uncertainty
+  visual_reference_only: true
+  preview_sha256: beb6e39cc85dd755d69f4f0b2fb79b1a4ea10d11bb942415d77da8075937d594
+  note_sha256: 23f4b1973f0ae12646fe1aeb363c30244f7dafdff77752c3315724c50f305b74
+  annotation_scope: native_full_preview; no crop or adapted target geometry stored
+    here
+canvas:
+  aspect_ratio: 559:671
+  coordinate_system: normalized_xywh_0_to_1 (x,y,width,height)
+  source_aspect_ratio: 559:671
+  aspect_ratio_evidence: observed
+  source_aspect_ratio_evidence: observed
+  width: 559
+  height: 671
+  dimensions_evidence: observed
+panels:
+- panel_id: P01
+  order: 1
+  bounds:
+  - 0.025045
+  - 0.149031
+  - 0.391771
+  - 0.345753
+  geometry_type: polygon
+  polygon:
+  - - 0.025045
+    - 0.149031
+  - - 0.416816
+    - 0.149031
+  - - 0.416816
+    - 0.42623
+  - - 0.025045
+    - 0.494784
+  polygon_status: inferred_completion_of_observed_visible_edges
+  role: upper-left setup action
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: observed
+    role: inferred
+    order: observed
+    cross_panel_allowed: inferred
+    polygon: inferred
+- panel_id: P02
+  order: 2
+  bounds:
+  - 0.429338
+  - 0.149031
+  - 0.436494
+  - 0.277198
+  geometry_type: polygon
+  polygon:
+  - - 0.429338
+    - 0.149031
+  - - 0.865832
+    - 0.149031
+  - - 0.865832
+    - 0.371088
+  - - 0.429338
+    - 0.42623
+  polygon_status: inferred_completion_of_observed_visible_edges
+  role: upper-right reaction action
+  cross_panel_allowed: false
+  field_evidence:
+    bounds: observed
+    role: inferred
+    order: observed
+    cross_panel_allowed: inferred
+    polygon: inferred
+- panel_id: P03
+  order: 3
+  bounds:
+  - 0.025045
+  - 0.348733
+  - 0.867621
+  - 0.621461
+  geometry_type: polygon
+  polygon:
+  - - 0.025045
+    - 0.512668
+  - - 0.892665
+    - 0.348733
+  - - 0.892665
+    - 0.921013
+  - - 0.025045
+    - 0.970194
+  polygon_status: inferred_completion_of_observed_visible_edges
+  role: lower breakout climax with foreground crossing
+  cross_panel_allowed: true
+  field_evidence:
+    bounds: observed
+    role: inferred
+    order: observed
+    cross_panel_allowed: inferred
+    polygon: inferred
+bubbles:
+- bubble_id: B01
+  panel_id: P01
+  allowed_text_types:
+  - dialogue
+  shape: rounded_rect
+  position: upper-left
+  max_width_ratio: 0.3425
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon:
+    - - 0.153846
+      - 0.225037
+    - - 0.184258
+      - 0.253353
+    - - 0.153846
+      - 0.244411
+    - - 0.139535
+      - 0.242921
+    - - 0.143113
+      - 0.260805
+    - - 0.125224
+      - 0.23845
+    anchor: &id001
+    - 0.184258
+    - 0.253353
+  visual_style:
+    renderer: preview_rounded_speech
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: observed_polygon
+    padding_ratio: 0.07
+    repeatable: false
+    tail_anchor: *id001
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  bounds:
+  - 0.041145
+  - 0.159463
+  - 0.134168
+  - 0.081967
+- bubble_id: B02
+  panel_id: P02
+  allowed_text_types:
+  - dialogue
+  shape: rounded_rect
+  position: upper-left
+  max_width_ratio: 0.3156
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: observed_polygon
+    coordinate_space: template_normalized
+    required: true
+    anchor_kind: speaker
+    speaker_binding_required: true
+    evidence: observed
+    polygon:
+    - - 0.565295
+      - 0.222057
+    - - 0.597496
+      - 0.23845
+    - - 0.572451
+      - 0.244411
+    - - 0.561717
+      - 0.256334
+    - - 0.556351
+      - 0.265276
+    - - 0.55814
+      - 0.280179
+    - - 0.542039
+      - 0.266766
+    - - 0.529517
+      - 0.263785
+    anchor: &id002
+    - 0.597496
+    - 0.23845
+  visual_style:
+    renderer: preview_rounded_speech
+    shape: rounded_rect
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.28
+    tail_shape: observed_polygon
+    padding_ratio: 0.07
+    repeatable: false
+    tail_anchor: *id002
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: unknown
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  bounds:
+  - 0.440072
+  - 0.160954
+  - 0.137746
+  - 0.108793
+- bubble_id: B03
+  panel_id: P03
+  allowed_text_types:
+  - emphasis
+  shape: polygon
+  position: lower-center
+  max_width_ratio: 0.5278
+  avoid:
+  - face
+  - hands
+  - key_props
+  tail:
+    mode: none
+    anchor: null
+    required: false
+    evidence: observed
+  visual_style:
+    renderer: preview_impact_burst
+    shape: polygon
+    fill: white
+    border: black
+    text_color: black
+    evidence: observed
+    corner_radius_ratio: 0.0
+    tail_shape: none
+    padding_ratio: 0.07
+    repeatable: false
+  field_evidence:
+    panel_id: observed
+    bounds: observed
+    shape: observed
+    position: observed
+    tail_geometry: observed
+    speaker_identity: not_applicable
+    allowed_text_types: inferred
+    max_width_ratio: inferred
+    avoid: inferred
+    renderer: inferred
+    font_family: unknown
+    text_semantics: inferred
+    polygon: inferred
+  annotation_precision:
+    method: manual_visual_trace
+    tolerance_source_pixels: 3
+    status: inferred
+  bounds:
+  - 0.218247
+  - 0.706408
+  - 0.429338
+  - 0.28614
+  polygon:
+  - - 0.248658
+    - 0.788376
+  - - 0.237925
+    - 0.767511
+  - - 0.221825
+    - 0.734724
+  - - 0.286225
+    - 0.766021
+  - - 0.302326
+    - 0.76006
+  - - 0.284436
+    - 0.716841
+  - - 0.355993
+    - 0.742176
+  - - 0.438283
+    - 0.706408
+  - - 0.42576
+    - 0.751118
+  - - 0.440072
+    - 0.755589
+  - - 0.472272
+    - 0.749627
+  - - 0.481216
+    - 0.76155
+  - - 0.545617
+    - 0.739195
+  - - 0.542039
+    - 0.770492
+  - - 0.552773
+    - 0.777943
+  - - 0.588551
+    - 0.777943
+  - - 0.570662
+    - 0.821162
+  - - 0.593918
+    - 0.825633
+  - - 0.636852
+    - 0.816692
+  - - 0.618962
+    - 0.852459
+  - - 0.620751
+    - 0.879285
+  - - 0.624329
+    - 0.912072
+  - - 0.647585
+    - 0.929955
+  - - 0.586762
+    - 0.934426
+  - - 0.570662
+    - 0.959762
+  - - 0.57424
+    - 0.980626
+  - - 0.534884
+    - 0.961252
+  - - 0.502683
+    - 0.9538
+  - - 0.461538
+    - 0.968703
+  - - 0.423971
+    - 0.992548
+  - - 0.395349
+    - 0.967213
+  - - 0.363148
+    - 0.958271
+  - - 0.322004
+    - 0.965723
+  - - 0.304114
+    - 0.979136
+  - - 0.302326
+    - 0.955291
+  - - 0.298748
+    - 0.946349
+  - - 0.270125
+    - 0.9538
+  - - 0.218247
+    - 0.982116
+  - - 0.255814
+    - 0.946349
+  - - 0.273703
+    - 0.922504
+  - - 0.289803
+    - 0.894188
+  - - 0.284436
+    - 0.868852
+  - - 0.266547
+    - 0.849478
+  - - 0.26297
+    - 0.828614
+  - - 0.277281
+    - 0.819672
+  - - 0.273703
+    - 0.804769
+  polygon_annotation_note: Manual trace of an observed silhouette; straight segments
+    approximate the visible curved or ragged contour.
+constraints:
+  panel_count_exact: true
+  preserve_reading_order: true
+  allow_add_panels: false
+  allow_delete_panels: false
+  allow_merge_panels: false
+  allow_split_panels: false
+  allow_generic_long_box: false
+fallback:
+  policy: block_until_annotated
+  reason_required: true
+evidence:
+  panel_geometry: inferred
+  bubble_shape: observed
+  bubble_position: observed
+  tail_anchor: observed
+  confidence: 0.86
+  font_family: unknown
+review_status: source_visual_annotation_complete_pending_independent_review
+missing_fields: []
+preview_contract:
+  source_size:
+  - 559
+  - 671
+  content_roi:
+  - 0.025045
+  - 0.149031
+  - 0.949911
+  - 0.843517
+  header:
+    bounds:
+    - 0
+    - 0
+    - 1
+    - 0.136
+    status: observed
+    writable: false
+  coordinate_space: full_preview_normalized_xywh
+  crop_policy:
+    type: external_target_transform_only
+    evidence: inferred
+    source_rule: false
+    note: Any 3:4 cover, clipped boundary, moved bubble, or resized bubble is an adapted
+      target, never a source observation.
+  evidence: observed
+structure:
+  units:
+  - unit_id: P01
+    order: 1
+    bounds:
+    - 0.025045
+    - 0.149031
+    - 0.391771
+    - 0.345753
+    geometry_type: polygon
+    role: upper-left setup action
+    cross_panel_allowed: false
+    evidence: inferred
+    polygon:
+    - - 0.025045
+      - 0.149031
+    - - 0.416816
+      - 0.149031
+    - - 0.416816
+      - 0.42623
+    - - 0.025045
+      - 0.494784
+  - unit_id: P02
+    order: 2
+    bounds:
+    - 0.429338
+    - 0.149031
+    - 0.436494
+    - 0.277198
+    geometry_type: polygon
+    role: upper-right reaction action
+    cross_panel_allowed: false
+    evidence: inferred
+    polygon:
+    - - 0.429338
+      - 0.149031
+    - - 0.865832
+      - 0.149031
+    - - 0.865832
+      - 0.371088
+    - - 0.429338
+      - 0.42623
+  - unit_id: P03
+    order: 3
+    bounds:
+    - 0.025045
+    - 0.348733
+    - 0.867621
+    - 0.621461
+    geometry_type: polygon
+    role: lower breakout climax with foreground crossing
+    cross_panel_allowed: true
+    evidence: inferred
+    polygon:
+    - - 0.025045
+      - 0.512668
+    - - 0.892665
+      - 0.348733
+    - - 0.892665
+      - 0.921013
+    - - 0.025045
+      - 0.970194
+  nested_units: []
+  reading_order:
+    type: explicit_order
+    evidence: observed
+style_contract:
+  border:
+    required: true
+    color: black
+    width_ratio: 0.006
+    evidence: observed
+  gutter:
+    required: true
+    color: white
+    width_ratio: 0.006
+    evidence: observed
+  sample_content_policy: omit_story_text_preserve_zone_style
+  unknown_policy: do_not_invent
+  broken_frame:
+    required: true
+    shape: polygon_breakout
+    cross_panel_allowed: true
+    evidence: observed
+  bubble_default:
+    renderer: preview_rounded_speech
+    shape: preview_rounded_speech
+    fill: white
+    border: black
+    tail_shape: single_point_observed
+    evidence: observed
+    tail_anchor: unknown
+  impact_burst:
+    required: true
+    shape: impact_burst
+    fill: white
+    border: black
+    evidence: observed
+text_zones:
+- zone_id: H01
+  panel_id: null
+  type: subtitle
+  bounds:
+  - 0.035
+  - 0.078
+  - 0.74
+  - 0.044
+  shape: underline_text
+  evidence: observed
+- zone_id: I01
+  panel_id: P03
+  type: impact_burst
+  bounds:
+  - 0.213
+  - 0.765
+  - 0.49
+  - 0.2
+  shape: impact_burst
+  evidence: observed
+overlays:
+- overlay_id: O01
+  type: foreground_breakout
+  bounds:
+  - 0.02
+  - 0.42
+  - 0.95
+  - 0.55
+  cross_panel_allowed: true
+  evidence: observed
+- overlay_id: O02
+  type: debris_marks
+  bounds:
+  - 0.7
+  - 0.4
+  - 0.25
+  - 0.48
+  cross_panel_allowed: true
+  evidence: observed
+field_evidence:
+  constraints: inferred
+  fallback: inferred
+  canvas.aspect_ratio: inferred
+  source.preview_image: observed
+  source.source_note: observed
+  panel_roles: inferred
+  renderer_selection: inferred
+  sample_content_policy: inferred
+annotation_uncertainties:
+- field: font_family
+  status: unknown
+  reason: The preview does not identify the font file or exact original hand lettering.
+- field: new_story_speaker_or_prop_identity
+  status: unknown
+  reason: Observed source tail geometry does not identify a replacement story speaker
+    or prop; execution requires a separate confirmed binding.
+- field: occluded_panel_edges
+  status: unknown
+  reason: Foreground hair, arm, glove, impact balloon and debris hide portions of
+    panel borders. The declared frame polygons interpolate visible segments; those
+    hidden spans are inferred, never observed.
+annotation_coverage:
+  speech_bubble_instances: 2
+  impact_bubble_instances: 1
+  executable_text_instances: 3
+  complete_for_visible_story_containers: true
+  excluded_source_decorations:
+  - page title and explanatory subtitle
+  evidence: observed
+workflow_output_preference:
+  aspect_ratio: '3:4'
+  evidence: inferred_workflow_output_target
+  requires_explicit_adaptation: Source canvas dimensions and geometry must not be
+    implicitly stretched to this ratio.

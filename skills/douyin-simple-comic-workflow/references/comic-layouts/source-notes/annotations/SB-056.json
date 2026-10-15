@@ -1,0 +1,160 @@
+{
+  "layout_id": "SB-056",
+  "source_size": [
+    544,
+    643
+  ],
+  "preview_sha256": "a503e0fba72d69e92c1836f4606f0c57b9687071e4a51719b87c513e96d6deb2",
+  "note_sha256": "06f41c105f64849366a877db052763edb74572a48d2e8fd152cccbc25b54e903",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 83,
+  "panels": [
+    {
+      "bounds_px": [
+        1,
+        83,
+        542,
+        559
+      ],
+      "role": "continuous double-page vista",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        43,
+        103,
+        186,
+        73
+      ],
+      "sample_text": "更广阔的世界，正等着我们去书写。",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        374,
+        111,
+        130,
+        89
+      ],
+      "sample_text": "不同的旅途，同样的梦想——在更远的地方，再一起看见！",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        370,
+        531,
+        172,
+        98
+      ],
+      "sample_text": "这不仅是一个终点，更是无数新故事的起点。",
+      "shape": "polygon",
+      "text_kind": "caption",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "polygon_px": [
+        [
+          370,
+          553
+        ],
+        [
+          542,
+          531
+        ],
+        [
+          542,
+          603
+        ],
+        [
+          371,
+          629
+        ]
+      ],
+      "fill": "paper_yellow"
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        36,
+        265,
+        40,
+        52
+      ],
+      "sample_text": "向着未来",
+      "shape": "carrier",
+      "text_kind": "note",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "carrier_kind": "banner",
+      "writing_direction": "vertical_rl"
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        471,
+        278,
+        40,
+        52
+      ],
+      "sample_text": "继续出发",
+      "shape": "carrier",
+      "text_kind": "note",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "carrier_kind": "banner",
+      "writing_direction": "vertical_rl"
+    }
+  ],
+  "text_zones": [],
+  "observed_features": [
+    "one continuous panoramic image",
+    "visible center book-spread gutter and page shading",
+    "two physical banners with lettering",
+    "bottom parchment caption"
+  ],
+  "uncertainties": [
+    "Center gutter is not evidence of two separate narrative panels.",
+    "Paper/banner writable polygons are estimated; surface distortion unknown."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

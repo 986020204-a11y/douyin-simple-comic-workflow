@@ -1,0 +1,522 @@
+{
+  "layout_id": "SB-057",
+  "source_size": [
+    545,
+    635
+  ],
+  "preview_sha256": "c0eefd0dfe52daba85527ff9773bb050e3158cff5960287a9743246993c58e03",
+  "note_sha256": "5f413331ff407de5f451ea3c547426e245ef9fd43f75650160f32ed99048d069",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 60,
+  "panels": [
+    {
+      "bounds_px": [
+        137,
+        61,
+        269,
+        562
+      ],
+      "role": "dominant basketball poster",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "layer": 0
+    },
+    {
+      "bounds_px": [
+        10,
+        65,
+        128,
+        165
+      ],
+      "role": "morning practice",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 1,
+      "layer": 1
+    },
+    {
+      "bounds_px": [
+        10,
+        235,
+        128,
+        160
+      ],
+      "role": "team support",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 2,
+      "layer": 1
+    },
+    {
+      "bounds_px": [
+        10,
+        400,
+        128,
+        215
+      ],
+      "role": "frustration and persistence",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 3,
+      "layer": 1
+    },
+    {
+      "bounds_px": [
+        405,
+        66,
+        132,
+        166
+      ],
+      "role": "key match",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 4,
+      "layer": 1
+    },
+    {
+      "bounds_px": [
+        405,
+        239,
+        132,
+        151
+      ],
+      "role": "dream score",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 5,
+      "layer": 1
+    },
+    {
+      "bounds_px": [
+        405,
+        397,
+        132,
+        219
+      ],
+      "role": "future team",
+      "geometry_type": "rect",
+      "cross_panel_allowed": false,
+      "source_number": 6,
+      "layer": 1
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 2,
+      "bounds_px": [
+        50,
+        180,
+        79,
+        45
+      ],
+      "sample_text": "再累也要多练一次！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            65,
+            182
+          ],
+          [
+            62,
+            168
+          ],
+          [
+            75,
+            181
+          ]
+        ],
+        "anchor_px": [
+          62,
+          168
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        17,
+        267,
+        67,
+        45
+      ],
+      "sample_text": "我们一起上！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            49,
+            307
+          ],
+          [
+            51,
+            322
+          ],
+          [
+            59,
+            308
+          ]
+        ],
+        "anchor_px": [
+          51,
+          322
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        41,
+        548,
+        89,
+        54
+      ],
+      "sample_text": "就算失败也不放弃！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            42,
+            559
+          ],
+          [
+            33,
+            549
+          ],
+          [
+            42,
+            574
+          ]
+        ],
+        "anchor_px": [
+          33,
+          549
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        465,
+        178,
+        61,
+        44
+      ],
+      "sample_text": "这一球，我来！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            469,
+            183
+          ],
+          [
+            455,
+            175
+          ],
+          [
+            465,
+            196
+          ]
+        ],
+        "anchor_px": [
+          455,
+          175
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        466,
+        345,
+        60,
+        38
+      ],
+      "sample_text": "进了！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            487,
+            347
+          ],
+          [
+            484,
+            334
+          ],
+          [
+            499,
+            347
+          ]
+        ],
+        "anchor_px": [
+          484,
+          334
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        410,
+        429,
+        119,
+        46
+      ],
+      "sample_text": "总有一天，站上更大的舞台！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            449,
+            470
+          ],
+          [
+            447,
+            484
+          ],
+          [
+            462,
+            474
+          ]
+        ],
+        "anchor_px": [
+          447,
+          484
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        149,
+        416,
+        254,
+        115
+      ],
+      "sample_text": "放手去拼",
+      "shape": "display_text",
+      "text_kind": "emphasis",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "font_style": "brush_calligraphy",
+      "text_color": "white",
+      "rotation_degrees": -12
+    },
+    {
+      "panel": 1,
+      "bounds_px": [
+        241,
+        545,
+        139,
+        58
+      ],
+      "sample_text": "青春，从不设限！",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      },
+      "text_color": "white"
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        14,
+        70,
+        94,
+        23
+      ],
+      "sample_text": "1.清晨训练",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        14,
+        239,
+        91,
+        25
+      ],
+      "sample_text": "2.队友支持",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        14,
+        403,
+        112,
+        25
+      ],
+      "sample_text": "3.挫折与坚持",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        411,
+        70,
+        100,
+        25
+      ],
+      "sample_text": "4.关键比赛",
+      "kind": "panel_label",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        412,
+        244,
+        94,
+        25
+      ],
+      "sample_text": "5.梦想时刻",
+      "kind": "panel_label",
+      "panel": 6,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        411,
+        401,
+        101,
+        24
+      ],
+      "sample_text": "6.未来的我们",
+      "kind": "panel_label",
+      "panel": 7,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    }
+  ],
+  "observed_features": [
+    "central full-height hero poster plus six side insets",
+    "large white brush display over hero",
+    "red brush underline"
+  ],
+  "uncertainties": [
+    "Numbered six supporting insets plus unnumbered central main image = seven image panels.",
+    "Display text rotation and underline outline are manually estimated."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  },
+  "source_overlays": [
+    {
+      "overlay_id": "O01",
+      "kind": "red_brush_underline",
+      "panel": 1,
+      "polygon_px": [
+        [
+          167,
+          548
+        ],
+        [
+          218,
+          529
+        ],
+        [
+          270,
+          515
+        ],
+        [
+          322,
+          502
+        ],
+        [
+          375,
+          491
+        ],
+        [
+          400,
+          486
+        ],
+        [
+          381,
+          498
+        ],
+        [
+          336,
+          509
+        ],
+        [
+          279,
+          529
+        ],
+        [
+          224,
+          543
+        ],
+        [
+          182,
+          558
+        ],
+        [
+          194,
+          548
+        ]
+      ],
+      "fill": "red",
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred",
+      "rough_edge_texture": "unknown",
+      "required": true
+    }
+  ]
+}

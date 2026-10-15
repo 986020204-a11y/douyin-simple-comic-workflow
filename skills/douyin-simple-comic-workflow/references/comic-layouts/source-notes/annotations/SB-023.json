@@ -1,0 +1,97 @@
+{
+  "roi": [
+    11,
+    69,
+    530,
+    606
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        11,
+        69,
+        530,
+        126
+      ],
+      "polygon_px": null,
+      "role": "mountain long shot"
+    },
+    {
+      "bounds_px": [
+        11,
+        201,
+        530,
+        125
+      ],
+      "polygon_px": null,
+      "role": "courtyard medium shot"
+    },
+    {
+      "bounds_px": [
+        11,
+        332,
+        530,
+        123
+      ],
+      "polygon_px": null,
+      "role": "monk near shot"
+    },
+    {
+      "bounds_px": [
+        11,
+        462,
+        231,
+        213
+      ],
+      "polygon_px": null,
+      "role": "rope detail"
+    },
+    {
+      "bounds_px": [
+        249,
+        462,
+        292,
+        213
+      ],
+      "polygon_px": null,
+      "role": "face extreme closeup"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 5,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        449,
+        584,
+        83,
+        43
+      ],
+      "source_sample": "一声钟响，万念皆空。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    }
+  ],
+  "features": [
+    "camera_progression",
+    "unboxed_text"
+  ],
+  "notes": [
+    "Only one narrative text zone is visible. Do not invent speech balloons in the four silent panels.",
+    "Five numbered camera shot strips are explanatory source decorations."
+  ],
+  "layout_id": "SB-023",
+  "source_size_px": [
+    552,
+    684
+  ],
+  "preview_sha256": "a80ae5494d89d5bd2f16d812b2b4c8638f73bbfcb8f301fa39d51e81daae76a9",
+  "note_sha256": "df8e5ca6dde17551a16d1ed80b5648c31d72f8147a144de36d8e2ceb3a77ba04",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

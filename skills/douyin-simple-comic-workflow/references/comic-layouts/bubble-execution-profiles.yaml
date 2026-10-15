@@ -1,0 +1,2276 @@
+schema_version: '1.0'
+purpose: Workflow-authored executable bubble constraints paired with the 68 bundled
+  SB references.
+source_boundary: visual_reference_only=true means the SB description/preview is not
+  executable source geometry; execution fields are an explicit workflow adaptation.
+required_fields:
+- bubble_style
+- bubble_bounds
+- allowed_zone
+- max_width
+- tail_anchor
+- speaker_direction
+- text_type
+- fallback
+profiles:
+- layout_id: SB-001
+  profile_id: SB-001-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: explicit
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - rounded_speech
+  - narration_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-002
+  profile_id: SB-002-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-003
+  profile_id: SB-003-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-004
+  profile_id: SB-004-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-005
+  profile_id: SB-005-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-006
+  profile_id: SB-006-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-007
+  profile_id: SB-007-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-008
+  profile_id: SB-008-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-009
+  profile_id: SB-009-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-010
+  profile_id: SB-010-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-011
+  profile_id: SB-011-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-012
+  profile_id: SB-012-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-013
+  profile_id: SB-013-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-014
+  profile_id: SB-014-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-015
+  profile_id: SB-015-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-016
+  profile_id: SB-016-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-017
+  profile_id: SB-017-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-018
+  profile_id: SB-018-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-019
+  profile_id: SB-019-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-020
+  profile_id: SB-020-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-021
+  profile_id: SB-021-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-022
+  profile_id: SB-022-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-023
+  profile_id: SB-023-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-024
+  profile_id: SB-024-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-025
+  profile_id: SB-025-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: explicit
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - rounded_speech
+  - narration_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-026
+  profile_id: SB-026-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-027
+  profile_id: SB-027-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-028
+  profile_id: SB-028-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-029
+  profile_id: SB-029-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-030
+  profile_id: SB-030-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: explicit
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-031
+  profile_id: SB-031-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: explicit
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-032
+  profile_id: SB-032-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-033
+  profile_id: SB-033-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-034
+  profile_id: SB-034-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-035
+  profile_id: SB-035-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-036
+  profile_id: SB-036-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-037
+  profile_id: SB-037-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: explicit
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - thought_bubble
+  - narration_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-038
+  profile_id: SB-038-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-039
+  profile_id: SB-039-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: explicit
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - phone_dialogue
+  - rounded_speech
+  - narration_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-040
+  profile_id: SB-040-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-041
+  profile_id: SB-041-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: explicit
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - emphasis_box
+  - rounded_speech
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-042
+  profile_id: SB-042-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-043
+  profile_id: SB-043-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-044
+  profile_id: SB-044-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-045
+  profile_id: SB-045-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-046
+  profile_id: SB-046-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-047
+  profile_id: SB-047-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-048
+  profile_id: SB-048-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-049
+  profile_id: SB-049-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-050
+  profile_id: SB-050-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-051
+  profile_id: SB-051-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-052
+  profile_id: SB-052-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: explicit
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - rounded_speech
+  - thought_bubble
+  - narration_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-053
+  profile_id: SB-053-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: explicit
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-054
+  profile_id: SB-054-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: explicit
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-055
+  profile_id: SB-055-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-056
+  profile_id: SB-056-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-057
+  profile_id: SB-057-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-058
+  profile_id: SB-058-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-059
+  profile_id: SB-059-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-060
+  profile_id: SB-060-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-061
+  profile_id: SB-061-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-062
+  profile_id: SB-062-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-063
+  profile_id: SB-063-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-064
+  profile_id: SB-064-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-065
+  profile_id: SB-065-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: explicit
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - emphasis_box
+  - narration_box
+  - rounded_speech
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-066
+  profile_id: SB-066-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-067
+  profile_id: SB-067-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone
+- layout_id: SB-068
+  profile_id: SB-068-bubble-execution-v1
+  visual_reference_only: true
+  executable: true
+  source: workflow-adaptation
+  source_rule_level: none
+  bubble_style: profile_preference
+  preferred_bubble_candidates:
+  - narration_box
+  - rounded_speech
+  - thought_bubble
+  - phone_dialogue
+  - shout_burst
+  - note_embedded
+  - emphasis_box
+  bubble_bounds:
+    mode: compact_within_anchor
+    coordinate_space: canvas_px
+    min_width: 150
+    min_height: 72
+  allowed_zone:
+    kind: panel_whitespace
+    coordinate_space: panel
+    margin_px: 24
+    requires_explicit_anchor: true
+  max_width:
+    value: 0.92
+    unit: anchor_fraction
+  tail_anchor: speaker_region
+  speaker_direction: toward_speaker
+  text_type: semantic_type
+  fallback:
+    policy: needs_review
+    reason: bubble_execution_profile_missing_or_anchor_outside_allowed_zone

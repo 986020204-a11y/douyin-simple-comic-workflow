@@ -1,0 +1,203 @@
+{
+  "roi": [
+    10,
+    62,
+    540,
+    580
+  ],
+  "panels": [
+    {
+      "bounds_px": [
+        10,
+        62,
+        540,
+        155
+      ],
+      "polygon_px": null,
+      "role": "desert train establishing"
+    },
+    {
+      "bounds_px": [
+        10,
+        224,
+        540,
+        149
+      ],
+      "polygon_px": null,
+      "role": "pursuit"
+    },
+    {
+      "bounds_px": [
+        10,
+        380,
+        540,
+        127
+      ],
+      "polygon_px": null,
+      "role": "board train"
+    },
+    {
+      "bounds_px": [
+        10,
+        513,
+        540,
+        129
+      ],
+      "polygon_px": null,
+      "role": "rooftop ending"
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "shape": "rect",
+      "bounds_px": [
+        15,
+        66,
+        145,
+        50
+      ],
+      "source_sample": "黄沙延伸至地平线，目标列车正驶向西方。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 1,
+      "shape": "rect",
+      "bounds_px": [
+        440,
+        169,
+        107,
+        43
+      ],
+      "source_sample": "一场大胆的劫案，即将展开。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 2,
+      "shape": "rect",
+      "bounds_px": [
+        15,
+        231,
+        121,
+        48
+      ],
+      "source_sample": "他们追上列车，风和沙都挡不住。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    },
+    {
+      "panel": 2,
+      "shape": "unboxed_text",
+      "bounds_px": [
+        28,
+        328,
+        113,
+        35
+      ],
+      "source_sample": "哒哒哒——",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "sound_effect",
+      "rotation_deg": -13
+    },
+    {
+      "panel": 3,
+      "shape": "ellipse",
+      "bounds_px": [
+        274,
+        382,
+        65,
+        38
+      ],
+      "source_sample": "上去！",
+      "tail_tip_px": [
+        273,
+        421
+      ],
+      "tail_polygon_px": [
+        [
+          284,
+          410
+        ],
+        [
+          273,
+          421
+        ],
+        [
+          295,
+          414
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 4,
+      "shape": "ellipse",
+      "bounds_px": [
+        293,
+        522,
+        58,
+        37
+      ],
+      "source_sample": "搞定！",
+      "tail_tip_px": [
+        288,
+        565
+      ],
+      "tail_polygon_px": [
+        [
+          299,
+          551
+        ],
+        [
+          288,
+          565
+        ],
+        [
+          310,
+          555
+        ]
+      ],
+      "text_type": "dialogue"
+    },
+    {
+      "panel": 4,
+      "shape": "rect",
+      "bounds_px": [
+        431,
+        584,
+        115,
+        49
+      ],
+      "source_sample": "在无垠的荒野上，又一个传说诞生。",
+      "tail_tip_px": null,
+      "tail_polygon_px": null,
+      "text_type": "narration"
+    }
+  ],
+  "features": [
+    "widescreen",
+    "sound_effect"
+  ],
+  "notes": [
+    "Four unequal-height horizontal panels, not equal vertical stack."
+  ],
+  "layout_id": "SB-018",
+  "source_size_px": [
+    557,
+    654
+  ],
+  "preview_sha256": "3dc4302ccb7cc4949b1d407d53c0680d211eae407a5e8a3829f6193b4277e911",
+  "note_sha256": "4b902c3adaade1e4486e10f1d4401dacc90789bd0d32abc7c6ed394f26b161a1",
+  "preview_viewed": true,
+  "view_method": "tools.view_image original untouched preview",
+  "source_note_read": true,
+  "coordinate_basis": "full untouched preview pixels",
+  "annotation_method": "manual visual trace; not inferred from layout name",
+  "trace_precision_px": 3
+}

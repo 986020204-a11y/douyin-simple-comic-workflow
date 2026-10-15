@@ -1,0 +1,336 @@
+{
+  "layout_id": "SB-054",
+  "source_size": [
+    544,
+    681
+  ],
+  "preview_sha256": "cae51ea7980b539508a63647d0f2762663167bf013cde627713164dc4f8f26a9",
+  "note_sha256": "06993fe2d8f56d574daf93aea3f1bdb9da78cb145261fdcf347dd5e0f796ad4c",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 84,
+  "panels": [
+    {
+      "bounds_px": [
+        11,
+        107,
+        215,
+        154
+      ],
+      "role": "boy waiting",
+      "geometry_type": "unframed",
+      "cross_panel_allowed": false
+    },
+    {
+      "bounds_px": [
+        330,
+        123,
+        200,
+        138
+      ],
+      "role": "girl waiting",
+      "geometry_type": "unframed",
+      "cross_panel_allowed": false
+    },
+    {
+      "bounds_px": [
+        8,
+        347,
+        328,
+        183
+      ],
+      "role": "boy speaking",
+      "geometry_type": "unframed",
+      "cross_panel_allowed": false
+    },
+    {
+      "bounds_px": [
+        328,
+        367,
+        205,
+        114
+      ],
+      "role": "girl surprised",
+      "geometry_type": "unframed",
+      "cross_panel_allowed": false
+    },
+    {
+      "bounds_px": [
+        327,
+        534,
+        215,
+        132
+      ],
+      "role": "girl blushing",
+      "geometry_type": "unframed",
+      "cross_panel_allowed": false
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        159,
+        121,
+        62,
+        52
+      ],
+      "sample_text": "……",
+      "shape": "ellipse",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            164,
+            157
+          ],
+          [
+            158,
+            171
+          ],
+          [
+            175,
+            163
+          ]
+        ],
+        "anchor_px": [
+          158,
+          171
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        331,
+        143,
+        65,
+        47
+      ],
+      "sample_text": "……",
+      "shape": "ellipse",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            382,
+            181
+          ],
+          [
+            395,
+            190
+          ],
+          [
+            389,
+            177
+          ]
+        ],
+        "anchor_px": [
+          395,
+          190
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        136,
+        361,
+        119,
+        65
+      ],
+      "sample_text": "那个……我一直想说……",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            149,
+            414
+          ],
+          [
+            138,
+            428
+          ],
+          [
+            159,
+            419
+          ]
+        ],
+        "anchor_px": [
+          138,
+          428
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        328,
+        369,
+        73,
+        54
+      ],
+      "sample_text": "……！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            386,
+            413
+          ],
+          [
+            399,
+            422
+          ],
+          [
+            392,
+            409
+          ]
+        ],
+        "anchor_px": [
+          399,
+          422
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        204,
+        473,
+        132,
+        57
+      ],
+      "sample_text": "我，很喜欢你！",
+      "shape": "ellipse",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            215,
+            478
+          ],
+          [
+            201,
+            474
+          ],
+          [
+            208,
+            490
+          ]
+        ],
+        "anchor_px": [
+          201,
+          474
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        459,
+        539,
+        82,
+        54
+      ],
+      "sample_text": "我也是……",
+      "shape": "ellipse",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            476,
+            583
+          ],
+          [
+            472,
+            598
+          ],
+          [
+            488,
+            587
+          ]
+        ],
+        "anchor_px": [
+          472,
+          598
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        215,
+        258,
+        141,
+        67
+      ],
+      "sample_text": "有些话……一开口，世界就不一样了。",
+      "kind": "page_furniture",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        124,
+        594,
+        165,
+        49
+      ],
+      "sample_text": "在这一片留白里，心意变得格外清晰。",
+      "kind": "page_furniture",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    }
+  ],
+  "observed_features": [
+    "large intentional white negative space",
+    "five unframed character instances",
+    "six speech bubbles plus two free captions"
+  ],
+  "uncertainties": [
+    "No visible frame edges. Narrative-zone envelopes are inferred; whitespace is intentional source structure, not an instruction header."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

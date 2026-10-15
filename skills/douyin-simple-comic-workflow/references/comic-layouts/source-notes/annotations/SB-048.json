@@ -1,0 +1,750 @@
+{
+  "layout_id": "SB-048",
+  "source_size": [
+    556,
+    689
+  ],
+  "preview_sha256": "f3e129f4aab7de75ef0e0810f00c257b04ce6fb02accf0996732ea061464d460",
+  "note_sha256": "a3343045aee2b0c2b8841559e2ca9672889356c93e173ef0985fd7a51230785e",
+  "source_note_read": true,
+  "preview_viewed": true,
+  "view_method": "tools.view_image",
+  "review_date": "2026-10-15",
+  "coordinate_space": "source_pixel_xywh",
+  "header_height": 55,
+  "panels": [
+    {
+      "bounds_px": [
+        170,
+        55,
+        223,
+        180
+      ],
+      "role": "wake",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          170,
+          65
+        ],
+        [
+          220,
+          55
+        ],
+        [
+          304,
+          56
+        ],
+        [
+          393,
+          78
+        ],
+        [
+          345,
+          235
+        ],
+        [
+          311,
+          217
+        ],
+        [
+          266,
+          212
+        ],
+        [
+          212,
+          229
+        ]
+      ],
+      "source_number": 1
+    },
+    {
+      "bounds_px": [
+        345,
+        87,
+        201,
+        211
+      ],
+      "role": "breakfast",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          398,
+          87
+        ],
+        [
+          460,
+          118
+        ],
+        [
+          520,
+          177
+        ],
+        [
+          546,
+          244
+        ],
+        [
+          391,
+          298
+        ],
+        [
+          379,
+          262
+        ],
+        [
+          345,
+          234
+        ]
+      ],
+      "source_number": 2
+    },
+    {
+      "bounds_px": [
+        378,
+        255,
+        168,
+        207
+      ],
+      "role": "play",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          391,
+          298
+        ],
+        [
+          546,
+          255
+        ],
+        [
+          545,
+          329
+        ],
+        [
+          529,
+          399
+        ],
+        [
+          484,
+          462
+        ],
+        [
+          378,
+          410
+        ],
+        [
+          393,
+          374
+        ]
+      ],
+      "source_number": 3
+    },
+    {
+      "bounds_px": [
+        292,
+        410,
+        193,
+        201
+      ],
+      "role": "nap",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          379,
+          410
+        ],
+        [
+          485,
+          463
+        ],
+        [
+          444,
+          518
+        ],
+        [
+          384,
+          568
+        ],
+        [
+          306,
+          611
+        ],
+        [
+          292,
+          447
+        ],
+        [
+          338,
+          438
+        ]
+      ],
+      "source_number": 4
+    },
+    {
+      "bounds_px": [
+        56,
+        410,
+        249,
+        201
+      ],
+      "role": "patrol",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          185,
+          410
+        ],
+        [
+          220,
+          435
+        ],
+        [
+          292,
+          447
+        ],
+        [
+          305,
+          611
+        ],
+        [
+          221,
+          609
+        ],
+        [
+          141,
+          577
+        ],
+        [
+          56,
+          511
+        ]
+      ],
+      "source_number": 5
+    },
+    {
+      "bounds_px": [
+        9,
+        266,
+        176,
+        244
+      ],
+      "role": "night company",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          12,
+          266
+        ],
+        [
+          159,
+          301
+        ],
+        [
+          158,
+          353
+        ],
+        [
+          185,
+          409
+        ],
+        [
+          55,
+          510
+        ],
+        [
+          23,
+          432
+        ],
+        [
+          9,
+          354
+        ]
+      ],
+      "source_number": 6
+    },
+    {
+      "bounds_px": [
+        25,
+        96,
+        186,
+        205
+      ],
+      "role": "sleep again",
+      "geometry_type": "polygon",
+      "cross_panel_allowed": false,
+      "polygon_px": [
+        [
+          25,
+          257
+        ],
+        [
+          48,
+          188
+        ],
+        [
+          96,
+          135
+        ],
+        [
+          159,
+          96
+        ],
+        [
+          211,
+          228
+        ],
+        [
+          178,
+          259
+        ],
+        [
+          160,
+          301
+        ]
+      ],
+      "source_number": 7
+    },
+    {
+      "bounds_px": [
+        155,
+        211,
+        239,
+        238
+      ],
+      "role": "center circular summary",
+      "geometry_type": "ellipse",
+      "cross_panel_allowed": false
+    }
+  ],
+  "bubbles": [
+    {
+      "panel": 1,
+      "bounds_px": [
+        291,
+        77,
+        80,
+        65
+      ],
+      "sample_text": "哈～新的一天开始啦！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            295,
+            124
+          ],
+          [
+            283,
+            127
+          ],
+          [
+            294,
+            137
+          ]
+        ],
+        "anchor_px": [
+          283,
+          127
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 2,
+      "bounds_px": [
+        448,
+        138,
+        94,
+        83
+      ],
+      "sample_text": "干饭！干饭！超好吃！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            451,
+            191
+          ],
+          [
+            435,
+            198
+          ],
+          [
+            451,
+            205
+          ]
+        ],
+        "anchor_px": [
+          435,
+          198
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 3,
+      "bounds_px": [
+        466,
+        302,
+        78,
+        77
+      ],
+      "sample_text": "嘿！看我猫猫拳！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            468,
+            348
+          ],
+          [
+            451,
+            351
+          ],
+          [
+            469,
+            359
+          ]
+        ],
+        "anchor_px": [
+          451,
+          351
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 4,
+      "bounds_px": [
+        429,
+        453,
+        85,
+        61
+      ],
+      "sample_text": "睡一会儿，养足精神！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            437,
+            494
+          ],
+          [
+            417,
+            505
+          ],
+          [
+            447,
+            506
+          ]
+        ],
+        "anchor_px": [
+          417,
+          505
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      },
+      "cross_canvas": true
+    },
+    {
+      "panel": 5,
+      "bounds_px": [
+        111,
+        470,
+        88,
+        60
+      ],
+      "sample_text": "我的地盘我来守护！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            184,
+            505
+          ],
+          [
+            205,
+            516
+          ],
+          [
+            189,
+            515
+          ]
+        ],
+        "anchor_px": [
+          205,
+          516
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 6,
+      "bounds_px": [
+        78,
+        310,
+        75,
+        55
+      ],
+      "sample_text": "有你在真幸福！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            92,
+            356
+          ],
+          [
+            82,
+            367
+          ],
+          [
+            105,
+            361
+          ]
+        ],
+        "anchor_px": [
+          82,
+          367
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 7,
+      "bounds_px": [
+        39,
+        168,
+        81,
+        67
+      ],
+      "sample_text": "晚安～明天也要一起哦！",
+      "shape": "rounded_rect",
+      "text_kind": "speech",
+      "tail": {
+        "mode": "observed_polygon",
+        "polygon_px": [
+          [
+            99,
+            225
+          ],
+          [
+            112,
+            236
+          ],
+          [
+            115,
+            221
+          ]
+        ],
+        "anchor_px": [
+          112,
+          236
+        ],
+        "anchor_kind": "speaker",
+        "numeric_status": "inferred"
+      }
+    },
+    {
+      "panel": 8,
+      "bounds_px": [
+        208,
+        243,
+        145,
+        80
+      ],
+      "sample_text": "喵～这就是我的每一天！",
+      "shape": "display_text",
+      "text_kind": "emphasis",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    },
+    {
+      "panel": 8,
+      "bounds_px": [
+        214,
+        390,
+        139,
+        35
+      ],
+      "sample_text": "吃、睡、玩、再吃……明天又是美好的一天！",
+      "shape": "display_text",
+      "text_kind": "narration",
+      "tail": {
+        "mode": "none",
+        "anchor_px": null
+      }
+    }
+  ],
+  "text_zones": [
+    {
+      "bounds_px": [
+        179,
+        60,
+        128,
+        34
+      ],
+      "sample_text": "1.起床伸懒腰",
+      "kind": "panel_label",
+      "panel": 1,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        392,
+        122,
+        95,
+        29
+      ],
+      "sample_text": "2.吃早餐",
+      "kind": "panel_label",
+      "panel": 2,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        445,
+        276,
+        89,
+        34
+      ],
+      "sample_text": "3.玩耍时间",
+      "kind": "panel_label",
+      "panel": 3,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        331,
+        430,
+        107,
+        31
+      ],
+      "sample_text": "4.午睡时光",
+      "kind": "panel_label",
+      "panel": 4,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        150,
+        447,
+        104,
+        28
+      ],
+      "sample_text": "5.巡视地盘",
+      "kind": "panel_label",
+      "panel": 5,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        18,
+        291,
+        108,
+        28
+      ],
+      "sample_text": "6.晚上陪伴",
+      "kind": "panel_label",
+      "panel": 6,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        55,
+        135,
+        97,
+        28
+      ],
+      "sample_text": "7.再次入睡",
+      "kind": "panel_label",
+      "panel": 7,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        29,
+        601,
+        153,
+        70
+      ],
+      "sample_text": "猫在，快乐就一直在！♡",
+      "kind": "page_furniture",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    },
+    {
+      "bounds_px": [
+        430,
+        548,
+        115,
+        127
+      ],
+      "sample_text": "生活就是一个幸福的循环♥",
+      "kind": "page_note",
+      "panel": null,
+      "existence_evidence": "observed",
+      "geometry_evidence": "inferred"
+    }
+  ],
+  "observed_features": [
+    "central circular summary with seven annular panels",
+    "explicit clockwise 1–7 reading loop",
+    "red perimeter loop arrows"
+  ],
+  "uncertainties": [
+    "Ring arcs are hand traced as polygons; smooth Bezier controls unknown.",
+    "Center summary is not one of the seven numbered time steps."
+  ],
+  "annotation_precision": {
+    "method": "manual_visual_trace",
+    "tolerance_source_pixels": 4,
+    "numeric_geometry_status": "inferred"
+  },
+  "field_provenance": {
+    "container_existence": "observed",
+    "source_sample_text": "observed",
+    "shape_class": "observed",
+    "manual_bounds": "inferred",
+    "manual_polygon": "inferred",
+    "reading_order": "inferred_unless_source_numbered",
+    "font_file": "unknown",
+    "new_story_speaker_identity": "unknown",
+    "constraints": "workflow_inferred"
+  }
+}

@@ -1001,20 +1001,63 @@ def _wrap(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeTypeFont, wi
     return _wrap_text_lines(text, width, lambda value: draw.textbbox((0, 0), value, font=font)[2])
 
 
+class _TextFitError(ValueError):
+    """A measured text block cannot be drawn without breaking its contract."""
+
+    def __init__(self, fit: dict[str, Any]):
+        self.fit = fit
+        super().__init__(str(fit.get("failure_reason") or "text_does_not_fit_at_declared_font_size"))
+
+
+def _measure_text_layout(draw: ImageDraw.ImageDraw, text: str, rect: tuple[int, int, int, int], config: dict[str, Any], *, size: int, bold: bool = False, vertical: bool = False) -> dict[str, Any]:
+    """One padding/wrapping calculation shared by preflight and raster output.
+
+    Explicit block sizes are fixed unless ``font_size_policy: fit`` is
+    deliberately selected. Legacy config-only callers retain reported fitting.
+    No search step may undershoot the minimum readable size.
+    """
+    padding = max(0, int(config.get("text_box_style", {}).get("padding", 22)))
+    requested = int(size)
+    minimum = int(config.get("minimum_readable_font_size", 24))
+    policy = str(config.get("font_size_policy") or ("fixed" if config.get("_explicit_font_size") else "fit"))
+    if policy not in {"fixed", "fit"}:
+        return {"font_size": requested, "requested_font_size": requested, "fit_ok": False,
+                "failure_reason": "invalid_font_size_policy", "font_size_policy": policy}
+    if requested < minimum or minimum <= 0:
+        return {"font_size": requested, "requested_font_size": requested, "fit_ok": False,
+                "failure_reason": "font_below_readable_minimum", "minimum_readable_font_size": minimum}
+    available_w, available_h = rect[2] - rect[0] - padding * 2, rect[3] - rect[1] - padding * 2
+    font_size = requested
+    while True:
+        font = _font(config, size=font_size, bold=bold)
+        lines = ([char for char in str(text) if char not in "\r\n"] or [""]) if vertical else _wrap(draw, text, font, max(0, available_w))
+        boxes = [draw.textbbox((0, 0), line, font=font) for line in lines]
+        heights = [box[3] for box in boxes]
+        spacing = 4 if vertical else 8
+        total = sum(heights) + max(0, len(lines) - 1) * spacing
+        max_width = max((box[2] - min(0, box[0]) for box in boxes), default=0)
+        punctuation_invalid = not vertical and _has_closing_line_start(lines)
+        fits = available_w > 0 and available_h > 0 and total <= available_h and max_width <= available_w and not punctuation_invalid
+        if fits or policy == "fixed" or font_size == minimum:
+            break
+        font_size = max(minimum, font_size - 2)
+    return {"font_size": font_size, "requested_font_size": requested, "minimum_readable_font_size": minimum,
+            "font_size_policy": policy, "font_size_adjusted": font_size != requested,
+            "line_count": len(lines), "content_width": max_width, "content_height": total,
+            "wrapped_lines": lines, "line_heights": heights, "line_spacing_px": spacing,
+            "padding_px": padding, "available_size_px": [available_w, available_h],
+            "closing_punctuation_line_start": punctuation_invalid, "fit_ok": fits,
+            "failure_reason": None if fits else "text_does_not_fit_at_declared_font_size"}
+
+
 def _draw_text(draw: ImageDraw.ImageDraw, text: str, rect: tuple[int, int, int, int], config: dict[str, Any], *, size: int | None = None, bold: bool = False, align: str = "left") -> tuple[int, int, int, int]:
     x0, y0, x1, y1 = rect
     padding = int(config.get("text_box_style", {}).get("padding", 22))
-    requested_size = int(size or config.get("font_size", 42))
-    font_size = requested_size
-    min_size = max(int(config.get("minimum_readable_font_size", 18)), requested_size // 2)
-    while True:
-        font = _font(config, size=font_size, bold=bold)
-        lines = _wrap(draw, text, font, x1 - x0 - padding * 2)
-        heights = [draw.textbbox((0, 0), line, font=font)[3] for line in lines]
-        total = sum(heights) + max(0, len(lines) - 1) * 8
-        if total <= max(1, (y1 - y0) - padding * 2) or font_size <= min_size:
-            break
-        font_size -= 2
+    fit = _measure_text_layout(draw, text, rect, config, size=int(size or config.get("font_size", 42)), bold=bold)
+    if not fit["fit_ok"]:
+        raise _TextFitError(fit)
+    font = _font(config, size=fit["font_size"], bold=bold)
+    lines, heights, total = fit["wrapped_lines"], fit["line_heights"], fit["content_height"]
     yy = y0 + max(padding, ((y1 - y0) - total) // 2)
     ink = _rgba_hex(config.get("font_color"), INK)
     used: list[tuple[int, int, int, int]] = []
@@ -1037,18 +1080,11 @@ def _draw_vertical_text(draw: ImageDraw.ImageDraw, text: str, rect: tuple[int, i
     """Draw a compact top-to-bottom Chinese label in a preview note zone."""
     x0, y0, x1, y1 = rect
     padding = int(config.get("text_box_style", {}).get("padding", 22))
-    font_size = int(size or config.get("font_size", 42))
-    chars = [char for char in str(text) if char not in "\r\n"] or [""]
-    min_size = max(int(config.get("minimum_readable_font_size", 16)), font_size // 2)
-    while font_size > min_size:
-        font = _font(config, size=font_size, bold=bold)
-        heights = [draw.textbbox((0, 0), char, font=font)[3] for char in chars]
-        if sum(heights) + max(0, len(chars) - 1) * 4 <= max(1, y1 - y0 - padding * 2):
-            break
-        font_size -= 2
-    font = _font(config, size=font_size, bold=bold)
-    heights = [draw.textbbox((0, 0), char, font=font)[3] for char in chars]
-    total = sum(heights) + max(0, len(chars) - 1) * 4
+    fit = _measure_text_layout(draw, text, rect, config, size=int(size or config.get("font_size", 42)), bold=bold, vertical=True)
+    if not fit["fit_ok"]:
+        raise _TextFitError(fit)
+    font = _font(config, size=fit["font_size"], bold=bold)
+    chars, heights, total = fit["wrapped_lines"], fit["line_heights"], fit["content_height"]
     yy = y0 + max(padding, ((y1 - y0) - total) // 2)
     used: list[tuple[int, int, int, int]] = []
     for char, char_height in zip(chars, heights):
@@ -1062,35 +1098,7 @@ def _draw_vertical_text(draw: ImageDraw.ImageDraw, text: str, rect: tuple[int, i
 
 
 def _fit_text_in_rect(draw: ImageDraw.ImageDraw, text: str, rect: tuple[int, int, int, int], config: dict[str, Any], *, size: int, bold: bool = False) -> dict[str, Any]:
-    """Measure the same wrapping loop used by ``_draw_text``.
-
-    The raster routine uses a top padding floor and then centers when there is
-    room.  Carrier text therefore needs a one-sided vertical fit check against
-    the actual writable rectangle, rather than the generic bubble body's
-    symmetric padding rule.
-    """
-    padding = int(config.get("text_box_style", {}).get("padding", 22))
-    requested = int(size)
-    min_size = max(int(config.get("minimum_readable_font_size", 18)), requested // 2)
-    font_size = requested
-    while True:
-        font = _font(config, size=font_size, bold=bold)
-        lines = _wrap(draw, text, font, rect[2] - rect[0] - padding * 2)
-        heights = [draw.textbbox((0, 0), line, font=font)[3] for line in lines]
-        total = sum(heights) + max(0, len(lines) - 1) * 8
-        max_width = max((draw.textbbox((0, 0), line, font=font)[2] for line in lines), default=0)
-        if total + padding <= rect[3] - rect[1] or font_size <= min_size:
-            break
-        font_size -= 2
-    return {
-        "font_size": font_size,
-        "line_count": len(lines),
-        "content_width": max_width,
-        "content_height": total,
-        "wrapped_lines": lines,
-        "closing_punctuation_line_start": _has_closing_line_start(lines),
-        "fit_ok": total + padding <= rect[3] - rect[1] and max_width + padding <= rect[2] - rect[0] and not _has_closing_line_start(lines),
-    }
+    return _measure_text_layout(draw, text, rect, config, size=size, bold=bold)
 
 
 def _style_box(draw: ImageDraw.ImageDraw, rect: tuple[int, int, int, int], config: dict[str, Any], *, fill: tuple[int, int, int, int] | None = None, border: tuple[int, int, int, int] | None = None, width: int | None = None, radius: int | None = None) -> None:
@@ -1161,34 +1169,15 @@ def _compact_rect(draw: ImageDraw.ImageDraw, text: str, anchor: tuple[int, int, 
     """
     x0, y0, x1, y1 = anchor
     padding = int(config.get("text_box_style", {}).get("padding", 22))
-    requested = int(size or config.get("font_size", 42))
-    min_size = max(int(config.get("minimum_readable_font_size", 20)), requested // 2)
-    usable_w = max(1, x1 - x0 - padding * 2)
-    usable_h = max(1, y1 - y0 - padding * 2)
-    font_size = requested
-    while True:
-        font = _font(config, size=font_size, bold=bold)
-        lines = _wrap(draw, text, font, usable_w)
-        heights = [draw.textbbox((0, 0), line, font=font)[3] for line in lines]
-        total_h = sum(heights) + max(0, len(lines) - 1) * 8
-        if total_h <= usable_h or font_size <= min_size:
-            break
-        font_size -= 2
-    max_line_w = max((draw.textbbox((0, 0), line, font=font)[2] for line in lines), default=0)
+    fit = _fit_text_in_rect(draw, text, anchor, config, size=int(size or config.get("font_size", 42)), bold=bold)
+    if not fit["fit_ok"]:
+        return anchor, fit
+    max_line_w, total_h = fit["content_width"], fit["content_height"]
     desired_w = min(x1 - x0, max(min_width, max_line_w + padding * 2))
     desired_h = min(y1 - y0, max(min_height, total_h + padding * 2))
     # If the requested anchor is too short to contain the text at the minimum
     # readable size, keep the anchor and let the placement report block it.
-    fit_ok = total_h + padding * 2 <= (y1 - y0) and max_line_w + padding * 2 <= (x1 - x0) and not _has_closing_line_start(lines)
-    return (x0, y0, x0 + int(desired_w), y0 + int(desired_h)), {
-        "font_size": font_size,
-        "line_count": len(lines),
-        "fit_ok": fit_ok,
-        "content_width": max_line_w,
-        "content_height": total_h,
-        "wrapped_lines": lines,
-        "closing_punctuation_line_start": _has_closing_line_start(lines),
-    }
+    return (x0, y0, x0 + int(desired_w), y0 + int(desired_h)), fit
 
 
 def _preview_color(value: Any, default: str) -> tuple[str, tuple[int, int, int, int] | None]:
@@ -1220,6 +1209,65 @@ def _preview_support_errors(visual: dict[str,Any]) -> list[str]:
         except ValueError:errors.append(f'{key}_requires_explicit_color_region_renderer')
     if visual.get('rotation_degrees') not in (None,0,0.0):errors.append('source_rotated_glyph_renderer_not_implemented')
     return errors
+
+
+def _preview_text_parameters(renderer: str, visual: dict[str, Any], rect: tuple[int, int, int, int], config: dict[str, Any]) -> tuple[tuple[int, int, int, int], dict[str, Any], bool, bool]:
+    """Resolve the actual renderer's text inset and padding for both gates."""
+    x0, y0, x1, y1 = rect
+    text_config = copy.deepcopy(config)
+    text_style = dict(text_config.get("text_box_style") or {})
+    text_style["padding"] = max(4, int(round(min(x1 - x0, y1 - y0) * float(visual.get("padding_ratio", .04)))))
+    text_config["text_box_style"] = text_style
+    canonical = _canonical_style(renderer)
+    bold = canonical == "shout_burst" or renderer in {"preview_display", "preview_display_text", "preview_brush_display_text"}
+    if canonical == "rounded_speech":
+        ix, iy = int((x1 - x0) * .13), int((y1 - y0) * .13)
+        text_rect = x0 + ix, y0 + iy, x1 - ix, y1 - iy
+    elif canonical == "shout_burst":
+        ix, iy = int((x1 - x0) * .15), int((y1 - y0) * .17)
+        text_rect = x0 + ix, y0 + iy, x1 - ix, y1 - iy
+    else:
+        text_rect = rect
+    vertical = renderer == "preview_vertical_note" or visual.get("text_orientation") == "vertical" or visual.get("writing_direction") in {"vertical", "vertical_rl"}
+    return text_rect, text_config, bold, vertical
+
+
+def measure_preview_text_capacity(text: str, bounds: list[float], bubble: dict[str, Any], block: dict[str, Any], config: dict[str, Any]) -> dict[str, Any]:
+    """Expose the raster measurement to preflight without painting an image."""
+    visual = bubble.get("visual_style") or {}
+    renderer = str(visual.get("renderer") or bubble.get("shape") or "")
+    effective = copy.deepcopy(config)
+    if block.get("font_size") is not None:
+        effective["font_size"] = int(block["font_size"])
+        effective["_explicit_font_size"] = True
+    if block.get("font_size_policy") is not None:
+        effective["font_size_policy"] = block["font_size_policy"]
+    rect = _rect(bounds, "xywh")
+    if not rect:
+        return {"fit_ok": False, "failure_reason": "invalid_preview_body_geometry"}
+    text_rect, effective, bold, vertical = _preview_text_parameters(renderer, visual, rect, effective)
+    if renderer == "preview_brush_display_text":
+        brush = _brush_font_evidence(effective)
+        if brush["status"] != "verified":
+            return {"fit_ok": False, "failure_reason": brush["reason"], "brush_font_evidence": brush}
+        effective["font_file"] = effective["font_bold_file"] = brush["font_path"]
+    draw = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
+    requested = int(effective.get("font_size", 42))
+    if visual.get("typography_direction") == "diagonal_three_line_stack":
+        regions = block.get("bubble_contract_typography_regions") or []
+        lines = block.get("text_split_lines") or text.split("\n")
+        if (not isinstance(lines, list) or len(lines) != 3 or len(regions) != 3
+                or any(not isinstance(line, str) or not line for line in lines)
+                or "".join(lines) != text.replace("\n", "")):
+            return {"fit_ok": False, "failure_reason": "three_line_typography_requires_source_preserving_explicit_lines_and_regions"}
+        fits = []
+        for line, region in zip(lines, regions):
+            region_rect = _rect(region.get("bounds"), "xywh")
+            if not region_rect or not _contains(rect, region_rect):
+                return {"fit_ok": False, "failure_reason": "typography_region_outside_body"}
+            fits.append(_measure_text_layout(draw, line, region_rect, effective, size=requested, bold=bold))
+        return {"font_size": min(row["font_size"] for row in fits), "fit_ok": all(row["fit_ok"] for row in fits), "line_fits": fits}
+    return _measure_text_layout(draw, text, text_rect, effective, size=requested, bold=bold, vertical=vertical)
 
 
 def _draw_preview_native(draw: ImageDraw.ImageDraw, block: dict[str, Any], rect: tuple[int, int, int, int], config: dict[str, Any]) -> tuple[tuple[int, int, int, int], dict[str, Any]]:
@@ -1317,6 +1365,7 @@ def _draw_preview_native(draw: ImageDraw.ImageDraw, block: dict[str, Any], rect:
         fill_name, fill_rgba, border_name, border_rgba, border_width = "none", None, "none", None, 0
         text_name, text_rgba = _preview_color(visual.get("text_color", "black"), "black")
         text_config["font_color"] = "#" + "".join(f"{v:02x}" for v in (text_rgba or (0, 0, 0, 255))[:3])
+    text_rect, text_config, bold, vertical_text = _preview_text_parameters(renderer, visual, rect, text_config)
     requested_font = int(config.get("font_size", 42))
     brush_evidence = None
     if renderer == "preview_brush_display_text":
@@ -1342,14 +1391,12 @@ def _draw_preview_native(draw: ImageDraw.ImageDraw, block: dict[str, Any], rect:
                 return rect, result
             line_fit = _fit_text_in_rect(draw, line, region_rect, text_config, size=requested_font, bold=bold)
             typography_draw_lines.append((line, region_rect, line_fit))
-    vertical_text = renderer == "preview_vertical_note" or visual.get("text_orientation") == "vertical" or visual.get("writing_direction") in {"vertical", "vertical_rl"}
     if typography_draw_lines:
         fit = {"font_size": min(row[2]["font_size"] for row in typography_draw_lines),
                "fit_ok": all(row[2]["fit_ok"] for row in typography_draw_lines),
                "line_fits": [row[2] for row in typography_draw_lines]}
     elif vertical_text:
-        # The exact vertical glyph geometry is checked after drawing.
-        fit = {"font_size": requested_font, "fit_ok": True}
+        fit = _measure_text_layout(draw, text, text_rect, text_config, size=requested_font, bold=bold, vertical=True)
     else:
         fit = _fit_text_in_rect(draw, text, text_rect, text_config, size=requested_font, bold=bold)
     if not fit["fit_ok"]:
@@ -1435,7 +1482,77 @@ def _draw_preview_native(draw: ImageDraw.ImageDraw, block: dict[str, Any], rect:
     return text_bounds, result
 
 
+def _system_note_overlay_allowed(block: dict[str, Any], style: str) -> bool:
+    """An explicitly adapted, tailless system caption is not a physical prop label."""
+    contract = block.get('bubble_contract') or {}
+    adaptation = contract.get('compatibility_adaptation') or {}
+    tail = contract.get('tail') or {}
+    return bool(
+        block.get('type') == 'note' and block.get('source_type') == 'note'
+        and block.get('speaker') == 'system'
+        and block.get('use_preview_contract') is True
+        and style in {'preview_caption_box', 'preview_caption_note', 'preview_caption'}
+        and contract.get('shape') in {'rect', 'rounded_rect'}
+        and contract.get('note_scope') == 'nonphysical_system_overlay'
+        and 'note' in (contract.get('allowed_text_types') or [])
+        and adaptation.get('kind') == 'system_note_semantic_adaptation'
+        and adaptation.get('approved_for_run') is True
+        and adaptation.get('origin') == 'workflow_adaptation'
+        and bool(adaptation.get('reason'))
+        and isinstance(adaptation.get('source_allowed_text_types'), list)
+        and not contract.get('carrier') and not block.get('carrier')
+        and tail.get('mode') == 'none' and tail.get('required') is not True
+    )
+
+
 def _draw_block(draw: ImageDraw.ImageDraw, block: dict[str, Any], rect: tuple[int, int, int, int], config: dict[str, Any]) -> tuple[tuple[int, int, int, int], dict[str, Any]]:
+    """Draw one block and record the font objects passed to Pillow itself."""
+    effective = dict(config)
+    try:
+        requested = int(block.get("font_size") if block.get("font_size") is not None else effective.get("font_size", 42))
+        minimum = int(effective.get("minimum_readable_font_size", 24))
+    except (TypeError, ValueError):
+        return rect, {"rendered": False, "selection_status": "blocked", "failure_reason": "invalid_font_size"}
+    effective["font_size"] = requested
+    effective["_explicit_font_size"] = block.get("font_size") is not None
+    if block.get("font_size_policy") is not None:
+        effective["font_size_policy"] = block["font_size_policy"]
+    if requested < minimum or minimum <= 0:
+        return rect, {"rendered": False, "selection_status": "blocked", "failure_reason": "font_below_readable_minimum",
+                      "requested_font_size": requested, "minimum_readable_font_size": minimum}
+    calls: list[dict[str, Any]] = []
+    original_text = draw.text
+
+    def traced_text(xy: Any, text: Any, *args: Any, **kwargs: Any) -> Any:
+        font = kwargs.get("font") or (args[1] if len(args) > 1 else None)
+        # The entry is appended only after Pillow successfully paints it.
+        value = original_text(xy, text, *args, **kwargs)
+        calls.append({"text": str(text), "position_px": list(xy), "font_size": getattr(font, "size", None),
+                      "font_file": str(getattr(font, "path", "")),
+                      "glyph_bounds_xyxy": list(draw.textbbox(xy, text, font=font))})
+        return value
+
+    draw.text = traced_text
+    try:
+        bounds, result = _draw_block_content(draw, block, rect, effective)
+    except _TextFitError as exc:
+        bounds, result = rect, {"rendered": False, "selection_status": "needs-placement", "failure_reason": str(exc), "fit": exc.fit}
+    finally:
+        draw.text = original_text
+    sizes = sorted({row["font_size"] for row in calls if row["font_size"] is not None})
+    result["requested_font_size"] = requested
+    result["minimum_readable_font_size"] = minimum
+    result["actual_font_sizes"] = sizes
+    result["font_size_policy"] = str(effective.get("font_size_policy") or ("fixed" if effective["_explicit_font_size"] else "fit"))
+    result["font_size_adjusted"] = bool(sizes and sizes != [requested])
+    result["font_raster_evidence"] = {"method": "pillow_draw_text_font_object", "draw_calls": calls,
+                                      "actual_font_sizes": sizes, "evidence_scope": "executed_draw_calls_before_placement_rollback"}
+    if result.get("rendered") and (not sizes or min(sizes) < minimum):
+        result.update(rendered=False, selection_status="blocked", failure_reason="actual_font_below_readable_minimum_or_missing")
+    return bounds, result
+
+
+def _draw_block_content(draw: ImageDraw.ImageDraw, block: dict[str, Any], rect: tuple[int, int, int, int], config: dict[str, Any]) -> tuple[tuple[int, int, int, int], dict[str, Any]]:
     requested_style = block.get("bubble_style") or DEFAULT_STYLE
     report_aliases = {
         "caption_box": "preview_caption",
@@ -1475,7 +1592,8 @@ def _draw_block(draw: ImageDraw.ImageDraw, block: dict[str, Any], rect: tuple[in
         else:
             draw.polygon([(x0 + 10, y0), (x1 - 10, y0 + 4), (x1, y1 - 6), (x0 - 3, y1)], fill=(255, 246, 188, 255), outline=V0_BORDER)
         text_rect = rect
-        carrier_fit = _fit_text_in_rect(draw, text, text_rect, draw_config, size=max(24, int(draw_config.get("font_size", 42)) - 8))
+        carrier_size = int(draw_config.get("font_size", 42)) if draw_config.get("_explicit_font_size") else max(24, int(draw_config.get("font_size", 42)) - 8)
+        carrier_fit = _fit_text_in_rect(draw, text, text_rect, draw_config, size=carrier_size)
         if not carrier_fit["fit_ok"]:
             result.update({"selection_status": "needs-placement", "rendered": False, "failure_reason": "text_does_not_fit_carrier_writable_rect"})
             return rect, result
@@ -1490,6 +1608,17 @@ def _draw_block(draw: ImageDraw.ImageDraw, block: dict[str, Any], rect: tuple[in
     bounds_contract = block.get("bubble_bounds") if isinstance(block.get("bubble_bounds"), dict) else {}
     profile_min_width = int(bounds_contract.get("min_width", 150)) if str(bounds_contract.get("min_width", "")).isdigit() else 150
     profile_min_height = int(bounds_contract.get("min_height", 72)) if str(bounds_contract.get("min_height", "")).isdigit() else 72
+    # Legacy shapes also inset their glyph area after fitting. Include these
+    # insets now so a compact body cannot trigger a second, smaller font.
+    inset_left = inset_top = inset_right = inset_bottom = 0
+    if style == "thought_bubble":
+        inset_left, inset_top, inset_right, inset_bottom = 12, 14, 12, 16
+    elif style == "shout_burst":
+        inset_left, inset_top, inset_right, inset_bottom = 18, 14, 18, 14
+    elif style == "phone_dialogue":
+        inset_left = 10 if report_style in {"preview_phone", "preview_phone_message"} else 48
+        inset_top, inset_right, inset_bottom = 6, 10, 6
+    writable_anchor = (rect[0] + inset_left, rect[1] + inset_top, rect[2] - inset_right, rect[3] - inset_bottom)
     if block.get("coordinate_source") == "bubble_contract":
         # A preview-native bubble has a measured body rectangle.  Do not
         # compact it to the text width; doing so would erase the observed
@@ -1498,22 +1627,24 @@ def _draw_block(draw: ImageDraw.ImageDraw, block: dict[str, Any], rect: tuple[in
         fit = _fit_text_in_rect(
             draw,
             text,
-            compact,
+            writable_anchor,
             draw_config,
-            size=max(26, int(draw_config.get("font_size", 42)) - 8) if style in {"phone_dialogue", "thought_bubble"} else int(draw_config.get("font_size", 42)),
+            size=max(26, int(draw_config.get("font_size", 42)) - 8) if style in {"phone_dialogue", "thought_bubble"} and not draw_config.get("_explicit_font_size") else int(draw_config.get("font_size", 42)),
             bold=style in {"emphasis_box", "shout_burst"},
         )
     else:
-        compact, fit = _compact_rect(
+        inner_compact, fit = _compact_rect(
             draw,
             text,
-            rect,
+            writable_anchor,
             draw_config,
-            size=max(26, int(draw_config.get("font_size", 42)) - 8) if style in {"phone_dialogue", "thought_bubble"} else None,
-            min_width=max(profile_min_width, 200 if style == "phone_dialogue" else profile_min_width),
-            min_height=max(profile_min_height, 112 if style == "phone_dialogue" else profile_min_height),
+            size=max(26, int(draw_config.get("font_size", 42)) - 8) if style in {"phone_dialogue", "thought_bubble"} and not draw_config.get("_explicit_font_size") else None,
+            min_width=max(1, max(profile_min_width, 200 if style == "phone_dialogue" else profile_min_width) - inset_left - inset_right),
+            min_height=max(1, max(profile_min_height, 112 if style == "phone_dialogue" else profile_min_height) - inset_top - inset_bottom),
             bold=style in {"emphasis_box", "shout_burst"},
         )
+        compact = (inner_compact[0] - inset_left, inner_compact[1] - inset_top,
+                   inner_compact[2] + inset_right, inner_compact[3] + inset_bottom)
     block["_render_body_rect"] = compact
     result["body_rect"] = list(compact)
     result["fit"] = fit
@@ -1914,7 +2045,12 @@ def _resolve_block(block: dict[str, Any], layout_context: dict[str, Any] | None 
         return resolved, result, None
     carrier_valid = bool(anchor.get("kind") == "carrier" and carrier_id_match and carrier_kind and carrier_rect and carrier_polygon and anchor_rect and _contains(carrier_rect, anchor_rect))
     trace.append({"stage": "physical_carrier", "input": carrier_kind or "none", "result": "confirmed" if carrier_valid else "none", "reason": "matched carrier_id, polygon, writable_rect and anchor" if carrier_valid else "no physical carrier required or carrier contract incomplete", "carrier_id_match": carrier_id_match})
-    if semantic_type == "note" or effective_style == "note_embedded" or effective_style=='preview_surface_text':
+    system_overlay = _system_note_overlay_allowed(block, effective_style)
+    if system_overlay:
+        result['note_scope'] = 'nonphysical_system_overlay'
+        trace.append({'stage':'system_note_overlay','result':'explicit_adapted_caption',
+                      'reason':'Preserve system-note semantics and declared caption geometry without inventing a physical carrier'})
+    if (semantic_type == "note" and not system_overlay) or effective_style == "note_embedded" or effective_style=='preview_surface_text':
         if not carrier_valid:
             result.update({"rendered": False, "selection_status": "needs-placement", "failure_reason": "note_carrier_missing_or_not_writable", "selection_trace": trace})
             return resolved, result, None
@@ -2261,6 +2397,11 @@ def compose_page(base_image: str | Path, text_blocks: str | Path | list[dict[str
     page_pixel_difference = ImageChops.difference(frozen_base_pixels.convert("RGB"), image.convert("RGB"))
     page_pixel_bbox = page_pixel_difference.getbbox()
     output_hash = hashlib.sha256(out.read_bytes()).hexdigest()
+    for record in records:
+        if record.get("font_raster_evidence") is not None:
+            record["font_raster_evidence"].update(output_image_sha256=output_hash,
+                                                  base_image_sha256=base_hash_before,
+                                                  retained_in_output=record.get("rendered") is True)
     rendered = [r for r in records if r.get("rendered")]
     failed = [r for r in records if not r.get("rendered") and r.get("selection_status") != "duplicate-skipped"]
     dedupe_status = "blocked" if any(r.get("dedupe_status") == "blocked" for r in records) else ("deduped" if any(r.get("dedupe_status") == "deduped" for r in records) else "clean")
@@ -2279,7 +2420,7 @@ def compose_page(base_image: str | Path, text_blocks: str | Path | list[dict[str
     )
     render_data = {
         "compositor": "douyin-simple-comic-workflow/scripts/text_compositor.py",
-        "compositor_version": "0.6-executable-tail-brush",
+        "compositor_version": "0.8-measured-font-raster",
         "page_id": page_id,
         "layout_id": layout_id,
         "selected_layout": layout_id,

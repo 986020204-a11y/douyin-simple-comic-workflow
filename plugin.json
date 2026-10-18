@@ -1,6 +1,6 @@
 {
   "name": "douyin-simple-comic-workflow",
-  "version": "0.7.0-rc.1",
-  "description": "将中文文案转换为静态抖音漫画组图，执行内置 68 个已标注 SB 模板并验证实际画格、文字与证据。",
+  "version": "0.8.1-rc.1",
+  "description": "中文文案到静态漫画组图：68 个 SB 模板、完整文字预检、可续作生成队列、实图气泡适配及整篇交付验收。",
   "skills": "./skills/"
 }

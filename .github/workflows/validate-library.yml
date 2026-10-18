@@ -18,3 +18,5 @@ jobs:
         run: python skills/douyin-simple-comic-workflow/scripts/check_executable_templates.py --root skills/douyin-simple-comic-workflow/references/comic-layouts --output "$RUNNER_TEMP/template-contract.json" --check-index
       - name: Verify native geometry and rejection cases
         run: python skills/douyin-simple-comic-workflow/scripts/verify_template_library.py --root skills/douyin-simple-comic-workflow/references/comic-layouts --output "$RUNNER_TEMP/sb-geometry"
+      - name: Verify production preparation, queue, runtime and delivery
+        run: python -B -m unittest discover -s regression/production -p 'test_*.py' -v

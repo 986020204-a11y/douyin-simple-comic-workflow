@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "skill_version": "0.8.1-production",
+  "package_version": "0.8.1-rc.1",
+  "verification_date": "2026-10-18",
+  "production_regression": {
+    "tests_run": 127,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "by_suite": {
+      "test_delivery": 35,
+      "test_preflight": 16,
+      "test_queue": 55,
+      "test_runtime": 16,
+      "test_text_semantics": 5
+    },
+    "provider_calls": 0
+  },
+  "source_template_contract": {
+    "template_count": 68,
+    "preview_count": 68,
+    "passed": 68,
+    "annotation_needs_review_count": 5,
+    "source_previews_modified": false,
+    "source_templates_modified": false
+  },
+  "structural_diagnostics": {
+    "native_geometry_passed": 68,
+    "negative_cases": 272,
+    "negative_cases_rejected": 272,
+    "actual_comic_tested": false
+  },
+  "whole_story_preparation_replay": {
+    "page_count": 20,
+    "job_count": 54,
+    "generation_ready": true,
+    "images_generated": false,
+    "actual_image_checked": false
+  },
+  "prepared_request_queue_smoke": {
+    "normal_mode": true,
+    "claimed_pages": [
+      "P01"
+    ],
+    "later_pages_locked": true,
+    "reference_images_are_actual_absolute_paths": true,
+    "provider_calls": 0
+  },
+  "existing_real_asset_replay": {
+    "scope": "isolated diagnostic copy of one prior real page",
+    "full_template_execution": "passed",
+    "storyboard_layout_match": "failed",
+    "adaptation": "previously approved 3:4 cover and explicit text fits",
+    "visual_review_status": "pending",
+    "promoted": false,
+    "base_image_modified": false,
+    "images_generated": false
+  },
+  "independent_forward_review": {
+    "previously_reproduced_missing_review_gate": "fixed_and_rechecked",
+    "original_SB015_CANVAS_binding": "passed",
+    "forged_CANVAS_bindings": "rejected",
+    "seven_page_preparation": "passed in independent isolated diagnostic run"
+  },
+  "legacy_run_recheck": {
+    "validator_status": "blocked",
+    "source_plan_text_consistent_pages": 19,
+    "undeclared_wrapper_source_range_change_pages": [
+      "P09"
+    ],
+    "complete_current_acceptance_claimed": false,
+    "reason": "Legacy review provenance is incomplete for current full/mobile gates; no retrospective approval supplied.",
+    "historical_artwork_modified": false
+  },
+  "protected_files": {
+    "count": 4489,
+    "status": "unchanged"
+  },
+  "limitations": [
+    "Not all 68 layouts have real-artwork acceptance.",
+    "Known rotation/composite-color text instances remain blocked in SB-006, SB-040 through SB-046, and SB-057.",
+    "The production delivery channel still blocks fully silent pages with no executable text containers.",
+    "Source-preview pixel/font identity is not established by structural or production tests.",
+    "Offline verification does not measure provider generation latency or promise a fixed speedup.",
+    "Human acceptance still requires explicit review of the actual production images."
+  ],
+  "base_image_modified": false,
+  "comic_published": false
+}

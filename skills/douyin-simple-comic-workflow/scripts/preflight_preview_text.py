@@ -2,7 +2,8 @@
 """Check a source-linked preview text plan before scene generation.
 
 This gate never edits a plan, generates artwork, or writes an image. Font
-measurement is a conservative preliminary capacity check, not a render pass.
+measurement shares the raster renderer's inset/wrapping calculation, not a
+render pass or a substitute for actual artwork checks.
 """
 from __future__ import annotations
 
@@ -16,9 +17,7 @@ from typing import Any
 
 import yaml
 from template_contract import executable_text_containers, CANVAS_BINDING
-from PIL import ImageFont
-
-from text_compositor import _apply_bubble_contract, _observed_tail_check, _brush_font_evidence, _wrap_text_lines, _has_closing_line_start, _surface_text_check, _global_protection_check, _preview_support_errors, STYLE_NAMES, PREVIEW_STYLE_ALIASES
+from text_compositor import _apply_bubble_contract, _observed_tail_check, _brush_font_evidence, _surface_text_check, _global_protection_check, _preview_support_errors, measure_preview_text_capacity, STYLE_NAMES, PREVIEW_STYLE_ALIASES
 
 SOURCE_TYPES = {
     "narration_text": {"narration", "caption"},
@@ -84,71 +83,30 @@ def _capacity(text: str, bounds: list[float], bubble: dict, block: dict,
               config: dict, config_dir: Path) -> dict:
     visual = bubble.get("visual_style") or {}
     renderer = str(visual.get("renderer") or bubble.get("shape") or "")
-    if visual.get("typography_direction") == "diagonal_three_line_stack":
-        regions = block.get("bubble_contract_typography_regions") or []
-        lines = block.get("text_split_lines") or text.split("\n")
-        if (not isinstance(lines, list) or len(lines) != 3 or len(regions) != 3
-                or any(not isinstance(line, str) or not line for line in lines)
-                or "".join(lines) != text.replace("\n", "")):
-            return {"status": "failed", "reason": "three_line_typography_requires_source_preserving_explicit_lines_and_regions", "guaranteed": False}
-        line_bubble = dict(bubble, visual_style={key: value for key, value in visual.items() if key != "typography_direction"})
-        line_results = []
-        for line, region in zip(lines, regions):
-            rb = region["bounds"]
-            if rb[0] < bounds[0] or rb[1] < bounds[1] or rb[0] + rb[2] > bounds[0] + bounds[2] + 1 or rb[1] + rb[3] > bounds[1] + bounds[3] + 1:
-                return {"status": "failed", "reason": "typography_region_outside_body", "guaranteed": False}
-            line_results.append(_capacity(line, rb, line_bubble, block, config, config_dir))
-        return {"status": "passed" if all(row["status"] == "passed" for row in line_results) else "failed",
-                "reason": "three_line_typography_capacity", "line_checks": line_results,
-                "capacity_stage": "preliminary", "guaranteed": False}
+    effective = dict(config)
+    for key in ("font_file", "font_bold_file", "brush_font_file"):
+        if config.get(key):
+            resolved = _path(config[key], config_dir)
+            effective[key] = str(resolved) if resolved else None
     brush = "brush" in renderer or "brush" in str(visual.get("font_style", ""))
     brush_evidence = None
     if brush:
-        font_config = dict(config)
-        resolved_brush_path = _path(config.get("brush_font_file"), config_dir)
-        font_config["brush_font_file"] = str(resolved_brush_path) if resolved_brush_path else None
-        brush_evidence = _brush_font_evidence(font_config)
+        brush_evidence = _brush_font_evidence(effective)
         if brush_evidence["status"] != "verified":
-            return {"status": "not-checked", "reason": brush_evidence["reason"], "brush_font_evidence": brush_evidence, "guaranteed": False}
-    font_path = _path(config.get("brush_font_file") if brush else config.get("font_file", DEFAULT_FONT), config_dir)
+            return {"status": "not-checked", "reason": brush_evidence["reason"],
+                    "brush_font_evidence": brush_evidence, "guaranteed": False}
+    font_path = _path(effective.get("brush_font_file") if brush else effective.get("font_file", DEFAULT_FONT), Path.cwd())
     if font_path is None or not font_path.is_file():
         return {"status": "not-checked", "reason": "brush_font_unavailable" if brush else "font_unavailable",
                 "font_path": str(font_path) if font_path else None, "guaranteed": False}
     try:
-        size = int(block.get("font_size", config.get("font_size", 42)))
-        minimum = int(config.get("minimum_readable_font_size", 24))
-        if size < minimum:
-            return {"status": "failed", "reason": "font_below_readable_minimum", "font_size": size,
-                    "minimum_readable_font_size": minimum, "guaranteed": False}
-        font = ImageFont.truetype(str(font_path), size)
+        fit = measure_preview_text_capacity(text, bounds, bubble, block, effective)
     except (TypeError, ValueError, OSError) as exc:
-        return {"status": "not-checked", "reason": "font_load_failed", "detail": str(exc), "guaranteed": False}
-    shape = str(bubble.get("shape", ""))
-    # Renderer family determines text inset even when the observed body is
-    # rounded_rect or a traced polygon. Geometric shape alone is insufficient.
-    factor = .70 if shape in {"rounded_speech", "thought_bubble", "ellipse"} or renderer == "preview_rounded_speech" else (.70 if "impact" in shape or "impact" in renderer else .90)
-    padding = max(4, round(min(bounds[2:]) * float(visual.get("padding_ratio", .04))))
-    available_w = bounds[2] * factor - 2 * padding
-    available_h = bounds[3] * factor - 2 * padding
-    vertical = "vertical" in renderer or visual.get("text_orientation") == "vertical"
-    spacing = max(4, round(size * .20))
-    lines: list[str] = []
-    if vertical:
-        lines = list(text.replace("\n", ""))
-    else:
-        lines = _wrap_text_lines(text, available_w, font.getlength)
-    widths = [font.getlength(line) for line in lines]
-    # Full ascent/descent is deliberately conservative for CJK glyphs.
-    ascent, descent = font.getmetrics()
-    required_h = len(lines) * (ascent + descent) + max(0, len(lines) - 1) * spacing
-    punctuation_invalid = not vertical and _has_closing_line_start(lines)
-    fits = available_w > 0 and available_h > 0 and max(widths, default=0) <= available_w and required_h <= available_h and not punctuation_invalid
-    return {"status": "passed" if fits else "failed", "method": "pillow_font_metrics_conservative_interior",
-            "font_path": str(font_path), "font_size": size, "line_count": len(lines),
-            "available_size_px": [round(available_w, 2), round(available_h, 2)],
-            "estimated_text_size_px": [round(max(widths, default=0), 2), round(required_h, 2)],
-            "wrapped_lines": lines, "closing_punctuation_line_start": punctuation_invalid,
-            "capacity_stage": "preliminary", "guaranteed": False, "brush_font_evidence": brush_evidence}
+        return {"status": "not-checked", "reason": "font_measurement_failed", "detail": str(exc), "guaranteed": False}
+    return dict(fit, status="passed" if fit.get("fit_ok") else "failed",
+                reason=fit.get("failure_reason"), method="shared_raster_padding_and_wrapping",
+                font_path=str(font_path), capacity_stage="preliminary", guaranteed=False,
+                brush_font_evidence=brush_evidence)
 
 
 def preflight(template: dict, plan: dict, config: dict | None = None,
@@ -323,7 +281,7 @@ def preflight(template: dict, plan: dict, config: dict | None = None,
         exact_blockers.append("adapted_match_policy_cannot_be_exact")
     strict = match_policy in {"structure_exact", "pixel_reference"}
     ready = not errors and (not strict or not exact_blockers)
-    warnings.append("Capacity uses conservative font metrics only; actual artwork avoidance, glyph contours, tails, and mobile readability still require render/visual checks.")
+    warnings.append("Capacity shares raster font metrics, padding, and wrapping; actual artwork avoidance, glyph contours, tails, and mobile readability still require render/visual checks.")
     return {"preflight_version": "0.2-executable-tail-brush", "page_id": page_id, "selected_layout": layout_id,
             "match_policy": match_policy, "bubble_selection_policy": policy,
             "generation_ready": ready, "exact_ready": not errors and not exact_blockers,

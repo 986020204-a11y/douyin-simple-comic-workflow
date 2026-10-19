@@ -121,20 +121,20 @@ adaptation record. Required special mechanisms carry their actual `status`, name
 
 `finish` replaces synthetic placeholders, preflights the executed target,
 composes a candidate, audits real text/bubble pixels and font evidence, then runs
-the final full-template audit. It creates the 360×480 mobile preview. Successful
+the final full-template audit. Successful
 mechanical checks leave `visual_review_status: pending`; they do not imply visual
 acceptance. Source-preview fidelity stays failed when an approved target crop or
 text adaptation differs from the source.
 
 ## Explicit review and promotion
 
-Review the full-size candidate and its mobile preview. Supply an actual review
+Review the full-size candidate. Supply an actual review
 file with `page_id`, `review_status: passed`, nonempty `reviewer` and `notes`,
-`synthetic: false`, `actual_image_checked: true`, `mobile_image_checked: true`, and
-the current `image_sha256`, `base_image_sha256`, `mobile_image_sha256`.
+`synthetic: false`, `actual_image_checked: true`, and the current
+`image_sha256`, `base_image_sha256`.
 The `checks` mapping must explicitly pass all seven:
 
-- `mobile_readability`
+- `full_size_readability`
 - `character_continuity`
 - `speaker_binding`
 - `text_integrity`
@@ -156,11 +156,10 @@ reports as well as the supplied review. It copies only the reviewed candidate to
 different canonical final. Whole-story coverage, page count reconciliation and
 story review are still required by the delivery/finalize stage.
 
-The translated production review preserves the supplied reviewer/observations,
-adds `review_binding` for that original review, and binds the checked mobile PNG
-as `mobile_image: {path, sha256}`. These are provenance fields for existing
-evidence, not new visual observations. Normal queue and delivery validation require
-the same current full/mobile, actual plan/target/annotation, font and layout
+The translated production review preserves the supplied reviewer/observations and
+adds `review_binding` for that original review. These are provenance fields for
+existing evidence, not new visual observations. Normal queue and delivery validation
+require the same current full-size, actual plan/target/annotation, font and layout
 bindings; bare passed checkboxes or explicitly diagnostic records cannot replace
 them.
 

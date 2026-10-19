@@ -179,9 +179,8 @@ class RuntimeTests(unittest.TestCase):
     def test_promote_cannot_invent_full_or_mobile_review(self):
         self.image("pages/renders/CUSTOM-7-base.png")
         self.image("pages/candidates/CUSTOM-7/checked-render.png")
-        self.image("delivery/previews/CUSTOM-7-mobile.png")
         fake = self.write("fake-review.json", {"review_status": "passed", "checks": {k: "passed" for k in runtime.CHECKS}})
-        with self.assertRaisesRegex(ValueError, "explicit current full-size/mobile"):
+        with self.assertRaisesRegex(ValueError, "explicit current full-size"):
             self.rt.promote(fake)
         self.assertFalse(self.rt.canonical.exists())
 

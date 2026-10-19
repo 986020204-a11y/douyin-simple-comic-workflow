@@ -154,13 +154,9 @@ class QueueRegression(unittest.TestCase):
                     generation_template_path=str(self.template),generation_template_sha256=queue.sha256(self.template),
                     execution_template_path=str(actual_target))
         dump(actual_plan,plan)
-        mobile = self.root/'mobile.png'
-        with Image.open(final) as image:
-            image.resize((360,480),Image.Resampling.LANCZOS).save(mobile)
         review = {"diagnostic_test_only":self.diagnostic,"page_id": "P01", "synthetic": False,
             "actual_image_checked": True, "review_status": "passed",
             "image_sha256": queue.sha256(final), "base_image_sha256": queue.sha256(base),
-            'mobile_image_checked':True,'mobile_image_sha256':queue.sha256(mobile),
             'reviewer':'diagnostic fixture author','notes':['Fabricated diagnostic records; not artwork acceptance.'],
             "checks": {key: "passed" for key in queue.FINAL_CHECKS},
             "evidence_files": {"render_report": self.binding(render), "bubble_audit": self.binding(bubbles),
@@ -169,7 +165,7 @@ class QueueRegression(unittest.TestCase):
             "input_bindings": [self.binding(actual_plan),self.binding(actual_target),self.binding(annotation)]}
         source_review = self.root/'supplied-visual-review.json'; dump(source_review,review)
         final_audit = self.root / "final-audit.json"
-        review.update(review_binding=self.binding(source_review),mobile_image=self.binding(mobile))
+        review.update(review_binding=self.binding(source_review))
         dump(final_audit,review)
         return base, base_audit, final, final_audit
 
@@ -618,7 +614,7 @@ class QueueRegression(unittest.TestCase):
 
     def test_ordinary_mode_seven_flags_cannot_replace_supplied_review(self):
         self.ordinary_attack_mode(); self.complete_pilot()
-        for missing in ('reviewer','notes','mobile_image_checked','mobile_image_sha256','mobile_image','review_binding'):
+        for missing in ('reviewer','notes','review_binding'):
             with self.subTest(missing=missing):
                 evidence = self.evidence()
                 value = json.loads(evidence[3].read_text(encoding='utf-8'))
@@ -645,14 +641,12 @@ class QueueRegression(unittest.TestCase):
         with self.assertRaisesRegex(queue.QueueError,'differs from the separately supplied'):
             queue.accept_pilot(self.state,*evidence)
 
-    def test_current_mobile_hash_for_unrelated_pixels_is_rejected(self):
+    def test_current_full_size_review_does_not_require_mobile_preview(self):
         self.complete_pilot(); evidence = self.evidence()
-        mobile = self.root/'mobile.png'; Image.new('RGB',(360,480),'red').save(mobile)
         value = json.loads(evidence[3].read_text(encoding='utf-8'))
-        value.update(mobile_image=self.binding(mobile),mobile_image_sha256=queue.sha256(mobile))
-        dump(evidence[3],value); self.refresh_review_bindings(evidence)
-        with self.assertRaisesRegex(queue.QueueError,'uniform reduction'):
-            queue.accept_pilot(self.state,*evidence)
+        self.assertNotIn('mobile_image', value)
+        self.assertNotIn('mobile_image_sha256', value)
+        self.assertTrue(queue.accept_pilot(self.state,*evidence)['pilot_unlocked'])
 
     def test_missing_actual_glyph_draw_calls_block_pilot(self):
         self.complete_pilot(); evidence = self.evidence()

@@ -281,7 +281,7 @@ def preflight(template: dict, plan: dict, config: dict | None = None,
         exact_blockers.append("adapted_match_policy_cannot_be_exact")
     strict = match_policy in {"structure_exact", "pixel_reference"}
     ready = not errors and (not strict or not exact_blockers)
-    warnings.append("Capacity shares raster font metrics, padding, and wrapping; actual artwork avoidance, glyph contours, tails, and mobile readability still require render/visual checks.")
+    warnings.append("Capacity shares raster font metrics, padding, and wrapping; actual artwork avoidance, glyph contours, tails, and full-size readability still require render/visual checks.")
     return {"preflight_version": "0.2-executable-tail-brush", "page_id": page_id, "selected_layout": layout_id,
             "match_policy": match_policy, "bubble_selection_policy": policy,
             "generation_ready": ready, "exact_ready": not errors and not exact_blockers,

@@ -1,6 +1,6 @@
-# douyin-simple-comic-workflow 0.8.1-rc.1
+# douyin-simple-comic-workflow 0.8.2-rc.1
 
-把中文文案制作成静态抖音漫画组图，内含 Skill `0.8.1-production`。工作流先规划完整故事和文字，再完成一页真实样稿，随后通过可续作队列生成独立场景，按 SB 模板拼版并添加中文气泡，最后检查与打包。
+把中文文案制作成静态抖音漫画组图，内含 Skill `0.8.2-production`。工作流先规划完整故事和文字，再完成一页真实样稿，随后通过可续作队列生成独立场景，按 SB 模板拼版并添加中文气泡，最后检查与打包。
 
 ## 使用方式
 
@@ -18,6 +18,7 @@
 - **局部修图**：保留原素材，使用原图/修图哈希和明确审核记录选择替换图，图片损坏、记录过期或未审核时阻止使用。
 - **完整交付**：按实际准备的页数检查，不固定 5 页或 20 页；核对来源文字、全部页序、冻结输入、分镜与气泡证据、唯一最终 PNG 和整篇实际视觉审核，再输出阅读器与图片 ZIP。
 - **保留事实边界**：3:4 满版适配可以通过目标验收，原始 SB 严格匹配失败仍保留；程序不自动声称人工看过图片。
+- **移除手机预览产物**：生产流程只生成和审核 1080×1440 完整图，不再创建 360×480 手机预览，也不再把手机图绑定或手机可读性作为晋级条件。
 
 完整流程见 [Skill](skills/douyin-simple-comic-workflow/SKILL.md)、[生产流程](skills/douyin-simple-comic-workflow/references/production-workflow.md)和[实图运行说明](skills/douyin-simple-comic-workflow/references/actual-image-runtime.md)。图像生成由运行环境提供；这些离线脚本负责准备、调度、拼版、文字合成和验收，不内置图像服务或账号凭据。
 
@@ -42,11 +43,11 @@ python -B skills/douyin-simple-comic-workflow/scripts/verify_template_library.py
 python -B -m unittest discover -s regression/production -p 'test_*.py' -v
 ```
 
-回归使用临时目录及明确标注的诊断素材，不调用图像模型，不生成新漫画。详细验证范围见 [本次版本验证记录](validation/production-0.8.1-rc.1/README.md)。离线检查不能证明实际生图耗时降低固定比例。
+回归使用临时目录及明确标注的诊断素材，不调用图像模型，不生成新漫画。详细验证范围见 [本次版本验证记录](validation/production-0.8.1-rc.1/README.md)。本次手机预览移除验证记录见 [0.8.2 验证](validation/production-0.8.2-rc.1/README.md)。离线检查不能证明实际生图耗时降低固定比例。
 
 ## 包与历史文件
 
-`plugin.json` 与 `.codex-plugin/plugin.json` 均为 `0.8.1-rc.1`，指向 `./skills/`。旧 `examples/`、`tests/`、`delivery/` 以及先前验证记录保留原样；新增回归位于 `regression/production/`。仓库发布包含通用能力与验证代码，不上传本次故事的漫画图片或私人角色素材。
+`plugin.json` 与 `.codex-plugin/plugin.json` 均为 `0.8.2-rc.1`，指向 `./skills/`。旧 `examples/`、`tests/`、`delivery/` 以及先前验证记录保留原样；新增回归位于 `regression/production/`。仓库发布包含通用能力与验证代码，不上传本次故事的漫画图片或私人角色素材。
 
 ## 68 个内置漫画分镜预览
 

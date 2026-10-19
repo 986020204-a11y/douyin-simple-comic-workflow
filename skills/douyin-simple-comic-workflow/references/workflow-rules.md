@@ -7,7 +7,7 @@ All 68 SB files have individual native source annotation. See [the executable-li
 - `visual_mode: douyin_simple_comic`
 - `visual_density: low`
 - `background_level: minimal`
-- `mobile_reading_priority: true`
+- `full_size_readability_priority: true`
 - `text_readability: high`
 - delivery canvas: 1080×1440, 3:4, PNG
 - Chinese text: post-layout raster overlay
@@ -74,7 +74,7 @@ visual_mode: douyin_simple_comic
 visual_density: low
 background_level: minimal
 text_readability: high
-mobile_reading_priority: true
+full_size_readability_priority: true
 panels:
   - panel_id: P01-01
     focus: "panel-level focus"
@@ -184,7 +184,7 @@ python scripts/audit_preview_bubbles.py \
 
 Use the original template plus its recorded transform with `--target-coordinate-space source` when actual drawing coordinates are on the target canvas. If a separate transformed-target template is used, declare `--target-coordinate-space target`, omit another transform, and preserve a second source-preview comparison. `--coordinate-space source` is only for actual records still expressed in source coordinates. Never substitute an adapted target comparison for source-preview fidelity.
 
-Report bubble IDs, panel binding, shape, position, bounds, tail, visual style, unused IDs, full-structure coverage, and deviations separately. Accepted text placement plus required passing bubble checks are candidate promotion gates; any failed or unresolved required field blocks an exact claim. Base storyboard layout failure cannot be repaired by adding text. Contract/style checks do not establish pixel equality: keep real-page and mobile human visual acceptance pending until reviewed. Preserve old finals while candidates are being checked.
+Report bubble IDs, panel binding, shape, position, bounds, tail, visual style, unused IDs, full-structure coverage, and deviations separately. Accepted text placement plus required passing bubble checks are candidate promotion gates; any failed or unresolved required field blocks an exact claim. Base storyboard layout failure cannot be repaired by adding text. Contract/style checks do not establish pixel equality: keep real-page full-size human visual acceptance pending until reviewed. Preserve old finals while candidates are being checked.
 
 Base layout acceptance separately requires hash-bound `measurement_evidence` from the actual PNG (`geometry_observed_from_image: true`; method `manual_visual_annotation`, `image_panel_detection`, or `deterministic_render_with_pixel_verification`). Preview style acceptance requires hash-bound `style_verification` with `method: manual_visual_comparison` and an actual `matched` result. Target/transform echoes and a nonempty style contract cannot supply either proof. Missing observation blocks acceptance.
 
@@ -208,7 +208,7 @@ The adapter's generic placement contract is additive: use an explicit pixel `anc
 | `note` | `note_embedded` | Direct post-layout ink on the note/paper itself; no floating box, speech tail, or duplicate note text. |
 | `emphasis` | `emphasis_box` | Modestly heavier border or tint, no speaker tail; do not invent a shouted line or a speaker. |
 
-The reusable compositor in `scripts/text_compositor.py` implements these seven drawing methods for raster post-layout output. It passes the fitted font size into the actual draw call and rolls back failed carrier/anchor attempts, so a too-small writable region cannot leave partial text or outlines behind. A style render is still only accepted for a real page after its PNG and mobile preview have been checked. A profile may declare the v0.1 warm-white rounded box as a finite fallback: fill `#FFFDF7`, fill opacity 245/255, border `#2B2621` width 3, radius 12, padding 22, Microsoft YaHei, dark ink `#1F1B17`, and nominal font size 42 on a 1080×1440 canvas. Its coordinates must still follow the current panel's available whitespace; do not reuse a fixed top-left position. Without that declaration, drawing failure remains `needs-placement` or `blocked`.
+The reusable compositor in `scripts/text_compositor.py` implements these seven drawing methods for raster post-layout output. It passes the fitted font size into the actual draw call and rolls back failed carrier/anchor attempts, so a too-small writable region cannot leave partial text or outlines behind. A style render is still only accepted for a real page after its 1080×1440 PNG has been checked. A profile may declare the v0.1 warm-white rounded box as a finite fallback: fill `#FFFDF7`, fill opacity 245/255, border `#2B2621` width 3, radius 12, padding 22, Microsoft YaHei, dark ink `#1F1B17`, and nominal font size 42 on a 1080×1440 canvas. Its coordinates must still follow the current panel's available whitespace; do not reuse a fixed top-left position. Without that declaration, drawing failure remains `needs-placement` or `blocked`.
 
 ### Required decision order
 
@@ -256,7 +256,7 @@ Collision checks cover the complete drawn text body, speech shape, visible tail,
 
 ### No-image verification boundary
 
-A dry run may exercise all seven mappings, missing speaker/intensity, unclear type, carrier targeting, avoidance, and fallback with synthetic regions. Mark these regions `synthetic`, and record `actual_image_checked: false`. A successful rule check is `rule_check_status: passed`; page `render_status`/`final_status` remain `not-generated` and `check_status` remains `not-checked`. For an actual base PNG, call `scripts/text_compositor.py` and record the output and placement reports. A real render still requires visual checks for glyph fit, phone-screen perspective, bubble outline quality, and mobile readability.
+A dry run may exercise all seven mappings, missing speaker/intensity, unclear type, carrier targeting, avoidance, and fallback with synthetic regions. Mark these regions `synthetic`, and record `actual_image_checked: false`. A successful rule check is `rule_check_status: passed`; page `render_status`/`final_status` remain `not-generated` and `check_status` remains `not-checked`. For an actual base PNG, call `scripts/text_compositor.py` and record the output and placement reports. A real render still requires visual checks for glyph fit, phone-screen perspective, bubble outline quality, and full-size readability.
 
 ## Failure handling
 

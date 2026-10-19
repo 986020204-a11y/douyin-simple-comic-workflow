@@ -523,11 +523,7 @@ class Runtime:
         self.write(self.report("final-layout-audit.json"), audit)
         self.write(self.report("base-actual-linked.json"), actual)
         require(audit["full_template_execution"] == "passed", str(audit["execution_style_evidence"]))
-        mobile = self.out(f"delivery/previews/{self.pid}-mobile.png")
-        mobile.parent.mkdir(parents=True, exist_ok=True)
-        with Image.open(self.candidate) as image:
-            image.resize((360, 480), Image.Resampling.LANCZOS).save(mobile)
-        return {"page_id": self.pid, "candidate": str(self.candidate), "mobile": str(mobile),
+        return {"page_id": self.pid, "candidate": str(self.candidate),
                 "full_template_execution": audit["full_template_execution"],
                 "storyboard_layout_match": audit["storyboard_layout_match"],
                 "visual_review_status": "pending", "base_image_modified": False}
@@ -536,13 +532,11 @@ class Runtime:
         review_path = repairs.inside(self.root, review_path)
         review = repairs.read(review_path)
         base_hash, final_hash = repairs.digest(self.base), repairs.digest(self.candidate)
-        mobile = self.out(f"delivery/previews/{self.pid}-mobile.png")
         require(review.get("page_id") == self.pid and review.get("review_status") == "passed"
                 and review.get("image_sha256") == final_hash and review.get("base_image_sha256") == base_hash
-                and review.get("mobile_image_sha256") == repairs.digest(mobile)
-                and review.get("actual_image_checked") is True and review.get("mobile_image_checked") is True
+                and review.get("actual_image_checked") is True
                 and review.get("synthetic") is False and review.get("reviewer") and review.get("notes"),
-                "Promotion requires an explicit current full-size/mobile visual review")
+                "Promotion requires an explicit current full-size visual review")
         require(all(review.get("checks", {}).get(key) == "passed" for key in CHECKS),
                 "All seven actual review checks must be recorded; no automatic acceptance")
         self.actual_files()
@@ -582,7 +576,6 @@ class Runtime:
         # validated evidence into the queue/delivery schema, never creates truth.
         qa = copy.deepcopy(review)
         qa.update(image_sha256=final_hash, final_image_sha256=final_hash, base_image_sha256=base_hash,
-                  mobile_image=binding(mobile),
                   synthetic_input=False, review_binding=binding(review_path),
                   evidence_files={k: binding(v) for k, v in names.items()},
                   input_bindings=required_inputs + [binding(names["base_audit"]), binding(names["final_layout_audit"])])
@@ -600,7 +593,7 @@ def main() -> None:
     parser.add_argument("--state", type=Path, help="Use intact registered queue assets when assembling")
     parser.add_argument("--record", type=Path, help="Explicit fit adaptation record")
     parser.add_argument("--annotations", type=Path, help="Hash-bound actual base annotation file")
-    parser.add_argument("--review", type=Path, help="Explicit full-size/mobile visual review for promotion")
+    parser.add_argument("--review", type=Path, help="Explicit full-size visual review for promotion")
     args = parser.parse_args()
     if args.action == "fit" and not args.record:
         parser.error("fit requires --record")

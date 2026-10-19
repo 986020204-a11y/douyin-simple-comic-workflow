@@ -181,10 +181,6 @@ class DeliveryTests(unittest.TestCase):
                         "blocks": [{"block_id": row["id"], "actual_font_sizes": row["actual_font_sizes"],
                                     "font_raster_evidence": row["font_raster_evidence"]}
                                    for row in render["rendered_blocks"]]})
-        mobile = self.root / f"delivery/previews/{pid}-mobile.png"
-        mobile.parent.mkdir(parents=True, exist_ok=True)
-        with Image.open(final) as picture:
-            picture.convert("RGB").resize((360,480), Image.Resampling.LANCZOS).save(mobile)
         evidence = {"render_report": render_path, "bubble_audit": self.root / f"reports/{pid}-bubble.json",
                     "font_raster": font_path, "base_audit": self.root / f"reports/{pid}-base.json",
                     "final_layout_audit": self.root / f"reports/{pid}-layout.json"}
@@ -192,7 +188,6 @@ class DeliveryTests(unittest.TestCase):
         visual = delivery.load_mapping(review_path)
         visual.update(diagnostic_test_only=True, review_status="passed", reviewer="DIAGNOSTIC_ONLY_FABRICATED",
                       notes=["Explicit fabricated diagnostic record tests the gate; not actual image acceptance."],
-                      mobile_image_checked=True, mobile_image_sha256=digest(mobile), mobile_image=binding(mobile),
                       evidence_files={key: binding(path) for key,path in evidence.items()},
                       input_bindings=[binding(plan_path), binding(actual_target), binding(annotations)])
         original = self.root / f"reports/{pid}-supplied-review.json"
@@ -463,17 +458,14 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(result["status"], "blocked")
         self.assertTrue(any("separately supplied visual observations" in e["reason"] for e in result["errors"]))
 
-    def test_consistently_rebound_wrong_mobile_image_cannot_pass(self):
-        mobile = self.root / "delivery/previews/P03-mobile.png"
-        Image.new("RGB", (360,480), "black").save(mobile)
+    def test_delivery_accepts_review_without_mobile_preview_binding(self):
         for name in ("reports/P03-review.json", "reports/P03-supplied-review.json"):
-            self.mutate(name, lambda d: d.update(mobile_image_sha256=digest(mobile),
-                mobile_image={"path": str(mobile), "sha256": digest(mobile)}))
+            self.mutate(name, lambda d: [d.pop(key, None) for key in
+                ("mobile_image", "mobile_image_sha256", "mobile_image_checked")])
         self.mutate("reports/P03-review.json", lambda d: d["review_binding"].update(
             sha256=digest(self.root / "reports/P03-supplied-review.json")))
         result = self.run_check()
-        self.assertEqual(result["status"], "blocked")
-        self.assertTrue(any("current final image's uniform reduction" in e["reason"] for e in result["errors"]))
+        self.assertEqual(result["status"], "passed")
 
     def test_actual_annotations_must_be_bound_by_both_reviews(self):
         for name in ("reports/P03-review.json", "reports/P03-supplied-review.json"):

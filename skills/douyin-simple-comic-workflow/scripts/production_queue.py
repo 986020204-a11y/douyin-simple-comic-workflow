@@ -27,10 +27,10 @@ A readiness report must bind every input with ``input_bindings`` and contain
 and bubble audit. It proves layout capability, not real image acceptance.
 
 Pilot final-review schema: page_id, image_sha256, base_image_sha256,
-mobile_image_sha256, mobile_image:{path,sha256}, reviewer, notes,
+reviewer, notes,
 review_binding:{path,sha256} linking the separately supplied visual review,
-actual_image_checked:true, mobile_image_checked:true, synthetic:false, review_status:passed (or
-passed_with_declared_adaptations), checks:{mobile_readability,character_continuity,
+actual_image_checked:true, synthetic:false, review_status:passed (or
+passed_with_declared_adaptations), checks:{full_size_readability,character_continuity,
 speaker_binding,text_integrity,critical_occlusion,full_template_execution,
 execution_style_match}, all ``passed``. ``evidence_files`` binds render_report
 and bubble_audit with {path,sha256}; optional font_raster is hash-checked too.
@@ -64,13 +64,13 @@ import time
 from typing import Any
 import uuid
 
-from PIL import Image, ImageChops
+from PIL import Image
 import yaml
 
 
-QUEUE_VERSION = "1.0"
+QUEUE_VERSION = "1.1"
 FINAL_CHECKS = (
-    "mobile_readability", "character_continuity", "speaker_binding",
+    "full_size_readability", "character_continuity", "speaker_binding",
     "text_integrity", "critical_occlusion", "full_template_execution",
     "execution_style_match",
 )
@@ -575,7 +575,7 @@ def validate_visual_provenance(qa_path: Path, base_path: Path, final_path: Path,
                                expected_evidence: dict[str, Path] | None = None,
                                expected_actual_plan_path: Path | None = None,
                                diagnostic: bool = False) -> dict:
-    """Validate separately supplied observations, current mobile proof and inputs.
+    """Validate separately supplied observations, current full-size proof and inputs.
 
     Shared by queue/delivery; it never invents observations or accepts artwork
     from geometry alone. The caller also validates report contents and frozen
@@ -591,25 +591,18 @@ def validate_visual_provenance(qa_path: Path, base_path: Path, final_path: Path,
                    (isinstance(notes, list) and bool(notes)
                     and all(isinstance(n, str) and n.strip() for n in notes)))
     if (not isinstance(qa.get("reviewer"), str) or not qa["reviewer"].strip() or not valid_notes
-            or qa.get("actual_image_checked") is not True or qa.get("mobile_image_checked") is not True
+            or qa.get("actual_image_checked") is not True
             or qa.get("synthetic") is not False or qa.get("image_sha256") != final_hash
             or qa.get("base_image_sha256") != base_hash
             or qa.get("review_status") not in {"passed", "passed_with_declared_adaptations"}
             or any(qa.get("checks", {}).get(k) != "passed" for k in FINAL_CHECKS)):
-        raise QueueError("Actual visual review requires current images, reviewer, concrete notes and all seven checks")
-    mobile = _check_binding(qa.get("mobile_image"), qa_path.parent, image=True)
-    if qa.get("mobile_image_sha256") != sha256(mobile) or _verify_image(mobile) != (360, 480):
-        raise QueueError("Visual review requires a current hash-bound 360x480 mobile image")
-    with Image.open(final_path) as final, Image.open(mobile) as small:
-        expected = final.convert("RGB").resize((360, 480), Image.Resampling.LANCZOS)
-        if ImageChops.difference(expected, small.convert("RGB")).getbbox() is not None:
-            raise QueueError("Reviewed mobile image is not the current final image's uniform reduction")
+        raise QueueError("Actual visual review requires current full-size images, reviewer, concrete notes and all seven checks")
     source_path = _check_binding(qa.get("review_binding"), qa_path.parent)
     if source_path == qa_path:
         raise QueueError("Production review must bind a separate supplied visual review")
     source = _load(source_path)
-    fields = ("page_id", "image_sha256", "base_image_sha256", "mobile_image_sha256",
-              "actual_image_checked", "mobile_image_checked", "synthetic", "review_status",
+    fields = ("page_id", "image_sha256", "base_image_sha256",
+              "actual_image_checked", "synthetic", "review_status",
               "reviewer", "notes", "checks")
     if any(source.get(k) != qa.get(k) for k in fields):
         raise QueueError("Production review differs from the separately supplied visual observations")
@@ -655,7 +648,7 @@ def validate_visual_provenance(qa_path: Path, base_path: Path, final_path: Path,
     return {"review": qa, "source_review": source, "evidence_paths": paths,
             "actual_plan_path": plan_path, "actual_plan": plan,
             "executed_target_path": target_path, "executed_target": _load(target_path),
-            "bound_files": list(input_paths | set(paths.values()) | {mobile, source_path, qa_path})}
+            "bound_files": list(input_paths | set(paths.values()) | {source_path, qa_path})}
 
 
 def _glyph_evidence_valid(fonts: dict, render: dict, plan: dict, base_hash: str, final_hash: str) -> None:

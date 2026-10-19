@@ -396,7 +396,7 @@ A run can be marked complete only when:
 8. Delivery manifest records paths, SB IDs, statuses, `published: false`, and the separate `planned_story_units`, `planned_panel_count`, `visible_panel_count`, `panel_count_delta`, and `panel_count_reconciliation` fields.
 9. Existing approved assets outside the isolated run are unchanged.
 10. Text selection retains semantic type and wording; narration has no speech tail, remote phone speech is distinguished from onsite speech, weak emotion has no shout burst, and notes/screens stay on their actual carrier. Placement respects protected regions; a `needs-placement` block prevents page acceptance.
-11. A rule-selected style or a passed no-image test is not proof of a rendered bubble. The formal compositor must produce a PNG and placement report; new shapes still require real-page and mobile visual validation before they are treated as production-ready.
+11. A rule-selected style or a passed no-image test is not proof of a rendered bubble. The formal compositor must produce a PNG and placement report; new shapes still require real-page full-size visual validation before they are treated as production-ready.
 12. `panel_count_delta` equals `visible_panel_count - planned_panel_count`, and the reconciliation contains a per-page audit or an equivalent traceable basis.
 13. An explainable SB-structure difference does not fail the run by itself; an unresolved difference blocks publication and remains visible in the report.
 14. Each page has `final_image_count: 1`, `generated_variants: 0` by default, a canonical `retained_final_image`, and a recorded `duplicate_story_check`. Candidate and legacy version files are not delivery outputs.

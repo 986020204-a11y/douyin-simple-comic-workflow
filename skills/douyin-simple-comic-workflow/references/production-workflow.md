@@ -1,4 +1,4 @@
-# Stable production, v0.8.1
+# Stable production, v0.8.2
 
 Use this path for a new static comic after the library is installed. The output
 continues to use real SB geometry, post-layout text and one canonical final per
@@ -136,8 +136,8 @@ Assemble the pilot with `production_runtime.py assemble` and run the actual
 base audit before adding text. Measure geometry from the generated base and bind
 that evidence to its hash; do not substitute copied target coordinates. Then
 replace synthetic regions with confirmed real face/hand/prop/speaker regions,
-compose text, audit bubbles and full template execution, and review the full and
-mobile-size candidate. Explicit font sizes are fixed by default. A failed fit
+compose text, audit bubbles and full template execution, and review the full-size
+candidate. Explicit font sizes are fixed by default. A failed fit
 blocks that block and rolls back its pixels; use layout repair or an explicitly
 recorded adaptation rather than silently shrinking it. An explicit
 `font_size_policy: fit` can search down to the configured readable minimum, with
@@ -151,7 +151,7 @@ python <SKILL>/scripts/production_queue.py accept-pilot --state <RUN>/production
 
 The production review records current base/final hashes, `actual_image_checked:
 true`, `synthetic: false`, a passed review status, and passed `checks` for
-`mobile_readability`, `character_continuity`, `speaker_binding`, `text_integrity`,
+`full_size_readability`, `character_continuity`, `speaker_binding`, `text_integrity`,
 `critical_occlusion`, `full_template_execution`, and `execution_style_match`.
 Its `evidence_files` bind the real base-layout, render, bubble and actual-font
 reports. See the queue's CLI help/API validation errors for its evidence fields.
@@ -160,9 +160,8 @@ unlock the run. Any changed pilot image/evidence invalidates the prior unlock.
 
 Use the `reports/<PAGE_ID>-production-review.json` emitted by the runtime's
 reviewed promotion step. It preserves the named reviewer and observations,
-binds the original full/mobile review through `review_binding`, and includes
-`mobile_image: {path, sha256}` plus `mobile_image_sha256` and
-`mobile_image_checked: true`. Its five `evidence_files` are `render_report`,
+binds the original full-size review through `review_binding`. Its five
+`evidence_files` are `render_report`,
 `bubble_audit`, `font_raster`, `base_audit`, and `final_layout_audit`.
 Its `input_bindings` include the actual plan, executed target and actual
 annotations. Pilot unlock checks these current files and their actual font,
@@ -201,7 +200,7 @@ python <SKILL>/scripts/production_runtime.py finish --run-root <RUN> --manifest 
 python <SKILL>/scripts/production_runtime.py promote --run-root <RUN> --manifest <RUN>/production.yaml --page P01 --review <RUN>/reports/P01-visual-review.json
 ```
 
-The actual base annotations and separate full/mobile review must exist before
+The actual base annotations and separate full-size review must exist before
 their corresponding steps. These commands never perform the visual review or
 guess a speaker, protected region or tail direction. A bound actual annotation
 is not a human acceptance record. Keep all inference and review sources explicit.
@@ -224,7 +223,7 @@ then assemble a new unaccepted attempt; preserve an existing accepted base/final
 
 Every page still needs the actual base audit, real text/bubble reports, final
 template execution and a visual review. A contact sheet helps review all pages;
-use full/mobile views to resolve legibility, ownership or continuity concerns.
+use the full-size views to resolve legibility, ownership or continuity concerns.
 Keep approved target adaptation separate from original-preview fidelity:
 3:4 clipping may pass the approved target while the strict source match remains
 failed. Source annotations and previews remain immutable.
@@ -254,8 +253,8 @@ pages:
 `visual_review` uses the same seven checks as the queue pilot review. It records
 `page_id`, `image_sha256`, `base_image_sha256`, `actual_image_checked: true`,
 `synthetic: false`, `review_status: passed`, a named reviewer, concrete notes,
-all seven passed `checks`, the full/mobile review binding, mobile image binding,
-and all five report bindings described above. The render report includes current
+all seven passed `checks`, the full-size review binding, and all five report
+bindings described above. The render report includes current
 actual font evidence. A whole-story review does not substitute for these
 per-page checks. Legacy metadata missing these records stays blocked until an
 actual review supplies them; do not create a reviewer or missing observations.

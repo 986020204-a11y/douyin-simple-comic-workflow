@@ -36,14 +36,14 @@ from template_contract import executable_text_containers
 from production_queue import validate_visual_provenance, _glyph_evidence_valid
 
 
-VERSION = "1.1"
+VERSION = "1.2"
 LAYOUT_FIELDS = (
     "selected_layout", "target_panel_count", "actual_panel_count",
     "target_panel_geometry", "actual_panel_geometry", "reading_order_match",
     "storyboard_layout_match", "layout_deviation", "base_image_modified",
 )
 REVIEW_CHECKS = (
-    "mobile_readability", "character_continuity", "speaker_binding",
+    "full_size_readability", "character_continuity", "speaker_binding",
     "text_integrity", "critical_occlusion", "full_template_execution",
     "execution_style_match",
 )

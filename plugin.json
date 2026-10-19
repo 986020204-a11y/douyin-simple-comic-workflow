@@ -1,6 +1,6 @@
 {
   "name": "douyin-simple-comic-workflow",
-  "version": "0.8.1-rc.1",
+  "version": "0.8.2-rc.1",
   "description": "中文文案到静态漫画组图：68 个 SB 模板、完整文字预检、可续作生成队列、实图气泡适配及整篇交付验收。",
   "skills": "./skills/"
 }

@@ -20,3 +20,5 @@ jobs:
         run: python skills/douyin-simple-comic-workflow/scripts/verify_template_library.py --root skills/douyin-simple-comic-workflow/references/comic-layouts --output "$RUNNER_TEMP/sb-geometry"
       - name: Verify production preparation, queue, runtime and delivery
         run: python -B -m unittest discover -s regression/production -p 'test_*.py' -v
+      - name: Verify per-page storyboard selection and whole-story rhythm gates
+        run: python -B -m unittest discover -s skills/douyin-simple-comic-workflow/scripts/tests -p 'test_storyboard*.py' -v

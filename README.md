@@ -1,6 +1,6 @@
-# douyin-simple-comic-workflow 0.8.2-rc.1
+# douyin-simple-comic-workflow 0.9.0-rc.1
 
-把中文文案制作成静态抖音漫画组图，内含 Skill `0.8.2-production`。工作流先规划完整故事和文字，再完成一页真实样稿，随后通过可续作队列生成独立场景，按 SB 模板拼版并添加中文气泡，最后检查与打包。
+把中文文案制作成静态抖音漫画组图，内含 Skill `0.9.0-production`。工作流先逐页选择分镜并检查整篇节奏、完成文字样稿，再完成一页真实样稿，随后通过可续作队列生成独立场景，按 SB 模板拼版并添加中文气泡，最后检查与打包。
 
 ## 使用方式
 
@@ -12,6 +12,9 @@
 
 ## 本次升级
 
+- **逐页选择分镜**：`prompt_style.py --pages` 根据每页叙事功能和真实故事单元比较兼容候选，不能把一次选型直接复制到整篇；人物和画风连续性单独保持。
+- **生成前检查重复**：整篇同一SB或连续三页以上使用同一SB，必须有具体叙事理由或用户明确要求统一格式的记录。准备、恢复领取任务与交付核对同一份审核，缺失、过期或页面不一致时阻断。
+- **保留合理重复**：允许对照或持续对话使用相同版式，不要求每页不同，也不规定必须使用几种模板。自动检查不能代替整套样稿的视觉节奏审查。
 - **减少重复准备**：整篇一次完成文字容量、情节覆盖和关键引文预检，随后冻结用于生成的计划与模板。
 - **并行与续作**：默认最多 4 个独立画格请求，失败只重试该画格；任务有领取标识、超时恢复和最多 3 次尝试。真实样稿通过前不放行后续页面。
 - **实图适配**：底图结构先验收，再根据实际人脸、手部、道具和说话者位置绑定字幕；调整气泡时同步变换其轮廓，只在有明确证据及适配授权时调整已知尾巴。
@@ -21,6 +24,8 @@
 - **移除手机预览产物**：生产流程只生成和审核 1080×1440 完整图，不再创建 360×480 手机预览，也不再把手机图绑定或手机可读性作为晋级条件。
 
 完整流程见 [Skill](skills/douyin-simple-comic-workflow/SKILL.md)、[生产流程](skills/douyin-simple-comic-workflow/references/production-workflow.md)和[实图运行说明](skills/douyin-simple-comic-workflow/references/actual-image-runtime.md)。图像生成由运行环境提供；这些离线脚本负责准备、调度、拼版、文字合成和验收，不内置图像服务或账号凭据。
+
+逐页规划输入、全篇审核和重复版式的例外记录见[分镜节奏说明](skills/douyin-simple-comic-workflow/references/storyboard-rhythm.md)。旧的单页选择入口仍可用于单页任务，其结果不能充当多页分镜决策。
 
 ## 分镜与画布
 
@@ -41,13 +46,14 @@ python -m pip install -r requirements.txt
 python -B skills/douyin-simple-comic-workflow/scripts/check_executable_templates.py --root skills/douyin-simple-comic-workflow/references/comic-layouts --check-index --output .local-validation/templates.json
 python -B skills/douyin-simple-comic-workflow/scripts/verify_template_library.py --root skills/douyin-simple-comic-workflow/references/comic-layouts --output .local-validation/geometry
 python -B -m unittest discover -s regression/production -p 'test_*.py' -v
+python -B -m unittest discover -s skills/douyin-simple-comic-workflow/scripts/tests -p 'test_storyboard*.py' -v
 ```
 
-回归使用临时目录及明确标注的诊断素材，不调用图像模型，不生成新漫画。详细验证范围见 [本次版本验证记录](validation/production-0.8.1-rc.1/README.md)。本次手机预览移除验证记录见 [0.8.2 验证](validation/production-0.8.2-rc.1/README.md)。离线检查不能证明实际生图耗时降低固定比例。
+回归使用临时目录及明确标注的诊断素材，不调用图像模型，不生成新漫画。生产通道验证见 [0.8.1 验证](validation/production-0.8.1-rc.1/README.md)，手机预览移除见 [0.8.2 验证](validation/production-0.8.2-rc.1/README.md)，逐页分镜与整篇节奏检查见 [0.9.0 验证](validation/production-0.9.0-rc.1/README.md)。离线检查不能证明实际生图耗时降低固定比例。
 
 ## 包与历史文件
 
-`plugin.json` 与 `.codex-plugin/plugin.json` 均为 `0.8.2-rc.1`，指向 `./skills/`。旧 `examples/`、`tests/`、`delivery/` 以及先前验证记录保留原样；新增回归位于 `regression/production/`。仓库发布包含通用能力与验证代码，不上传本次故事的漫画图片或私人角色素材。
+`plugin.json` 与 `.codex-plugin/plugin.json` 均为 `0.9.0-rc.1`，指向 `./skills/`。旧 `examples/`、`tests/`、`delivery/` 以及先前验证记录保留原样；生产回归位于 `regression/production/`，逐页分镜回归位于 Skill 的 `scripts/tests/`。仓库发布包含通用能力与验证代码，不上传本次故事的漫画图片或私人角色素材。
 
 ## 68 个内置漫画分镜预览
 

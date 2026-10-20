@@ -340,32 +340,203 @@ def _tokens(text: str) -> set[str]:
     return grams
 
 
+def _layout_score(item: dict, story_function: str, theme: str) -> int:
+    q = _tokens(f"{story_function} {theme}".strip())
+    hay = " ".join([
+        item.get("name", ""), item.get("name_en", ""),
+        " ".join(item.get("keywords", [])), item.get("layout_structure", "")
+    ])
+    h = _tokens(hay)
+    score = sum(1 for token in q if token in h)
+    for phrase in (story_function, theme):
+        if phrase and phrase in hay:
+            score += 12
+    return score
+
+
 def select(pool: list[dict], story_function: str, theme: str, layout_id: str | None) -> tuple[dict, str]:
     if layout_id:
         item = next((x for x in pool if x["id"].upper() == layout_id.upper()), None)
         if item is None:
             raise ValueError(f"Unknown layout: {layout_id}")
         return item, "explicit layout requested; validated against bundled internal index"
-    query = f"{story_function} {theme}".strip()
-    q = _tokens(query)
-    scored=[]
-    for item in pool:
-        hay = " ".join([
-            item.get("name", ""), item.get("name_en", ""),
-            " ".join(item.get("keywords", [])), item.get("layout_structure", "")
-        ])
-        h = _tokens(hay)
-        score = sum(1 for t in q if t in h)
-        for phrase in (story_function, theme):
-            if phrase and phrase in hay:
-                score += 12
-        scored.append((score, item))
+    scored = [(_layout_score(item, story_function, theme), item) for item in pool]
     scored.sort(key=lambda pair: (-pair[0], pair[1]["id"]))
     score, item = scored[0]
     if score <= 0:
         item = next(x for x in pool if x["id"] == "SB-001")
         return item, "no direct term match; selected the bundled regular-grid template"
     return item, f"matched story-function/theme terms against bundled metadata (score={score})"
+
+
+class PageSelectionBlocked(ValueError):
+    def __init__(self, audit: dict):
+        self.audit = audit
+        super().__init__("Multi-page storyboard rhythm audit blocked: "
+                         + "; ".join(str(error) for error in audit.get("errors", [])))
+
+
+def _read_pages(path: Path) -> dict:
+    document = yaml.safe_load(path.read_text(encoding="utf-8-sig"))
+    if not isinstance(document, dict):
+        raise ValueError("--pages must contain a YAML/JSON mapping with a pages list")
+    return document
+
+
+def select_pages(document: dict, pool: list[dict], match_policy: str = "structure_exact", *,
+                 approved_3_4_adaptation: bool = False) -> dict:
+    """Select each page independently, then audit the complete reading rhythm.
+
+    Near-scoring executable candidates may break a repeat. A distinctly better
+    narrative match remains selected, leaving any repeated run to explicit
+    narrative justification or a recorded user request in the rhythm audit.
+    """
+    pages = document.get("pages")
+    if not isinstance(pages, list) or not pages:
+        raise ValueError("--pages requires a non-empty pages list")
+    policy = document.get("layout_policy", "narrative_variety")
+    if policy not in {"narrative_variety", "uniform_by_user_request"}:
+        raise ValueError("layout_policy must be narrative_variety or uniform_by_user_request")
+    request = document.get("uniform_layout_request")
+    if request is not None or policy == "uniform_by_user_request":
+        if (not isinstance(request, dict) or request.get("source") != "user"
+                or not isinstance(request.get("instruction_excerpt"), str)
+                or not request["instruction_excerpt"].strip()):
+            raise ValueError("A uniform layout requires uniform_layout_request with "
+                             "source: user and a non-empty instruction_excerpt")
+    result = copy.deepcopy(document)
+    result.update({
+        "selected_by": "douyin-simple-comic-workflow",
+        "layout_source": "bundled-internal-comic-layouts",
+        "internal_layout_pool": len(pool),
+        "selection_scope": "per_page",
+        "layout_policy": policy,
+        "match_policy": match_policy,
+        "pages": [],
+    })
+    compiled: dict[tuple[str, int], tuple[dict | None, str]] = {}
+    seen: set[str] = set()
+    previous_layout: str | None = None
+    repeat_length = 0
+    for page in pages:
+        if not isinstance(page, dict):
+            raise ValueError("Each page must be a mapping")
+        page_id = page.get("page_id")
+        if not isinstance(page_id, str) or not page_id.strip() or page_id in seen:
+            raise ValueError("Each page requires a unique, non-empty page_id")
+        seen.add(page_id)
+        narrative = page.get("narrative_function")
+        if not isinstance(narrative, str) or not narrative.strip():
+            raise ValueError(f"{page_id} requires its own narrative_function")
+        if not isinstance(page.get("panel_count_reason"), str) or not page["panel_count_reason"].strip():
+            raise ValueError(f"{page_id} requires a narrative panel_count_reason")
+        panels = page.get("panels")
+        if not isinstance(panels, list) or not panels:
+            raise ValueError(f"{page_id} requires non-empty panels")
+        for panel in panels:
+            if not isinstance(panel, dict) or any(
+                not isinstance(panel.get(key), str) or not panel[key].strip()
+                for key in ("focus", "main_action_or_emotion")
+            ):
+                raise ValueError(f"{page_id} panels require focus and main_action_or_emotion")
+        count = len(panels)
+        if "panel_count" in page and page["panel_count"] != count:
+            raise ValueError(f"{page_id} panel_count disagrees with its actual story units")
+        theme = page.get("theme", "")
+        if not isinstance(theme, str):
+            raise ValueError(f"{page_id} theme must be text")
+        content = " ".join([theme] + [panel[key] for panel in panels
+                                     for key in ("focus", "main_action_or_emotion")])
+        candidates = []
+        for item in pool:
+            key = (item["id"], count)
+            if key not in compiled:
+                try:
+                    contract = compile_execution_contract(
+                        item, count, match_policy,
+                        approved_3_4_adaptation=approved_3_4_adaptation)
+                    compiled[key] = (contract, f"Native {count}-unit execution contract compiled")
+                except (ValueError, RuntimeError, OSError, KeyError, TypeError) as exc:
+                    compiled[key] = (None, str(exc))
+            contract, reason = compiled[key]
+            score = _layout_score(item, narrative, content)
+            penalty = min(repeat_length, 2) if item["id"] == previous_layout else 0
+            candidate_reason = (f"{page_id} 叙事功能“{narrative}”：{reason}; narrative score={score}")
+            candidates.append({"layout_id": item["id"], "score": score,
+                               "compatible": contract is not None, "reason": candidate_reason,
+                               "repetition_penalty": penalty, "adjusted_score": score - penalty})
+        compatible = [candidate for candidate in candidates if candidate["compatible"]]
+        compatible.sort(key=lambda candidate: (-candidate["score"], candidate["layout_id"]))
+        if not compatible:
+            raise ValueError(f"{page_id}: no executable native template matches {count} story units")
+        explicit = page.get("layout_id")
+        if explicit is not None:
+            if not isinstance(explicit, str):
+                raise ValueError(f"{page_id} layout_id must be text")
+            chosen = next((candidate for candidate in compatible
+                           if candidate["layout_id"].upper() == explicit.upper()), None)
+            if chosen is None:
+                diagnostic = next((candidate["reason"] for candidate in candidates
+                                   if candidate["layout_id"].upper() == explicit.upper()), "unknown layout")
+                raise ValueError(f"{page_id} requested {explicit} is incompatible: {diagnostic}")
+            reason = (f"本页“{narrative}”采用页内明确指定的 {chosen['layout_id']}；"
+                      f"已验证 {count} 个叙事单元与模板原生结构一致")
+        else:
+            best_score = compatible[0]["score"]
+            # A maximum two-point semantic gap prevents variety from overriding
+            # a substantially stronger narrative match or a zero-match fallback.
+            near = [candidate for candidate in compatible
+                    if candidate["score"] >= max(1, best_score - 2)] if best_score > 0 else compatible[:1]
+            chosen = min(near, key=lambda candidate: (-candidate["adjusted_score"],
+                                                     -candidate["score"], candidate["layout_id"]))
+            reason = (f"本页“{narrative}”及其场景内容匹配 {chosen['layout_id']} 元数据 "
+                      f"(score={chosen['score']})；仅在叙事分差不超过 2 分且原生 {count} 格可执行的候选内考虑连续重复")
+        selected_id = chosen["layout_id"]
+        contract = copy.deepcopy(compiled[(selected_id, count)][0])
+        item = next(item for item in pool if item["id"] == selected_id)
+        output_page = copy.deepcopy(page)
+        mapped_panels = []
+        for panel, native in zip(panels, contract["panel_geometry"]):
+            mapped = copy.deepcopy(panel)
+            if mapped.get("panel_id") and mapped["panel_id"] != native["panel_id"]:
+                mapped["source_panel_id"] = mapped["panel_id"]
+            mapped["panel_id"] = native["panel_id"]
+            mapped_panels.append(mapped)
+        evidence = {"page_id": page_id, "selected_layout_id": selected_id,
+                    "narrative_function": narrative, "selection_scope": "per_page",
+                    "candidates": candidates, "selection_reason": reason,
+                    "compatible_candidate_count": len(compatible)}
+        if len(compatible) < 3:
+            evidence["fewer_than_three_candidates_reason"] = (
+                f"Only {len(compatible)} bundled templates compile for this page's {count} native story units "
+                f"under match_policy={match_policy}; rejected candidates retain their incompatibility reasons")
+        # Keep compatible alternatives first, with their true narrative scores.
+        evidence["candidates"] = sorted(candidates, key=lambda candidate: (
+            not candidate["compatible"], -candidate["score"], candidate["layout_id"]))
+        prompt_file = POOL / item["prompt_file"]
+        output_page.update({
+            "layout_id": selected_id, "layout_name": item["name"],
+            "layout_name_en": item.get("name_en"), "panel_count": count,
+            "panel_count_policy": page.get("panel_count_policy", "minimum_sufficient"),
+            "panels": mapped_panels, "selected_by": "douyin-simple-comic-workflow",
+            "layout_source": "bundled-internal-comic-layouts", "internal_layout_pool": len(pool),
+            "selection_scope": "per_page", "selection_reason": reason, "selection_evidence": evidence,
+            "match_policy": contract["match_policy"], "execution_contract": contract,
+            "prompt_file": str(prompt_file),
+            "prompt_text": prompt_file.read_text(encoding="utf-8") + "\n\n" + _contract_prompt(contract),
+        })
+        result["pages"].append(output_page)
+        repeat_length = repeat_length + 1 if previous_layout == selected_id else 1
+        previous_layout = selected_id
+    result["page_count"] = len(result["pages"])
+    result["planned_story_units"] = sum(len(page["panels"]) for page in result["pages"])
+    result["planned_panel_count"] = sum(page["panel_count"] for page in result["pages"])
+    from audit_storyboard_rhythm import audit_decision
+    audit = audit_decision(result)
+    if audit.get("status") != "passed":
+        raise PageSelectionBlocked(audit)
+    result["storyboard_rhythm_audit"] = audit
+    return result
 
 
 def _contract_prompt(contract: dict) -> str:
@@ -442,6 +613,8 @@ def main() -> None:
     ap.add_argument("--list", action="store_true")
     ap.add_argument("--layout")
     ap.add_argument("--auto", action="store_true")
+    ap.add_argument("--pages", type=Path,
+                    help="Select and audit each page independently from a YAML/JSON story-unit plan")
     ap.add_argument("--story-function", default="")
     ap.add_argument("--theme", default="")
     ap.add_argument("--panel-count", type=int)
@@ -450,7 +623,20 @@ def main() -> None:
                     help="Use only after user selected 3:4 content cover; compile an adapted target with explicit source deviations")
     ap.add_argument("--output", type=Path)
     args=ap.parse_args()
-    if args.verify:
+    if args.pages:
+        if (args.verify or args.list or args.auto or args.layout or args.panel_count is not None
+                or args.story_function or args.theme):
+            ap.error("--pages supplies per-page decisions; do not combine it with single-page selection options")
+        try:
+            result = select_pages(_read_pages(args.pages), load_pool(), args.match_policy,
+                                  approved_3_4_adaptation=args.approved_3_4_adaptation)
+        except (ValueError, RuntimeError, ImportError, OSError) as exc:
+            diagnostic = {"status": "blocked", "errors": [str(exc)]}
+            if isinstance(exc, PageSelectionBlocked):
+                diagnostic["storyboard_rhythm_audit"] = exc.audit
+            print(json.dumps(diagnostic, ensure_ascii=False, indent=2), file=sys.stderr)
+            raise SystemExit(2) from exc
+    elif args.verify:
         result=verify()
     else:
         pool=load_pool()

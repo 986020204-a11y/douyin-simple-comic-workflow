@@ -33,7 +33,7 @@ sys.dont_write_bytecode = True
 from PIL import Image, ImageChops
 import yaml
 from template_contract import executable_text_containers
-from production_queue import validate_visual_provenance, _glyph_evidence_valid
+from production_queue import validate_visual_provenance, _glyph_evidence_valid, _validate_storyboard_rhythm
 
 
 VERSION = "1.2"
@@ -182,6 +182,12 @@ def _generation_inputs(manifest: dict[str, Any], root: Path, ids: list[str],
     if (resolve(coverage_binding.get("path"), coverage.parent) != decision
             or coverage_binding.get("sha256") != decision_hash):
         raise ValueError("coverage and production bind different storyboard handoffs")
+    if not diagnostic:
+        rhythm = _validate_storyboard_rhythm(requests.get('storyboard_rhythm_binding'),
+                                             request_path.parent, expected_page_ids=ids)
+        if rhythm['decision_path'] != decision:
+            raise ValueError('Delivery and rhythm audit bind different storyboard handoffs')
+        bind(rhythm['report_path'])
     policy = production.get("text_policy", "excerpts")
     if policy not in ("excerpts", "verbatim"):
         raise ValueError("unknown production text policy")
@@ -195,6 +201,8 @@ def _generation_inputs(manifest: dict[str, Any], root: Path, ids: list[str],
         readiness = load_mapping(proof_path)
         if readiness.get("generation_ready") is not True or readiness.get("page_id") != pid:
             raise ValueError(f"{pid}: complete text preparation is not ready")
+        if not diagnostic and readiness.get('storyboard_rhythm_binding') != requests.get('storyboard_rhythm_binding'):
+            raise ValueError(f'{pid}: preparation differs from the audited whole-story rhythm')
         supplied = readiness.get("input_bindings")
         if not isinstance(supplied, list):
             raise ValueError(f"{pid}: readiness input bindings missing")
@@ -204,6 +212,8 @@ def _generation_inputs(manifest: dict[str, Any], root: Path, ids: list[str],
             if path in table:
                 raise ValueError(f"{pid}: duplicate readiness binding")
             table[path] = item.get("sha256")
+        if not diagnostic and table.get(rhythm['report_path']) != sha256(rhythm['report_path']):
+            raise ValueError(f'{pid}: readiness inputs do not bind the current whole-story rhythm audit')
         paths = {"text_plan_path": resolve(page.get("text_plan_path"), production_path.parent),
                  "template_path": resolve(page.get("template_path"), production_path.parent),
                  "text_layout_path": resolve(page.get("text_layout_path"), production_path.parent)}
@@ -217,6 +227,10 @@ def _generation_inputs(manifest: dict[str, Any], root: Path, ids: list[str],
                 frozen.append({"page_id": pid, "kind": kind, "path": str(path),
                                "sha256": actual, "status": "passed"})
         target, plan = load_mapping(paths["template_path"]), load_mapping(paths["text_plan_path"])
+        if not diagnostic:
+            selected = next(p for p in rhythm['decision']['pages'] if p['page_id'] == pid)
+            if target.get('layout_id') != selected.get('layout_id'):
+                raise ValueError(f'{pid}: delivery target differs from the audited page layout')
         config = load_mapping(paths["text_layout_path"])
         minimum = config.get("minimum_readable_font_size", 24)
         if (isinstance(minimum, bool) or not isinstance(minimum, (int, float))

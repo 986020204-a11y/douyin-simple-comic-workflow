@@ -17,6 +17,7 @@ from PIL import Image, ImageDraw
 import yaml
 import production_delivery as delivery
 import production_finalize as finalizer
+import audit_storyboard_rhythm as rhythm
 
 
 def save(path, value):
@@ -479,6 +480,50 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(self.run_check()["status"], "blocked")
 
     def test_normal_delivery_rejects_diagnostic_evidence_linked_below_review(self):
+        # Satisfy the normal-mode preparation contract before attacking nested
+        # review provenance. These remain isolated fabricated test records.
+        save(self.root / "FIXTURE-METADATA.json", {"diagnostic_test_only": True,
+             "purpose": "Adversarial ordinary-mode delivery test, never artwork acceptance."})
+        pages = []
+        for pid, lid, function in zip(self.ids, ("SB-055", "SB-056"),
+                ("单幅独白表现角色收到消息后的惊讶", "单幅连续场景表现角色回应后的释然")):
+            self.mutate(f"targets/{pid}.yaml", lambda d: d.update(layout_id=lid))
+            for name in (f"plans/{pid}.yaml", f"plans/actual/{pid}.yaml"):
+                self.mutate(name, lambda d: d.update(layout_id=lid))
+            for name in (f"reports/{pid}-base.json", f"reports/{pid}-layout.json"):
+                self.mutate(name, lambda d: d.update(selected_layout=lid))
+            pages.append({"page_id": pid, "layout_id": lid, "panel_count": 1,
+                "narrative_function": function,
+                "panel_count_reason": "本页只有一个独立情绪节点，使用原生单幅结构足以表达",
+                "panels": [{"panel_id": "P01", "focus": function}],
+                "selection_evidence": {"page_id": pid, "selected_layout_id": lid,
+                    "narrative_function": function,
+                    "selection_reason": "比较两个原生单幅模板后，依据本页情绪功能选择构图",
+                    "candidates": [{"layout_id": candidate, "compatible": True,
+                        "reason": "原生单幅数量与本页独立情绪节点的数量相容"}
+                        for candidate in ("SB-055", "SB-056")]}})
+        decision_path = self.root / "storyboard-decision.yaml"
+        decision = {"page_count": 2, "pages": pages, "planned_panel_count": 2}
+        save(decision_path, decision)
+        audit = rhythm.audit_decision(decision)
+        self.assertEqual(audit["status"], "passed", audit)
+        audit["decision_binding"] = {"path": str(decision_path), "sha256": digest(decision_path)}
+        audit_path = self.root / "preparation/storyboard-rhythm-audit.json"
+        save(audit_path, audit)
+        rhythm_binding = {"path": str(audit_path), "sha256": digest(audit_path)}
+        self.mutate("preparation/content-coverage.json", lambda d:
+            d["storyboard_binding"].update(sha256=digest(decision_path)))
+        self.mutate("reports/story.json", lambda d:
+            d.update(coverage_sha256=digest(self.root / "preparation/content-coverage.json")))
+        self.mutate("preparation/generation-requests.json", lambda d:
+            d.update(storyboard_rhythm_binding=rhythm_binding))
+        for pid in self.ids:
+            self.mutate(f"preparation/{pid}/generation-readiness.json", lambda d:
+                d.update(storyboard_rhythm_binding=rhythm_binding,
+                         input_bindings=d["input_bindings"] + [rhythm_binding]))
+        self.rebind_preparation()
+        for pid in self.ids:
+            self.refresh_visual_provenance(pid)
         self.mutate("delivery-input.pending.yaml", lambda d: d.pop("diagnostic_test_only"))
         for pid in self.ids:
             for name in (f"reports/{pid}-review.json", f"reports/{pid}-supplied-review.json"):

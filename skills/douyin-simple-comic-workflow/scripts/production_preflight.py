@@ -19,6 +19,7 @@ import yaml
 from PIL import Image, ImageDraw
 
 from audit_preview_bubbles import audit as audit_bubbles
+from audit_storyboard_rhythm import audit_decision
 from check_executable_templates import check as check_library
 from layout_executor import compile_template_contract, render_layout
 from preflight_preview_text import preflight
@@ -28,7 +29,7 @@ from template_contract import executable_text_containers
 
 ROOT = Path(__file__).resolve().parents[1]
 LIBRARY = ROOT / 'references/comic-layouts'
-VERSION = '0.8-production'
+VERSION = '0.9-production-page-selection'
 
 
 def load(path):
@@ -245,6 +246,17 @@ def prepare(manifest_path, output, cache_dir=None, diagnostic=False):
         raise ValueError('Storyboard handoff contains duplicate pages')
     if not diagnostic and page_ids != decision_ids:
         raise ValueError('Production page IDs/order must cover the complete storyboard handoff; partial tests require explicit diagnostic mode')
+    rhythm_path = output / 'storyboard-rhythm-audit.json'
+    if not diagnostic:
+        rhythm = audit_decision(decision, library_root=LIBRARY)
+        rhythm['decision_binding'] = binding(decision_path)
+        write(rhythm_path, rhythm)
+        if rhythm['status'] != 'passed':
+            summary = {'status': 'blocked', 'generation_ready': False,
+                       'errors': rhythm['errors'], 'storyboard_rhythm': rhythm,
+                       'images_generated': False, 'actual_image_checked': False}
+            write(output / 'summary.json', summary)
+            return summary
     if not diagnostic:
         declared_beats = {b.get('beat_id') for b in manifest.get('story_beats', [])}
         for page in pages:
@@ -297,6 +309,8 @@ def prepare(manifest_path, output, cache_dir=None, diagnostic=False):
         check = preflight(template, plan, config, config_path.parent)
         write(folder / 'text-preflight.json', check)
         dependency_paths = [source_path, decision_path, template_path, plan_path, config_path, ROOT/'SKILL.md']
+        if not diagnostic:
+            dependency_paths.append(rhythm_path)
         dependency_paths += sorted((ROOT/'scripts').glob('*.py'))
         dependency_paths += [LIBRARY/'layouts.json', LIBRARY/'template-index.yaml',
                              LIBRARY/'bubble-constraints.yaml', LIBRARY/'bubble-execution-profiles.yaml',
@@ -310,6 +324,8 @@ def prepare(manifest_path, output, cache_dir=None, diagnostic=False):
                      'actual_image_checked': False, 'images_generated': False,
                      'input_bindings': [binding(p) for p in dict.fromkeys(dependency_paths)],
                      'capability_key': caps['key'], 'errors': list(check['errors'])}
+        if not diagnostic:
+            readiness['storyboard_rhythm_binding'] = binding(rhythm_path)
         if check['generation_ready']:
             proof_base = folder / 'proof-base.png'
             # A neutral diagnostic interior reveals both white and black ink.
@@ -388,11 +404,14 @@ def prepare(manifest_path, output, cache_dir=None, diagnostic=False):
                'page_count': len(pages), 'job_count': sum(len(p['jobs']) for p in requests),
                'capability_cache_hit': caps['cache_hit'], 'elapsed_seconds': round(time.monotonic()-started, 3),
                'images_generated': False, 'actual_image_checked': False, 'base_image_modified': False}
+    if not diagnostic:
+        summary['storyboard_rhythm_binding'] = binding(rhythm_path)
     write(output / 'summary.json', summary)
     if ready:
         write(output / 'generation-requests.json', {'schema_version': 1, 'pipeline_version': VERSION,
               'diagnostic_test_only': diagnostic, 'expected_page_ids': page_ids,
-              'pilot_page_id': manifest.get('pilot_page_id', page_ids[0]), 'pages': requests})
+              'pilot_page_id': manifest.get('pilot_page_id', page_ids[0]), 'pages': requests,
+              **({'storyboard_rhythm_binding': binding(rhythm_path)} if not diagnostic else {})})
     return summary
 
 

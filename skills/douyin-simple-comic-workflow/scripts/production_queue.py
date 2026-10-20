@@ -263,6 +263,14 @@ def _validate_proof(proof_binding: dict, template_binding: dict, *, diagnostic: 
     if template_binding["path"] not in bound_paths:
         raise QueueError(f"Readiness proof is not bound to the current template: {path}")
     _check_binding(template_binding, Path.cwd())
+    if not diagnostic:
+        if not isinstance(proof.get('page_id'), str) or not proof['page_id'].strip():
+            raise QueueError('Normal readiness proof requires an explicit page_id')
+        rhythm = _validate_storyboard_rhythm(
+            proof.get('storyboard_rhythm_binding'), path.parent,
+            page_id=proof.get('page_id'), template_path=Path(template_binding['path']))
+        if not {str(rhythm['report_path']), str(rhythm['decision_path'])}.issubset(bound_paths):
+            raise QueueError('Readiness inputs must bind the whole-story rhythm audit and decision')
     complete = proof.get("complete_proof") or {}
     if complete.get("accepted") is not True:
         raise QueueError(f"Complete layout/text proof has not passed: {path}")
@@ -291,6 +299,33 @@ def _validate_proof(proof_binding: dict, template_binding: dict, *, diagnostic: 
     return proof
 
 
+def _validate_storyboard_rhythm(supplied: dict, base: Path, *, page_id: str | None = None,
+                               template_path: Path | None = None,
+                               expected_page_ids: list[str] | None = None) -> dict:
+    """Recheck the complete decision, including on resume; a saved pass is insufficient."""
+    from audit_storyboard_rhythm import audit_decision
+    report_path = _check_binding(supplied, base)
+    report = _load(report_path)
+    decision_path = _check_binding(report.get('decision_binding'), report_path.parent)
+    decision = _load(decision_path)
+    current = audit_decision(decision)
+    if (report.get('status') != 'passed' or report.get('generation_ready') is not True
+            or current.get('status') != 'passed' or current.get('generation_ready') is not True
+            or report.get('metrics') != current.get('metrics')):
+        raise QueueError('Whole-story storyboard rhythm audit is missing, stale or blocked: '
+                         + '; '.join(current.get('errors', [])))
+    pages = decision.get('pages') or []
+    ids = [p.get('page_id') for p in pages]
+    if expected_page_ids is not None and ids != expected_page_ids:
+        raise QueueError('Storyboard rhythm audit must cover the entire prepared page set/order')
+    if page_id is not None:
+        page = next((p for p in pages if p.get('page_id') == page_id), None)
+        if page is None or template_path is None or page.get('layout_id') != _load(template_path).get('layout_id'):
+            raise QueueError('Page/template differs from the audited whole-story decision')
+    return {'report': report, 'decision': decision, 'report_path': report_path,
+            'decision_path': decision_path}
+
+
 def _fingerprint(job: dict, version: str) -> str:
     material = {"queue_version": QUEUE_VERSION, "pipeline_version": version,
                 "request": job["request"], "reference_bindings": job["reference_bindings"],
@@ -313,6 +348,9 @@ def _normalize_manifest(manifest_path: str | Path, *, diagnostic: bool = False) 
     jobs: dict[str, dict] = {}
     if not isinstance(raw.get("pages"), list) or not raw["pages"]:
         raise QueueError("Manifest requires explicit nonempty pages/jobs")
+    if not diagnostic:
+        _validate_storyboard_rhythm(raw.get('storyboard_rhythm_binding'), path.parent,
+                                    expected_page_ids=[p.get('page_id') for p in raw['pages']])
     for page in raw["pages"]:
         page_id = page.get("page_id")
         if not isinstance(page_id, str) or not page_id.strip() or page_id in pages:
@@ -321,7 +359,11 @@ def _normalize_manifest(manifest_path: str | Path, *, diagnostic: bool = False) 
         supplied = page.get("proof") or {}
         proof = {"path": str(_path(supplied.get("report_path", ""), path.parent)),
                  "sha256": supplied.get("sha256")}
-        _validate_proof(proof, template, diagnostic=diagnostic)
+        ready = _validate_proof(proof, template, diagnostic=diagnostic)
+        if not diagnostic and ready.get('page_id') != page_id:
+            raise QueueError('Readiness proof page_id differs from its request page')
+        if not diagnostic and ready.get('storyboard_rhythm_binding') != raw.get('storyboard_rhythm_binding'):
+            raise QueueError('All pages must use the same whole-story rhythm audit')
         rows = page.get("jobs")
         if not isinstance(rows, list) or not rows:
             raise QueueError(f"Page requires explicit scene jobs: {page_id}")

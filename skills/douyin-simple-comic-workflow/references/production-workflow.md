@@ -1,4 +1,4 @@
-# Stable production, v0.8.2
+# Stable production, v0.9.0
 
 Use this path for a new static comic after the library is installed. The output
 continues to use real SB geometry, post-layout text and one canonical final per
@@ -15,6 +15,15 @@ action or emotion per unit. Combine repeated scenery before selecting an SB,
 never by deleting units from an already selected template. Preserve causal
 events, emotion turns, critical dialogue/conditions and the ending. Record
 inferences and design additions separately.
+
+Select multi-page layouts with `prompt_style.py --pages <RUN>/page-plan.yaml
+--output <RUN>/storyboard-decision.yaml`; see [the page selection schema](storyboard-rhythm.md).
+The page plan gives each page its own narrative function, panel-count reason and
+story units. A previous single-layout result or an accepted pilot does not choose
+the layout for other pages. Inspect the whole set's layout/text proofs for pacing
+and image scale before dispatch. A new preparation must contain a current
+`storyboard-rhythm-audit.json` bound to the complete decision; a legacy handoff
+without page-specific selection evidence must return to selection, not be expanded.
 
 Build a production manifest with paths relative to that manifest or absolute:
 
@@ -76,10 +85,19 @@ The output directory must be new/empty. This one command:
 - verifies the bundled 68-layout library and selector, caching only library
   integrity by actual program/library/version hashes;
 - checks beat/panel bindings, required source quotations and linked excerpts;
+- blocks unreasoned whole-story uniform layouts, long repeated runs and copied
+  page-selection evidence before creating any scene requests;
 - runs current text capacity checks for every page, draws its complete neutral
   diagnostic proof and executes the real text/bubble audit;
 - writes hash-bound `generation-readiness.json` per page and, only when every
   page is ready, `generation-requests.json` for the queue.
+
+Each readiness proof and the request manifest contain the same hash-bound
+`storyboard_rhythm_binding`. Queue initialization, sync and resume dispatch
+revalidate the underlying whole-story decision, page order, selected target and
+the current audit rather than trusting a saved `passed` label. Final delivery
+checks that binding too. Diagnostic-only renderer tests remain explicitly marked
+and cannot enter a normal queue or production package.
 
 The generation requests contain each real unit's target geometry, full page
 reading order and only the text reservations intersecting that unit, expressed

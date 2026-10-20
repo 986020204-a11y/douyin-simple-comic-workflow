@@ -20,6 +20,7 @@ from PIL import Image
 SCRIPTS = Path(__file__).resolve().parents[2] / "skills/douyin-simple-comic-workflow/scripts"
 sys.path.insert(0, str(SCRIPTS))
 import production_queue as queue
+import audit_storyboard_rhythm as rhythm
 
 
 def dump(path, value):
@@ -108,7 +109,8 @@ class QueueRegression(unittest.TestCase):
         geometry = [{"panel_id": "U01", "order": 1, "x": 0, "y": 0,
                      "width": 1080, "height": 1440}]
         base_audit = self.root / "base-audit.json"
-        dump(base_audit, {"diagnostic_test_only":self.diagnostic,"selected_layout": "SB-001", "target_panel_count": 1,
+        selected_layout = json.loads(self.template.read_text(encoding='utf-8'))['layout_id']
+        dump(base_audit, {"diagnostic_test_only":self.diagnostic,"selected_layout": selected_layout, "target_panel_count": 1,
             "actual_panel_count": 1, "target_panel_geometry": geometry,
             "actual_panel_geometry": geometry, "image_geometry_measurement_verified": True,
             "measurement_evidence": {"image_sha256": queue.sha256(base),
@@ -186,9 +188,51 @@ class QueueRegression(unittest.TestCase):
              'purpose':'Adversarial ordinary-mode gate tests, never artwork acceptance.'})
         self.diagnostic = False
         target = json.loads(self.template.read_text(encoding='utf-8'))
-        target['diagnostic_test_only'] = False; dump(self.template,target)
+        # Both real SBs have one native story unit. The tiny targets below remain
+        # explicit test geometry; they do not certify either source template.
+        target.update(diagnostic_test_only=False, layout_id='SB-055')
+        dump(self.template,target)
+        second_target = self.root/'P02-template.json'
+        dump(second_target,dict(target,layout_id='SB-056'))
+        pages = []
+        for pid, lid, function in [
+            ('P01','SB-055','独白以单幅构图表现角色首次惊讶'),
+            ('P02','SB-056','连续场景以单幅构图表现之后释然'),
+        ]:
+            pages.append({'page_id':pid,'layout_id':lid,'panel_count':1,
+                'narrative_function':function,
+                'panel_count_reason':'本页只有一个独立的情绪节点，单幅画面足以承载',
+                'panels':[{'focus':function,'main_action_or_emotion':function}],
+                'selection_evidence':{'page_id':pid,'selected_layout_id':lid,
+                    'narrative_function':function,
+                    'selection_reason':'比较两个原生单幅模板后，按本页情绪功能选择构图',
+                    'candidates':[{'layout_id':candidate,'compatible':True,
+                        'reason':'原生单幅结构与本页唯一情绪节点的数量相容'}
+                        for candidate in ('SB-055','SB-056')]}})
+        decision = {'page_count':2,'pages':pages}
+        decision_path = self.root/'ordinary-storyboard-decision.json'
+        dump(decision_path,decision)
+        audit = rhythm.audit_decision(decision)
+        self.assertEqual(audit['status'],'passed',audit)
+        audit['decision_binding'] = self.binding(decision_path)
+        audit_path = self.root/'ordinary-storyboard-rhythm.json'
+        dump(audit_path,audit)
+        rhythm_binding = self.binding(audit_path)
         self.raw['diagnostic_test_only'] = False
-        self.raw['pages'] = [self.make_page('P01',3),self.make_page('P02',2)]
+        self.raw['storyboard_rhythm_binding'] = rhythm_binding
+        self.raw['pages'] = []
+        for pid, template in [('P01',self.template),('P02',second_target)]:
+            page = self.make_page(pid,1)
+            page['template_path'] = str(template)
+            proof_path = Path(page['proof']['report_path'])
+            proof = json.loads(proof_path.read_text(encoding='utf-8'))
+            proof.update(page_id=pid,storyboard_rhythm_binding=rhythm_binding)
+            proof['input_bindings'] = [self.binding(template),self.binding(self.source),
+                self.binding(self.root/f'{pid}-generation-plan.json'),
+                self.binding(decision_path),rhythm_binding]
+            dump(proof_path,proof)
+            page['proof']['sha256'] = queue.sha256(proof_path)
+            self.raw['pages'].append(page)
         dump(self.manifest,self.raw)
         self.state = self.root/'ordinary-attack-state.json'
         queue.init_queue(self.manifest,self.state,max_concurrency=2)

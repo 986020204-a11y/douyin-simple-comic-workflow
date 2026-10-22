@@ -1,5 +1,11 @@
 # Stable production, v0.9.0
 
+This document belongs to **STRICT**. New everyday FAST runs use the independent
+[FAST workflow](fast-workflow.md); do not run this preflight/scene queue for FAST.
+Resume existing STRICT projects here. The original strict helpers and acceptance
+requirements below are unchanged. All actual artwork uses the built-in Codex
+`image_gen` tool; no API-key or external-provider fallback is authorized.
+
 Use this path for a new static comic after the library is installed. The output
 continues to use real SB geometry, post-layout text and one canonical final per
 page. Template research and renderer benchmarks belong to capability validation;

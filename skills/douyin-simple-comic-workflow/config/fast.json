@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "mode": "fast",
+  "generator": "codex.image_gen",
+  "generation_unit": "whole_page",
+  "candidates_per_page": 1,
+  "max_attempts": 2,
+  "reuse_first_page_reference": true,
+  "text_strategy": "semantic_local_post_layout",
+  "storyboard_strategy": "original_sb_narrative_selection",
+  "visual_review_required": true,
+  "reference_role": "identity_wardrobe_palette_style_only",
+  "token_usage": null,
+  "quota_usage": null,
+  "cost": null
+}

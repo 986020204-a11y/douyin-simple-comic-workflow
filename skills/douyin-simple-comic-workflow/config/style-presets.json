@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "catalog_version": "1.0.1",
+  "presets": [
+    {
+      "preset_id": "urban-webtoon",
+      "name": "都市韩漫",
+      "aliases": [
+        "都市韩漫",
+        "韩漫",
+        "Korean Webtoon",
+        "FG-021",
+        "327"
+      ],
+      "prompt": "Korean Webtoon. Use expressive character faces, a coherent restrained palette and readable narrative staging. Keep each character's age, face, hairstyle and wardrobe consistent with the story-specific character cards. Character identity first, narrative composition second, background richness third.",
+      "planning_guidance": {
+        "character_design": "按当前故事设计人物卡；成年角色采用成年比例，儿童保留原文年龄；区分脸型、发型、衣着剪影，精致度服从辨识度。",
+        "performance": "用眼神、嘴角、手部和身体距离表达试探、压迫或情绪变化；强烈反应由剧情决定，不把每页都画成同一张精致表情。",
+        "camera": "根据当前语境安排对视、反应近景、物件特写或交代空间的中景；同一场景允许镜头切换。",
+        "layout": "从原有SB按每页叙事选型；情绪停顿可留白或放大近景，动作推进可用连续格，不固定分镜结构或格数。",
+        "lettering": "对白优先清晰气泡，内心与旁白分开；在当前画格中为人物视线、脸、手和关键物件留空间；字体与线条整组统一。"
+      },
+      "preview": {
+        "path": "assets/style-previews/character-style-preview.png",
+        "focus": "左栏：都市韩漫，成年男女头像与半身造型",
+        "role": "selection_only"
+      },
+      "source": {
+        "kind": "library_label",
+        "catalog_id": "FG-021",
+        "legacy_number": "327",
+        "author": "yang0",
+        "url": "https://github.com/yang0/handraw-style",
+        "note": "采用通用Korean Webtoon标签；不声称某一作品的精确画风或跨页一致性已自动验证。"
+      }
+    },
+    {
+      "preset_id": "chibi-comedy",
+      "name": "Q版轻喜剧",
+      "aliases": [
+        "Q版轻喜剧",
+        "q版轻喜剧",
+        "Q版",
+        "chibi",
+        "chibi comedy"
+      ],
+      "prompt": "Adult chibi light-comedy comic when characters are adults: roughly 3 to 3.5 head proportions, expressive oversized heads, compact bodies, clean rounded outlines, readable flat cel color and small shadows. Preserve the source age, character identity, hairstyle and wardrobe; stylization does not turn adults into children. Use facial and body acting to express the current story moment. Character identity first, narrative composition second, background richness third.",
+      "planning_guidance": {
+        "character_design": "采用约3至3.5头身的喜剧概括，保留发型、服装剪影和个体差异；人物年龄与身份遵循原文，不将成年人误画成儿童。",
+        "performance": "用表情、姿态和节奏表现装哭、憋笑、尴尬或反差；严肃场景保留对应情绪，夸张不改写事件与人物关系。",
+        "camera": "可用反应特写、人物大小对比和物件特写强化笑点；是否放大或简化由本页内容决定。",
+        "layout": "根据铺垫、反应和笑点释放选择原SB，小格推进或大格反应均可；不固定四格或机械轮换。",
+        "lettering": "对白、吐槽心声、强调和拟声形式按原文语义选择；活泼气泡须绑定实际说话者和画格，旁白不能变对白，不能额外堆字。"
+      },
+      "preview": {
+        "path": "assets/style-previews/character-style-preview.png",
+        "focus": "中栏：Q版轻喜剧，成年角色的Q版头像与半身造型",
+        "role": "selection_only"
+      },
+      "source": {
+        "kind": "project_approved_generic_recipe",
+        "url": null,
+        "note": "本次用户选定的通用Q版轻喜剧样张；不是手绘库中1.5头身Q版编号，不与该编号混同。"
+      }
+    },
+    {
+      "preset_id": "ancient-fine-line",
+      "name": "清雅古风叙事",
+      "aliases": [
+        "清雅古风叙事",
+        "清雅细线古风漫画",
+        "古风细线",
+        "FE-034",
+        "203",
+        "Classical Chinese Fine-Line Manga"
+      ],
+      "prompt": "Classical Chinese Fine-Line Manga. Fine graceful linework, carefully designed classical garments and architecture, restrained character emotion and clear long-form narrative. Design hairstyles, clothing, ornaments and etiquette for the story's period, social identity and scene; if the period is fictional, keep one coherent invented costume vocabulary. Preserve story-specific character identity across all pages. Character identity first, narrative composition second, background richness third.",
+      "planning_guidance": {
+        "character_design": "先确定故事朝代或架空设定、身份与年龄，再设计脸型、发式、服饰和配饰；男女与不同角色有可辨认的轮廓，不把同一张古风脸套给所有人。",
+        "performance": "按语境表现含蓄试探、威严、狠厉、灵动或温柔；用眉眼、手势、袖口动作和仪态承担表演，动作戏允许更鲜明的身体姿态。",
+        "camera": "对峙时可强调视线与站位距离，隐忍时可用眼神或手部特写，行动时交代身体与场景关系；不固定镜头清单。",
+        "layout": "仍按叙事选择原有SB；近景、场面和动作格按剧情组织，适度简化纹样与背景，为人物和文字保留呼吸空间。",
+        "lettering": "古风对白、心声和旁白仍按语义分别安排；文字区域避开发饰、脸、衣袖和关键动作，使用清晰中文字体，不默认花体或把正文变成书法。"
+      },
+      "preview": {
+        "path": "assets/style-previews/character-style-preview.png",
+        "focus": "右栏：清雅古风叙事，古风成年男女头像与半身造型",
+        "role": "selection_only"
+      },
+      "source": {
+        "kind": "library_traits",
+        "catalog_id": "FE-034",
+        "legacy_number": "203",
+        "author": "yang0",
+        "url": "https://github.com/yang0/handraw-style",
+        "note": "参考库中细线古风叙事定义；样张为架空服饰，不作特定朝代考据证明。"
+      }
+    }
+  ]
+}

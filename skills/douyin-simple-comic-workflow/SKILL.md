@@ -2,7 +2,7 @@
 name: douyin-simple-comic-workflow
 description: Create static Douyin comics and story illustration sets from Chinese copy, with FAST whole-page generation by default and STRICT SB geometry, local Chinese text, and production acceptance when precision is required. Not for video.
 metadata:
-  version: "1.1.0-fast-semantic"
+  version: "1.2.0-style-presets"
   short-description: "默认 FAST 整页漫画；保留 STRICT 精确 SB 生产"
   final-output-policy: "one-final-image-per-page"
 ---
@@ -10,6 +10,16 @@ metadata:
 # 抖音静态漫画：FAST / STRICT
 
 默认用于静态抖音漫画、故事插画组图。不制作视频，不自动发布。新任务使用新的独立项目目录，保留历史成品。
+
+## 画风与人物选择
+
+![三套已确认人物画风的头像与半身预览](assets/style-previews/character-style-preview.png)
+
+从左到右为都市韩漫、Q版轻喜剧、清雅古风叙事。图片只展示画法，具体人物仍依据本故事重新设计。
+
+新项目支持三套已选画风：**都市韩漫、Q版轻喜剧、清雅古风叙事**。生成前遵照用户本次选择或明确要求继承的项目风格；没有选择依据时展示三项与预览供选择，用户授权助手选择时可推荐并记录理由。读取 [画风预设与逐页表达](references/style-presets.md) 和所选规格，不默认加载整个外部画风库。保留原有自定义画风与真实参考图能力。
+
+先确定画风，再按本故事建立人物卡，联合规划每页的表演、镜头、分镜与文字。预设提供倾向，每页仍按语境、动作和情绪选择原SB及文字形式；不把一种画风绑定一种分镜或统一字幕。样图人物不自动成为新故事主角。恢复冻结任务沿用该任务快照，不重新选风格或修改历史图片。
 
 ## 先选择模式，再读取对应资料
 

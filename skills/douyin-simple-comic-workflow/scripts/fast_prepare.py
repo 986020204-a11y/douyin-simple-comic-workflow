@@ -15,6 +15,7 @@ from PIL import Image
 import yaml
 
 import fast_storyboard
+import fast_style
 
 ROOT = Path(__file__).resolve().parents[1]
 LIBRARY = ROOT / "references/comic-layouts"
@@ -107,7 +108,8 @@ def prepare(plan_path, run_root, simulation=False):
     if draft.get("requires_exact_layout") or draft.get("requires_exact_bubbles"):
         raise ValueError("Exact panels/bubble positions require STRICT; FAST cannot certify exact geometry")
     source = _source_path(draft["source_path"], plan_path.parent)
-    analysis, characters, style = draft.get("analysis"), draft.get("characters"), draft.get("style")
+    analysis, characters = draft.get("analysis"), draft.get("characters")
+    style = fast_style.resolve_style(draft.get("style"))
     pages = copy.deepcopy(draft.get("pages"))
     if not isinstance(analysis, dict) or not analysis:
         raise ValueError("Save the one-time story analysis in analysis")
@@ -137,6 +139,9 @@ def prepare(plan_path, run_root, simulation=False):
                 img.load()
             references[str(path)] = (digest(path), path.suffix.lower())
     for page in pages:
+        application = fast_style.page_application(page, style)
+        if application is not None:
+            page["style_application"] = application
         if not isinstance(page.get("panels"), list) or not page["panels"]:
             raise ValueError(f"{page['page_id']}: ordered panels/story units are required")
         if not isinstance(page.get("prompt"), str) or not page["prompt"].strip():
@@ -153,6 +158,9 @@ def prepare(plan_path, run_root, simulation=False):
         if any(not isinstance(c, dict) or not isinstance(c.get("type"), str) or not c["type"].strip() for c in captions):
             raise ValueError(f"{page['page_id']}: new caption plans need explicit text type; geometry must not invent dialogue")
         page["caption_plan"] = prepare_caption_plan(page, text_settings)
+        if "preset_id" in style:
+            page["caption_plan"]["style_application"] = {
+                "preset_id": style["preset_id"], "lettering": page["style_application"]["lettering"]}
         if captions:
             page["caption_plan"]["capacity_preflight"] = preflight_caption_plan(
                 page["caption_plan"], font_source, tuple(text_settings["canvas_size"]))
@@ -199,11 +207,18 @@ def prepare(plan_path, run_root, simulation=False):
                            "narrative_function": page["narrative_function"],
                            "panel_count_reason": page["panel_count_reason"],
                            "text_design": page["captions"]})
+        if "preset_id" in style:
+            storyboard[-1]["style_application"] = page["style_application"]
         reservations = [c["bounds"] for c in page["captions"]]
+        style_decisions = ("Current page style application (artwork only; lettering is local post-layout): "
+                           + json.dumps({k: page["style_application"][k]
+                                         for k in ("performance", "camera", "layout")}, ensure_ascii=False)
+                           + "\n" if "preset_id" in style else "")
         prompt = (style["prompt"].strip() + "\n\n"
                   + "Recurring character cards: " + json.dumps(characters, ensure_ascii=False) + "\n"
                   + ("Bundled SB visual guide (approximate, no pixel-exact claim): " + layout["prompt"] + "\n" if layout else "")
                   + "Current page narrative purpose: " + page["narrative_function"] + "\n"
+                  + style_decisions
                   + "Planned approximate panel regions (not exact source geometry): "
                   + json.dumps(layout["guidance"]["panels"], ensure_ascii=False) + "\n"
                   + "Ordered story units: " + json.dumps(page["panels"], ensure_ascii=False) + "\n"

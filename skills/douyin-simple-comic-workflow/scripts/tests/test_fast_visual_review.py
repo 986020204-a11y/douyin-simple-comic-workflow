@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 import sys
 import tempfile
+import threading
 import unittest
 from unittest import mock
 
@@ -93,6 +94,169 @@ class FastVisualReviewOffline(unittest.TestCase):
 
     def pass_review(self, pid="P01"):
         return fast_queue.review_page(self.run, pid, self.review_file(pid))
+
+    def enable_first_final_gate(self, single_page=False):
+        self.plan["first_final_review_required"] = True
+        if single_page:
+            self.plan["pages"] = self.plan["pages"][:1]
+        caption = self.fast / "captions" / "P01.json"
+        caption.parent.mkdir(exist_ok=True)
+        caption.write_text(json.dumps({"captions": [{"text": "SIMULATED narration"}]}), encoding="utf-8")
+        self.plan["pages"][0].update(caption_plan_path=str(caption),
+                                     caption_plan_sha256=fast_queue.sha256(caption))
+        self.reset_queue()
+        self.complete(self.claim())
+        self.pass_review()
+
+    def select_final_fixture(self, revision="one", same_image=None):
+        import fast_caption
+        caption = self.fast / "caption-revisions" / f"P01-{revision}.json"
+        caption.parent.mkdir(exist_ok=True)
+        caption.write_text(json.dumps({"captions": [{"text": f"SIMULATED {revision}"}]}), encoding="utf-8")
+        final = same_image or self.image(f"project/fast/final/P01-{revision}.png")
+        manifest_path = self.fast / "caption-selection.json"
+        manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {"schema_version": 1, "pages": {}}
+        result = {"page_id": "P01", "caption_plan_path": str(caption), "output_path": str(final),
+                  "image_sha256": fast_queue.sha256(final), "render_signature": revision,
+                  "renderer": "SIMULATED local composition"}
+        fast_caption._commit_selection(self.run, manifest, result, fast_queue.sha256(self.fast / "plan.json"),
+                                       self.state()["pages"]["P01"]["image_sha256"], None)
+        return manifest["pages"]["P01"]
+
+    def final_review_file(self, selection, passed=True):
+        document = {"page_id": "P01", "image_sha256": selection["output_sha256"],
+                    "caption_plan_sha256": selection["caption_plan_sha256"], "actual_final_viewed": True,
+                    "checks": {name: {"passed": True, "reason": "SIMULATED final viewing for state test"}
+                               for name in ("storyboard_expression", "text_scene_integration", "reading_order")}}
+        if not passed:
+            document["checks"]["text_scene_integration"] = {"passed": False,
+                "reason": "SIMULATED dialogue detached from its speaker; reletter locally"}
+        path = self.root / "SIMULATED-final-review.json"
+        path.write_text(json.dumps(document), encoding="utf-8")
+        return path
+
+    def test_first_final_gate_waits_for_local_selection_and_actual_review(self):
+        self.enable_first_final_gate()
+        self.assertEqual(fast_queue.claim_page(self.run)["status"], "awaiting_final_review")
+        selection = self.select_final_fixture()
+        self.assertEqual(fast_queue.claim_page(self.run)["status"], "awaiting_final_review")
+        self.assertEqual(self.state()["pages"]["P02"]["attempts"], 0)
+        result = fast_queue.review_final_page(self.run, "P01", self.final_review_file(selection))
+        self.assertEqual(result["status"], "passed")
+        self.assertFalse(result["generation_requested"])
+        fast_queue.init_queue(self.run)
+        self.assertEqual(fast_queue.status(self.run)["counts"]["dispatched_attempts"], 1)
+        self.assertEqual(self.claim("P02")["attempt"], 1)
+
+    def test_final_review_requires_current_hashes_viewing_and_complete_checks(self):
+        self.enable_first_final_gate()
+        selection = self.select_final_fixture()
+        for key, value in (("image_sha256", "stale"), ("caption_plan_sha256", "stale"),
+                           ("actual_final_viewed", False), ("checks", {})):
+            with self.subTest(key=key):
+                path = self.final_review_file(selection)
+                document = json.loads(path.read_text())
+                document[key] = value
+                path.write_text(json.dumps(document), encoding="utf-8")
+                with self.assertRaises(fast_queue.QueueError):
+                    fast_queue.review_final_page(self.run, "P01", path)
+        self.assertEqual(fast_queue.status(self.run)["counts"]["dispatched_attempts"], 1)
+
+    def test_failed_final_is_fixed_locally_without_regeneration(self):
+        self.enable_first_final_gate()
+        selection = self.select_final_fixture()
+        fast_queue.review_final_page(self.run, "P01", self.final_review_file(selection, passed=False))
+        blocked = fast_queue.claim_page(self.run)
+        self.assertEqual(blocked["status"], "final_review_failed")
+        self.assertIn("detached", blocked["reason"])
+        with self.assertRaises(fast_queue.QueueError):
+            fast_queue.retry_visual_page(self.run, "P01", "SIMULATED lettering problem")
+        updated = self.select_final_fixture("two")
+        self.assertEqual(fast_queue.claim_page(self.run)["status"], "awaiting_final_review")
+        fast_queue.review_final_page(self.run, "P01", self.final_review_file(updated))
+        self.assertEqual(fast_queue.status(self.run)["counts"]["dispatched_attempts"], 1)
+        self.claim("P02")
+
+    def test_same_selection_keeps_review_but_new_caption_even_same_pixels_invalidates_it(self):
+        self.enable_first_final_gate()
+        first = self.select_final_fixture()
+        fast_queue.review_final_page(self.run, "P01", self.final_review_file(first))
+        self.select_final_fixture(same_image=Path(first["output_path"]))
+        self.assertEqual(fast_queue.status(self.run)["first_final_review_status"], "passed")
+        changed = self.select_final_fixture("changed-text", same_image=Path(first["output_path"]))
+        self.assertEqual(changed["output_sha256"], first["output_sha256"])
+        self.assertEqual(fast_queue.claim_page(self.run)["status"], "awaiting_final_review")
+
+    def test_final_artifact_or_review_corruption_blocks_without_image_retry(self):
+        self.enable_first_final_gate()
+        selection = self.select_final_fixture()
+        result = fast_queue.review_final_page(self.run, "P01", self.final_review_file(selection))
+        for path in (selection["output_path"], selection["caption_plan_path"], result["review_path"]):
+            with self.subTest(path=path):
+                target = Path(path)
+                original = target.read_bytes()
+                target.write_bytes(original + b"SIMULATED corruption")
+                self.assertEqual(fast_queue.claim_page(self.run)["status"], "awaiting_final_review")
+                self.assertEqual(self.state()["pages"]["P01"]["attempts"], 1)
+                target.write_bytes(original)
+        self.assertEqual(fast_queue.status(self.run)["first_final_review_status"], "passed")
+
+    def test_single_page_waits_for_final_review_to_report_complete(self):
+        self.enable_first_final_gate(single_page=True)
+        self.assertEqual(fast_queue.status(self.run)["status"], "active")
+        selection = self.select_final_fixture()
+        review = self.final_review_file(selection)
+        fast_queue.review_final_page(self.run, "P01", review)
+        self.assertEqual(fast_queue.claim_page(self.run)["status"], "complete")
+        self.assertTrue(fast_queue.review_final_page(self.run, "P01", review)["already_reviewed"])
+
+    def test_legacy_run_does_not_read_first_final_artifacts(self):
+        self.complete(self.claim())
+        self.pass_review()
+        (self.fast / "caption-selection.json").write_text("SIMULATED invalid legacy selection", encoding="utf-8")
+        self.claim("P02")
+
+    def test_selection_cannot_change_between_review_check_and_dispatch(self):
+        import fast_caption
+        self.enable_first_final_gate()
+        selection = self.select_final_fixture()
+        fast_queue.review_final_page(self.run, "P01", self.final_review_file(selection))
+        checked = threading.Event()
+        release = threading.Event()
+        changing = threading.Event()
+        acquired = threading.Event()
+        original = fast_queue._selected_first_final
+
+        def pause_after_check(*args):
+            result = original(*args)
+            checked.set()
+            if not release.wait(5):
+                raise AssertionError("SIMULATED claim release timed out")
+            return result
+
+        def change_selection():
+            changing.set()
+            with fast_caption._selection_lock(self.run):
+                acquired.set()
+                return self.select_final_fixture("concurrent-change")
+
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            with mock.patch.object(fast_queue, "_selected_first_final", side_effect=pause_after_check):
+                claimed = pool.submit(fast_queue.claim_page, self.run)
+                try:
+                    self.assertTrue(checked.wait(5))
+                    changed = pool.submit(change_selection)
+                    self.assertTrue(changing.wait(5))
+                    self.assertFalse(acquired.wait(0.15))
+                finally:
+                    release.set()
+                self.assertEqual(claimed.result(timeout=5)["status"], "claimed")
+                with self.assertRaisesRegex(ValueError, "selection is busy"):
+                    changed.result(timeout=5)
+        self.assertFalse(acquired.is_set())
+        with fast_caption._selection_lock(self.run):
+            self.select_final_fixture("change-after-dispatch")
+        self.assertEqual(fast_queue.status(self.run)["first_final_review_status"], "pending")
 
     def test_first_image_saved_but_next_dispatch_requires_review(self):
         result = self.complete(self.claim())

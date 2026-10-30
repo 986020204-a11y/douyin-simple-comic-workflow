@@ -133,6 +133,51 @@ class FastWorkflowOffline(unittest.TestCase):
             self.assertTrue(prompt.is_file())
             self.assertIn("No text", prompt.read_text(encoding="utf-8"))
         self.assertTrue(self.read_plan().get("simulation"))
+        self.assertFalse(self.read_plan()["first_final_review_required"])
+
+    def test_page_character_membership_limits_prompt_and_image_inputs(self):
+        inactive = self.simulated_image("inputs/inactive.png", color="violet")
+        self.spec["characters"].append({"character_id": "N02",
+            "description": "INACTIVE CHARACTER ONLY ON ANOTHER PAGE", "reference_paths": [str(inactive)]})
+        for page in self.spec["pages"]:
+            page["character_ids"] = ["N01"]
+        self.prepare()
+        for page in self.read_plan()["pages"]:
+            self.assertNotIn("INACTIVE CHARACTER", Path(page["prompt_path"]).read_text(encoding="utf-8"))
+            self.assertNotIn(fast_prepare.digest(inactive), [ref["sha256"] for ref in page["reference_bindings"]])
+        all_cards = json.loads((self.run / "fast/planning/characters.json").read_text(encoding="utf-8"))
+        self.assertEqual({card["character_id"] for card in all_cards}, {"N01", "N02"})
+
+    def test_page_membership_rejects_unknown_or_omitted_text_owner_before_run_creation(self):
+        self.spec["pages"][0]["character_ids"] = ["UNKNOWN"]
+        with self.assertRaisesRegex(ValueError, "character_ids"):
+            self.prepare()
+        self.assertFalse(self.run.exists())
+        self.spec["pages"][0]["character_ids"] = []
+        self.spec["pages"][0]["captions"] = [{"type": "thought", "text": "我到家了。", "owner_id": "N01"}]
+        with self.assertRaisesRegex(ValueError, "omits.*owner"):
+            self.prepare()
+        self.assertFalse(self.run.exists())
+
+    def test_blanket_footer_needs_narrative_reason_but_legitimate_band_is_allowed(self):
+        for page in self.spec["pages"]:
+            page["prompt"] += " Reserve the explicitly specified EMPTY LOWER CAPTION ZONE inside each panel."
+        with self.assertRaisesRegex(ValueError, "caption_band_reason"):
+            self.prepare()
+        self.assertFalse(self.run.exists())
+        for page in self.spec["pages"]:
+            page["caption_band_reason"] = "保持三次回应的文字视线一致，方便比较情绪变化。"
+        self.prepare()
+        saved = json.loads((self.run / "fast/planning/storyboard.json").read_text(encoding="utf-8"))
+        self.assertTrue(all(page.get("caption_band_reason") for page in saved["pages"]))
+
+    def test_local_caption_space_and_explicit_negative_footer_instruction_are_allowed(self):
+        for page in self.spec["pages"]:
+            page["prompt"] += (" Do not reserve an empty lower caption zone inside each panel. "
+                               "Leave quiet space beside N01 for one caption. "
+                               "Keep its lower 20 percent completely empty.")
+        self.prepare()
+        self.assertEqual(len(self.read_plan()["pages"]), 3)
 
     def test_prepare_reads_only_selected_sb_rules(self):
         read_paths = []

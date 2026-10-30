@@ -55,6 +55,125 @@ def shortlist(query="", limit=5):
     return fast_storyboard.shortlist(query, limit, LIBRARY)
 
 
+def page_character_cards(page, characters):
+    """Use explicit page membership, never guess which visual actors to omit."""
+    if "character_ids" not in page:
+        return characters  # Old drafts retain their original prompt/reference behavior.
+    selected = page["character_ids"]
+    known = {c["character_id"] for c in characters}
+    if (not isinstance(selected, list) or any(not isinstance(cid, str) for cid in selected)
+            or len(set(selected)) != len(selected) or set(selected) - known):
+        raise ValueError(f"{page['page_id']}: character_ids must contain unique existing character IDs")
+    owners = {caption.get(key) for caption in page.get("captions", []) if isinstance(caption, dict)
+              for key in ("speaker_id", "owner_id") if isinstance(caption.get(key), str)} & known
+    if owners - set(selected):
+        raise ValueError(f"{page['page_id']}: character_ids omits a dialogue/thought owner: {sorted(owners - set(selected))}")
+    return [c for c in characters if c["character_id"] in selected]
+
+
+def _prompt_parts(values):
+    """Deduplicate exact authored text only; never infer synonyms or truncate."""
+    result = []
+    for value in values:
+        if isinstance(value, str) and value.strip() and value.strip() not in result:
+            result.append(value.strip())
+    return result
+
+
+def _prompt_bounds(bounds):
+    return "xywh=" + json.dumps(bounds, ensure_ascii=False, separators=(",", ":"))
+
+
+def build_generation_prompt(page, style, characters):
+    """Project frozen planning into image instructions, not serialized records.
+
+    The authored shared and page prompts remain intact. Only known image-facing
+    fields enter this projection; complete cards, storyboards and caption plans
+    are still frozen separately. Reference instructions are added by claim_page
+    when actual references exist, including a dynamically reused first page.
+    """
+    sections = [style["prompt"].strip()]
+    cards = []
+    for character in characters:
+        # Do not expose reference paths, provenance or arbitrary private notes.
+        details = _prompt_parts(character.get(key) for key in
+                                ("description", "appearance", "wardrobe", "visual_notes"))
+        cards.append(character["character_id"] + ": " + "; ".join(details))
+    if cards:
+        sections.append("Characters:\n" + "\n".join(cards))
+    layout = page.get("layout")
+    if layout:
+        mechanism = layout["prompt"].strip()
+        # Remove only the exact stock scaffold from bundled SB notes.
+        mechanism = mechanism.removeprefix("Comic storyboard. Layout: ")
+        mechanism = mechanism.removesuffix(
+            " Let this storyboard mechanism determine the page structure, reading flow, panel hierarchy, "
+            "and pacing; output a complete single-page comic where panels tell a continuous story with "
+            "consistent characters.")
+        sections.append("Layout (approximate): " + mechanism)
+    if "preset_id" in style:
+        application = page["style_application"]
+        decisions = _prompt_parts(application[key] for key in ("performance", "camera", "layout"))
+        sections.append("Page direction: " + "; ".join(decisions))
+    regions = {region["panel_id"]: region for region in
+               layout["guidance"]["panels"]} if layout else {}
+    panel_lines = []
+    for panel in page["panels"]:
+        region = regions.get(panel["panel_id"], panel)
+        position = " " + _prompt_bounds(region["bounds"]) if region.get("bounds") else ""
+        details = _prompt_parts(panel.get(key) for key in
+                                ("visual", "description", "main_action_or_emotion", "focus", "camera"))
+        shape = region.get("geometry_type")
+        if shape and shape != "rect":
+            position += " " + str(shape)
+        panel_lines.append(panel["panel_id"] + position + ": " + "; ".join(details))
+    sections.append("Panels in reading order (normalized xywh):\n" + "\n".join(panel_lines))
+    sections.append(page["prompt"].strip())
+    if page["captions"]:
+        reservations = []
+        for caption in page["captions"]:
+            owners = _prompt_parts(caption.get(key) for key in ("speaker_id", "owner_id", "speaker"))
+            row = caption["panel_id"] + " " + _prompt_bounds(caption["bounds"])
+            if owners:
+                row += " owner=" + "/".join(owners)
+            intention = caption.get("placement_intention")
+            if isinstance(intention, str) and intention.strip():
+                row += ": " + intention.strip()
+            reservations.append(row)
+        sections.append("Reserve quiet space for local lettering; keep faces, hands and key objects clear:\n"
+                        + "\n".join(reservations))
+    sections.append("Generate one complete portrait 3:4 comic page with consistent characters and style. "
+                    "No text, letters, numbers, labels, logos, watermarks, speech bubbles or caption boxes; "
+                    "lettering is added locally.")
+    return "\n\n".join(sections) + "\n"
+
+
+def check_caption_band_policy(page, shared_prompt=""):
+    """Catch explicit blanket footer instructions locally, not visual quality."""
+    prompt = shared_prompt + "\n" + page["prompt"]
+    def affirmative(match):
+        prefix = prompt[max(0, match.start()-20):match.start()]
+        return not re.search(r"(?:do\s+not|don't|never|avoid|不要|禁止|避免|勿)\s*$", prefix, re.I)
+    blanket = re.search(
+        r"\breserve\b[^.!?\n]{0,70}\b(?:empty|blank)\s+lower\s+caption\s+zone\b"
+        r"[^.!?\n]{0,45}\b(?:each|every)\s+panel\b", prompt, re.I)
+    if blanket and not affirmative(blanket):
+        blanket = None
+    repeated = [match for match in re.finditer(
+        r"\bkeep\s+(?:its|the)\s+lower\s+\d+(?:\.\d+)?\s*(?:percent|%)\s+"
+        r"(?:completely\s+)?(?:empty|blank)\b", prompt, re.I) if affirmative(match)]
+    chinese = re.search(
+        r"(?:每一格|每格|每个画格|所有画格)的?(?:底部|下方|下半部)(?:都|统一)?"
+        r"(?:预留|留出|保留)[^。！？\n]{0,20}(?:空白|字幕区|文字区)", prompt)
+    if chinese and re.search(r"(?:不要|禁止|避免|勿)[^。！？\n]{0,8}$", prompt[max(0, chinese.start()-15):chinese.start()]):
+        chinese = None
+    uniform = len(page["panels"]) > 1 and len(repeated) >= len(page["panels"])
+    reason = page.get("caption_band_reason")
+    if (blanket or chinese or uniform) and (not isinstance(reason, str) or not reason.strip()):
+        raise ValueError(f"{page['page_id']}: uniform lower caption bands need a page-specific caption_band_reason "
+                         "from narrative intent or the user's requested format; otherwise plan text with the scene")
+
+
 def _text_settings(draft, base, pages, fast):
     settings = copy.deepcopy(draft.get("text_settings", {}))
     if not isinstance(settings, dict):
@@ -146,6 +265,8 @@ def prepare(plan_path, run_root, simulation=False):
             raise ValueError(f"{page['page_id']}: ordered panels/story units are required")
         if not isinstance(page.get("prompt"), str) or not page["prompt"].strip():
             raise ValueError(f"{page['page_id']}: final page prompt is required")
+        page_character_cards(page, characters)
+        check_caption_band_policy(page, style["prompt"])
     decision = fast_storyboard.select_pages({**draft, "pages": pages}, _pool(), LIBRARY)
     pages = decision["pages"]
     text_settings, font_source = _text_settings(draft, plan_path.parent, pages, fast)
@@ -189,14 +310,15 @@ def prepare(plan_path, run_root, simulation=False):
     def resolve_refs(owner):
         return [ref_bindings[str(_source_path(ref, plan_path.parent))] for ref in owner.get("reference_paths", [])]
 
-    shared = []
     for owner in [*characters, style]:
         owner["reference_paths"] = [b["path"] for b in resolve_refs(owner)]
-        shared.extend(owner["reference_paths"])
     rows = []
     storyboard = []
     for page in pages:
         pid = page["page_id"]
+        current_characters = page_character_cards(page, characters)
+        shared = [*style["reference_paths"],
+                  *[ref for character in current_characters for ref in character["reference_paths"]]]
         refs = list(dict.fromkeys([*shared, *[b["path"] for b in resolve_refs(page)]]))
         bindings = [{"path": path, "sha256": digest(path)} for path in refs]
         layout = page["layout"]
@@ -207,36 +329,13 @@ def prepare(plan_path, run_root, simulation=False):
                            "narrative_function": page["narrative_function"],
                            "panel_count_reason": page["panel_count_reason"],
                            "text_design": page["captions"]})
+        if "character_ids" in page:
+            storyboard[-1]["character_ids"] = list(page["character_ids"])
+        if page.get("caption_band_reason"):
+            storyboard[-1]["caption_band_reason"] = page["caption_band_reason"]
         if "preset_id" in style:
             storyboard[-1]["style_application"] = page["style_application"]
-        reservations = [c["bounds"] for c in page["captions"]]
-        style_decisions = ("Current page style application (artwork only; lettering is local post-layout): "
-                           + json.dumps({k: page["style_application"][k]
-                                         for k in ("performance", "camera", "layout")}, ensure_ascii=False)
-                           + "\n" if "preset_id" in style else "")
-        prompt = (style["prompt"].strip() + "\n\n"
-                  + "Recurring character cards: " + json.dumps(characters, ensure_ascii=False) + "\n"
-                  + ("Bundled SB visual guide (approximate, no pixel-exact claim): " + layout["prompt"] + "\n" if layout else "")
-                  + "Current page narrative purpose: " + page["narrative_function"] + "\n"
-                  + style_decisions
-                  + "Planned approximate panel regions (not exact source geometry): "
-                  + json.dumps(layout["guidance"]["panels"], ensure_ascii=False) + "\n"
-                  + "Ordered story units: " + json.dumps(page["panels"], ensure_ascii=False) + "\n"
-                  + "Joint artwork/text design; reserve space and speaker ownership, do not draw these containers: "
-                  + json.dumps([{key: c[key] for key in ("caption_id", "panel_id", "type", "speaker", "speaker_id", "owner_id",
-                                                        "bounds", "container", "bubble_style", "placement_intention")
-                                 if key in c} for c in page["captions"]], ensure_ascii=False) + "\n"
-                  + page["prompt"].strip() + "\n\n"
-                  + "Generate ONE complete portrait 3:4 page illustration, including all planned story units. "
-                  "Use consistent character identity, wardrobe, palette and drawing style across all pages and panels. "
-                  "Use supplied reference images ONLY for character identity, wardrobe, palette and drawing style. "
-                  "The CURRENT page's selected SB, story units and authored camera plan determine its composition, "
-                  "panel relationships, subject scale, staging and reserved text areas. Do not copy a reference page's "
-                  "panel arrangement, character positions, camera framing or caption positions. "
-                  "Draw no text, Chinese characters, letters, captions, numbers, watermarks, labels or speech bubbles. "
-                  "All captions will be added locally after generation. Keep faces, hands and key objects outside "
-                  "these normalized xywh caption reservations; leave quiet low-detail space there: "
-                  + json.dumps(reservations) + ".\n")
+        prompt = build_generation_prompt(page, style, current_characters)
         prompt_path = fast / "prompts" / f"{pid}.txt"
         prompt_path.parent.mkdir(exist_ok=True)
         prompt_path.write_text(prompt, encoding="utf-8")
@@ -258,6 +357,8 @@ def prepare(plan_path, run_root, simulation=False):
     frozen_plan = {"schema_version": 1, "mode": "fast", "simulation": bool(simulation),
                    "max_attempts": 2, "first_page_id": page_ids[0], "reuse_first_page_reference": True,
                    "semantic_planning_version": 1, "visual_review_required": True,
+                   "first_final_review_required": bool(config.get("first_final_review_required", True)
+                                                       and pages[0]["caption_plan"]["captions"]),
                    "text_settings": text_settings,
                    "input_bindings": [{"path": str(p), "sha256": digest(p)} for p in local_inputs],
                    "pages": rows}

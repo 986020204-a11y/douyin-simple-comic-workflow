@@ -9,6 +9,7 @@
   "text_strategy": "semantic_local_post_layout",
   "storyboard_strategy": "original_sb_narrative_selection",
   "visual_review_required": true,
+  "first_final_review_required": true,
   "reference_role": "identity_wardrobe_palette_style_only",
   "token_usage": null,
   "quota_usage": null,

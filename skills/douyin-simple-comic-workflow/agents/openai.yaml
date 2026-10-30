@@ -1,6 +1,6 @@
 interface:
   display_name: "抖音简洁漫画工作流"
-  short_description: "默认 FAST 整页漫画，支持 STRICT 精确 SB 生产"
-  default_prompt: "使用 $douyin-simple-comic-workflow 把中文文案制作成静态漫画组图，默认 FAST 一次规划、整页生图、断点续作和本地字幕；需要精确 SB 时使用 STRICT。"
+  short_description: "默认 FAST 精简提示词、整页漫画；支持 STRICT 精确 SB"
+  default_prompt: "使用 $douyin-simple-comic-workflow 把中文文案制作成静态漫画组图，默认 FAST 一次规划、精简本页生图提示词、整页生图、断点续作和本地字幕，完整制作资料留在本地；需要精确 SB 时使用 STRICT。"
 policy:
   allow_implicit_invocation: true

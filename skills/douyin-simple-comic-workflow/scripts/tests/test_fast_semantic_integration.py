@@ -17,13 +17,7 @@ import fast_prepare
 import fast_queue
 
 
-def _font_path():
-    return next((Path(value) for value in ('C:/Windows/Fonts/msyh.ttc', 'C:/Windows/Fonts/simhei.ttf',
-                                         '/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc')
-                 if Path(value).is_file()), None)
-
-
-@unittest.skipUnless(_font_path(), 'local Chinese font required')
+@unittest.skipUnless(Path('C:/Windows/Fonts/msyh.ttc').is_file(), 'local Chinese font required')
 class SemanticLifecycle(unittest.TestCase):
     def test_prepare_review_reflow_cli_resume_and_first_page_skip(self):
         with tempfile.TemporaryDirectory(prefix='semantic-lifecycle-SIMULATION-') as temporary:
@@ -50,7 +44,7 @@ class SemanticLifecycle(unittest.TestCase):
                      'characters': [{'character_id': 'N01', 'description': '小海，短黑发蓝衣'},
                                     {'character_id': 'N02', 'description': '妈妈，短发米色上衣'}],
                      'style': {'prompt': 'Chinese hand-drawn diary comic with consistent characters.'},
-                     'text_settings': {'font_path': str(_font_path()), 'font_size': 40,
+                     'text_settings': {'font_path': 'C:/Windows/Fonts/msyh.ttc', 'font_size': 40,
                                        'canvas_size': [1080, 1440]}, 'pages': [page]}
             draft_path = root / 'draft.json'
             draft_path.write_text(json.dumps(draft, ensure_ascii=False), encoding='utf-8')
@@ -105,6 +99,21 @@ class SemanticLifecycle(unittest.TestCase):
             self.assertTrue(Path(first['output_path']).is_file())
             self.assertEqual((run / 'fast/state.json').read_bytes(), after_resume)
             self.assertEqual(Path(saved['output_path']).read_bytes(), base_before)
+            self.assertEqual(fast_queue.claim_page(run)['status'], 'awaiting_final_review')
+            selection = json.loads((run / 'fast/caption-selection.json').read_text(encoding='utf-8'))['pages']['P01']
+            final_review = {'page_id': 'P01', 'image_sha256': selection['output_sha256'],
+                'caption_plan_sha256': selection['caption_plan_sha256'], 'actual_final_viewed': True,
+                'checks': {key: {'passed': True, 'reason': 'SIMULATION integration declaration only'}
+                           for key in ('storyboard_expression', 'text_scene_integration', 'reading_order')}}
+            final_review_path = root / 'SIMULATED-final-review.json'
+            final_review_path.write_text(json.dumps(final_review), encoding='utf-8')
+            result = subprocess.run([sys.executable, str(SCRIPTS / 'fast_queue.py'), 'review-final',
+                '--run-root', str(run), '--page-id', 'P01', '--review', str(final_review_path)],
+                capture_output=True, text=True, encoding='utf-8', timeout=20)
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            self.assertEqual(json.loads(result.stdout)['status'], 'passed')
+            fast_caption.compose(run, 'P01')
+            fast_prepare.prepare(root / 'missing.json', run, simulation=True)
             self.assertEqual(fast_queue.claim_page(run)['status'], 'complete')
             summary = fast_queue.status(run)
             self.assertEqual(summary['counts']['dispatched_attempts'], 1)

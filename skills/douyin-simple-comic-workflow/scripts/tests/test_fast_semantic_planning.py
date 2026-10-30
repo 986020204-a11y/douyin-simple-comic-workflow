@@ -222,9 +222,10 @@ class SemanticPrepareTests(unittest.TestCase):
         self.assertEqual(frozen["max_attempts"], 2)
         self.assertTrue(frozen["reuse_first_page_reference"])
         prompt = Path(frozen["pages"][0]["prompt_path"]).read_text(encoding="utf-8")
-        self.assertIn("ONE complete portrait 3:4 page", prompt)
-        self.assertIn("Do not copy a reference page's", prompt)
-        self.assertIn("Joint artwork/text design", prompt)
+        self.assertIn("Full-Bleed Splash Page", prompt)
+        for panel in self.draft["pages"][0]["panels"]:
+            self.assertIn(panel["main_action_or_emotion"], prompt)
+        self.assertNotIn("Reference-role constraint:", prompt)
         self.assertEqual(len(frozen["pages"]), 1)
 
     def test_nonempty_new_captions_require_explicit_semantics(self):

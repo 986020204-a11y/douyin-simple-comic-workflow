@@ -1,9 +1,9 @@
 ---
 name: douyin-simple-comic-workflow
-description: Create static Douyin comics and story illustration sets from Chinese copy, with FAST whole-page generation by default and STRICT SB geometry, local Chinese text, and production acceptance when precision is required. Not for video.
+description: Create static Douyin comics and story illustration sets from Chinese copy, with FAST whole-page generation and concise page-specific image prompts by default, plus STRICT SB geometry, local Chinese text, and production acceptance when precision is required. Not for video.
 metadata:
-  version: "1.2.0-style-presets"
-  short-description: "默认 FAST 整页漫画；保留 STRICT 精确 SB 生产"
+  version: "1.2.3-fast-compact-prompts"
+  short-description: "默认 FAST 精简提示词与整页漫画；保留 STRICT 精确 SB 生产"
   final-output-policy: "one-final-image-per-page"
 ---
 
@@ -37,11 +37,15 @@ metadata:
 
 ## FAST 的关键约定
 
+FAST 默认使用精简生图提示词：只发送本页必要的画风、人物、分镜动作、构图与文字留白，完整分析、字幕和审核数据留在本地。冻结前检查实际拼接后的请求，去掉重复规范和后页内容；不靠硬截断或删除关键剧情缩短文本。具体编写与拼接规则见 [FAST 工作流](references/fast-workflow.md)。精简是请求质量改进，不把网络失败直接归因于提示词长度。
+
+优先缩短准备与减少重复调用：在原有一次规划里联合确定图文位置，公共画风和角色卡只写一次，每页用 `character_ids` 列出实际出场人物；脚本只携带这些人物卡及其专属参考。不要为同一篇原稿另开重复分析轮次或默认增加试风格图、测试图、多个候选；首张就是正式第1页。共用身份参考可放在首张的 `reference_paths`，后续复用审核过的首张；本页需要的新人物参考或用户指定的持续参考仍保留。具体轻量检查见 FAST 工作流，不新增模板数量配额。
+
 读故事后在同一次规划中写好分析、人物卡、画风、分镜、字幕与最终提示词并保存。分镜确认后冻结，恢复只读已有状态和当前页请求；修一页不重新分析整篇故事。已有明确创作授权且无需额外选择时可直接采用规划并冻结，不新增确认轮次。
 
 每页写清叙事功能、最少充分画格的理由、每格的主动作或情绪和文字归属。从原有 68 套 SB 选型；叙事匹配优先，相近候选才考虑前后变化。有叙事理由可以重复，不设固定轮换或最低版式配额。复杂 SB 的近似改编须明确记录；不能用通用网格替代原模板后宣称执行通过。
 
-一页默认一个最终候选；先完成并保存第 1 页，再继续剩余页。每页最多 2 次生图尝试，只重试失败页；有效成功图片必须跳过。复用人物/画风参考；没有现成参考时可复用第 1 页，不默认增加参考图生图任务。
+一页默认一个最终候选；首张有文字的新任务先完成正式第 1 页的本地排字，实际查看成品并记录分镜表达、图文关系及阅读顺序，队列通过后再继续剩余页。首张无文字时不增加排字审核；旧冻结计划沿用原规则。每页最多 2 次生图尝试，只重试失败页；有效成功图片必须跳过。复用人物/画风参考；没有现成参考时可复用第 1 页，不默认增加参考图生图任务。
 
 新任务保存图片后先做当前页轻量视觉检查，再开放后续任务。文件成功只表示可读且已保存，人物、关键情节和分镜执行需另行记录。参考图继承人物、服装与画风，本页 SB 决定构图。画面确实失败时先记录，再明确登记并使用该页剩余的一次重试；字幕问题只在本地处理。
 

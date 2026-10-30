@@ -108,6 +108,22 @@ def _paths(run_root: str | Path) -> tuple[Path, Path, Path]:
     return root, root / "fast" / "plan.json", root / "fast" / "state.json"
 
 
+@contextlib.contextmanager
+def _final_operation_lock(root: Path, plan_path: Path, state_path: Path):
+    """Keep selection stable until a claim/review commits; lock state first."""
+    with _lock(state_path):
+        try:
+            required = _read(plan_path).get("first_final_review_required", False)
+        except QueueError:
+            required = False  # _checked persists the ordinary frozen-input stop.
+        if required:
+            from fast_caption import _selection_lock
+            with _selection_lock(root):
+                yield
+        else:
+            yield
+
+
 def _event(state: dict, kind: str, **values: Any) -> None:
     now = time.time()
     state["updated_at"] = now
@@ -149,6 +165,8 @@ def _validate_plan(root: Path, plan: dict) -> None:
         raise QueueError("FAST plan requires explicit simulation boolean and max_attempts=2")
     if "visual_review_required" in plan and type(plan["visual_review_required"]) is not bool:
         raise QueueError("visual_review_required must be an explicit boolean")
+    if "first_final_review_required" in plan and type(plan["first_final_review_required"]) is not bool:
+        raise QueueError("first_final_review_required must be an explicit boolean")
     pages = plan.get("pages")
     if not isinstance(pages, list) or not pages:
         raise QueueError("FAST plan requires pages")
@@ -178,6 +196,12 @@ def _validate_plan(root: Path, plan: dict) -> None:
             _binding({"path": page["caption_plan_path"], "sha256": page.get("caption_plan_sha256")})
     if plan.get("first_page_id") not in ids:
         raise QueueError("FAST plan first_page_id must identify a page")
+    if plan.get("first_final_review_required"):
+        first = next(p for p in pages if p["page_id"] == plan["first_page_id"])
+        if not plan.get("visual_review_required") or not first.get("caption_plan_path"):
+            raise QueueError("First-final review requires base visual review and a caption plan")
+        if not _read(Path(first["caption_plan_path"])).get("captions"):
+            raise QueueError("Textless first pages do not need a lettering review gate")
 
 
 def _checked(root: Path, plan_path: Path, state_path: Path) -> tuple[dict, dict]:
@@ -188,6 +212,7 @@ def _checked(root: Path, plan_path: Path, state_path: Path) -> tuple[dict, dict]
         plan = _read(plan_path)
         _validate_plan(root, plan)
         state["visual_review_required"] = plan.get("visual_review_required", False)
+        state["first_final_review_required"] = plan.get("first_final_review_required", False)
     except (QueueError, OSError) as exc:
         state["status"] = "stopped"
         state["stop_reason"] = str(exc)
@@ -195,7 +220,47 @@ def _checked(root: Path, plan_path: Path, state_path: Path) -> tuple[dict, dict]
         _event(state, "stopped", reason=str(exc))
         _write(state_path, state)
         raise QueueError(str(exc)) from exc
+    _refresh_first_final(root, plan, state)
     return plan, state
+
+
+def _selected_first_final(root: Path, plan: dict, state: dict) -> tuple[dict, str]:
+    # Reuse the compositor's file/path/hash validation; no story or image analysis.
+    from fast_caption import _selected_revision
+
+    first = state["pages"][plan["first_page_id"]]
+    if first["status"] != "succeeded" or first.get("visual_review_status") != "passed":
+        raise QueueError("Save and review the first base image before reviewing its lettered final")
+    spec = next(p for p in plan["pages"] if p["page_id"] == first["page_id"])
+    try:
+        _, selection = _selected_revision(root, first["page_id"], state["plan_sha256"],
+                                          first["image_sha256"], Path(spec["caption_plan_path"]).resolve())
+    except (ValueError, OSError) as exc:
+        raise QueueError(str(exc)) from exc
+    if selection is None:
+        raise QueueError("Locally letter and select the formal first page before continuing")
+    fingerprint = hashlib.sha256(json.dumps(selection, sort_keys=True,
+                                  separators=(",", ":")).encode("utf-8")).hexdigest()
+    return selection, fingerprint
+
+
+def _refresh_first_final(root: Path, plan: dict, state: dict) -> None:
+    if not state.get("first_final_review_required"):
+        return  # Preserve frozen legacy runs without reading new review artifacts.
+    state["first_final_review_status"] = "pending"
+    state["first_final_output_path"] = None
+    try:
+        selection, fingerprint = _selected_first_final(root, plan, state)
+        state["first_final_output_path"] = selection["output_path"]
+        record = state.get("first_final_review")
+        if not record or record.get("selection_sha256") != fingerprint:
+            raise QueueError("View the current lettered first page and record its integrated comic review")
+        _binding({"path": record.get("review_path"), "sha256": record.get("review_sha256")})
+        state["first_final_review_status"] = record["status"]
+        state["first_final_review_error"] = record.get("failure_reason")
+    except (QueueError, OSError) as exc:
+        # A missing/stale review needs local review or relettering, never regeneration.
+        state["first_final_review_error"] = str(exc)
 
 
 def validate_frozen(run_root: str | Path) -> dict:
@@ -238,7 +303,9 @@ def _refresh_outputs(state: dict) -> None:
         state["status"] = ("complete" if all(p["status"] == "succeeded" and
                            (not state.get("visual_review_required") or
                             p.get("visual_review_status") == "passed")
-                           for p in state["pages"].values())
+                           for p in state["pages"].values()) and
+                           (not state.get("first_final_review_required") or
+                            state.get("first_final_review_status") == "passed")
                            else "active")
 
 
@@ -248,6 +315,9 @@ def _summary(state: dict) -> dict:
     return {
         "status": state["status"], "mode": "fast", "simulation": state["simulation"],
         "visual_review_required": state.get("visual_review_required", False),
+        "first_final_review_required": state.get("first_final_review_required", False),
+        "first_final_review_status": state.get("first_final_review_status", "not_required"),
+        "first_final_review_error": state.get("first_final_review_error"),
         "stop_reason": state.get("stop_reason"), "plan_sha256": state["plan_sha256"],
         "counts": {"pages": len(pages), "succeeded": sum(p["status"] == "succeeded" for p in pages),
                    "dispatched_attempts": sum(p["attempts"] for p in pages),
@@ -284,6 +354,7 @@ def init_queue(run_root: str | Path) -> dict:
         _validate_plan(root, plan)
         state = {"schema_version": 1, "mode": "fast", "simulation": plan["simulation"],
                  "visual_review_required": plan.get("visual_review_required", False),
+                 "first_final_review_required": plan.get("first_final_review_required", False),
                  "plan_sha256": sha256(plan_path), "status": "active", "stop_reason": None,
                  "created_at": time.time(), "pages": {}, "events": []}
         for page in plan["pages"]:
@@ -300,6 +371,7 @@ def init_queue(run_root: str | Path) -> dict:
                 "visual_review_image_sha256": None, "visual_review_history": [],
                 "visual_retry_authorized": False,
             }
+        _refresh_first_final(root, plan, state)
         _event(state, "initialized")
         _write(state_path, state)
         return _summary(state)
@@ -321,7 +393,7 @@ def _downstream_completed(state: dict, first_page_id: str) -> bool:
 
 def claim_page(run_root: str | Path) -> dict:
     root, plan_path, state_path = _paths(run_root)
-    with _lock(state_path):
+    with _final_operation_lock(root, plan_path, state_path):
         plan, state = _checked(root, plan_path, state_path)
         _refresh_outputs(state)
         if state["status"] == "stopped":
@@ -353,6 +425,14 @@ def claim_page(run_root: str | Path) -> dict:
                                    "an image retry requires the explicit retry-visual command."
                                    if failed else "View the actual saved image and record its visual review before continuing.")}
         first = state["pages"][plan["first_page_id"]]
+        if (first["status"] == "succeeded" and state.get("first_final_review_required")
+                and state.get("first_final_review_status") != "passed"):
+            _write(state_path, state)
+            failed = state.get("first_final_review_status") == "failed"
+            return {"status": "final_review_failed" if failed else "awaiting_final_review",
+                    "page_id": first["page_id"], "output_path": state.get("first_final_output_path"),
+                    "reason": state.get("first_final_review_error") or
+                              "Correct the first page locally and review its selected lettered final; no new image attempt is needed."}
         eligible = ([first] if first["status"] != "succeeded" else list(state["pages"].values()))
         page = next((p for p in eligible if p["status"] in {"pending", "failed"} and p["attempts"] < 2), None)
         if page is None:
@@ -628,6 +708,62 @@ def review_page(run_root: str | Path, page_id: str, review_path: str | Path) -> 
                 "caption_issues": document.get("caption_issues", [])}
 
 
+def review_final_page(run_root: str | Path, page_id: str, review_path: str | Path) -> dict:
+    """Record actual viewing of the selected lettered first page, without an image call."""
+    root, plan_path, state_path = _paths(run_root)
+    with _final_operation_lock(root, plan_path, state_path):
+        plan, state = _checked(root, plan_path, state_path)
+        _refresh_outputs(state)
+        if not state.get("first_final_review_required") or page_id != plan["first_page_id"]:
+            raise QueueError("This frozen run/page has no first-final review gate")
+        selection, fingerprint = _selected_first_final(root, plan, state)
+        document = _read(Path(review_path))
+        if (document.get("page_id") != page_id or
+                document.get("image_sha256") != selection["output_sha256"] or
+                document.get("caption_plan_sha256") != selection["caption_plan_sha256"]):
+            raise QueueError("Final review must bind this page's current final image and caption plan hashes")
+        if document.get("actual_final_viewed") is not True:
+            raise QueueError("View the actual selected lettered final before setting actual_final_viewed=true")
+        checks = document.get("checks")
+        required = {"storyboard_expression", "text_scene_integration", "reading_order"}
+        if not isinstance(checks, dict) or set(checks) != required:
+            raise QueueError("Final review requires storyboard_expression, text_scene_integration and reading_order")
+        for check in checks.values():
+            if (not isinstance(check, dict) or type(check.get("passed")) is not bool or
+                    not isinstance(check.get("reason"), str) or not check["reason"].strip()):
+                raise QueueError("Each final check requires an explicit passed boolean and concrete viewing reason")
+        result = "passed" if all(check["passed"] for check in checks.values()) else "failed"
+        digest = hashlib.sha256(json.dumps(document, ensure_ascii=False, sort_keys=True,
+                                separators=(",", ":")).encode("utf-8")).hexdigest()
+        previous = state.get("first_final_review", {})
+        if (previous.get("document_sha256") == digest and previous.get("selection_sha256") == fingerprint
+                and state.get("first_final_review_status") == result):
+            return {"status": result, "page_id": page_id, "already_reviewed": True,
+                    "review_path": previous["review_path"], "generation_requested": False}
+        snapshot = root / "fast" / "final-reviews" / page_id / f"{fingerprint}-{digest}.json"
+        if snapshot.exists() and _read(snapshot) != document:
+            raise QueueError("Existing final review snapshot changed; preserve it and supply a new review")
+        if not snapshot.exists():
+            _write(snapshot, document)
+        record = {"selection_sha256": fingerprint, "document_sha256": digest,
+                  "image_sha256": selection["output_sha256"],
+                  "caption_plan_sha256": selection["caption_plan_sha256"],
+                  "review_path": str(snapshot), "review_sha256": sha256(snapshot),
+                  "status": result, "reviewed_at": time.time(),
+                  "failure_reason": "; ".join(f"{name}: {check['reason']}" for name, check in checks.items()
+                                              if not check["passed"]) or None,
+                  "evidence_note": "Caller attests actual final-image viewing; no automatic aesthetic judgement is performed."}
+        state.setdefault("first_final_review_history", []).append(record)
+        state["first_final_review"] = record
+        _refresh_first_final(root, plan, state)
+        _refresh_outputs(state)
+        _event(state, "first_final_review_recorded", page_id=page_id, result=result,
+               image_sha256=selection["output_sha256"])
+        _write(state_path, state)
+        return {"status": result, "page_id": page_id, "review_path": str(snapshot),
+                "generation_requested": False, "attempts": state["pages"][page_id]["attempts"]}
+
+
 def retry_visual_page(run_root: str | Path, page_id: str, reason: str) -> dict:
     """Explicitly authorize the sole remaining image retry for a failed review."""
     root, plan_path, state_path = _paths(run_root)
@@ -729,10 +865,10 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
     for command in ("init", "status", "claim", "complete", "fail", "recover", "stop", "resume",
-                    "review", "retry-visual"):
+                    "review", "review-final", "retry-visual"):
         item = sub.add_parser(command)
         item.add_argument("--run-root", required=True)
-        if command in {"complete", "fail", "recover", "review", "retry-visual"}:
+        if command in {"complete", "fail", "recover", "review", "review-final", "retry-visual"}:
             item.add_argument("--page-id", required=True)
         if command in {"complete", "fail"}:
             item.add_argument("--claim-token", required=True)
@@ -740,7 +876,7 @@ def main(argv: list[str] | None = None) -> int:
             item.add_argument("--provider", default="codex.image_gen" if command == "complete" else None)
         if command == "complete":
             item.add_argument("--image", required=True)
-        if command == "review":
+        if command in {"review", "review-final"}:
             item.add_argument("--review", required=True)
         if command in {"fail", "recover", "stop", "retry-visual"}:
             item.add_argument("--reason", required=True)
@@ -758,6 +894,8 @@ def main(argv: list[str] | None = None) -> int:
             result = stop_run(args.run_root, args.reason)
         elif args.command == "review":
             result = review_page(args.run_root, args.page_id, args.review)
+        elif args.command == "review-final":
+            result = review_final_page(args.run_root, args.page_id, args.review)
         elif args.command == "retry-visual":
             result = retry_visual_page(args.run_root, args.page_id, args.reason)
         else:
